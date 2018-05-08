@@ -1,2 +1,2 @@
 # boohu-pages
-pages for the Boohu roguelike
+Some web pages for the Boohu roguelike.
