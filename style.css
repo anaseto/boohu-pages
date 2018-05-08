@@ -1,0 +1,10 @@
+/* Colors from http://ethanschoonover.com/solarized */
+html{
+	background-color:#fdf6e3;
+	color:#657b83;
+	font-size:16px;
+}
+body{
+	max-width:80ch;
+	margin-left:5%;
+}
