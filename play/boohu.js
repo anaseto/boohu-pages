@@ -39537,14 +39537,16 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	$pkg.SolarizedPalette = SolarizedPalette;
 	termui.ptr.prototype.DrawWelcome = function() {
-		var ColorText, _r, col, line, rcol, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; ColorText = $f.ColorText; _r = $f._r; col = $f.col; line = $f.line; rcol = $f.rcol; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var ColorText, _r, _r$1, col, line, rcol, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; ColorText = $f.ColorText; _r = $f._r; _r$1 = $f._r$1; col = $f.col; line = $f.line; rcol = $f.rcol; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		ui.Clear();
 		col = 10;
 		line = 5;
 		rcol = col + 20 >> 0;
 		ColorText = $pkg.ColorFgHPok;
+		_r = fmt.Sprintf("       Boohu %s", new sliceType$6([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		$r = ui.DrawDark(_r, col, line - 2 >> 0, ColorText); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		ui.DrawDark("\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80\xE2\x94\x82\\/\\/\\/\\/\\/\\/\\/\xE2\x94\x82\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80", col, line, ColorText);
 		line = line + (1) >> 0;
 		ui.DrawDark("##", col, line, $pkg.ColorFgDark);
@@ -39609,10 +39611,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		line = line + (1) >> 0;
 		ui.DrawDark("\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80Press any key to continue\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80", col - 3 >> 0, line, $pkg.ColorFg);
 		ui.Flush();
-		_r = ui.PressAnyKey(); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
-		_r;
+		_r$1 = ui.PressAnyKey(); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1;
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.DrawWelcome }; } $f.ColorText = ColorText; $f._r = _r; $f.col = col; $f.line = line; $f.rcol = rcol; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.DrawWelcome }; } $f.ColorText = ColorText; $f._r = _r; $f._r$1 = _r$1; $f.col = col; $f.line = line; $f.rcol = rcol; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.DrawWelcome = function() { return this.$val.DrawWelcome(); };
 	termui.ptr.prototype.DrawColored = function(text, x, y, fg, bg) {
