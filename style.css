@@ -11,3 +11,6 @@ p{
 	max-width:80ch;
 	text-align:justify;
 }
+details{
+	background-color:#eee8d5
+}
