@@ -37891,7 +37891,7 @@ $packages["path/filepath"] = (function() {
 	return $pkg;
 })();
 $packages["github.com/anaseto/boohu"] = (function() {
-	var $pkg = {}, $init, bytes, heap, rand, base64, gob, errors, fmt, js, io, log, big, filepath, sort, strings, time, unicode, utf8, aptitude, node, nodeMap, priorityQueue, dmgType, Dijkstrer, uicolor, uiMode, keyAction, runeKeyAction, examineData, explosionStyle, configAction, linestyle, rodSlice, consumableSlice, statusSlice, monsSlice, dungeon, cell, terrain, dungen, room, roomSlice, vegetation, config, event, iEvent, eventQueue, simpleAction, simpleEvent, monsterAction, monsterEvent, cloudAction, cloudEvent, burn, game, Renderer, consumable, potion, projectile, collectable, collectData, equipable, armour, weapon, shield, equipableData, UICell, jsInput, termui, logStyle, logEntry, raynode, rayMap, monsterState, monsterStatus, monsterKind, monsterData, monsterBand, monsInterval, monsterBandData, monster, dungeonPath, playerPath, noisePath, normalPath, autoexplorePath, monPath, posCost, posSlice, player, position, direction, rod, rodProps, cloud, stats, status, Targeter, examiner, chooser, wallChooser, sliceType, arrayType, sliceType$1, sliceType$2, sliceType$3, sliceType$4, ptrType, ptrType$1, sliceType$5, ptrType$2, ptrType$3, arrayType$1, sliceType$6, sliceType$7, sliceType$8, arrayType$2, arrayType$3, ptrType$4, sliceType$9, sliceType$10, ptrType$5, sliceType$11, sliceType$12, ptrType$6, ptrType$7, sliceType$13, sliceType$14, ptrType$8, sliceType$15, arrayType$4, arrayType$5, arrayType$6, ptrType$9, ptrType$10, ptrType$11, sliceType$16, ptrType$12, funcType, funcType$1, sliceType$17, arrayType$7, mapType, funcType$2, mapType$1, ptrType$13, mapType$2, mapType$3, mapType$4, mapType$5, mapType$6, mapType$7, mapType$8, mapType$9, mapType$10, mapType$11, ptrType$14, ptrType$15, mapType$12, mapType$13, ptrType$16, ptrType$17, ptrType$18, ptrType$19, ptrType$20, ptrType$21, mapType$14, mapType$15, mapType$16, mapType$17, mapType$18, ptrType$22, ptrType$23, nodeCache, configurableKeyActions, runeNormalKeyActions, runeTargetingKeyActions, menuActions, ch, wants, interrupt, monsDesc, init, AstarPath, Dijkstra, LinkColors, SolarizedPalette, FixedRuneKey, ApplyDefaultKeyBindings, InRuneSlice, roomDistance, nearRoom, nearestRoom, intersectsRoom, GenCaveRoomSize, init$1, main, init$2, KeyToDir, idxtopos, Abs, RandInt, Min, Max, Indefinite, formatText;
+	var $pkg = {}, $init, bytes, heap, rand, base64, gob, errors, fmt, js, io, log, big, filepath, sort, strings, time, unicode, utf8, aptitude, node, nodeMap, priorityQueue, dmgType, Dijkstrer, uicolor, uiMode, keyAction, runeKeyAction, examineData, explosionStyle, configAction, linestyle, rodSlice, consumableSlice, statusSlice, monsSlice, dungeon, cell, terrain, dungen, room, roomSlice, vegetation, config, event, iEvent, eventQueue, simpleAction, simpleEvent, monsterAction, monsterEvent, cloudAction, cloudEvent, burn, game, Renderer, consumable, potion, projectile, collectable, collectData, equipable, armour, weapon, shield, equipableData, UICell, jsInput, termui, logStyle, logEntry, raynode, rayMap, monsterState, monsterStatus, monsterKind, monsterData, monsterBand, monsInterval, monsterBandData, monster, dungeonPath, playerPath, noisePath, normalPath, autoexplorePath, monPath, posCost, posSlice, player, position, direction, rod, rodProps, cloud, stats, status, Targeter, examiner, chooser, wallChooser, sliceType, arrayType, sliceType$1, sliceType$2, sliceType$3, sliceType$4, ptrType, ptrType$1, sliceType$5, ptrType$2, ptrType$3, arrayType$1, sliceType$6, sliceType$7, sliceType$8, arrayType$2, arrayType$3, ptrType$4, sliceType$9, sliceType$10, ptrType$5, sliceType$11, sliceType$12, ptrType$6, ptrType$7, sliceType$13, sliceType$14, ptrType$8, sliceType$15, arrayType$4, arrayType$5, arrayType$6, ptrType$9, ptrType$10, ptrType$11, sliceType$16, ptrType$12, funcType, funcType$1, sliceType$17, arrayType$7, mapType, funcType$2, mapType$1, ptrType$13, mapType$2, mapType$3, mapType$4, mapType$5, mapType$6, mapType$7, mapType$8, mapType$9, mapType$10, mapType$11, ptrType$14, ptrType$15, mapType$12, mapType$13, ptrType$16, ptrType$17, ptrType$18, ptrType$19, ptrType$20, ptrType$21, mapType$14, mapType$15, mapType$16, mapType$17, mapType$18, ptrType$22, ptrType$23, nodeCache, configurableKeyActions, runeNormalKeyActions, runeTargetingKeyActions, menuActions, ch, interrupt, monsDesc, init, AstarPath, Dijkstra, LinkColors, SolarizedPalette, FixedRuneKey, ApplyDefaultKeyBindings, InRuneSlice, roomDistance, nearRoom, nearestRoom, intersectsRoom, GenCaveRoomSize, init$1, main, init$2, KeyToDir, idxtopos, Abs, RandInt, Min, Max, Indefinite, formatText;
 	bytes = $packages["bytes"];
 	heap = $packages["container/heap"];
 	rand = $packages["crypto/rand"];
@@ -39198,13 +39198,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _i, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, _v, behind, deltaX, deltaY, ev, g, mons, mons$1, mons$2, neighbors, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _v = $f._v; behind = $f.behind; deltaX = $f.deltaX; deltaY = $f.deltaY; ev = $f.ev; g = $f.g; mons = $f.mons; mons$1 = $f.mons$1; mons$2 = $f.mons$2; neighbors = $f.neighbors; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-			/* */ if (g.Player.HasStatus(13)) { $s = 2; continue; }
+			/* */ if (g.Player.HasStatus(13) && !g.Player.HasStatus(5)) { $s = 2; continue; }
 			/* */ if ((g.Player.Weapon === 7)) { $s = 3; continue; }
 			/* */ if (new weapon(g.Player.Weapon).Cleave()) { $s = 4; continue; }
 			/* */ if (new weapon(g.Player.Weapon).Pierce()) { $s = 5; continue; }
 			/* */ if ((g.Player.Weapon === 8)) { $s = 6; continue; }
 			/* */ $s = 7; continue;
-			/* if (g.Player.HasStatus(13)) { */ case 2:
+			/* if (g.Player.HasStatus(13) && !g.Player.HasStatus(5)) { */ case 2:
 				$r = g.SwapWithMonster(mons); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 8; continue;
 			/* } else if ((g.Player.Weapon === 7)) { */ case 3:
@@ -41524,22 +41524,23 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, _r$1, _tuple, _tuple$1, bgColorm, bgColorp, fgm, g, mpos, ppos, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; bgColorm = $f.bgColorm; bgColorp = $f.bgColorp; fgm = $f.fgm; g = $f.g; mpos = $f.mpos; ppos = $f.ppos; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		$r = time.Sleep(new time.Duration(0, 50000000)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		_r = ui.PositionDrawing(g, $clone(mpos, position)); /* */ $s = 2; case 2: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_r = ui.PositionDrawing(g, $clone(mpos, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_tuple = _r;
 		fgm = _tuple[1];
 		bgColorm = _tuple[2];
-		_r$1 = ui.PositionDrawing(g, $clone(ppos, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = ui.PositionDrawing(g, $clone(ppos, position)); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_tuple$1 = _r$1;
 		bgColorp = _tuple$1[2];
-		$r = ui.DrawAtPosition(g, $clone(ppos, position), true, 164, fgm, bgColorp); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ui.DrawAtPosition(g, $clone(mpos, position), true, 164, $pkg.ColorFgPlayer, bgColorm); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawAtPosition(g, $clone(ppos, position), true, 164, fgm, bgColorp); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawAtPosition(g, $clone(mpos, position), true, 164, $pkg.ColorFgPlayer, bgColorm); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ui.DrawAtPosition(g, $clone(ppos, position), true, 164, $pkg.ColorFgPlayer, bgColorp); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ui.DrawAtPosition(g, $clone(mpos, position), true, 164, fgm, bgColorm); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawAtPosition(g, $clone(ppos, position), true, 164, $pkg.ColorFgPlayer, bgColorp); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawAtPosition(g, $clone(mpos, position), true, 164, fgm, bgColorm); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.SwappingAnimation }; } $f._r = _r; $f._r$1 = _r$1; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f.bgColorm = bgColorm; $f.bgColorp = bgColorp; $f.fgm = fgm; $f.g = g; $f.mpos = mpos; $f.ppos = ppos; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -41548,26 +41549,27 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, _r$1, _tuple, _tuple$1, bgColorf, bgColort, fg, from, g, r, showto, to, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; bgColorf = $f.bgColorf; bgColort = $f.bgColort; fg = $f.fg; from = $f.from; g = $f.g; r = $f.r; showto = $f.showto; to = $f.to; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		$r = time.Sleep(new time.Duration(0, 50000000)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		_r = ui.PositionDrawing(g, $clone(from, position)); /* */ $s = 2; case 2: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_r = ui.PositionDrawing(g, $clone(from, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_tuple = _r;
 		r = _tuple[0];
 		fg = _tuple[1];
 		bgColorf = _tuple[2];
-		_r$1 = ui.PositionDrawing(g, $clone(to, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = ui.PositionDrawing(g, $clone(to, position)); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_tuple$1 = _r$1;
 		bgColort = _tuple$1[2];
-		$r = ui.DrawAtPosition(g, $clone(from, position), true, 164, $pkg.ColorCyan, bgColorf); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawAtPosition(g, $clone(from, position), true, 164, $pkg.ColorCyan, bgColorf); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		/* */ if (showto) { $s = 6; continue; }
-		/* */ $s = 7; continue;
-		/* if (showto) { */ case 6:
-			$r = ui.DrawAtPosition(g, $clone(from, position), true, r, fg, bgColorf); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = ui.DrawAtPosition(g, $clone(to, position), true, 164, $pkg.ColorCyan, bgColort); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* */ if (showto) { $s = 7; continue; }
+		/* */ $s = 8; continue;
+		/* if (showto) { */ case 7:
+			$r = ui.DrawAtPosition(g, $clone(from, position), true, r, fg, bgColorf); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = ui.DrawAtPosition(g, $clone(to, position), true, 164, $pkg.ColorCyan, bgColort); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			ui.Flush();
-			$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		/* } */ case 7:
+			$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* } */ case 8:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.TeleportAnimation }; } $f._r = _r; $f._r$1 = _r$1; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f.bgColorf = bgColorf; $f.bgColort = bgColort; $f.fg = fg; $f.from = from; $f.g = g; $f.r = r; $f.showto = showto; $f.to = to; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -41587,7 +41589,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			bgColor = _tuple[2];
 			$r = ui.DrawAtPosition(g, $clone(pos, position), true, 8226, fg, bgColor); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			ui.Flush();
-			$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = time.Sleep(new time.Duration(0, 30000000)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$r = ui.DrawAtPosition(g, $clone(pos, position), true, r, fgColor, bgColor); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			i = i - (1) >> 0;
 		/* } */ $s = 1; continue; case 2:
@@ -41595,9 +41597,34 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ProjectileTrajectoryAnimation }; } $f._r = _r; $f._tuple = _tuple; $f.bgColor = bgColor; $f.fg = fg; $f.fgColor = fgColor; $f.g = g; $f.i = i; $f.pos = pos; $f.r = r; $f.ray = ray; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.ProjectileTrajectoryAnimation = function(g, ray, fg) { return this.$val.ProjectileTrajectoryAnimation(g, ray, fg); };
+	termui.ptr.prototype.MonsterProjectileAnimation = function(g, ray, r, fg) {
+		var _r, _tuple, bgColor, fg, fgColor, g, i, or, pos, r, ray, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _tuple = $f._tuple; bgColor = $f.bgColor; fg = $f.fg; fgColor = $f.fgColor; g = $f.g; i = $f.i; or = $f.or; pos = $f.pos; r = $f.r; ray = $f.ray; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		ui = this;
+		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		i = 0;
+		/* while (true) { */ case 3:
+			/* if (!(i < ray.$length)) { break; } */ if(!(i < ray.$length)) { $s = 4; continue; }
+			pos = $clone(((i < 0 || i >= ray.$length) ? ($throwRuntimeError("index out of range"), undefined) : ray.$array[ray.$offset + i]), position);
+			_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			_tuple = _r;
+			or = _tuple[0];
+			fgColor = _tuple[1];
+			bgColor = _tuple[2];
+			$r = ui.DrawAtPosition(g, $clone(pos, position), true, r, fg, bgColor); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			ui.Flush();
+			$r = time.Sleep(new time.Duration(0, 30000000)); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = ui.DrawAtPosition(g, $clone(pos, position), true, or, fgColor, bgColor); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			i = i + (1) >> 0;
+		/* } */ $s = 3; continue; case 4:
+		$s = -1; return;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.MonsterProjectileAnimation }; } $f._r = _r; $f._tuple = _tuple; $f.bgColor = bgColor; $f.fg = fg; $f.fgColor = fgColor; $f.g = g; $f.i = i; $f.or = or; $f.pos = pos; $f.r = r; $f.ray = ray; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+	};
+	termui.prototype.MonsterProjectileAnimation = function(g, ray, r, fg) { return this.$val.MonsterProjectileAnimation(g, ray, r, fg); };
 	termui.ptr.prototype.ExplosionAnimation = function(g, es, pos) {
-		var _entry, _i, _i$1, _r, _r$1, _r$2, _ref, _ref$1, _tuple, _tuple$1, bgColor, bgColor$1, colors, es, fg, g, npos, pos, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _i$1 = $f._i$1; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; _ref$1 = $f._ref$1; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; bgColor = $f.bgColor; bgColor$1 = $f.bgColor$1; colors = $f.colors; es = $f.es; fg = $f.fg; g = $f.g; npos = $f.npos; pos = $f.pos; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _1, _entry, _i, _r, _r$1, _r$2, _r$3, _ref, _tuple, bgColor, colors, es, fg, g, i, mons, nb, npos, pos, r, ui, x, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _ref = $f._ref; _tuple = $f._tuple; bgColor = $f.bgColor; colors = $f.colors; es = $f.es; fg = $f.fg; g = $f.g; i = $f.i; mons = $f.mons; nb = $f.nb; npos = $f.npos; pos = $f.pos; r = $f.r; ui = $f.ui; x = $f.x; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = time.Sleep(new time.Duration(0, 20000000)); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -41606,46 +41633,61 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			colors[0] = $pkg.ColorFgExplosionWallStart;
 			colors[1] = $pkg.ColorFgExplosionWallEnd;
 		}
-		_ref = colors;
-		_i = 0;
+		i = 0;
 		/* while (true) { */ case 3:
-			/* if (!(_i < 2)) { break; } */ if(!(_i < 2)) { $s = 4; continue; }
-			fg = ((_i < 0 || _i >= _ref.length) ? ($throwRuntimeError("index out of range"), undefined) : _ref[_i]);
-			/* */ if (!((es === 2))) { $s = 5; continue; }
-			/* */ $s = 6; continue;
-			/* if (!((es === 2))) { */ case 5:
-				_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 7; case 7: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
-				_tuple = _r;
+			/* if (!(i < 3)) { break; } */ if(!(i < 3)) { $s = 4; continue; }
+			_r = g.Dungeon.FreeNeighbors($clone(pos, position)); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			nb = _r;
+			if (!((es === 2))) {
+				nb = $append(nb, pos);
+			}
+			_ref = nb;
+			_i = 0;
+			/* while (true) { */ case 6:
+				/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 7; continue; }
+				npos = $clone(((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]), position);
+				_r$1 = RandInt(2); /* */ $s = 8; case 8: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+				fg = (x = _r$1, ((x < 0 || x >= colors.length) ? ($throwRuntimeError("index out of range"), undefined) : colors[x]));
+				/* */ if (!(_entry = g.Player.LOS[position.keyFor(npos)], _entry !== undefined ? _entry.v : false)) { $s = 9; continue; }
+				/* */ $s = 10; continue;
+				/* if (!(_entry = g.Player.LOS[position.keyFor(npos)], _entry !== undefined ? _entry.v : false)) { */ case 9:
+					_i++;
+					/* continue; */ $s = 6; continue;
+				/* } */ case 10:
+				_r$2 = ui.PositionDrawing(g, $clone(npos, position)); /* */ $s = 11; case 11: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				_tuple = _r$2;
 				bgColor = _tuple[2];
-				$r = ui.DrawAtPosition(g, $clone(pos, position), true, 9788, fg, bgColor); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				ui.Flush();
-				$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 6:
-			_r$1 = g.Dungeon.FreeNeighbors($clone(pos, position)); /* */ $s = 10; case 10: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
-			_ref$1 = _r$1;
-			_i$1 = 0;
-			/* while (true) { */ case 11:
-				/* if (!(_i$1 < _ref$1.$length)) { break; } */ if(!(_i$1 < _ref$1.$length)) { $s = 12; continue; }
-				npos = $clone(((_i$1 < 0 || _i$1 >= _ref$1.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref$1.$array[_ref$1.$offset + _i$1]), position);
-				/* */ if (!(_entry = g.Player.LOS[position.keyFor(npos)], _entry !== undefined ? _entry.v : false)) { $s = 13; continue; }
-				/* */ $s = 14; continue;
-				/* if (!(_entry = g.Player.LOS[position.keyFor(npos)], _entry !== undefined ? _entry.v : false)) { */ case 13:
-					_i$1++;
-					/* continue; */ $s = 11; continue;
-				/* } */ case 14:
-				_r$2 = ui.PositionDrawing(g, $clone(npos, position)); /* */ $s = 15; case 15: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-				_tuple$1 = _r$2;
-				bgColor$1 = _tuple$1[2];
-				$r = ui.DrawAtPosition(g, $clone(npos, position), true, 164, fg, bgColor$1); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				ui.Flush();
-				$r = time.Sleep(new time.Duration(0, 10000000)); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				_i$1++;
-			/* } */ $s = 11; continue; case 12:
-			_i++;
+				mons = g.MonsterAt($clone(npos, position));
+				r = 59;
+					_r$3 = RandInt(9); /* */ $s = 13; case 13: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+					_1 = _r$3;
+					if ((_1 === (0)) || (_1 === (6))) {
+						r = 44;
+					} else if (_1 === (1)) {
+						r = 125;
+					} else if (_1 === (2)) {
+						r = 37;
+					} else if ((_1 === (3)) || (_1 === (7))) {
+						r = 58;
+					} else if (_1 === (4)) {
+						r = 92;
+					} else if (_1 === (5)) {
+						r = 126;
+					}
+				case 12:
+				if (mons.Exists() || $equal(g.Player.Pos, npos, position)) {
+					r = 164;
+				}
+				$r = ui.DrawAtPosition(g, $clone(npos, position), true, r, bgColor, fg); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_i++;
+			/* } */ $s = 6; continue; case 7:
+			ui.Flush();
+			$r = time.Sleep(new time.Duration(0, 100000000)); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			i = i + (1) >> 0;
 		/* } */ $s = 3; continue; case 4:
-		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 20000000)); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ExplosionAnimation }; } $f._entry = _entry; $f._i = _i; $f._i$1 = _i$1; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._ref = _ref; $f._ref$1 = _ref$1; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f.bgColor = bgColor; $f.bgColor$1 = bgColor$1; $f.colors = colors; $f.es = es; $f.fg = fg; $f.g = g; $f.npos = npos; $f.pos = pos; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ExplosionAnimation }; } $f._1 = _1; $f._entry = _entry; $f._i = _i; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._ref = _ref; $f._tuple = _tuple; $f.bgColor = bgColor; $f.colors = colors; $f.es = es; $f.fg = fg; $f.g = g; $f.i = i; $f.mons = mons; $f.nb = nb; $f.npos = npos; $f.pos = pos; $f.r = r; $f.ui = ui; $f.x = x; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.ExplosionAnimation = function(g, es, pos) { return this.$val.ExplosionAnimation(g, es, pos); };
 	termui.ptr.prototype.WallExplosionAnimation = function(g, pos) {
@@ -41661,7 +41703,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			_tuple = _r;
 			bgColor = _tuple[2];
-			$r = ui.DrawAtPosition(g, $clone(pos, position), true, 9788, fg, bgColor); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = ui.DrawAtPosition(g, $clone(pos, position), true, 9788, bgColor, fg); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			ui.Flush();
 			$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_i++;
@@ -41671,36 +41713,45 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.WallExplosionAnimation = function(g, pos) { return this.$val.WallExplosionAnimation(g, pos); };
 	termui.ptr.prototype.LightningBoltAnimation = function(g, ray) {
-		var _i, _r, _ref, _tuple, bgColor, colors, fg, g, i, n, pos, ray, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _ref = $f._ref; _tuple = $f._tuple; bgColor = $f.bgColor; colors = $f.colors; fg = $f.fg; g = $f.g; i = $f.i; n = $f.n; pos = $f.pos; ray = $f.ray; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _r, _r$1, _r$2, _tuple, bgColor, colors, fg, g, i, j, mons, pos, r, ray, ui, x, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _tuple = $f._tuple; bgColor = $f.bgColor; colors = $f.colors; fg = $f.fg; g = $f.g; i = $f.i; j = $f.j; mons = $f.mons; pos = $f.pos; r = $f.r; ray = $f.ray; ui = $f.ui; x = $f.x; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		colors = $toNativeArray($kindInt, [$pkg.ColorFgExplosionStart, $pkg.ColorFgExplosionEnd]);
-		n = 0;
-		_ref = colors;
-		_i = 0;
+		j = 0;
 		/* while (true) { */ case 3:
-			/* if (!(_i < 2)) { break; } */ if(!(_i < 2)) { $s = 4; continue; }
-			fg = ((_i < 0 || _i >= _ref.length) ? ($throwRuntimeError("index out of range"), undefined) : _ref[_i]);
+			/* if (!(j < 3)) { break; } */ if(!(j < 3)) { $s = 4; continue; }
 			i = ray.$length - 1 >> 0;
 			/* while (true) { */ case 5:
 				/* if (!(i >= 0)) { break; } */ if(!(i >= 0)) { $s = 6; continue; }
+				_r = RandInt(2); /* */ $s = 7; case 7: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+				fg = (x = _r, ((x < 0 || x >= colors.length) ? ($throwRuntimeError("index out of range"), undefined) : colors[x]));
 				pos = $clone(((i < 0 || i >= ray.$length) ? ($throwRuntimeError("index out of range"), undefined) : ray.$array[ray.$offset + i]), position);
-				_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 7; case 7: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
-				_tuple = _r;
+				_r$1 = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 8; case 8: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+				_tuple = _r$1;
 				bgColor = _tuple[2];
-				$r = ui.DrawAtPosition(g, $clone(pos, position), true, 9788, fg, bgColor); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				ui.Flush();
-				$r = time.Sleep($mul64($mul64(new time.Duration(0, 10), (new time.Duration(0, (2 - n >> 0)))), new time.Duration(0, 1000000))); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				mons = g.MonsterAt($clone(pos, position));
+				r = 42;
+				_r$2 = RandInt(2); /* */ $s = 11; case 11: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				/* */ if (_r$2 === 0) { $s = 9; continue; }
+				/* */ $s = 10; continue;
+				/* if (_r$2 === 0) { */ case 9:
+					r = 43;
+				/* } */ case 10:
+				if (mons.Exists()) {
+					r = 164;
+				}
+				$r = ui.DrawAtPosition(g, $clone(pos, position), true, r, bgColor, fg); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				i = i - (1) >> 0;
 			/* } */ $s = 5; continue; case 6:
-			n = n + (1) >> 0;
-			_i++;
+			ui.Flush();
+			$r = time.Sleep(new time.Duration(0, 100000000)); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			j = j + (1) >> 0;
 		/* } */ $s = 3; continue; case 4:
-		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.LightningBoltAnimation }; } $f._i = _i; $f._r = _r; $f._ref = _ref; $f._tuple = _tuple; $f.bgColor = bgColor; $f.colors = colors; $f.fg = fg; $f.g = g; $f.i = i; $f.n = n; $f.pos = pos; $f.ray = ray; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.LightningBoltAnimation }; } $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._tuple = _tuple; $f.bgColor = bgColor; $f.colors = colors; $f.fg = fg; $f.g = g; $f.i = i; $f.j = j; $f.mons = mons; $f.pos = pos; $f.r = r; $f.ray = ray; $f.ui = ui; $f.x = x; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.LightningBoltAnimation = function(g, ray) { return this.$val.LightningBoltAnimation(g, ray); };
 	termui.ptr.prototype.ProjectileSymbol = function(dir) {
@@ -41745,7 +41796,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_arg$4 = bgColor;
 			$r = ui.DrawAtPosition(_arg, _arg$1, true, _arg$2, _arg$3, _arg$4); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			ui.Flush();
-			$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = time.Sleep(new time.Duration(0, 30000000)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$r = ui.DrawAtPosition(g, $clone(pos, position), true, r, fgColor, bgColor); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			i = i - (1) >> 0;
 		/* } */ $s = 3; continue; case 4:
@@ -41755,11 +41806,44 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			pos$1 = $clone((0 >= ray.$length ? ($throwRuntimeError("index out of range"), undefined) : ray.$array[ray.$offset + 0]), position);
 			$r = ui.HitAnimation(g, $clone(pos$1, position), true); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 12:
-		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 30000000)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ThrowAnimation }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._tuple = _tuple; $f.bgColor = bgColor; $f.fgColor = fgColor; $f.g = g; $f.hit = hit; $f.i = i; $f.pos = pos; $f.pos$1 = pos$1; $f.r = r; $f.ray = ray; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.ThrowAnimation = function(g, ray, hit) { return this.$val.ThrowAnimation(g, ray, hit); };
+	termui.ptr.prototype.MonsterJavelinAnimation = function(g, ray, hit) {
+		var _arg, _arg$1, _arg$2, _arg$3, _arg$4, _r, _r$1, _r$2, _tuple, bgColor, fgColor, g, hit, i, pos, r, ray, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _tuple = $f._tuple; bgColor = $f.bgColor; fgColor = $f.fgColor; g = $f.g; hit = $f.hit; i = $f.i; pos = $f.pos; r = $f.r; ray = $f.ray; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		ui = this;
+		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		i = 0;
+		/* while (true) { */ case 3:
+			/* if (!(i < ray.$length)) { break; } */ if(!(i < ray.$length)) { $s = 4; continue; }
+			pos = $clone(((i < 0 || i >= ray.$length) ? ($throwRuntimeError("index out of range"), undefined) : ray.$array[ray.$offset + i]), position);
+			_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			_tuple = _r;
+			r = _tuple[0];
+			fgColor = _tuple[1];
+			bgColor = _tuple[2];
+			_arg = g;
+			_arg$1 = $clone(pos, position);
+			_r$1 = $clone(pos, position).Dir($clone(g.Player.Pos, position)); /* */ $s = 6; case 6: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+			_r$2 = ui.ProjectileSymbol(_r$1); /* */ $s = 7; case 7: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_arg$2 = _r$2;
+			_arg$3 = $pkg.ColorFgMonster;
+			_arg$4 = bgColor;
+			$r = ui.DrawAtPosition(_arg, _arg$1, true, _arg$2, _arg$3, _arg$4); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			ui.Flush();
+			$r = time.Sleep(new time.Duration(0, 30000000)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = ui.DrawAtPosition(g, $clone(pos, position), true, r, fgColor, bgColor); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			i = i + (1) >> 0;
+		/* } */ $s = 3; continue; case 4:
+		$r = time.Sleep(new time.Duration(0, 30000000)); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$s = -1; return;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.MonsterJavelinAnimation }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._tuple = _tuple; $f.bgColor = bgColor; $f.fgColor = fgColor; $f.g = g; $f.hit = hit; $f.i = i; $f.pos = pos; $f.r = r; $f.ray = ray; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+	};
+	termui.prototype.MonsterJavelinAnimation = function(g, ray, hit) { return this.$val.MonsterJavelinAnimation(g, ray, hit); };
 	termui.ptr.prototype.HitAnimation = function(g, pos, targeting) {
 		var _entry, _r, _tuple, bgColor, g, mons, pos, targeting, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _r = $f._r; _tuple = $f._tuple; bgColor = $f.bgColor; g = $f.g; mons = $f.mons; pos = $f.pos; targeting = $f.targeting; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -41767,20 +41851,21 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (!(_entry = g.Player.LOS[position.keyFor(pos)], _entry !== undefined ? _entry.v : false)) {
 			$s = -1; return;
 		}
-		_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		$r = ui.DrawDungeonView(g, 2); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_r = ui.PositionDrawing(g, $clone(pos, position)); /* */ $s = 2; case 2: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_tuple = _r;
 		bgColor = _tuple[2];
 		mons = g.MonsterAt($clone(pos, position));
-		/* */ if (mons.Exists()) { $s = 2; continue; }
-		/* */ $s = 3; continue;
-		/* if (mons.Exists()) { */ case 2:
-			$r = ui.DrawAtPosition(g, $clone(pos, position), targeting, 164, $pkg.ColorFgAnimationHit, bgColor); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$s = 4; continue;
-		/* } else { */ case 3:
-			$r = ui.DrawAtPosition(g, $clone(pos, position), targeting, 8734, $pkg.ColorFgAnimationHit, bgColor); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		/* } */ case 4:
+		/* */ if (mons.Exists() || $equal(pos, g.Player.Pos, position)) { $s = 3; continue; }
+		/* */ $s = 4; continue;
+		/* if (mons.Exists() || $equal(pos, g.Player.Pos, position)) { */ case 3:
+			$r = ui.DrawAtPosition(g, $clone(pos, position), targeting, 164, $pkg.ColorFgAnimationHit, bgColor); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$s = 5; continue;
+		/* } else { */ case 4:
+			$r = ui.DrawAtPosition(g, $clone(pos, position), targeting, 8734, $pkg.ColorFgAnimationHit, bgColor); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* } */ case 5:
 		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 50000000)); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.HitAnimation }; } $f._entry = _entry; $f._r = _r; $f._tuple = _tuple; $f.bgColor = bgColor; $f.g = g; $f.mons = mons; $f.pos = pos; $f.targeting = targeting; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -43072,28 +43157,15 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.Dump = function(g, err) { return this.$val.Dump(g, err); };
 	termui.ptr.prototype.CriticalHPWarning = function(g) {
-		var _r, _tuple, bg, fg, g, r, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _tuple = $f._tuple; bg = $f.bg; fg = $f.fg; g = $f.g; r = $f.r; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var g, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; g = $f.g; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		g.PrintStyled("*** CRITICAL HP WARNING *** --press esc or space to continue--", 1);
 		$r = ui.DrawDungeonView(g, 0); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		_r = ui.PositionDrawing(g, $clone(g.Player.Pos, position)); /* */ $s = 2; case 2: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
-		_tuple = _r;
-		r = _tuple[0];
-		fg = _tuple[1];
-		bg = _tuple[2];
-		$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, $pkg.ColorFgHPwounded, bg); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, $pkg.ColorFgHPcritical, bg); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, fg, bg); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		ui.Flush();
-		$r = ui.WaitForContinue(g, 21); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.WaitForContinue(g, 21); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		g.Print("Ok. Be careful, then.");
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.CriticalHPWarning }; } $f._r = _r; $f._tuple = _tuple; $f.bg = bg; $f.fg = fg; $f.g = g; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.CriticalHPWarning }; } $f.g = g; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.CriticalHPWarning = function(g) { return this.$val.CriticalHPWarning(g); };
 	termui.ptr.prototype.WoundedAnimation = function(g) {
@@ -43106,13 +43178,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		bg = _tuple[2];
 		$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, $pkg.ColorFgHPwounded, bg); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		ui.Flush();
-		$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = time.Sleep(new time.Duration(0, 50000000)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* */ if (g.Player.HP <= 15) { $s = 4; continue; }
 		/* */ $s = 5; continue;
 		/* if (g.Player.HP <= 15) { */ case 4:
 			$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, $pkg.ColorFgHPcritical, bg); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			ui.Flush();
-			$r = time.Sleep(new time.Duration(0, 75000000)); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = time.Sleep(new time.Duration(0, 50000000)); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 5:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.WoundedAnimation }; } $f._r = _r; $f._tuple = _tuple; $f.bg = bg; $f.g = g; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
@@ -43141,6 +43213,24 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.DrinkingPotionAnimation }; } $f._r = _r; $f._tuple = _tuple; $f.bg = bg; $f.fg = fg; $f.g = g; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.DrinkingPotionAnimation = function(g) { return this.$val.DrinkingPotionAnimation(g); };
+	termui.ptr.prototype.StatusEndAnimation = function(g) {
+		var _r, _tuple, bg, fg, g, r, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _tuple = $f._tuple; bg = $f.bg; fg = $f.fg; g = $f.g; r = $f.r; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		ui = this;
+		_r = ui.PositionDrawing(g, $clone(g.Player.Pos, position)); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_tuple = _r;
+		r = _tuple[0];
+		fg = _tuple[1];
+		bg = _tuple[2];
+		$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, $pkg.ColorViolet, bg); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		ui.Flush();
+		$r = time.Sleep(new time.Duration(0, 200000000)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawAtPosition(g, $clone(g.Player.Pos, position), false, r, fg, bg); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		ui.Flush();
+		$s = -1; return;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.StatusEndAnimation }; } $f._r = _r; $f._tuple = _tuple; $f.bg = bg; $f.fg = fg; $f.g = g; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+	};
+	termui.prototype.StatusEndAnimation = function(g) { return this.$val.StatusEndAnimation(g); };
 	termui.ptr.prototype.MagicMappingAnimation = function(g, border) {
 		var _i, _r, _ref, _tuple, bg, border, fg, g, i, pos, r, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _ref = $f._ref; _tuple = $f._tuple; bg = $f.bg; border = $f.border; fg = $f.fg; g = $f.g; i = $f.i; pos = $f.pos; r = $f.r; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -45834,7 +45924,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				$r = g.MPRegen(sev); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (3)) { */ case 5:
-				$r = g.Teleportation(sev); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* */ if (!g.Player.HasStatus(5)) { $s = 24; continue; }
+				/* */ $s = 25; continue;
+				/* if (!g.Player.HasStatus(5)) { */ case 24:
+					$r = g.Teleportation(sev); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$s = 26; continue;
+				/* } else { */ case 25:
+					g.Print("Lignification prevented teleportation.");
+				/* } */ case 26:
 				_key = 7; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key)] = { k: _key, v: 0 };
 				$s = 18; continue;
 			/* } else if (_1 === (4)) { */ case 6:
@@ -45843,67 +45940,91 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_key$3 = 2; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$3)] = { k: _key$3, v: 1 };
 				g.Player.HP = g.Player.HP - (((_q = ($imul(10, g.Player.HP)) / Max(g.Player.HPMax(), g.Player.HP), (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero")))) >> 0;
 				g.PrintStyled("You are no longer berserk.", 5);
-				_r$2 = RandInt(40); /* */ $s = 25; case 25: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-				$r = g.PushEvent(new simpleEvent.ptr((sev.Rank() + 90 >> 0) + _r$2 >> 0, 5)); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				_r$3 = RandInt(60); /* */ $s = 27; case 27: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-				$r = g.PushEvent(new simpleEvent.ptr((sev.Rank() + 270 >> 0) + _r$3 >> 0, 6)); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_r$2 = RandInt(40); /* */ $s = 28; case 28: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				$r = g.PushEvent(new simpleEvent.ptr((sev.Rank() + 90 >> 0) + _r$2 >> 0, 5)); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_r$3 = RandInt(60); /* */ $s = 30; case 30: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+				$r = g.PushEvent(new simpleEvent.ptr((sev.Rank() + 270 >> 0) + _r$3 >> 0, 6)); /* */ $s = 31; case 31: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.ui.StatusEndAnimation(g); /* */ $s = 32; case 32: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (5)) { */ case 7:
 				g.PrintStyled("You feel no longer slow.", 5);
 				_key$4 = 1; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$4)] = { k: _key$4, v: 0 };
+				$r = g.ui.StatusEndAnimation(g); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (6)) { */ case 8:
 				g.PrintStyled("You feel no longer exhausted.", 5);
 				_key$5 = 2; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$5)] = { k: _key$5, v: 0 };
+				$r = g.ui.StatusEndAnimation(g); /* */ $s = 34; case 34: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (7)) { */ case 9:
 				_key$6 = 3; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$6)] = { k: _key$6, v: (_entry = g.Player.Statuses[status.keyFor(3)], _entry !== undefined ? _entry.v : 0) - (1) >> 0 };
-				if ((_entry$1 = g.Player.Statuses[status.keyFor(3)], _entry$1 !== undefined ? _entry$1.v : 0) === 0) {
+				/* */ if ((_entry$1 = g.Player.Statuses[status.keyFor(3)], _entry$1 !== undefined ? _entry$1.v : 0) === 0) { $s = 35; continue; }
+				/* */ $s = 36; continue;
+				/* if ((_entry$1 = g.Player.Statuses[status.keyFor(3)], _entry$1 !== undefined ? _entry$1.v : 0) === 0) { */ case 35:
 					g.PrintStyled("You feel no longer speedy.", 5);
-				}
+					$r = g.ui.StatusEndAnimation(g); /* */ $s = 37; case 37: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 36:
 				$s = 18; continue;
 			/* } else if (_1 === (8)) { */ case 10:
 				_key$7 = 4; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$7)] = { k: _key$7, v: (_entry$2 = g.Player.Statuses[status.keyFor(4)], _entry$2 !== undefined ? _entry$2.v : 0) - (1) >> 0 };
-				if ((_entry$3 = g.Player.Statuses[status.keyFor(4)], _entry$3 !== undefined ? _entry$3.v : 0) === 0) {
+				/* */ if ((_entry$3 = g.Player.Statuses[status.keyFor(4)], _entry$3 !== undefined ? _entry$3.v : 0) === 0) { $s = 38; continue; }
+				/* */ $s = 39; continue;
+				/* if ((_entry$3 = g.Player.Statuses[status.keyFor(4)], _entry$3 !== undefined ? _entry$3.v : 0) === 0) { */ case 38:
 					g.PrintStyled("You feel no longer agile.", 5);
-				}
+					$r = g.ui.StatusEndAnimation(g); /* */ $s = 40; case 40: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 39:
 				$s = 18; continue;
 			/* } else if (_1 === (9)) { */ case 11:
 				_key$8 = 5; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$8)] = { k: _key$8, v: (_entry$4 = g.Player.Statuses[status.keyFor(5)], _entry$4 !== undefined ? _entry$4.v : 0) - (1) >> 0 };
 				g.Player.HP = g.Player.HP - (((_q$1 = ($imul(10, g.Player.HP)) / Max(g.Player.HPMax(), g.Player.HP), (_q$1 === _q$1 && _q$1 !== 1/0 && _q$1 !== -1/0) ? _q$1 >> 0 : $throwRuntimeError("integer divide by zero")))) >> 0;
-				if ((_entry$5 = g.Player.Statuses[status.keyFor(5)], _entry$5 !== undefined ? _entry$5.v : 0) === 0) {
+				/* */ if ((_entry$5 = g.Player.Statuses[status.keyFor(5)], _entry$5 !== undefined ? _entry$5.v : 0) === 0) { $s = 41; continue; }
+				/* */ $s = 42; continue;
+				/* if ((_entry$5 = g.Player.Statuses[status.keyFor(5)], _entry$5 !== undefined ? _entry$5.v : 0) === 0) { */ case 41:
 					g.PrintStyled("You feel no longer attached to the ground.", 5);
-				}
+					$r = g.ui.StatusEndAnimation(g); /* */ $s = 43; case 43: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 42:
 				$s = 18; continue;
 			/* } else if (_1 === (10)) { */ case 12:
 				g.PrintStyled("You feel no longer confused.", 5);
 				_key$9 = 6; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$9)] = { k: _key$9, v: 0 };
+				$r = g.ui.StatusEndAnimation(g); /* */ $s = 44; case 44: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (11)) { */ case 13:
 				g.PrintStyled("You feel no longer sick.", 5);
 				_key$10 = 8; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$10)] = { k: _key$10, v: 0 };
+				$r = g.ui.StatusEndAnimation(g); /* */ $s = 45; case 45: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (12)) { */ case 14:
 				g.PrintStyled("You manage to free your shield from the projectile.", 5);
 				_key$11 = 9; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$11)] = { k: _key$11, v: 0 };
+				$r = g.ui.StatusEndAnimation(g); /* */ $s = 46; case 46: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 18; continue;
 			/* } else if (_1 === (13)) { */ case 15:
 				_key$12 = 10; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$12)] = { k: _key$12, v: (_entry$6 = g.Player.Statuses[status.keyFor(10)], _entry$6 !== undefined ? _entry$6.v : 0) - (1) >> 0 };
-				if ((_entry$7 = g.Player.Statuses[status.keyFor(10)], _entry$7 !== undefined ? _entry$7.v : 0) === 0) {
+				/* */ if ((_entry$7 = g.Player.Statuses[status.keyFor(10)], _entry$7 !== undefined ? _entry$7.v : 0) === 0) { $s = 47; continue; }
+				/* */ $s = 48; continue;
+				/* if ((_entry$7 = g.Player.Statuses[status.keyFor(10)], _entry$7 !== undefined ? _entry$7.v : 0) === 0) { */ case 47:
 					g.PrintStyled("Your equipment is now free from acid.", 5);
-				}
+					$r = g.ui.StatusEndAnimation(g); /* */ $s = 49; case 49: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 48:
 				$s = 18; continue;
 			/* } else if (_1 === (14)) { */ case 16:
 				_key$13 = 12; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$13)] = { k: _key$13, v: 0 };
-				if ((_entry$8 = g.Player.Statuses[status.keyFor(12)], _entry$8 !== undefined ? _entry$8.v : 0) === 0) {
+				/* */ if ((_entry$8 = g.Player.Statuses[status.keyFor(12)], _entry$8 !== undefined ? _entry$8.v : 0) === 0) { $s = 50; continue; }
+				/* */ $s = 51; continue;
+				/* if ((_entry$8 = g.Player.Statuses[status.keyFor(12)], _entry$8 !== undefined ? _entry$8.v : 0) === 0) { */ case 50:
 					g.PrintStyled("You feel no longer like an earth dragon.", 5);
-				}
+					$r = g.ui.StatusEndAnimation(g); /* */ $s = 52; case 52: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 51:
 				$s = 18; continue;
 			/* } else if (_1 === (15)) { */ case 17:
 				_key$14 = 13; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key$14)] = { k: _key$14, v: 0 };
-				if ((_entry$9 = g.Player.Statuses[status.keyFor(13)], _entry$9 !== undefined ? _entry$9.v : 0) === 0) {
+				/* */ if ((_entry$9 = g.Player.Statuses[status.keyFor(13)], _entry$9 !== undefined ? _entry$9.v : 0) === 0) { $s = 53; continue; }
+				/* */ $s = 54; continue;
+				/* if ((_entry$9 = g.Player.Statuses[status.keyFor(13)], _entry$9 !== undefined ? _entry$9.v : 0) === 0) { */ case 53:
 					g.PrintStyled("You feel no longer dancing.", 5);
-				}
+					$r = g.ui.StatusEndAnimation(g); /* */ $s = 55; case 55: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 54:
 			/* } */ case 18:
 		case 1:
 		$s = -1; return;
@@ -46907,8 +47028,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	game.prototype.WizardMode = function() { return this.$val.WizardMode(); };
 	game.ptr.prototype.AutoPlayer = function(ev) {
-		var _r, _r$1, _r$10, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, _v, _v$1, _v$2, err, ev, finished, g, mons, mons$1, n, sources, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; _v = $f._v; _v$1 = $f._v$1; _v$2 = $f._v$2; err = $f.err; ev = $f.ev; finished = $f.finished; g = $f.g; mons = $f.mons; mons$1 = $f.mons$1; n = $f.n; sources = $f.sources; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _r, _r$1, _r$10, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, _v, _v$1, _v$2, err, ev, finished, g, mons, n, sources, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; _v = $f._v; _v$1 = $f._v$1; _v$2 = $f._v$2; err = $f.err; ev = $f.ev; finished = $f.finished; g = $f.g; mons = $f.mons; n = $f.n; sources = $f.sources; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		/* */ if (g.Resting) { $s = 1; continue; }
 		/* */ if (g.Autoexploring) { $s = 2; continue; }
@@ -46936,10 +47057,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				g.AutoHalt = true;
 				g.Print("Stopping, then.");
 			/* } */ case 10:
-			mons$1 = g.MonsterInLOS();
-				/* */ if (g.AutoHalt || !(mons$1 === ptrType$7.nil)) { $s = 13; continue; }
+				/* */ if (g.AutoHalt) { $s = 13; continue; }
 				/* */ $s = 14; continue;
-				/* if (g.AutoHalt || !(mons$1 === ptrType$7.nil)) { */ case 13:
+				/* if (g.AutoHalt) { */ case 13:
 					$s = 15; continue;
 				/* } else { */ case 14:
 					n = ptrType$1.nil;
@@ -47018,7 +47138,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* } */ case 42:
 		/* } */ case 5:
 		$s = -1; return false;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.AutoPlayer }; } $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f._v = _v; $f._v$1 = _v$1; $f._v$2 = _v$2; $f.err = err; $f.ev = ev; $f.finished = finished; $f.g = g; $f.mons = mons; $f.mons$1 = mons$1; $f.n = n; $f.sources = sources; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.AutoPlayer }; } $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f._v = _v; $f._v$1 = _v$1; $f._v$2 = _v$2; $f.err = err; $f.ev = ev; $f.finished = finished; $f.g = g; $f.mons = mons; $f.n = n; $f.sources = sources; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.AutoPlayer = function(ev) { return this.$val.AutoPlayer(ev); };
 	game.ptr.prototype.EventLoop = function() {
@@ -48255,38 +48375,22 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		ui = this;
 		ui.cells = $makeSlice(sliceType$16, 2781);
 		$global.document.addEventListener($externalize("keypress", $String), $externalize((function $b(e) {
-			var _selection, e, s, $s, $r;
-			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _selection = $f._selection; e = $f.e; s = $f.s; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-			_selection = $select([[wants], []]);
-			/* */ if (_selection[0] === 0) { $s = 1; continue; }
-			/* */ if (_selection[0] === 1) { $s = 2; continue; }
-			/* */ $s = 3; continue;
-			/* if (_selection[0] === 0) { */ case 1:
-				s = $internalize(e.key, $String);
-				$r = $send(ch, $clone(new jsInput.ptr(s, false, 0, 0, 0, false), jsInput)); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 3; continue;
-			/* } else if (_selection[0] === 1) { */ case 2:
-			/* } */ case 3:
+			var e, s, $s, $r;
+			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; e = $f.e; s = $f.s; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+			s = $internalize(e.key, $String);
+			$r = $send(ch, $clone(new jsInput.ptr(s, false, 0, 0, 0, false), jsInput)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = -1; return;
-			/* */ } return; } if ($f === undefined) { $f = { $blk: $b }; } $f._selection = _selection; $f.e = e; $f.s = s; $f.$s = $s; $f.$r = $r; return $f;
+			/* */ } return; } if ($f === undefined) { $f = { $blk: $b }; } $f.e = e; $f.s = s; $f.$s = $s; $f.$r = $r; return $f;
 		}), funcType));
 		$global.document.addEventListener($externalize("mousedown", $String), $externalize((function $b(e) {
-			var _selection, _tuple, e, x, y, $s, $r;
-			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _selection = $f._selection; _tuple = $f._tuple; e = $f.e; x = $f.x; y = $f.y; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-			_selection = $select([[wants], []]);
-			/* */ if (_selection[0] === 0) { $s = 1; continue; }
-			/* */ if (_selection[0] === 1) { $s = 2; continue; }
-			/* */ $s = 3; continue;
-			/* if (_selection[0] === 0) { */ case 1:
-				_tuple = ui.GetMousePos(e);
-				x = _tuple[0];
-				y = _tuple[1];
-				$r = $send(ch, $clone(new jsInput.ptr("", true, x, y, $parseInt(e.button) >> 0, false), jsInput)); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 3; continue;
-			/* } else if (_selection[0] === 1) { */ case 2:
-			/* } */ case 3:
+			var _tuple, e, x, y, $s, $r;
+			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _tuple = $f._tuple; e = $f.e; x = $f.x; y = $f.y; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+			_tuple = ui.GetMousePos(e);
+			x = _tuple[0];
+			y = _tuple[1];
+			$r = $send(ch, $clone(new jsInput.ptr("", true, x, y, $parseInt(e.button) >> 0, false), jsInput)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = -1; return;
-			/* */ } return; } if ($f === undefined) { $f = { $blk: $b }; } $f._selection = _selection; $f._tuple = _tuple; $f.e = e; $f.x = x; $f.y = y; $f.$s = $s; $f.$r = $r; return $f;
+			/* */ } return; } if ($f === undefined) { $f = { $blk: $b }; } $f._tuple = _tuple; $f.e = e; $f.x = x; $f.y = y; $f.$s = $s; $f.$r = $r; return $f;
 		}), funcType));
 		ui.ResetCells();
 		ui.backBuffer = $makeSlice(sliceType$16, 2781);
@@ -48360,8 +48464,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.ResetCells = function() { return this.$val.ResetCells(); };
 	init$2 = function() {
-		ch = new $Chan(jsInput, 0);
-		wants = new $Chan($Bool, 0);
+		ch = new $Chan(jsInput, 100);
 		interrupt = new $Chan($Bool, 0);
 	};
 	termui.ptr.prototype.Interrupt = function() {
@@ -48460,25 +48563,20 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.ReadKey = function(s) { return this.$val.ReadKey(s); };
 	termui.ptr.prototype.PollEvent = function() {
-		var _r, _r$1, _selection, in$1, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _selection = $f._selection; in$1 = $f.in$1; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _r, _selection, in$1, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _selection = $f._selection; in$1 = $f.in$1; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		in$1 = new jsInput.ptr("", false, 0, 0, 0, false);
 		ui = this;
-		_r = $select([[wants, true], [interrupt]]); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = $select([[ch], [interrupt]]); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_selection = _r;
-		/* */ if (_selection[0] === 0) { $s = 2; continue; }
-		/* */ if (_selection[0] === 1) { $s = 3; continue; }
-		/* */ $s = 4; continue;
-		/* if (_selection[0] === 0) { */ case 2:
-			_r$1 = $recv(ch); /* */ $s = 5; case 5: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
-			jsInput.copy(in$1, _r$1[0]);
-			$s = 4; continue;
-		/* } else if (_selection[0] === 1) { */ case 3:
+		if (_selection[0] === 0) {
+			jsInput.copy(in$1, _selection[1][0]);
+		} else if (_selection[0] === 1) {
 			in$1.interrupt = _selection[1][0];
-		/* } */ case 4:
+		}
 		jsInput.copy(in$1, in$1);
 		$s = -1; return in$1;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.PollEvent }; } $f._r = _r; $f._r$1 = _r$1; $f._selection = _selection; $f.in$1 = in$1; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.PollEvent }; } $f._r = _r; $f._selection = _selection; $f.in$1 = in$1; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.PollEvent = function() { return this.$val.PollEvent(); };
 	termui.ptr.prototype.WaitForContinue = function(g, line) {
@@ -49270,6 +49368,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		g = this;
 		if (g.Autoexploring && !g.AutoHalt) {
 			g.Print("You stop exploring.");
+		} else if (!((g.AutoDir === 0))) {
+			g.Print("You stop.");
+		} else if (!($equal(g.AutoTarget, $pkg.InvalidPos, position))) {
+			g.Print("You stop.");
 		}
 		g.AutoHalt = true;
 		g.AutoDir = 0;
@@ -49317,10 +49419,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (mons.Exists() && (_entry$1 = g.Player.LOS[position.keyFor(mons.Pos)], _entry$1 !== undefined ? _entry$1.v : false)) { $s = 9; continue; }
 			/* */ $s = 10; continue;
 			/* if (mons.Exists() && (_entry$1 = g.Player.LOS[position.keyFor(mons.Pos)], _entry$1 !== undefined ? _entry$1.v : false)) { */ case 9:
-				g.StopAuto();
 				/* */ if (mons.Seen) { $s = 11; continue; }
 				/* */ $s = 12; continue;
 				/* if (mons.Seen) { */ case 11:
+					g.StopAuto();
 					_i$1++;
 					/* continue; */ $s = 7; continue;
 				/* } */ case 12:
@@ -49332,6 +49434,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					_r$1 = new monsterKind(mons.Kind).SeenStoryText(); /* */ $s = 16; case 16: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 					$r = g.StoryPrint(_r$1); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* } */ case 15:
+				g.StopAuto();
 			/* } */ case 10:
 			_i$1++;
 		/* } */ $s = 7; continue; case 8:
@@ -49353,7 +49456,6 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (ok) { $s = 4; continue; }
 			/* */ $s = 5; continue;
 			/* if (ok) { */ case 4:
-				g.StopAuto();
 				/* */ if (c.Quantity > 1) { $s = 7; continue; }
 				/* */ $s = 8; continue;
 				/* if (c.Quantity > 1) { */ case 7:
@@ -49370,6 +49472,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					_arg$4 = new $String(_r$2);
 					$r = g.Printf("You %s %s.", new sliceType$7([_arg$3, _arg$4])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* } */ case 9:
+				g.StopAuto();
 				$s = 6; continue;
 			/* } else { */ case 5:
 				_tuple$1 = (_entry$1 = g.Stairs[position.keyFor(pos)], _entry$1 !== undefined ? [_entry$1.v, true] : [false, false]);
@@ -49377,8 +49480,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* */ if (ok$1) { $s = 15; continue; }
 				/* */ $s = 16; continue;
 				/* if (ok$1) { */ case 15:
-					g.StopAuto();
 					$r = g.Printf("You %s stairs.", new sliceType$7([new $String(see)])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					g.StopAuto();
 					$s = 17; continue;
 				/* } else { */ case 16:
 					_tuple$2 = (_entry$2 = g.Equipables[position.keyFor(pos)], _entry$2 !== undefined ? [_entry$2.v, true] : [$ifaceNil, false]);
@@ -49387,12 +49490,12 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* */ if (ok$2) { $s = 19; continue; }
 					/* */ $s = 20; continue;
 					/* if (ok$2) { */ case 19:
-						g.StopAuto();
 						_arg$5 = new $String(see);
 						_r$3 = eq.String(); /* */ $s = 22; case 22: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 						_r$4 = Indefinite(_r$3, false); /* */ $s = 23; case 23: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 						_arg$6 = new $String(_r$4);
 						$r = g.Printf("You %s %s.", new sliceType$7([_arg$5, _arg$6])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						g.StopAuto();
 						$s = 21; continue;
 					/* } else { */ case 20:
 						_tuple$3 = (_entry$3 = g.Rods[position.keyFor(pos)], _entry$3 !== undefined ? [_entry$3.v, true] : [0, false]);
@@ -49401,8 +49504,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						/* */ if (ok$3) { $s = 25; continue; }
 						/* */ $s = 26; continue;
 						/* if (ok$3) { */ case 25:
-							g.StopAuto();
 							$r = g.Printf("You %s %s.", new sliceType$7([new $String(see), new $String(Indefinite(new rod(rod$1).String(), false))])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+							g.StopAuto();
 						/* } */ case 26:
 					/* } */ case 21:
 				/* } */ case 17:
@@ -49415,8 +49518,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if ((_entry$4 = g.UnknownDig[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { $s = 28; continue; }
 			/* */ $s = 29; continue;
 			/* if ((_entry$4 = g.UnknownDig[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { */ case 28:
-				g.StopAuto();
 				$r = g.Printf("There is no more a wall there.", new sliceType$7([])); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				g.StopAuto();
 				g.DijkstraMapRebuild = true;
 			/* } */ case 29:
 			_tuple$4 = (_entry$5 = g.Clouds[position.keyFor(pos)], _entry$5 !== undefined ? [_entry$5.v, true] : [0, false]);
@@ -49425,8 +49528,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (ok$4 && (cld === 1) && !(((_entry$6 = g.UnknownBurn[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) === 0))) { $s = 31; continue; }
 			/* */ $s = 32; continue;
 			/* if (ok$4 && (cld === 1) && !(((_entry$6 = g.UnknownBurn[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) === 0))) { */ case 31:
-				g.StopAuto();
 				$r = g.Printf("There are flames there.", new sliceType$7([])); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				g.StopAuto();
 				g.DijkstraMapRebuild = true;
 			/* } */ case 32:
 		/* } */ case 3:
@@ -49564,24 +49667,15 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				if ((_1 === (15)) || (_1 === (7)) || (_1 === (18))) {
 				} else {
 					_key = $clone(pos, position); (noise || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key)] = { k: _key, v: true };
+					g.Print("You heared some footsteps.");
 					count = count + (1) >> 0;
 				}
 			/* } */ case 7:
 			_i++;
 		/* } */ $s = 2; continue; case 3:
-		/* */ if (count > 0) { $s = 10; continue; }
-		/* */ $s = 11; continue;
-		/* if (count > 0) { */ case 10:
-			/* */ if (count > 1) { $s = 12; continue; }
-			/* */ $s = 13; continue;
-			/* if (count > 1) { */ case 12:
-				$r = g.Printf("You hear some footsteps (%d\xC3\x97).", new sliceType$7([new $Int(count)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 14; continue;
-			/* } else { */ case 13:
-				g.Print("You hear some footsteps.");
-			/* } */ case 14:
+		if (count > 0) {
 			g.StopAuto();
-		/* } */ case 11:
+		}
 		g.Noise = noise;
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.ComputeNoise }; } $f._1 = _1; $f._entry = _entry; $f._entry$1 = _entry$1; $f._i = _i; $f._key = _key; $f._keys = _keys; $f._r = _r; $f._r$1 = _r$1; $f._ref = _ref; $f._v = _v; $f.count = count; $f.dij = dij; $f.g = g; $f.mons = mons; $f.nm = nm; $f.noise = noise; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
@@ -49940,11 +50034,16 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, g, m, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; g = $f.g; m = $f.m; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
-		/* */ if (!m.Seen && !(_entry = g.Player.LOS[position.keyFor(m.Pos)], _entry !== undefined ? _entry.v : false) && (_entry$1 = g.Player.LOS[position.keyFor(pos)], _entry$1 !== undefined ? _entry$1.v : false)) { $s = 1; continue; }
+		/* */ if (!(_entry = g.Player.LOS[position.keyFor(m.Pos)], _entry !== undefined ? _entry.v : false) && (_entry$1 = g.Player.LOS[position.keyFor(pos)], _entry$1 !== undefined ? _entry$1.v : false)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
-		/* if (!m.Seen && !(_entry = g.Player.LOS[position.keyFor(m.Pos)], _entry !== undefined ? _entry.v : false) && (_entry$1 = g.Player.LOS[position.keyFor(pos)], _entry$1 !== undefined ? _entry$1.v : false)) { */ case 1:
-			m.Seen = true;
-			$r = g.Printf("%s (%v) comes into view.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(true)), new monsterState(m.State)])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* if (!(_entry = g.Player.LOS[position.keyFor(m.Pos)], _entry !== undefined ? _entry.v : false) && (_entry$1 = g.Player.LOS[position.keyFor(pos)], _entry$1 !== undefined ? _entry$1.v : false)) { */ case 1:
+			/* */ if (!m.Seen) { $s = 3; continue; }
+			/* */ $s = 4; continue;
+			/* if (!m.Seen) { */ case 3:
+				m.Seen = true;
+				$r = g.Printf("%s (%v) comes into view.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(true)), new monsterState(m.State)])); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 4:
+			g.StopAuto();
 		/* } */ case 2:
 		m.PlaceAt(g, $clone(pos, position));
 		$s = -1; return;
@@ -50342,9 +50441,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				$r = g.Printf("You block the %s's attack with your %s.", new sliceType$7([new monsterKind(m.Kind), new shield(g.Player.Shield)])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = -1; return;
 			/* } */ case 9:
-			/* */ if (g.Player.HasStatus(13)) { $s = 12; continue; }
+			/* */ if (g.Player.HasStatus(13) && !g.Player.HasStatus(5)) { $s = 12; continue; }
 			/* */ $s = 13; continue;
-			/* if (g.Player.HasStatus(13)) { */ case 12:
+			/* if (g.Player.HasStatus(13) && !g.Player.HasStatus(5)) { */ case 12:
 				$r = g.SwapWithMonster(m); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = -1; return;
 			/* } */ case 13:
@@ -50549,8 +50648,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	monster.prototype.RangeBlocked = function(g) { return this.$val.RangeBlocked(g); };
 	monster.ptr.prototype.TormentBolt = function(g, ev) {
-		var _arg, _q, _r, _r$1, _r$2, _r$3, _r$4, blocked, damage, ev, g, hit, m, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; blocked = $f.blocked; damage = $f.damage; ev = $f.ev; g = $f.g; hit = $f.hit; m = $f.m; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _arg, _arg$1, _arg$2, _arg$3, _arg$4, _arg$5, _arg$6, _q, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, blocked, damage, ev, g, hit, m, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _arg$6 = $f._arg$6; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; blocked = $f.blocked; damage = $f.damage; ev = $f.ev; g = $f.g; hit = $f.hit; m = $f.m; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
 		_r = m.RangeBlocked(g); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		blocked = _r;
@@ -50568,18 +50667,28 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r$2 = new monsterKind(m.Kind).Definite(true); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_arg = new $String(_r$2);
 			$r = g.PrintfStyled("%s throws a bolt of torment at you.", 3, new sliceType$7([_arg])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = m.InflictDamage(g, damage, 15); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$1 = g;
+			_r$3 = g.Ray($clone(m.Pos, position)); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+			_arg$2 = _r$3;
+			_arg$3 = $pkg.ColorCyan;
+			$r = g.ui.MonsterProjectileAnimation(_arg$1, _arg$2, 42, _arg$3); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = m.InflictDamage(g, damage, 15); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 6; continue;
 		/* } else { */ case 5:
-			$r = g.Printf("You block the %s's bolt of torment.", new sliceType$7([new monsterKind(m.Kind)])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You block the %s's bolt of torment.", new sliceType$7([new monsterKind(m.Kind)])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$4 = g;
+			_r$4 = g.Ray($clone(m.Pos, position)); /* */ $s = 14; case 14: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+			_arg$5 = _r$4;
+			_arg$6 = $pkg.ColorCyan;
+			$r = g.ui.MonsterProjectileAnimation(_arg$4, _arg$5, 42, _arg$6); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 6:
 		m.Statuses[1] = 1;
-		_r$3 = ev.Rank(); /* */ $s = 12; case 12: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-		_r$4 = RandInt(50); /* */ $s = 13; case 13: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
-		$r = g.PushEvent(new monsterEvent.ptr((_r$3 + 100 >> 0) + _r$4 >> 0, m.Index, 3)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ev.Renew(g, new monsterKind(m.Kind).AttackDelay()); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_r$5 = ev.Rank(); /* */ $s = 16; case 16: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+		_r$6 = RandInt(50); /* */ $s = 17; case 17: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+		$r = g.PushEvent(new monsterEvent.ptr((_r$5 + 100 >> 0) + _r$6 >> 0, m.Index, 3)); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ev.Renew(g, new monsterKind(m.Kind).AttackDelay()); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return true;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.TormentBolt }; } $f._arg = _arg; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f.blocked = blocked; $f.damage = damage; $f.ev = ev; $f.g = g; $f.hit = hit; $f.m = m; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.TormentBolt }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._arg$5 = _arg$5; $f._arg$6 = _arg$6; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f.blocked = blocked; $f.damage = damage; $f.ev = ev; $f.g = g; $f.hit = hit; $f.m = m; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	monster.prototype.TormentBolt = function(g, ev) { return this.$val.TormentBolt(g, ev); };
 	monster.ptr.prototype.Blocked = function(g) {
@@ -50606,8 +50715,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	monster.prototype.Blocked = function(g) { return this.$val.Blocked(g); };
 	monster.ptr.prototype.ThrowRock = function(g, ev) {
-		var _arg, _arg$1, _q, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _tuple, acc, attack, block, blocked, ev, evasion, g, hit, m, noise, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _tuple = $f._tuple; acc = $f.acc; attack = $f.attack; block = $f.block; blocked = $f.blocked; ev = $f.ev; evasion = $f.evasion; g = $f.g; hit = $f.hit; m = $f.m; noise = $f.noise; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _arg, _arg$1, _arg$10, _arg$2, _arg$3, _arg$4, _arg$5, _arg$6, _arg$7, _arg$8, _arg$9, _q, _r, _r$1, _r$10, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, acc, attack, block, blocked, ev, evasion, g, hit, m, noise, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$10 = $f._arg$10; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _arg$6 = $f._arg$6; _arg$7 = $f._arg$7; _arg$8 = $f._arg$8; _arg$9 = $f._arg$9; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; acc = $f.acc; attack = $f.attack; block = $f.block; blocked = $f.blocked; ev = $f.ev; evasion = $f.evasion; g = $f.g; hit = $f.hit; m = $f.m; noise = $f.noise; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
 		_r = m.RangeBlocked(g); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		blocked = _r;
@@ -50646,28 +50755,43 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_arg = new $String(_r$6);
 			_arg$1 = new $Int(attack);
 			$r = g.PrintfStyled("%s throws a rock at you (%d dmg).", 3, new sliceType$7([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			_r$7 = RandInt(4); /* */ $s = 19; case 19: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
-			/* */ if (_r$7 === 0) { $s = 17; continue; }
-			/* */ $s = 18; continue;
-			/* if (_r$7 === 0) { */ case 17:
-				$r = g.Confusion(ev); /* */ $s = 20; case 20: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 18:
-			$r = m.InflictDamage(g, attack, 15); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$2 = g;
+			_r$7 = g.Ray($clone(m.Pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+			_arg$3 = _r$7;
+			_arg$4 = $pkg.ColorMagenta;
+			$r = g.ui.MonsterProjectileAnimation(_arg$2, _arg$3, 9679, _arg$4); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_r$8 = RandInt(4); /* */ $s = 21; case 21: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+			/* */ if (_r$8 === 0) { $s = 19; continue; }
+			/* */ $s = 20; continue;
+			/* if (_r$8 === 0) { */ case 19:
+				$r = g.Confusion(ev); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 20:
+			$r = m.InflictDamage(g, attack, 15); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 13; continue;
 		/* } else if (block) { */ case 11:
-			$r = g.Printf("You block %s's rock.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You block %s's rock.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$5 = g;
+			_r$9 = g.Ray($clone(m.Pos, position)); /* */ $s = 25; case 25: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+			_arg$6 = _r$9;
+			_arg$7 = $pkg.ColorMagenta;
+			$r = g.ui.MonsterProjectileAnimation(_arg$5, _arg$6, 9679, _arg$7); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 13; continue;
 		/* } else { */ case 12:
-			$r = g.Printf("You dodge %s's rock.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You dodge %s's rock.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$8 = g;
+			_r$10 = g.Ray($clone(m.Pos, position)); /* */ $s = 28; case 28: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+			_arg$9 = _r$10;
+			_arg$10 = $pkg.ColorMagenta;
+			$r = g.ui.MonsterProjectileAnimation(_arg$8, _arg$9, 9679, _arg$10); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 13:
-		$r = ev.Renew(g, $imul(2, new monsterKind(m.Kind).AttackDelay())); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ev.Renew(g, $imul(2, new monsterKind(m.Kind).AttackDelay())); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return true;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.ThrowRock }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._tuple = _tuple; $f.acc = acc; $f.attack = attack; $f.block = block; $f.blocked = blocked; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.hit = hit; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.ThrowRock }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$10 = _arg$10; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._arg$5 = _arg$5; $f._arg$6 = _arg$6; $f._arg$7 = _arg$7; $f._arg$8 = _arg$8; $f._arg$9 = _arg$9; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f.acc = acc; $f.attack = attack; $f.block = block; $f.blocked = blocked; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.hit = hit; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	monster.prototype.ThrowRock = function(g, ev) { return this.$val.ThrowRock(g, ev); };
 	monster.ptr.prototype.ThrowJavelin = function(g, ev) {
-		var _arg, _arg$1, _arg$2, _key, _r, _r$1, _r$10, _r$11, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, acc, attack, block, blocked, ev, evasion, g, hit, m, noise, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _key = $f._key; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; acc = $f.acc; attack = $f.attack; block = $f.block; blocked = $f.blocked; ev = $f.ev; evasion = $f.evasion; g = $f.g; hit = $f.hit; m = $f.m; noise = $f.noise; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _arg, _arg$1, _arg$10, _arg$2, _arg$3, _arg$4, _arg$5, _arg$6, _arg$7, _arg$8, _arg$9, _key, _r, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, acc, attack, block, blocked, ev, evasion, g, hit, m, noise, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$10 = $f._arg$10; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _arg$6 = $f._arg$6; _arg$7 = $f._arg$7; _arg$8 = $f._arg$8; _arg$9 = $f._arg$9; _key = $f._key; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; acc = $f.acc; attack = $f.attack; block = $f.block; blocked = $f.blocked; ev = $f.ev; evasion = $f.evasion; g = $f.g; hit = $f.hit; m = $f.m; noise = $f.noise; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
 		_r = m.RangeBlocked(g); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		blocked = _r;
@@ -50707,39 +50831,55 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_arg$1 = new $String(Indefinite("javelin", false));
 			_arg$2 = new $Int(attack);
 			$r = g.Printf("%s throws %s at you (%d dmg).", new sliceType$7([_arg, _arg$1, _arg$2])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = m.InflictDamage(g, attack, 11); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$3 = g;
+			_r$7 = g.Ray($clone(m.Pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+			_arg$4 = _r$7;
+			$r = g.ui.MonsterJavelinAnimation(_arg$3, _arg$4, true); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = m.InflictDamage(g, attack, 11); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 13; continue;
 		/* } else if (block) { */ case 11:
-			_r$7 = RandInt(3); /* */ $s = 21; case 21: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
-			/* */ if (_r$7 === 0) { $s = 18; continue; }
-			/* */ if (!g.Player.HasStatus(9)) { $s = 19; continue; }
-			/* */ $s = 20; continue;
-			/* if (_r$7 === 0) { */ case 18:
-				$r = g.Printf("You block %s's %s.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 20; continue;
-			/* } else if (!g.Player.HasStatus(9)) { */ case 19:
+			_r$8 = RandInt(3); /* */ $s = 23; case 23: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+			/* */ if (_r$8 === 0) { $s = 20; continue; }
+			/* */ if (!g.Player.HasStatus(9)) { $s = 21; continue; }
+			/* */ $s = 22; continue;
+			/* if (_r$8 === 0) { */ case 20:
+				$r = g.Printf("You block %s's %s.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_arg$5 = g;
+				_r$9 = g.Ray($clone(m.Pos, position)); /* */ $s = 25; case 25: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+				_arg$6 = _r$9;
+				$r = g.ui.MonsterJavelinAnimation(_arg$5, _arg$6, false); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$s = 22; continue;
+			/* } else if (!g.Player.HasStatus(9)) { */ case 21:
 				_key = 9; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key)] = { k: _key, v: 1 };
-				_r$8 = ev.Rank(); /* */ $s = 23; case 23: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
-				_r$9 = RandInt(100); /* */ $s = 24; case 24: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
-				$r = g.PushEvent(new simpleEvent.ptr((_r$8 + 100 >> 0) + _r$9 >> 0, 12)); /* */ $s = 25; case 25: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.Printf("%s's %s gets fixed on your shield.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(true)), new $String("javelin")])); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 20:
+				_r$10 = ev.Rank(); /* */ $s = 27; case 27: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+				_r$11 = RandInt(100); /* */ $s = 28; case 28: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
+				$r = g.PushEvent(new simpleEvent.ptr((_r$10 + 100 >> 0) + _r$11 >> 0, 12)); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s's %s gets fixed on your shield.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(true)), new $String("javelin")])); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_arg$7 = g;
+				_r$12 = g.Ray($clone(m.Pos, position)); /* */ $s = 31; case 31: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+				_arg$8 = _r$12;
+				$r = g.ui.MonsterJavelinAnimation(_arg$7, _arg$8, false); /* */ $s = 32; case 32: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 22:
 			$s = 13; continue;
 		/* } else { */ case 12:
-			$r = g.Printf("You dodge %s's %s.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You dodge %s's %s.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$9 = g;
+			_r$13 = g.Ray($clone(m.Pos, position)); /* */ $s = 34; case 34: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
+			_arg$10 = _r$13;
+			$r = g.ui.MonsterJavelinAnimation(_arg$9, _arg$10, false); /* */ $s = 35; case 35: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 13:
 		m.Statuses[1] = 1;
-		_r$10 = ev.Rank(); /* */ $s = 28; case 28: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
-		_r$11 = RandInt(50); /* */ $s = 29; case 29: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
-		$r = g.PushEvent(new monsterEvent.ptr((_r$10 + 50 >> 0) + _r$11 >> 0, m.Index, 3)); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = ev.Renew(g, new monsterKind(m.Kind).AttackDelay()); /* */ $s = 31; case 31: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_r$14 = ev.Rank(); /* */ $s = 36; case 36: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
+		_r$15 = RandInt(50); /* */ $s = 37; case 37: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
+		$r = g.PushEvent(new monsterEvent.ptr((_r$14 + 50 >> 0) + _r$15 >> 0, m.Index, 3)); /* */ $s = 38; case 38: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ev.Renew(g, new monsterKind(m.Kind).AttackDelay()); /* */ $s = 39; case 39: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return true;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.ThrowJavelin }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$11 = _r$11; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f.acc = acc; $f.attack = attack; $f.block = block; $f.blocked = blocked; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.hit = hit; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.ThrowJavelin }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$10 = _arg$10; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._arg$5 = _arg$5; $f._arg$6 = _arg$6; $f._arg$7 = _arg$7; $f._arg$8 = _arg$8; $f._arg$9 = _arg$9; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$11 = _r$11; $f._r$12 = _r$12; $f._r$13 = _r$13; $f._r$14 = _r$14; $f._r$15 = _r$15; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f.acc = acc; $f.attack = attack; $f.block = block; $f.blocked = blocked; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.hit = hit; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	monster.prototype.ThrowJavelin = function(g, ev) { return this.$val.ThrowJavelin(g, ev); };
 	monster.ptr.prototype.ThrowAcid = function(g, ev) {
-		var _arg, _arg$1, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, acc, attack, block, blocked, ev, evasion, g, hit, m, noise, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; acc = $f.acc; attack = $f.attack; block = $f.block; blocked = $f.blocked; ev = $f.ev; evasion = $f.evasion; g = $f.g; hit = $f.hit; m = $f.m; noise = $f.noise; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _arg, _arg$1, _arg$10, _arg$2, _arg$3, _arg$4, _arg$5, _arg$6, _arg$7, _arg$8, _arg$9, _r, _r$1, _r$10, _r$11, _r$12, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, acc, attack, block, blocked, ev, evasion, g, hit, m, noise, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$10 = $f._arg$10; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _arg$6 = $f._arg$6; _arg$7 = $f._arg$7; _arg$8 = $f._arg$8; _arg$9 = $f._arg$9; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; acc = $f.acc; attack = $f.attack; block = $f.block; blocked = $f.blocked; ev = $f.ev; evasion = $f.evasion; g = $f.g; hit = $f.hit; m = $f.m; noise = $f.noise; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
 		_r = m.RangeBlocked(g); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		blocked = _r;
@@ -50778,35 +50918,50 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_arg = new $String(_r$6);
 			_arg$1 = new $Int(attack);
 			$r = g.Printf("%s throws acid at you (%d dmg).", new sliceType$7([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = m.InflictDamage(g, attack, 11); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			_r$7 = RandInt(2); /* */ $s = 20; case 20: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
-			/* */ if (_r$7 === 0) { $s = 18; continue; }
-			/* */ $s = 19; continue;
-			/* if (_r$7 === 0) { */ case 18:
-				$r = g.Corrosion(ev); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				_r$8 = RandInt(2); /* */ $s = 24; case 24: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
-				/* */ if (_r$8 === 0) { $s = 22; continue; }
-				/* */ $s = 23; continue;
-				/* if (_r$8 === 0) { */ case 22:
-					$r = g.Confusion(ev); /* */ $s = 25; case 25: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				/* } */ case 23:
-			/* } */ case 19:
+			_arg$2 = g;
+			_r$7 = g.Ray($clone(m.Pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+			_arg$3 = _r$7;
+			_arg$4 = $pkg.ColorGreen;
+			$r = g.ui.MonsterProjectileAnimation(_arg$2, _arg$3, 42, _arg$4); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = m.InflictDamage(g, attack, 11); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_r$8 = RandInt(2); /* */ $s = 22; case 22: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+			/* */ if (_r$8 === 0) { $s = 20; continue; }
+			/* */ $s = 21; continue;
+			/* if (_r$8 === 0) { */ case 20:
+				$r = g.Corrosion(ev); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_r$9 = RandInt(2); /* */ $s = 26; case 26: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+				/* */ if (_r$9 === 0) { $s = 24; continue; }
+				/* */ $s = 25; continue;
+				/* if (_r$9 === 0) { */ case 24:
+					$r = g.Confusion(ev); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 25:
+			/* } */ case 21:
 			$s = 13; continue;
 		/* } else if (block) { */ case 11:
-			$r = g.Printf("You block %s's acid projectile.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			_r$9 = RandInt(2); /* */ $s = 29; case 29: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
-			/* */ if (_r$9 === 0) { $s = 27; continue; }
-			/* */ $s = 28; continue;
-			/* if (_r$9 === 0) { */ case 27:
-				$r = g.Corrosion(ev); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 28:
+			$r = g.Printf("You block %s's acid projectile.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$5 = g;
+			_r$10 = g.Ray($clone(m.Pos, position)); /* */ $s = 29; case 29: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+			_arg$6 = _r$10;
+			_arg$7 = $pkg.ColorGreen;
+			$r = g.ui.MonsterProjectileAnimation(_arg$5, _arg$6, 42, _arg$7); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_r$11 = RandInt(2); /* */ $s = 33; case 33: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
+			/* */ if (_r$11 === 0) { $s = 31; continue; }
+			/* */ $s = 32; continue;
+			/* if (_r$11 === 0) { */ case 31:
+				$r = g.Corrosion(ev); /* */ $s = 34; case 34: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 32:
 			$s = 13; continue;
 		/* } else { */ case 12:
-			$r = g.Printf("You dodge %s's acid projectile.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 31; case 31: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You dodge %s's acid projectile.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 35; case 35: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			_arg$8 = g;
+			_r$12 = g.Ray($clone(m.Pos, position)); /* */ $s = 36; case 36: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+			_arg$9 = _r$12;
+			_arg$10 = $pkg.ColorGreen;
+			$r = g.ui.MonsterProjectileAnimation(_arg$8, _arg$9, 42, _arg$10); /* */ $s = 37; case 37: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 13:
-		$r = ev.Renew(g, new monsterKind(m.Kind).AttackDelay()); /* */ $s = 32; case 32: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ev.Renew(g, new monsterKind(m.Kind).AttackDelay()); /* */ $s = 38; case 38: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return true;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.ThrowAcid }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f.acc = acc; $f.attack = attack; $f.block = block; $f.blocked = blocked; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.hit = hit; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.ThrowAcid }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$10 = _arg$10; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._arg$5 = _arg$5; $f._arg$6 = _arg$6; $f._arg$7 = _arg$7; $f._arg$8 = _arg$8; $f._arg$9 = _arg$9; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$11 = _r$11; $f._r$12 = _r$12; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f.acc = acc; $f.attack = attack; $f.block = block; $f.blocked = blocked; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.hit = hit; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	monster.prototype.ThrowAcid = function(g, ev) { return this.$val.ThrowAcid(g, ev); };
 	monster.ptr.prototype.SmitingAttack = function(g, ev) {
@@ -52771,7 +52926,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_1 = r;
 		if (_1 === (1)) {
 			charges = 5;
-		} else if (_1 === (0)) {
+		} else if ((_1 === (0)) || (_1 === (7))) {
 			charges = 3;
 		} else {
 			charges = 4;
@@ -52970,8 +53125,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	game.prototype.EvokeRodTeleportOther = function(ev) { return this.$val.EvokeRodTeleportOther(ev); };
 	game.ptr.prototype.EvokeRodLightningBolt = function(ev) {
-		var _i, _r, _r$1, _r$2, _ref, err, ev, g, mons, pos, ray, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; err = $f.err; ev = $f.ev; g = $f.g; mons = $f.mons; pos = $f.pos; ray = $f.ray; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _i, _q, _r, _r$1, _r$2, _ref, dmg, err, ev, g, i, mons, pos, ray, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; dmg = $f.dmg; err = $f.err; ev = $f.ev; g = $f.g; i = $f.i; mons = $f.mons; pos = $f.pos; ray = $f.ray; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		_r = g.ui.ChooseTarget(g, new chooser.ptr(false, false, false, false, false, true, false)); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		err = _r;
@@ -52995,25 +53150,33 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_i++;
 				/* continue; */ $s = 4; continue;
 			/* } */ case 8:
-			_r$2 = RandInt(21); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-			mons.HP = mons.HP - (_r$2) >> 0;
-			/* */ if (mons.HP <= 0) { $s = 10; continue; }
-			/* */ $s = 11; continue;
-			/* if (mons.HP <= 0) { */ case 10:
-				$r = g.Printf("%s is killed by the bolt.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.HandleKill(mons, ev); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 11:
-			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = mons.MakeHuntIfHurt(g); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			dmg = 0;
+			i = 0;
+			/* while (true) { */ case 9:
+				/* if (!(i < 2)) { break; } */ if(!(i < 2)) { $s = 10; continue; }
+				_r$2 = RandInt(21); /* */ $s = 11; case 11: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				dmg = dmg + (_r$2) >> 0;
+				i = i + (1) >> 0;
+			/* } */ $s = 9; continue; case 10:
+			dmg = (_q = dmg / (2), (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"));
+			mons.HP = mons.HP - (dmg) >> 0;
+			/* */ if (mons.HP <= 0) { $s = 12; continue; }
+			/* */ $s = 13; continue;
+			/* if (mons.HP <= 0) { */ case 12:
+				$r = g.Printf("%s is killed by the bolt.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.HandleKill(mons, ev); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 13:
+			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = mons.MakeHuntIfHurt(g); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_i++;
 		/* } */ $s = 4; continue; case 5:
 		$s = -1; return $ifaceNil;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodLightningBolt }; } $f._i = _i; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._ref = _ref; $f.err = err; $f.ev = ev; $f.g = g; $f.mons = mons; $f.pos = pos; $f.ray = ray; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodLightningBolt }; } $f._i = _i; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._ref = _ref; $f.dmg = dmg; $f.err = err; $f.ev = ev; $f.g = g; $f.i = i; $f.mons = mons; $f.pos = pos; $f.ray = ray; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.EvokeRodLightningBolt = function(ev) { return this.$val.EvokeRodLightningBolt(ev); };
 	game.ptr.prototype.EvokeRodFireball = function(ev) {
-		var _arg, _arg$1, _arg$2, _i, _r, _r$1, _r$2, _r$3, _ref, err, ev, g, mons, neighbors, pos, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _ref = $f._ref; err = $f.err; ev = $f.ev; g = $f.g; mons = $f.mons; neighbors = $f.neighbors; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _arg, _arg$1, _arg$2, _i, _q, _r, _r$1, _r$2, _r$3, _ref, dmg, err, ev, g, i, mons, neighbors, pos, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _i = $f._i; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _ref = $f._ref; dmg = $f.dmg; err = $f.err; ev = $f.ev; g = $f.g; i = $f.i; mons = $f.mons; neighbors = $f.neighbors; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		_r = g.ui.ChooseTarget(g, new chooser.ptr(false, true, true, false, false, true, false)); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		err = _r;
@@ -53042,20 +53205,28 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_i++;
 				/* continue; */ $s = 6; continue;
 			/* } */ case 10:
-			_r$3 = RandInt(21); /* */ $s = 11; case 11: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-			mons.HP = mons.HP - (_r$3) >> 0;
-			/* */ if (mons.HP <= 0) { $s = 12; continue; }
-			/* */ $s = 13; continue;
-			/* if (mons.HP <= 0) { */ case 12:
-				$r = g.Printf("%s is killed by the fireball.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.HandleKill(mons, ev); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 13:
-			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = mons.MakeHuntIfHurt(g); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			dmg = 0;
+			i = 0;
+			/* while (true) { */ case 11:
+				/* if (!(i < 2)) { break; } */ if(!(i < 2)) { $s = 12; continue; }
+				_r$3 = RandInt(21); /* */ $s = 13; case 13: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+				dmg = dmg + (_r$3) >> 0;
+				i = i + (1) >> 0;
+			/* } */ $s = 11; continue; case 12:
+			dmg = (_q = dmg / (2), (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"));
+			mons.HP = mons.HP - (dmg) >> 0;
+			/* */ if (mons.HP <= 0) { $s = 14; continue; }
+			/* */ $s = 15; continue;
+			/* if (mons.HP <= 0) { */ case 14:
+				$r = g.Printf("%s is killed by the fireball.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.HandleKill(mons, ev); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 15:
+			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = mons.MakeHuntIfHurt(g); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_i++;
 		/* } */ $s = 6; continue; case 7:
 		$s = -1; return $ifaceNil;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodFireball }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._i = _i; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._ref = _ref; $f.err = err; $f.ev = ev; $f.g = g; $f.mons = mons; $f.neighbors = neighbors; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodFireball }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._i = _i; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._ref = _ref; $f.dmg = dmg; $f.err = err; $f.ev = ev; $f.g = g; $f.i = i; $f.mons = mons; $f.neighbors = neighbors; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.EvokeRodFireball = function(ev) { return this.$val.EvokeRodFireball(ev); };
 	game.ptr.prototype.EvokeRodFog = function(ev) {
@@ -53139,8 +53310,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	game.prototype.EvokeRodDigging = function(ev) { return this.$val.EvokeRodDigging(ev); };
 	game.ptr.prototype.EvokeRodShatter = function(ev) {
-		var _arg, _arg$1, _arg$2, _arg$3, _arg$4, _arg$5, _i, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _ref, err, ev, g, mons, neighbors, pos, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _ref = $f._ref; err = $f.err; ev = $f.ev; g = $f.g; mons = $f.mons; neighbors = $f.neighbors; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _arg, _arg$1, _arg$2, _arg$3, _i, _q, _r, _r$1, _r$2, _r$3, _r$4, _ref, dmg, err, ev, g, i, mons, neighbors, pos, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _i = $f._i; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _ref = $f._ref; dmg = $f.dmg; err = $f.err; ev = $f.ev; g = $f.g; i = $f.i; mons = $f.mons; neighbors = $f.neighbors; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		_r = g.ui.ChooseTarget(g, new wallChooser.ptr(false, true)); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		err = _r;
@@ -53149,60 +53320,55 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		}
 		_r$1 = g.Dungeon.FreeNeighbors($clone(g.Player.Target, position)); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		neighbors = _r$1;
-		_r$2 = RandInt(2); /* */ $s = 6; case 6: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-		/* */ if (_r$2 === 0) { $s = 3; continue; }
-		/* */ $s = 4; continue;
-		/* if (_r$2 === 0) { */ case 3:
-			g.Dungeon.SetCell($clone(g.Player.Target, position), 1);
-			g.Stats.Digs = g.Stats.Digs + (1) >> 0;
-			$r = g.ComputeLOS(); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.MakeMonstersAware(); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.MakeNoise(19, $clone(g.Player.Target, position)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			g.Print("You see the wall disappear in a noisy explosion.");
-			_arg = g;
-			_r$3 = g.Ray($clone(g.Player.Target, position)); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-			_arg$1 = _r$3;
-			_arg$2 = $pkg.ColorFgExplosionWallStart;
-			$r = g.ui.ProjectileTrajectoryAnimation(_arg, _arg$1, _arg$2); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.ui.ExplosionAnimation(g, 1, $clone(g.Player.Target, position)); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.Fog($clone(g.Player.Target, position), 2, ev); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$s = 5; continue;
-		/* } else { */ case 4:
-			$r = g.MakeNoise(15, $clone(g.Player.Target, position)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			g.Print("You see an explosion around the wall.");
-			_arg$3 = g;
-			_r$4 = g.Ray($clone(g.Player.Target, position)); /* */ $s = 15; case 15: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
-			_arg$4 = _r$4;
-			_arg$5 = $pkg.ColorFgExplosionWallStart;
-			$r = g.ui.ProjectileTrajectoryAnimation(_arg$3, _arg$4, _arg$5); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.ui.ExplosionAnimation(g, 2, $clone(g.Player.Target, position)); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		/* } */ case 5:
+		g.Dungeon.SetCell($clone(g.Player.Target, position), 1);
+		g.Stats.Digs = g.Stats.Digs + (1) >> 0;
+		$r = g.ComputeLOS(); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.MakeMonstersAware(); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.MakeNoise(18, $clone(g.Player.Target, position)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_r$2 = g.CrackSound(); /* */ $s = 6; case 6: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+		_arg = new $String(_r$2);
+		$r = g.Printf("%s The wall disappeared.", new sliceType$7([_arg])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		_arg$1 = g;
+		_r$3 = g.Ray($clone(g.Player.Target, position)); /* */ $s = 8; case 8: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+		_arg$2 = _r$3;
+		_arg$3 = $pkg.ColorFgExplosionWallStart;
+		$r = g.ui.ProjectileTrajectoryAnimation(_arg$1, _arg$2, _arg$3); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.ui.ExplosionAnimation(g, 1, $clone(g.Player.Target, position)); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Fog($clone(g.Player.Target, position), 2, ev); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		_ref = neighbors;
 		_i = 0;
-		/* while (true) { */ case 18:
-			/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 19; continue; }
+		/* while (true) { */ case 12:
+			/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 13; continue; }
 			pos = $clone(((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]), position);
 			mons = g.MonsterAt($clone(pos, position));
-			/* */ if (!mons.Exists()) { $s = 20; continue; }
-			/* */ $s = 21; continue;
-			/* if (!mons.Exists()) { */ case 20:
+			/* */ if (!mons.Exists()) { $s = 14; continue; }
+			/* */ $s = 15; continue;
+			/* if (!mons.Exists()) { */ case 14:
 				_i++;
-				/* continue; */ $s = 18; continue;
-			/* } */ case 21:
-			_r$5 = RandInt(30); /* */ $s = 22; case 22: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
-			mons.HP = mons.HP - (_r$5) >> 0;
-			/* */ if (mons.HP <= 0) { $s = 23; continue; }
-			/* */ $s = 24; continue;
-			/* if (mons.HP <= 0) { */ case 23:
-				$r = g.Printf("%s is killed by the explosion.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 25; case 25: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.HandleKill(mons, ev); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			/* } */ case 24:
-			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = mons.MakeHuntIfHurt(g); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* continue; */ $s = 12; continue;
+			/* } */ case 15:
+			dmg = 0;
+			i = 0;
+			/* while (true) { */ case 16:
+				/* if (!(i < 3)) { break; } */ if(!(i < 3)) { $s = 17; continue; }
+				_r$4 = RandInt(30); /* */ $s = 18; case 18: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+				dmg = dmg + (_r$4) >> 0;
+				i = i + (1) >> 0;
+			/* } */ $s = 16; continue; case 17:
+			dmg = (_q = dmg / (3), (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"));
+			mons.HP = mons.HP - (dmg) >> 0;
+			/* */ if (mons.HP <= 0) { $s = 19; continue; }
+			/* */ $s = 20; continue;
+			/* if (mons.HP <= 0) { */ case 19:
+				$r = g.Printf("%s is killed by the explosion.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.HandleKill(mons, ev); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			/* } */ case 20:
+			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = mons.MakeHuntIfHurt(g); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_i++;
-		/* } */ $s = 18; continue; case 19:
+		/* } */ $s = 12; continue; case 13:
 		$s = -1; return $ifaceNil;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodShatter }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._arg$5 = _arg$5; $f._i = _i; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._ref = _ref; $f.err = err; $f.ev = ev; $f.g = g; $f.mons = mons; $f.neighbors = neighbors; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodShatter }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._i = _i; $f._q = _q; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._ref = _ref; $f.dmg = dmg; $f.err = err; $f.ev = ev; $f.g = g; $f.i = i; $f.mons = mons; $f.neighbors = neighbors; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.EvokeRodShatter = function(ev) { return this.$val.EvokeRodShatter(ev); };
 	game.ptr.prototype.EvokeRodObstruction = function(ev) {
@@ -53943,7 +54109,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	weapon.methods = [{prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Short", name: "Short", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Attack", name: "Attack", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "TwoHanded", name: "TwoHanded", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Cleave", name: "Cleave", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Pierce", name: "Pierce", pkg: "", typ: $funcType([], [$Bool], false)}];
 	shield.methods = [{prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Short", name: "Short", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Block", name: "Block", pkg: "", typ: $funcType([], [$Int], false)}];
 	equipableData.methods = [{prop: "FavorableRoll", name: "FavorableRoll", pkg: "", typ: $funcType([$Int], [$Int], false)}];
-	ptrType$15.methods = [{prop: "DrawWelcome", name: "DrawWelcome", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawColored", name: "DrawColored", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawDark", name: "DrawDark", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLight", name: "DrawLight", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLightAlt", name: "DrawLightAlt", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "EnterWizard", name: "EnterWizard", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "CleanError", name: "CleanError", pkg: "", typ: $funcType([$error], [$error], false)}, {prop: "HandleKeyAction", name: "HandleKeyAction", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "HandleKey", name: "HandleKey", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "GoToPos", name: "GoToPos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool], false)}, {prop: "ExaminePos", name: "ExaminePos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool, $Bool], false)}, {prop: "DrawKeysDescription", name: "DrawKeysDescription", pkg: "", typ: $funcType([ptrType$3, $String, sliceType$3], [], false)}, {prop: "KeysHelp", name: "KeysHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExamineHelp", name: "ExamineHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "CharacterInfo", name: "CharacterInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WizardInfo", name: "WizardInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "AptitudesText", name: "AptitudesText", pkg: "", typ: $funcType([ptrType$3], [$String], false)}, {prop: "DescribePosition", name: "DescribePosition", pkg: "", typ: $funcType([ptrType$3, position, Targeter], [], false)}, {prop: "Examine", name: "Examine", pkg: "", typ: $funcType([ptrType$3, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "NextMonster", name: "NextMonster", pkg: "", typ: $funcType([ptrType$3, $Int32, position, ptrType$14], [], false)}, {prop: "NextStair", name: "NextStair", pkg: "", typ: $funcType([ptrType$3, ptrType$14], [], false)}, {prop: "NextObject", name: "NextObject", pkg: "", typ: $funcType([ptrType$3, position, ptrType$14], [], false)}, {prop: "ExcludeZone", name: "ExcludeZone", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "CursorMouseLeft", name: "CursorMouseLeft", pkg: "", typ: $funcType([ptrType$3, Targeter, position, ptrType$14], [$Bool, $Bool], false)}, {prop: "CursorKeyAction", name: "CursorKeyAction", pkg: "", typ: $funcType([ptrType$3, Targeter, runeKeyAction, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "CursorAction", name: "CursorAction", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ViewPositionDescription", name: "ViewPositionDescription", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "MonsterInfo", name: "MonsterInfo", pkg: "", typ: $funcType([ptrType$7], [$String], false)}, {prop: "InView", name: "InView", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "CameraOffset", name: "CameraOffset", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Int, $Int], false)}, {prop: "InViewBorder", name: "InViewBorder", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "DrawAtPosition", name: "DrawAtPosition", pkg: "", typ: $funcType([ptrType$3, position, $Bool, $Int32, uicolor, uicolor], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, uicolor], [], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5], [], false)}, {prop: "ProjectileSymbol", name: "ProjectileSymbol", pkg: "", typ: $funcType([direction], [$Int32], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "PositionDrawing", name: "PositionDrawing", pkg: "", typ: $funcType([ptrType$3, position], [$Int32, uicolor, uicolor], false)}, {prop: "DrawStatusBar", name: "DrawStatusBar", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "DrawStatusLine", name: "DrawStatusLine", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "LogColor", name: "LogColor", pkg: "", typ: $funcType([logEntry], [uicolor], false)}, {prop: "DrawLog", name: "DrawLog", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "RunesForKeyAction", name: "RunesForKeyAction", pkg: "", typ: $funcType([keyAction], [$String], false)}, {prop: "Configure", name: "Configure", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawPreviousLogs", name: "DrawPreviousLogs", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawMonsterDescription", name: "DrawMonsterDescription", pkg: "", typ: $funcType([ptrType$3, ptrType$7], [], false)}, {prop: "DrawConsumableDescription", name: "DrawConsumableDescription", pkg: "", typ: $funcType([ptrType$3, consumable], [], false)}, {prop: "DrawDescription", name: "DrawDescription", pkg: "", typ: $funcType([ptrType$3, $String], [], false)}, {prop: "DrawText", name: "DrawText", pkg: "", typ: $funcType([$String, $Int, $Int], [], false)}, {prop: "DrawColoredText", name: "DrawColoredText", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawColoredTextOnBG", name: "DrawColoredTextOnBG", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawLine", name: "DrawLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "DrawTextLine", name: "DrawTextLine", pkg: "", typ: $funcType([$String, $Int], [], false)}, {prop: "DrawInfoLine", name: "DrawInfoLine", pkg: "", typ: $funcType([$String], [], false)}, {prop: "DrawStyledTextLine", name: "DrawStyledTextLine", pkg: "", typ: $funcType([$String, $Int, linestyle], [], false)}, {prop: "ClearLine", name: "ClearLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearLineWithColor", name: "ClearLineWithColor", pkg: "", typ: $funcType([$Int, uicolor], [], false)}, {prop: "ListItemBG", name: "ListItemBG", pkg: "", typ: $funcType([$Int], [uicolor], false)}, {prop: "ConsumableItem", name: "ConsumableItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, consumable, uicolor], [], false)}, {prop: "SelectProjectile", name: "SelectProjectile", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "SelectPotion", name: "SelectPotion", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "RodItem", name: "RodItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, rod, uicolor], [], false)}, {prop: "SelectRod", name: "SelectRod", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "ActionItem", name: "ActionItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, keyAction, uicolor], [], false)}, {prop: "SelectAction", name: "SelectAction", pkg: "", typ: $funcType([ptrType$3, sliceType$1, event], [keyAction, $error], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Win", name: "Win", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Dump", name: "Dump", pkg: "", typ: $funcType([ptrType$3, $error], [], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "Quit", name: "Quit", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Wizard", name: "Wizard", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Init", name: "Init", pkg: "", typ: $funcType([], [$error], false)}, {prop: "GetIndex", name: "GetIndex", pkg: "", typ: $funcType([$Int, $Int], [$Int], false)}, {prop: "GetPos", name: "GetPos", pkg: "", typ: $funcType([$Int], [$Int, $Int], false)}, {prop: "ResetCells", name: "ResetCells", pkg: "", typ: $funcType([], [], false)}, {prop: "Interrupt", name: "Interrupt", pkg: "", typ: $funcType([], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "PostInit", name: "PostInit", pkg: "", typ: $funcType([], [], false)}, {prop: "Clear", name: "Clear", pkg: "", typ: $funcType([], [], false)}, {prop: "Flush", name: "Flush", pkg: "", typ: $funcType([], [], false)}, {prop: "Small", name: "Small", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "FlushCallback", name: "FlushCallback", pkg: "", typ: $funcType([ptrType$12], [], false)}, {prop: "HideCursor", name: "HideCursor", pkg: "", typ: $funcType([], [], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([position], [], false)}, {prop: "SetCell", name: "SetCell", pkg: "", typ: $funcType([$Int, $Int, $Int32, uicolor, uicolor], [], false)}, {prop: "ReadKey", name: "ReadKey", pkg: "", typ: $funcType([$String], [$Int32], false)}, {prop: "PollEvent", name: "PollEvent", pkg: "", typ: $funcType([], [jsInput], false)}, {prop: "WaitForContinue", name: "WaitForContinue", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "PromptConfirmation", name: "PromptConfirmation", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "PressAnyKey", name: "PressAnyKey", pkg: "", typ: $funcType([], [$error], false)}, {prop: "PlayerTurnEvent", name: "PlayerTurnEvent", pkg: "", typ: $funcType([ptrType$3, event], [$error, $Bool, $Bool], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int], [$Int, $Bool], false)}, {prop: "ReadRuneKey", name: "ReadRuneKey", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "MenuAction", name: "MenuAction", pkg: "", typ: $funcType([$Int], [$Int, configAction], false)}, {prop: "TargetModeEvent", name: "TargetModeEvent", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([ptrType$3, event, $Int], [$Int, $Bool, $error], false)}, {prop: "InitElements", name: "InitElements", pkg: "", typ: $funcType([], [$error], false)}, {prop: "Draw", name: "Draw", pkg: "", typ: $funcType([UICell, $Int, $Int], [], false)}, {prop: "GetMousePos", name: "GetMousePos", pkg: "", typ: $funcType([ptrType$12], [$Int, $Int], false)}];
+	ptrType$15.methods = [{prop: "DrawWelcome", name: "DrawWelcome", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawColored", name: "DrawColored", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawDark", name: "DrawDark", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLight", name: "DrawLight", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLightAlt", name: "DrawLightAlt", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "EnterWizard", name: "EnterWizard", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "CleanError", name: "CleanError", pkg: "", typ: $funcType([$error], [$error], false)}, {prop: "HandleKeyAction", name: "HandleKeyAction", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "HandleKey", name: "HandleKey", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "GoToPos", name: "GoToPos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool], false)}, {prop: "ExaminePos", name: "ExaminePos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool, $Bool], false)}, {prop: "DrawKeysDescription", name: "DrawKeysDescription", pkg: "", typ: $funcType([ptrType$3, $String, sliceType$3], [], false)}, {prop: "KeysHelp", name: "KeysHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExamineHelp", name: "ExamineHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "CharacterInfo", name: "CharacterInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WizardInfo", name: "WizardInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "AptitudesText", name: "AptitudesText", pkg: "", typ: $funcType([ptrType$3], [$String], false)}, {prop: "DescribePosition", name: "DescribePosition", pkg: "", typ: $funcType([ptrType$3, position, Targeter], [], false)}, {prop: "Examine", name: "Examine", pkg: "", typ: $funcType([ptrType$3, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "NextMonster", name: "NextMonster", pkg: "", typ: $funcType([ptrType$3, $Int32, position, ptrType$14], [], false)}, {prop: "NextStair", name: "NextStair", pkg: "", typ: $funcType([ptrType$3, ptrType$14], [], false)}, {prop: "NextObject", name: "NextObject", pkg: "", typ: $funcType([ptrType$3, position, ptrType$14], [], false)}, {prop: "ExcludeZone", name: "ExcludeZone", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "CursorMouseLeft", name: "CursorMouseLeft", pkg: "", typ: $funcType([ptrType$3, Targeter, position, ptrType$14], [$Bool, $Bool], false)}, {prop: "CursorKeyAction", name: "CursorKeyAction", pkg: "", typ: $funcType([ptrType$3, Targeter, runeKeyAction, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "CursorAction", name: "CursorAction", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ViewPositionDescription", name: "ViewPositionDescription", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "MonsterInfo", name: "MonsterInfo", pkg: "", typ: $funcType([ptrType$7], [$String], false)}, {prop: "InView", name: "InView", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "CameraOffset", name: "CameraOffset", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Int, $Int], false)}, {prop: "InViewBorder", name: "InViewBorder", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "DrawAtPosition", name: "DrawAtPosition", pkg: "", typ: $funcType([ptrType$3, position, $Bool, $Int32, uicolor, uicolor], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, uicolor], [], false)}, {prop: "MonsterProjectileAnimation", name: "MonsterProjectileAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Int32, uicolor], [], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5], [], false)}, {prop: "ProjectileSymbol", name: "ProjectileSymbol", pkg: "", typ: $funcType([direction], [$Int32], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "MonsterJavelinAnimation", name: "MonsterJavelinAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "PositionDrawing", name: "PositionDrawing", pkg: "", typ: $funcType([ptrType$3, position], [$Int32, uicolor, uicolor], false)}, {prop: "DrawStatusBar", name: "DrawStatusBar", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "DrawStatusLine", name: "DrawStatusLine", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "LogColor", name: "LogColor", pkg: "", typ: $funcType([logEntry], [uicolor], false)}, {prop: "DrawLog", name: "DrawLog", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "RunesForKeyAction", name: "RunesForKeyAction", pkg: "", typ: $funcType([keyAction], [$String], false)}, {prop: "Configure", name: "Configure", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawPreviousLogs", name: "DrawPreviousLogs", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawMonsterDescription", name: "DrawMonsterDescription", pkg: "", typ: $funcType([ptrType$3, ptrType$7], [], false)}, {prop: "DrawConsumableDescription", name: "DrawConsumableDescription", pkg: "", typ: $funcType([ptrType$3, consumable], [], false)}, {prop: "DrawDescription", name: "DrawDescription", pkg: "", typ: $funcType([ptrType$3, $String], [], false)}, {prop: "DrawText", name: "DrawText", pkg: "", typ: $funcType([$String, $Int, $Int], [], false)}, {prop: "DrawColoredText", name: "DrawColoredText", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawColoredTextOnBG", name: "DrawColoredTextOnBG", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawLine", name: "DrawLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "DrawTextLine", name: "DrawTextLine", pkg: "", typ: $funcType([$String, $Int], [], false)}, {prop: "DrawInfoLine", name: "DrawInfoLine", pkg: "", typ: $funcType([$String], [], false)}, {prop: "DrawStyledTextLine", name: "DrawStyledTextLine", pkg: "", typ: $funcType([$String, $Int, linestyle], [], false)}, {prop: "ClearLine", name: "ClearLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearLineWithColor", name: "ClearLineWithColor", pkg: "", typ: $funcType([$Int, uicolor], [], false)}, {prop: "ListItemBG", name: "ListItemBG", pkg: "", typ: $funcType([$Int], [uicolor], false)}, {prop: "ConsumableItem", name: "ConsumableItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, consumable, uicolor], [], false)}, {prop: "SelectProjectile", name: "SelectProjectile", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "SelectPotion", name: "SelectPotion", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "RodItem", name: "RodItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, rod, uicolor], [], false)}, {prop: "SelectRod", name: "SelectRod", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "ActionItem", name: "ActionItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, keyAction, uicolor], [], false)}, {prop: "SelectAction", name: "SelectAction", pkg: "", typ: $funcType([ptrType$3, sliceType$1, event], [keyAction, $error], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Win", name: "Win", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Dump", name: "Dump", pkg: "", typ: $funcType([ptrType$3, $error], [], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "StatusEndAnimation", name: "StatusEndAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "Quit", name: "Quit", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Wizard", name: "Wizard", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Init", name: "Init", pkg: "", typ: $funcType([], [$error], false)}, {prop: "GetIndex", name: "GetIndex", pkg: "", typ: $funcType([$Int, $Int], [$Int], false)}, {prop: "GetPos", name: "GetPos", pkg: "", typ: $funcType([$Int], [$Int, $Int], false)}, {prop: "ResetCells", name: "ResetCells", pkg: "", typ: $funcType([], [], false)}, {prop: "Interrupt", name: "Interrupt", pkg: "", typ: $funcType([], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "PostInit", name: "PostInit", pkg: "", typ: $funcType([], [], false)}, {prop: "Clear", name: "Clear", pkg: "", typ: $funcType([], [], false)}, {prop: "Flush", name: "Flush", pkg: "", typ: $funcType([], [], false)}, {prop: "Small", name: "Small", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "FlushCallback", name: "FlushCallback", pkg: "", typ: $funcType([ptrType$12], [], false)}, {prop: "HideCursor", name: "HideCursor", pkg: "", typ: $funcType([], [], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([position], [], false)}, {prop: "SetCell", name: "SetCell", pkg: "", typ: $funcType([$Int, $Int, $Int32, uicolor, uicolor], [], false)}, {prop: "ReadKey", name: "ReadKey", pkg: "", typ: $funcType([$String], [$Int32], false)}, {prop: "PollEvent", name: "PollEvent", pkg: "", typ: $funcType([], [jsInput], false)}, {prop: "WaitForContinue", name: "WaitForContinue", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "PromptConfirmation", name: "PromptConfirmation", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "PressAnyKey", name: "PressAnyKey", pkg: "", typ: $funcType([], [$error], false)}, {prop: "PlayerTurnEvent", name: "PlayerTurnEvent", pkg: "", typ: $funcType([ptrType$3, event], [$error, $Bool, $Bool], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int], [$Int, $Bool], false)}, {prop: "ReadRuneKey", name: "ReadRuneKey", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "MenuAction", name: "MenuAction", pkg: "", typ: $funcType([$Int], [$Int, configAction], false)}, {prop: "TargetModeEvent", name: "TargetModeEvent", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([ptrType$3, event, $Int], [$Int, $Bool, $error], false)}, {prop: "InitElements", name: "InitElements", pkg: "", typ: $funcType([], [$error], false)}, {prop: "Draw", name: "Draw", pkg: "", typ: $funcType([UICell, $Int, $Int], [], false)}, {prop: "GetMousePos", name: "GetMousePos", pkg: "", typ: $funcType([ptrType$12], [$Int, $Int], false)}];
 	logEntry.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
 	monsterState.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
 	monsterStatus.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
@@ -53985,7 +54151,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	monsterEvent.init("", [{prop: "ERank", name: "ERank", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "NMons", name: "NMons", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "EAction", name: "EAction", anonymous: false, exported: true, typ: monsterAction, tag: ""}]);
 	cloudEvent.init("", [{prop: "ERank", name: "ERank", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Pos", name: "Pos", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "EAction", name: "EAction", anonymous: false, exported: true, typ: cloudAction, tag: ""}]);
 	game.init("github.com/anaseto/boohu", [{prop: "Dungeon", name: "Dungeon", anonymous: false, exported: true, typ: ptrType$5, tag: ""}, {prop: "Player", name: "Player", anonymous: false, exported: true, typ: ptrType$6, tag: ""}, {prop: "Monsters", name: "Monsters", anonymous: false, exported: true, typ: sliceType$13, tag: ""}, {prop: "MonstersPosCache", name: "MonstersPosCache", anonymous: false, exported: true, typ: sliceType$6, tag: ""}, {prop: "Bands", name: "Bands", anonymous: false, exported: true, typ: sliceType$14, tag: ""}, {prop: "Events", name: "Events", anonymous: false, exported: true, typ: ptrType$8, tag: ""}, {prop: "Ev", name: "Ev", anonymous: false, exported: true, typ: event, tag: ""}, {prop: "EventIndex", name: "EventIndex", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Depth", name: "Depth", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Turn", name: "Turn", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Highlight", name: "Highlight", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Collectables", name: "Collectables", anonymous: false, exported: true, typ: mapType$3, tag: ""}, {prop: "CollectableScore", name: "CollectableScore", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Equipables", name: "Equipables", anonymous: false, exported: true, typ: mapType$4, tag: ""}, {prop: "Rods", name: "Rods", anonymous: false, exported: true, typ: mapType$5, tag: ""}, {prop: "Stairs", name: "Stairs", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Clouds", name: "Clouds", anonymous: false, exported: true, typ: mapType$6, tag: ""}, {prop: "Fungus", name: "Fungus", anonymous: false, exported: true, typ: mapType$2, tag: ""}, {prop: "Doors", name: "Doors", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "TemporalWalls", name: "TemporalWalls", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "GeneratedBands", name: "GeneratedBands", anonymous: false, exported: true, typ: mapType$7, tag: ""}, {prop: "GeneratedEquipables", name: "GeneratedEquipables", anonymous: false, exported: true, typ: mapType$8, tag: ""}, {prop: "GeneratedRods", name: "GeneratedRods", anonymous: false, exported: true, typ: mapType$9, tag: ""}, {prop: "FoundEquipables", name: "FoundEquipables", anonymous: false, exported: true, typ: mapType$8, tag: ""}, {prop: "Simellas", name: "Simellas", anonymous: false, exported: true, typ: mapType$10, tag: ""}, {prop: "UnknownDig", name: "UnknownDig", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "UnknownBurn", name: "UnknownBurn", anonymous: false, exported: true, typ: mapType$11, tag: ""}, {prop: "ExclusionsMap", name: "ExclusionsMap", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Noise", name: "Noise", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Resting", name: "Resting", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Autoexploring", name: "Autoexploring", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "DijkstraMapRebuild", name: "DijkstraMapRebuild", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Targeting", name: "Targeting", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "AutoTarget", name: "AutoTarget", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "AutoDir", name: "AutoDir", anonymous: false, exported: true, typ: direction, tag: ""}, {prop: "AutoHalt", name: "AutoHalt", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "AutoNext", name: "AutoNext", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Log", name: "Log", anonymous: false, exported: true, typ: sliceType$15, tag: ""}, {prop: "LogIndex", name: "LogIndex", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "LogNextTick", name: "LogNextTick", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "InfoEntry", name: "InfoEntry", anonymous: false, exported: true, typ: $String, tag: ""}, {prop: "Stats", name: "Stats", anonymous: false, exported: true, typ: stats, tag: ""}, {prop: "Scumming", name: "Scumming", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Quit", name: "Quit", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Wizard", name: "Wizard", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "ui", name: "ui", anonymous: false, exported: false, typ: Renderer, tag: ""}]);
-	Renderer.init([{prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, uicolor], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}]);
+	Renderer.init([{prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "MonsterJavelinAnimation", name: "MonsterJavelinAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "MonsterProjectileAnimation", name: "MonsterProjectileAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Int32, uicolor], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, uicolor], [], false)}, {prop: "StatusEndAnimation", name: "StatusEndAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}]);
 	consumable.init([{prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Int", name: "Int", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Plural", name: "Plural", pkg: "", typ: $funcType([], [$String], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Use", name: "Use", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}]);
 	collectable.init("", [{prop: "Consumable", name: "Consumable", anonymous: false, exported: true, typ: consumable, tag: ""}, {prop: "Quantity", name: "Quantity", anonymous: false, exported: true, typ: $Int, tag: ""}]);
 	collectData.init("github.com/anaseto/boohu", [{prop: "rarity", name: "rarity", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "quantity", name: "quantity", anonymous: false, exported: false, typ: $Int, tag: ""}]);
@@ -54079,7 +54245,6 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		$pkg.CenteredCamera = false;
 		$pkg.SaveError = "";
 		ch = $chanNil;
-		wants = $chanNil;
 		interrupt = $chanNil;
 		$pkg.ColorBase03 = 234;
 		$pkg.ColorBase02 = 235;
