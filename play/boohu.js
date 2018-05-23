@@ -37891,7 +37891,7 @@ $packages["path/filepath"] = (function() {
 	return $pkg;
 })();
 $packages["github.com/anaseto/boohu"] = (function() {
-	var $pkg = {}, $init, bytes, heap, rand, base64, gob, errors, fmt, js, io, log, big, filepath, sort, strings, time, unicode, utf8, aptitude, node, nodeMap, priorityQueue, dmgType, Dijkstrer, uicolor, uiMode, keyAction, runeKeyAction, examineData, explosionStyle, configAction, linestyle, rodSlice, consumableSlice, statusSlice, monsSlice, dungeon, cell, terrain, dungen, room, roomSlice, vegetation, config, event, iEvent, eventQueue, simpleAction, simpleEvent, monsterAction, monsterEvent, cloudAction, cloudEvent, burn, game, Renderer, consumable, potion, projectile, collectable, collectData, equipable, armour, weapon, shield, equipableData, UICell, jsInput, termui, logStyle, logEntry, raynode, rayMap, monsterState, monsterStatus, monsterKind, monsterData, monsterBand, monsInterval, monsterBandData, monster, dungeonPath, playerPath, noisePath, normalPath, autoexplorePath, monPath, posCost, posSlice, player, position, direction, rod, rodProps, cloud, stats, status, Targeter, examiner, chooser, wallChooser, sliceType, arrayType, sliceType$1, sliceType$2, sliceType$3, sliceType$4, ptrType, ptrType$1, sliceType$5, ptrType$2, ptrType$3, arrayType$1, sliceType$6, sliceType$7, sliceType$8, arrayType$2, arrayType$3, ptrType$4, sliceType$9, sliceType$10, ptrType$5, sliceType$11, sliceType$12, ptrType$6, ptrType$7, sliceType$13, sliceType$14, ptrType$8, sliceType$15, arrayType$4, arrayType$5, arrayType$6, ptrType$9, ptrType$10, ptrType$11, sliceType$16, ptrType$12, funcType, funcType$1, sliceType$17, arrayType$7, mapType, funcType$2, mapType$1, ptrType$13, mapType$2, mapType$3, mapType$4, mapType$5, mapType$6, mapType$7, mapType$8, mapType$9, mapType$10, mapType$11, ptrType$14, ptrType$15, mapType$12, mapType$13, ptrType$16, ptrType$17, ptrType$18, ptrType$19, ptrType$20, ptrType$21, mapType$14, mapType$15, mapType$16, mapType$17, mapType$18, ptrType$22, ptrType$23, nodeCache, configurableKeyActions, runeNormalKeyActions, runeTargetingKeyActions, menuActions, ch, interrupt, monsDesc, init, AstarPath, Dijkstra, LinkColors, SolarizedPalette, FixedRuneKey, ApplyDefaultKeyBindings, InRuneSlice, roomDistance, nearRoom, nearestRoom, intersectsRoom, GenCaveRoomSize, init$1, main, init$2, KeyToDir, idxtopos, Abs, RandInt, Min, Max, Indefinite, formatText;
+	var $pkg = {}, $init, bytes, heap, rand, base64, gob, errors, fmt, js, io, log, big, filepath, sort, strings, time, unicode, utf8, aptitude, node, nodeMap, priorityQueue, dmgType, Dijkstrer, uicolor, uiMode, keyAction, runeKeyAction, examineData, explosionStyle, menu, configAction, linestyle, rodSlice, consumableSlice, statusSlice, monsSlice, dungeon, cell, terrain, dungen, room, roomSlice, vegetation, config, event, iEvent, eventQueue, simpleAction, simpleEvent, monsterAction, monsterEvent, cloudAction, cloudEvent, burn, game, Renderer, consumable, potion, projectile, collectable, collectData, equipable, armour, weapon, shield, equipableData, UICell, jsInput, termui, logStyle, logEntry, raynode, rayMap, monsterState, monsterStatus, monsterKind, monsterData, monsterBand, monsInterval, monsterBandData, monster, dungeonPath, playerPath, noisePath, normalPath, autoexplorePath, monPath, posCost, posSlice, player, position, direction, rod, rodProps, cloud, stats, status, Targeter, examiner, chooser, wallChooser, sliceType, arrayType, arrayType$1, sliceType$1, sliceType$2, sliceType$3, sliceType$4, sliceType$5, ptrType, ptrType$1, sliceType$6, ptrType$2, ptrType$3, arrayType$2, sliceType$7, sliceType$8, sliceType$9, arrayType$3, arrayType$4, ptrType$4, sliceType$10, sliceType$11, ptrType$5, sliceType$12, sliceType$13, ptrType$6, ptrType$7, sliceType$14, sliceType$15, ptrType$8, sliceType$16, arrayType$5, arrayType$6, arrayType$7, ptrType$9, ptrType$10, ptrType$11, sliceType$17, ptrType$12, funcType, funcType$1, sliceType$18, mapType, funcType$2, mapType$1, ptrType$13, mapType$2, mapType$3, mapType$4, mapType$5, mapType$6, mapType$7, mapType$8, mapType$9, mapType$10, mapType$11, ptrType$14, ptrType$15, mapType$12, mapType$13, ptrType$16, ptrType$17, ptrType$18, ptrType$19, ptrType$20, ptrType$21, mapType$14, mapType$15, mapType$16, mapType$17, mapType$18, ptrType$22, ptrType$23, nodeCache, configurableKeyActions, runeNormalKeyActions, runeTargetingKeyActions, menuActions, ch, interrupt, monsDesc, init, AstarPath, Dijkstra, LinkColors, SolarizedPalette, FixedRuneKey, ApplyDefaultKeyBindings, init$1, InRuneSlice, roomDistance, nearRoom, nearestRoom, intersectsRoom, GenCaveRoomSize, init$2, main, init$3, KeyToDir, idxtopos, Abs, RandInt, Min, Max, Indefinite, formatText;
 	bytes = $packages["bytes"];
 	heap = $packages["container/heap"];
 	rand = $packages["crypto/rand"];
@@ -37954,9 +37954,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (arguments.length === 0) {
 			this.npos = new position.ptr(0, 0);
 			this.nmonster = 0;
-			this.objects = sliceType$5.nil;
+			this.objects = sliceType$6.nil;
 			this.nobject = 0;
-			this.sortedStairs = sliceType$5.nil;
+			this.sortedStairs = sliceType$6.nil;
 			this.stairIndex = 0;
 			return;
 		}
@@ -37968,6 +37968,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		this.stairIndex = stairIndex_;
 	});
 	explosionStyle = $pkg.explosionStyle = $newType(4, $kindInt, "main.explosionStyle", true, "github.com/anaseto/boohu", false, null);
+	menu = $pkg.menu = $newType(4, $kindInt, "main.menu", true, "github.com/anaseto/boohu", false, null);
 	configAction = $pkg.configAction = $newType(4, $kindInt, "main.configAction", true, "github.com/anaseto/boohu", false, null);
 	linestyle = $pkg.linestyle = $newType(4, $kindInt, "main.linestyle", true, "github.com/anaseto/boohu", false, null);
 	rodSlice = $pkg.rodSlice = $newType(12, $kindSlice, "main.rodSlice", true, "github.com/anaseto/boohu", false, null);
@@ -37977,7 +37978,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	dungeon = $pkg.dungeon = $newType(0, $kindStruct, "main.dungeon", true, "github.com/anaseto/boohu", false, function(Cells_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.Cells = sliceType$11.nil;
+			this.Cells = sliceType$12.nil;
 			return;
 		}
 		this.Cells = Cells_;
@@ -38073,9 +38074,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (arguments.length === 0) {
 			this.Dungeon = ptrType$5.nil;
 			this.Player = ptrType$6.nil;
-			this.Monsters = sliceType$13.nil;
-			this.MonstersPosCache = sliceType$6.nil;
-			this.Bands = sliceType$14.nil;
+			this.Monsters = sliceType$14.nil;
+			this.MonstersPosCache = sliceType$7.nil;
+			this.Bands = sliceType$15.nil;
 			this.Events = ptrType$8.nil;
 			this.Ev = $ifaceNil;
 			this.EventIndex = 0;
@@ -38108,11 +38109,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			this.AutoDir = 0;
 			this.AutoHalt = false;
 			this.AutoNext = false;
-			this.Log = sliceType$15.nil;
+			this.Log = sliceType$16.nil;
 			this.LogIndex = 0;
 			this.LogNextTick = 0;
 			this.InfoEntry = "";
-			this.Stats = new stats.ptr(sliceType$3.nil, 0, false, 0, 0, 0, 0, 0, arrayType$4.zero(), arrayType$4.zero(), arrayType$4.zero(), arrayType$5.zero(), 0, 0, 0, 0, 0, 0, 0, 0, arrayType$6.zero());
+			this.Stats = new stats.ptr(sliceType$4.nil, 0, false, 0, 0, 0, 0, 0, arrayType$5.zero(), arrayType$5.zero(), arrayType$5.zero(), arrayType$6.zero(), 0, 0, 0, 0, 0, 0, 0, 0, arrayType$7.zero());
 			this.Scumming = 0;
 			this.Quit = false;
 			this.Wizard = false;
@@ -38237,8 +38238,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	termui = $pkg.termui = $newType(0, $kindStruct, "main.termui", true, "github.com/anaseto/boohu", false, function(cells_, backBuffer_, cursor_, display_, cache_, ctx_, width_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.cells = sliceType$16.nil;
-			this.backBuffer = sliceType$16.nil;
+			this.cells = sliceType$17.nil;
+			this.backBuffer = sliceType$17.nil;
 			this.cursor = new position.ptr(0, 0);
 			this.display = null;
 			this.cache = false;
@@ -38353,10 +38354,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			this.HPmax = 0;
 			this.HP = 0;
 			this.State = 0;
-			this.Statuses = arrayType$7.zero();
+			this.Statuses = arrayType$1.zero();
 			this.Pos = new position.ptr(0, 0);
 			this.Target = new position.ptr(0, 0);
-			this.Path = sliceType$5.nil;
+			this.Path = sliceType$6.nil;
 			this.Obstructing = false;
 			this.FireReady = false;
 			this.Seen = false;
@@ -38384,7 +38385,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.dungeon = ptrType$5.nil;
-			this.neighbors = arrayType$1.zero();
+			this.neighbors = arrayType$2.zero();
 			return;
 		}
 		this.dungeon = dungeon_;
@@ -38394,7 +38395,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.game = ptrType$3.nil;
-			this.neighbors = arrayType$1.zero();
+			this.neighbors = arrayType$2.zero();
 			return;
 		}
 		this.game = game_;
@@ -38404,7 +38405,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.game = ptrType$3.nil;
-			this.neighbors = arrayType$1.zero();
+			this.neighbors = arrayType$2.zero();
 			return;
 		}
 		this.game = game_;
@@ -38414,7 +38415,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.game = ptrType$3.nil;
-			this.neighbors = arrayType$1.zero();
+			this.neighbors = arrayType$2.zero();
 			return;
 		}
 		this.game = game_;
@@ -38424,7 +38425,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.game = ptrType$3.nil;
-			this.neighbors = arrayType$1.zero();
+			this.neighbors = arrayType$2.zero();
 			return;
 		}
 		this.game = game_;
@@ -38436,7 +38437,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			this.game = ptrType$3.nil;
 			this.monster = ptrType$7.nil;
 			this.wall = false;
-			this.neighbors = arrayType$1.zero();
+			this.neighbors = arrayType$2.zero();
 			return;
 		}
 		this.game = game_;
@@ -38513,7 +38514,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	stats = $pkg.stats = $newType(0, $kindStruct, "main.stats", true, "github.com/anaseto/boohu", false, function(Story_, Killed_, KilledMons_, Moves_, Hits_, Misses_, Wounds_, TimesLucky_, DExplPerc_, DSleepingPerc_, DKilledPerc_, DLayout_, Burns_, Digs_, Rest_, RestInterrupt_, Turns_, TWounded_, TMWounded_, TMonsLOS_, UsedRod_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.Story = sliceType$3.nil;
+			this.Story = sliceType$4.nil;
 			this.Killed = 0;
 			this.KilledMons = false;
 			this.Moves = 0;
@@ -38521,10 +38522,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			this.Misses = 0;
 			this.Wounds = 0;
 			this.TimesLucky = 0;
-			this.DExplPerc = arrayType$4.zero();
-			this.DSleepingPerc = arrayType$4.zero();
-			this.DKilledPerc = arrayType$4.zero();
-			this.DLayout = arrayType$5.zero();
+			this.DExplPerc = arrayType$5.zero();
+			this.DSleepingPerc = arrayType$5.zero();
+			this.DKilledPerc = arrayType$5.zero();
+			this.DLayout = arrayType$6.zero();
 			this.Burns = 0;
 			this.Digs = 0;
 			this.Rest = 0;
@@ -38533,7 +38534,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			this.TWounded = 0;
 			this.TMWounded = 0;
 			this.TMonsLOS = 0;
-			this.UsedRod = arrayType$6.zero();
+			this.UsedRod = arrayType$7.zero();
 			return;
 		}
 		this.Story = Story_;
@@ -38602,45 +38603,46 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	});
 	sliceType = $sliceType(node);
 	arrayType = $arrayType($Int, 1659);
-	sliceType$1 = $sliceType(keyAction);
-	sliceType$2 = $sliceType(monsterData);
-	sliceType$3 = $sliceType($String);
-	sliceType$4 = $sliceType(monsterBandData);
+	arrayType$1 = $arrayType($Int, 2);
+	sliceType$1 = $sliceType(arrayType$1);
+	sliceType$2 = $sliceType(keyAction);
+	sliceType$3 = $sliceType(monsterData);
+	sliceType$4 = $sliceType($String);
+	sliceType$5 = $sliceType(monsterBandData);
 	ptrType = $ptrType(node);
 	ptrType$1 = $ptrType(position);
-	sliceType$5 = $sliceType(position);
+	sliceType$6 = $sliceType(position);
 	ptrType$2 = $ptrType(priorityQueue);
 	ptrType$3 = $ptrType(game);
-	arrayType$1 = $arrayType(position, 8);
-	sliceType$6 = $sliceType($Int);
-	sliceType$7 = $sliceType($emptyInterface);
-	sliceType$8 = $sliceType($Uint8);
-	arrayType$2 = $arrayType($Uint8, 64);
-	arrayType$3 = $arrayType($Bool, 1659);
+	arrayType$2 = $arrayType(position, 8);
+	sliceType$7 = $sliceType($Int);
+	sliceType$8 = $sliceType($emptyInterface);
+	sliceType$9 = $sliceType($Uint8);
+	arrayType$3 = $arrayType($Uint8, 64);
+	arrayType$4 = $arrayType($Bool, 1659);
 	ptrType$4 = $ptrType(examiner);
-	sliceType$9 = $sliceType($Int32);
-	sliceType$10 = $sliceType(dungen);
+	sliceType$10 = $sliceType($Int32);
+	sliceType$11 = $sliceType(dungen);
 	ptrType$5 = $ptrType(dungeon);
-	sliceType$11 = $sliceType(cell);
-	sliceType$12 = $sliceType(room);
+	sliceType$12 = $sliceType(cell);
+	sliceType$13 = $sliceType(room);
 	ptrType$6 = $ptrType(player);
 	ptrType$7 = $ptrType(monster);
-	sliceType$13 = $sliceType(ptrType$7);
-	sliceType$14 = $sliceType(monsterBand);
+	sliceType$14 = $sliceType(ptrType$7);
+	sliceType$15 = $sliceType(monsterBand);
 	ptrType$8 = $ptrType(eventQueue);
-	sliceType$15 = $sliceType(logEntry);
-	arrayType$4 = $arrayType($Int, 13);
-	arrayType$5 = $arrayType($String, 13);
-	arrayType$6 = $arrayType($Int, 9);
+	sliceType$16 = $sliceType(logEntry);
+	arrayType$5 = $arrayType($Int, 13);
+	arrayType$6 = $arrayType($String, 13);
+	arrayType$7 = $arrayType($Int, 9);
 	ptrType$9 = $ptrType(config);
 	ptrType$10 = $ptrType(monsterEvent);
 	ptrType$11 = $ptrType(cloudEvent);
-	sliceType$16 = $sliceType(UICell);
+	sliceType$17 = $sliceType(UICell);
 	ptrType$12 = $ptrType(js.Object);
 	funcType = $funcType([ptrType$12], [], false);
 	funcType$1 = $funcType([ptrType$12], [$Bool], false);
-	sliceType$17 = $sliceType(monsterKind);
-	arrayType$7 = $arrayType($Int, 2);
+	sliceType$18 = $sliceType(monsterKind);
 	mapType = $mapType(position, $Bool);
 	funcType$2 = $funcType([position], [$Bool], false);
 	mapType$1 = $mapType($Int32, keyAction);
@@ -38758,7 +38760,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	AstarPath = function(ast, from, to) {
 		var _entry, _i, _r, _r$1, _r$2, _r$3, _r$4, _ref, _tmp, _tmp$1, _tmp$2, ast, cost, curr, current, found, from, fromNode, length, neighbor, neighborNode, nm, nq, num, p, path, to, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _ref = $f._ref; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; ast = $f.ast; cost = $f.cost; curr = $f.curr; current = $f.current; found = $f.found; from = $f.from; fromNode = $f.fromNode; length = $f.length; neighbor = $f.neighbor; neighborNode = $f.neighborNode; nm = $f.nm; nq = $f.nq; num = $f.num; p = $f.p; path = $f.path; to = $f.to; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-		path = sliceType$5.nil;
+		path = sliceType$6.nil;
 		length = 0;
 		found = false;
 		nodeCache = $subslice(nodeCache, 0, 0);
@@ -38779,7 +38781,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			current.Open = false;
 			current.Closed = true;
 			if ($equal(current.Pos, to, position)) {
-				p = new sliceType$5([]);
+				p = new sliceType$6([]);
 				curr = current;
 				while (true) {
 					p = $append(p, curr.Pos);
@@ -38918,7 +38920,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _entry$2, _i, _r, _ref, _tuple, _tuple$1, c, g, i, np, ok, okc, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _i = $f._i; _r = $f._r; _ref = $f._ref; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; c = $f.c; g = $f.g; i = $f.i; np = $f.np; ok = $f.ok; okc = $f.okc; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		np = new normalPath.ptr(g, arrayType$1.zero());
+		np = new normalPath.ptr(g, arrayType$2.zero());
 		_ref = g.Dungeon.Cells;
 		_i = 0;
 		/* while (true) { */ case 1:
@@ -38958,8 +38960,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _entry$2, _entry$3, _i, _r, _ref, _tuple, _tuple$1, c, g, i, np, ok, okc, pos, sources, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _entry$3 = $f._entry$3; _i = $f._i; _r = $f._r; _ref = $f._ref; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; c = $f.c; g = $f.g; i = $f.i; np = $f.np; ok = $f.ok; okc = $f.okc; pos = $f.pos; sources = $f.sources; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		sources = new sliceType$6([]);
-		np = new normalPath.ptr(g, arrayType$1.zero());
+		sources = new sliceType$7([]);
+		np = new normalPath.ptr(g, arrayType$2.zero());
 		_ref = g.Dungeon.Cells;
 		_i = 0;
 		/* while (true) { */ case 1:
@@ -39003,7 +39005,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var ap, g, sources, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; ap = $f.ap; g = $f.g; sources = $f.sources; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		ap = new autoexplorePath.ptr(g, arrayType$1.zero());
+		ap = new autoexplorePath.ptr(g, arrayType$2.zero());
 		$r = g.AutoExploreDijkstra(ap, sources); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		g.DijkstraMapRebuild = false;
 		$s = -1; return;
@@ -39017,7 +39019,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		next = ptrType$1.nil;
 		finished = false;
 		g = this;
-		ap = new autoexplorePath.ptr(g, arrayType$1.zero());
+		ap = new autoexplorePath.ptr(g, arrayType$2.zero());
 		if ((x = $clone(g.Player.Pos, position).idx(), ((x < 0 || x >= $pkg.DijkstraMapCache.length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.DijkstraMapCache[x])) === 9999) {
 			_tmp = ptrType$1.nil;
 			_tmp$1 = false;
@@ -39090,7 +39092,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (oldHP > max && g.Player.HP <= max) { $s = 2; continue; }
 		/* */ $s = 3; continue;
 		/* if (oldHP > max && g.Player.HP <= max) { */ case 2:
-			$r = g.StoryPrintf("Critical HP: %d (hit by %s)", new sliceType$7([new $Int(g.Player.HP), new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.StoryPrintf("Critical HP: %d (hit by %s)", new sliceType$8([new $Int(g.Player.HP), new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$r = g.ui.CriticalHPWarning(g); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 3:
 		$s = -1; return;
@@ -39132,8 +39134,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _i, _q, _r, _r$1, _ref, _tuple, at, d, dij, g, m, n, nm, noise, ok, r, v, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _i = $f._i; _q = $f._q; _r = $f._r; _r$1 = $f._r$1; _ref = $f._ref; _tuple = $f._tuple; at = $f.at; d = $f.d; dij = $f.dij; g = $f.g; m = $f.m; n = $f.n; nm = $f.nm; noise = $f.noise; ok = $f.ok; r = $f.r; v = $f.v; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		dij = new normalPath.ptr(g, arrayType$1.zero());
-		_r = Dijkstra(dij, new sliceType$5([$clone(at, position)]), noise); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		dij = new normalPath.ptr(g, arrayType$2.zero());
+		_r = Dijkstra(dij, new sliceType$6([$clone(at, position)]), noise); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nm = _r;
 		_ref = g.Monsters;
 		_i = 0;
@@ -39219,11 +39221,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* */ $s = 14; continue;
 				/* if (_r$1 === 0) { */ case 13:
 					$r = mons.EnterConfusion(g, ev); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					$r = g.PrintfStyled("Frundis glows\xE2\x80\xA6 the %s appears confused.", 2, new sliceType$7([new monsterKind(mons.Kind)])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$r = g.PrintfStyled("Frundis glows\xE2\x80\xA6 the %s appears confused.", 2, new sliceType$8([new monsterKind(mons.Kind)])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* } */ case 14:
 				$s = 8; continue;
 			/* } else if (new weapon(g.Player.Weapon).Cleave()) { */ case 4:
-				neighbors = sliceType$5.nil;
+				neighbors = sliceType$6.nil;
 				/* */ if (g.Player.HasStatus(6)) { $s = 18; continue; }
 				/* */ $s = 19; continue;
 				/* if (g.Player.HasStatus(6)) { */ case 18:
@@ -39295,9 +39297,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		g = this;
 		d[0] = g.Dungeon;
 		conn = $makeMap(position.keyFor, []);
-		stack = new sliceType$5([$clone(pos, position)]);
+		stack = new sliceType$6([$clone(pos, position)]);
 		_key = $clone(pos, position); (conn || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key)] = { k: _key, v: true };
-		nb = $makeSlice(sliceType$5, 0, 8);
+		nb = $makeSlice(sliceType$6, 0, 8);
 		/* while (true) { */ case 1:
 			/* if (!(stack.$length > 0)) { break; } */ if(!(stack.$length > 0)) { $s = 2; continue; }
 			position.copy(pos, (x = stack.$length - 1 >> 0, ((x < 0 || x >= stack.$length) ? ($throwRuntimeError("index out of range"), undefined) : stack.$array[stack.$offset + x])));
@@ -39393,13 +39395,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_r$4 = new monsterKind(mons.Kind).Definite(false); /* */ $s = 15; case 15: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 				_arg = new $String(_r$4);
 				_arg$1 = new $Int(attack);
-				$r = g.PrintfStyled("You hit %s (%d dmg).", 2, new sliceType$7([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("You hit %s (%d dmg).", 2, new sliceType$8([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 14; continue;
 			/* } else if (oldHP > 0) { */ case 13:
 				_r$5 = new monsterKind(mons.Kind).Definite(false); /* */ $s = 17; case 17: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 				_arg$2 = new $String(_r$5);
 				_arg$3 = new $Int(attack);
-				$r = g.PrintfStyled("You kill %s (%d dmg).", 2, new sliceType$7([_arg$2, _arg$3])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("You kill %s (%d dmg).", 2, new sliceType$8([_arg$2, _arg$3])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = g.HandleKill(mons, ev); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 14:
 			if (!(mons.Kind === 4)) { _v = false; $s = 22; continue s; }
@@ -39419,7 +39421,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* } else { */ case 4:
 			_r$9 = new monsterKind(mons.Kind).Definite(false); /* */ $s = 27; case 27: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 			_arg$4 = new $String(_r$9);
-			$r = g.Printf("You miss %s.", new sliceType$7([_arg$4])); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You miss %s.", new sliceType$8([_arg$4])); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			g.Stats.Misses = g.Stats.Misses + (1) >> 0;
 		/* } */ case 5:
 		$r = mons.MakeHuntIfHurt(g); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -39447,7 +39449,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (new monsterKind(mons.Kind).Dangerousness() > 10) { $s = 7; continue; }
 		/* */ $s = 8; continue;
 		/* if (new monsterKind(mons.Kind).Dangerousness() > 10) { */ case 7:
-			$r = g.StoryPrintf("You killed %s.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(false))])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.StoryPrintf("You killed %s.", new sliceType$8([new $String(new monsterKind(mons.Kind).Indefinite(false))])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 8:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.HandleKill }; } $f._entry = _entry; $f._entry$1 = _entry$1; $f._key = _key; $f.ev = ev; $f.g = g; $f.mons = mons; $f.$s = $s; $f.$r = $r; return $f;
@@ -39523,8 +39525,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _i$1 = $f._i$1; _r = $f._r; _ref = $f._ref; _ref$1 = $f._ref$1; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; cidx = $f.cidx; cpos = $f.cpos; d = $f.d; dij = $f.dij; dmap = $f.dmap; g = $f.g; i = $f.i; nidx = $f.nidx; npos = $f.npos; qend = $f.qend; qstart = $f.qstart; queue = $f.queue; s = $f.s; sources = $f.sources; visited = $f.visited; x = $f.x; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		d = g.Dungeon;
-		dmap = new sliceType$6($pkg.DijkstraMapCache);
-		visited = arrayType$3.zero();
+		dmap = new sliceType$7($pkg.DijkstraMapCache);
+		visited = arrayType$4.zero();
 		queue = arrayType.zero();
 		_tmp = 0;
 		_tmp$1 = 0;
@@ -39641,7 +39643,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		line = 5;
 		rcol = col + 20 >> 0;
 		ColorText = $pkg.ColorFgHPok;
-		_r = fmt.Sprintf("       Boohu %s", new sliceType$7([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("       Boohu %s", new sliceType$8([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$r = ui.DrawDark(_r, col, line - 2 >> 0, ColorText); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		ui.DrawDark("\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80\xE2\x94\x82\\/\\/\\/\\/\\/\\/\\/\xE2\x94\x82\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80", col, line, ColorText);
 		line = line + (1) >> 0;
@@ -39986,14 +39988,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	$ptrType(keyAction).prototype.TargetingModeKey = function() { return new keyAction(this.$get()).TargetingModeKey(); };
 	ApplyDefaultKeyBindings = function() {
-		runeNormalKeyActions = $makeMap($Int32.keyFor, [{ k: 104, v: 1 }, { k: 106, v: 2 }, { k: 107, v: 3 }, { k: 108, v: 4 }, { k: 121, v: 5 }, { k: 117, v: 6 }, { k: 98, v: 7 }, { k: 110, v: 8 }, { k: 52, v: 1 }, { k: 50, v: 2 }, { k: 56, v: 3 }, { k: 54, v: 4 }, { k: 55, v: 5 }, { k: 57, v: 6 }, { k: 49, v: 7 }, { k: 51, v: 8 }, { k: 72, v: 9 }, { k: 74, v: 10 }, { k: 75, v: 11 }, { k: 76, v: 12 }, { k: 89, v: 13 }, { k: 85, v: 14 }, { k: 66, v: 15 }, { k: 78, v: 16 }, { k: 46, v: 18 }, { k: 53, v: 18 }, { k: 114, v: 17 }, { k: 62, v: 19 }, { k: 68, v: 19 }, { k: 71, v: 20 }, { k: 111, v: 21 }, { k: 120, v: 22 }, { k: 101, v: 23 }, { k: 103, v: 23 }, { k: 44, v: 23 }, { k: 113, v: 24 }, { k: 100, v: 24 }, { k: 116, v: 25 }, { k: 102, v: 25 }, { k: 118, v: 26 }, { k: 122, v: 26 }, { k: 37, v: 27 }, { k: 67, v: 27 }, { k: 109, v: 28 }, { k: 35, v: 29 }, { k: 63, v: 30 }, { k: 83, v: 31 }, { k: 81, v: 32 }, { k: 87, v: 33 }, { k: 64, v: 34 }, { k: 61, v: 42 }, { k: 77, v: 43 }, { k: 97, v: 43 }]);
-		runeTargetingKeyActions = $makeMap($Int32.keyFor, [{ k: 104, v: 1 }, { k: 106, v: 2 }, { k: 107, v: 3 }, { k: 108, v: 4 }, { k: 121, v: 5 }, { k: 117, v: 6 }, { k: 98, v: 7 }, { k: 110, v: 8 }, { k: 52, v: 1 }, { k: 50, v: 2 }, { k: 56, v: 3 }, { k: 54, v: 4 }, { k: 55, v: 5 }, { k: 57, v: 6 }, { k: 49, v: 7 }, { k: 51, v: 8 }, { k: 72, v: 9 }, { k: 74, v: 10 }, { k: 75, v: 11 }, { k: 76, v: 12 }, { k: 89, v: 13 }, { k: 85, v: 14 }, { k: 66, v: 15 }, { k: 78, v: 16 }, { k: 62, v: 44 }, { k: 45, v: 35 }, { k: 43, v: 36 }, { k: 111, v: 37 }, { k: 118, v: 38 }, { k: 100, v: 38 }, { k: 46, v: 39 }, { k: 101, v: 40 }, { k: 32, v: 41 }, { k: 27, v: 41 }, { k: 63, v: 30 }, { k: 77, v: 43 }]);
+		runeNormalKeyActions = $makeMap($Int32.keyFor, [{ k: 104, v: 1 }, { k: 106, v: 2 }, { k: 107, v: 3 }, { k: 108, v: 4 }, { k: 121, v: 5 }, { k: 117, v: 6 }, { k: 98, v: 7 }, { k: 110, v: 8 }, { k: 52, v: 1 }, { k: 50, v: 2 }, { k: 56, v: 3 }, { k: 54, v: 4 }, { k: 55, v: 5 }, { k: 57, v: 6 }, { k: 49, v: 7 }, { k: 51, v: 8 }, { k: 72, v: 9 }, { k: 74, v: 10 }, { k: 75, v: 11 }, { k: 76, v: 12 }, { k: 89, v: 13 }, { k: 85, v: 14 }, { k: 66, v: 15 }, { k: 78, v: 16 }, { k: 46, v: 18 }, { k: 53, v: 18 }, { k: 114, v: 17 }, { k: 62, v: 19 }, { k: 68, v: 19 }, { k: 71, v: 20 }, { k: 111, v: 21 }, { k: 120, v: 22 }, { k: 101, v: 23 }, { k: 103, v: 23 }, { k: 44, v: 23 }, { k: 113, v: 24 }, { k: 100, v: 24 }, { k: 116, v: 25 }, { k: 102, v: 25 }, { k: 118, v: 26 }, { k: 122, v: 26 }, { k: 37, v: 27 }, { k: 67, v: 27 }, { k: 109, v: 28 }, { k: 35, v: 29 }, { k: 63, v: 30 }, { k: 83, v: 31 }, { k: 81, v: 32 }, { k: 87, v: 33 }, { k: 64, v: 34 }, { k: 61, v: 42 }]);
+		runeTargetingKeyActions = $makeMap($Int32.keyFor, [{ k: 104, v: 1 }, { k: 106, v: 2 }, { k: 107, v: 3 }, { k: 108, v: 4 }, { k: 121, v: 5 }, { k: 117, v: 6 }, { k: 98, v: 7 }, { k: 110, v: 8 }, { k: 52, v: 1 }, { k: 50, v: 2 }, { k: 56, v: 3 }, { k: 54, v: 4 }, { k: 55, v: 5 }, { k: 57, v: 6 }, { k: 49, v: 7 }, { k: 51, v: 8 }, { k: 72, v: 9 }, { k: 74, v: 10 }, { k: 75, v: 11 }, { k: 76, v: 12 }, { k: 89, v: 13 }, { k: 85, v: 14 }, { k: 66, v: 15 }, { k: 78, v: 16 }, { k: 62, v: 44 }, { k: 45, v: 35 }, { k: 43, v: 36 }, { k: 111, v: 37 }, { k: 118, v: 38 }, { k: 100, v: 38 }, { k: 46, v: 39 }, { k: 101, v: 40 }, { k: 32, v: 41 }, { k: 27, v: 41 }, { k: 63, v: 30 }]);
 		$pkg.CustomKeys = false;
 	};
 	$pkg.ApplyDefaultKeyBindings = ApplyDefaultKeyBindings;
 	termui.ptr.prototype.HandleKeyAction = function(g, rka) {
-		var _1, _entry, _r, _r$1, _r$2, _tmp, _tmp$1, _tmp$2, _tmp$3, _tmp$4, _tmp$5, _tuple, _tuple$1, _tuple$2, again, err, g, ok, quit, rka, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tmp$4 = $f._tmp$4; _tmp$5 = $f._tmp$5; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; again = $f.again; err = $f.err; g = $f.g; ok = $f.ok; quit = $f.quit; rka = $f.rka; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _1, _entry, _r, _r$1, _r$2, _r$3, _tmp, _tmp$1, _tmp$2, _tmp$3, _tmp$4, _tmp$5, _tuple, _tuple$1, _tuple$2, again, err, g, ok, quit, rka, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tmp$4 = $f._tmp$4; _tmp$5 = $f._tmp$5; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; again = $f.again; err = $f.err; g = $f.g; ok = $f.ok; quit = $f.quit; rka = $f.rka; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		err = $ifaceNil;
 		again = false;
 		quit = false;
@@ -40015,7 +40017,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						err = errors.New("Unknown key. Did you mean capital S for save and quit?");
 						$s = 8; continue;
 					/* } else { */ case 7:
-						_r = fmt.Errorf("Unknown key '%c'. Type ? for help.", new sliceType$7([new $Int32(rka.r)])); /* */ $s = 9; case 9: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+						_r = fmt.Errorf("Unknown key '%c'. Type ? for help.", new sliceType$8([new $Int32(rka.r)])); /* */ $s = 9; case 9: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 						err = _r;
 					/* } */ case 8:
 				case 5:
@@ -40035,7 +40037,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_tuple$1 = _r$1;
 			rka.k = _tuple$1[0];
 			err = _tuple$1[1];
-			if (!($interfaceIsEqual(err, $ifaceNil))) {
+			/* */ if (!($interfaceIsEqual(err, $ifaceNil))) { $s = 13; continue; }
+			/* */ $s = 14; continue;
+			/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 13:
+				_r$2 = ui.CleanError(err); /* */ $s = 15; case 15: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				err = _r$2;
 				_tmp$3 = err;
 				_tmp$4 = again;
 				_tmp$5 = quit;
@@ -40043,15 +40049,15 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				again = _tmp$4;
 				quit = _tmp$5;
 				$s = -1; return [err, again, quit];
-			}
+			/* } */ case 14:
 		/* } */ case 11:
-		_r$2 = ui.HandleKey(g, $clone(rka, runeKeyAction)); /* */ $s = 13; case 13: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-		_tuple$2 = _r$2;
+		_r$3 = ui.HandleKey(g, $clone(rka, runeKeyAction)); /* */ $s = 16; case 16: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+		_tuple$2 = _r$3;
 		err = _tuple$2[0];
 		again = _tuple$2[1];
 		quit = _tuple$2[2];
 		$s = -1; return [err, again, quit];
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.HandleKeyAction }; } $f._1 = _1; $f._entry = _entry; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tmp$4 = _tmp$4; $f._tmp$5 = _tmp$5; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f.again = again; $f.err = err; $f.g = g; $f.ok = ok; $f.quit = quit; $f.rka = rka; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.HandleKeyAction }; } $f._1 = _1; $f._entry = _entry; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tmp$4 = _tmp$4; $f._tmp$5 = _tmp$5; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f.again = again; $f.err = err; $f.g = g; $f.ok = ok; $f.quit = quit; $f.rka = rka; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.HandleKeyAction = function(g, rka) { return this.$val.HandleKeyAction(g, rka); };
 	termui.ptr.prototype.HandleKey = function(g, rka) {
@@ -40100,16 +40106,17 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* } else if (_1 === (17)) { */ case 5:
 				_r$2 = g.Rest(g.Ev); /* */ $s = 30; case 30: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 				err = _r$2;
+				$r = ui.MenuSelectedAnimation(g, 0, $interfaceIsEqual(err, $ifaceNil)); /* */ $s = 31; case 31: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 26; continue;
 			/* } else if (_1 === (19)) { */ case 6:
-				/* */ if ((_entry = g.Stairs[position.keyFor(g.Player.Pos)], _entry !== undefined ? _entry.v : false)) { $s = 31; continue; }
-				/* */ $s = 32; continue;
-				/* if ((_entry = g.Stairs[position.keyFor(g.Player.Pos)], _entry !== undefined ? _entry.v : false)) { */ case 31:
-					_r$3 = g.Descend(); /* */ $s = 36; case 36: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-					/* */ if (_r$3) { $s = 34; continue; }
-					/* */ $s = 35; continue;
-					/* if (_r$3) { */ case 34:
-						$r = ui.Win(g); /* */ $s = 37; case 37: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* */ if ((_entry = g.Stairs[position.keyFor(g.Player.Pos)], _entry !== undefined ? _entry.v : false)) { $s = 32; continue; }
+				/* */ $s = 33; continue;
+				/* if ((_entry = g.Stairs[position.keyFor(g.Player.Pos)], _entry !== undefined ? _entry.v : false)) { */ case 32:
+					_r$3 = g.Descend(); /* */ $s = 37; case 37: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+					/* */ if (_r$3) { $s = 35; continue; }
+					/* */ $s = 36; continue;
+					/* if (_r$3) { */ case 35:
+						$r = ui.Win(g); /* */ $s = 38; case 38: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 						quit = true;
 						_tmp = err;
 						_tmp$1 = again;
@@ -40118,138 +40125,139 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						again = _tmp$1;
 						quit = _tmp$2;
 						$s = -1; return [err, again, quit];
-					/* } */ case 35:
-					$r = ui.DrawDungeonView(g, 0); /* */ $s = 38; case 38: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					$s = 33; continue;
-				/* } else { */ case 32:
+					/* } */ case 36:
+					$r = ui.DrawDungeonView(g, 0); /* */ $s = 39; case 39: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$s = 34; continue;
+				/* } else { */ case 33:
 					err = errors.New("No stairs here.");
-				/* } */ case 33:
+				/* } */ case 34:
 				$s = 26; continue;
 			/* } else if (_1 === (20)) { */ case 7:
 				stairs = g.StairsSlice();
-				_r$4 = g.SortedNearestTo(stairs, $clone(g.Player.Pos, position)); /* */ $s = 39; case 39: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+				_r$4 = g.SortedNearestTo(stairs, $clone(g.Player.Pos, position)); /* */ $s = 40; case 40: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 				sortedStairs = _r$4;
-				/* */ if (sortedStairs.$length > 0) { $s = 40; continue; }
-				/* */ $s = 41; continue;
-				/* if (sortedStairs.$length > 0) { */ case 40:
+				/* */ if (sortedStairs.$length > 0) { $s = 41; continue; }
+				/* */ $s = 42; continue;
+				/* if (sortedStairs.$length > 0) { */ case 41:
 					stair = $clone((0 >= sortedStairs.$length ? ($throwRuntimeError("index out of range"), undefined) : sortedStairs.$array[sortedStairs.$offset + 0]), position);
 					if ($equal(g.Player.Pos, stair, position)) {
 						err = errors.New("You are already on the stairs.");
 						/* break; */ $s = 1; continue;
 					}
 					ex = new examiner.ptr(false, true);
-					_r$5 = ex.Action(g, $clone(stair, position)); /* */ $s = 43; case 43: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+					_r$5 = ex.Action(g, $clone(stair, position)); /* */ $s = 44; case 44: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 					err = _r$5;
-					if (!($interfaceIsEqual(err, $ifaceNil))) { _v = false; $s = 46; continue s; }
-					_r$6 = g.MoveToTarget(g.Ev); /* */ $s = 47; case 47: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
-					_v = !_r$6; case 46:
-					/* */ if (_v) { $s = 44; continue; }
-					/* */ $s = 45; continue;
-					/* if (_v) { */ case 44:
+					if (!($interfaceIsEqual(err, $ifaceNil))) { _v = false; $s = 47; continue s; }
+					_r$6 = g.MoveToTarget(g.Ev); /* */ $s = 48; case 48: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+					_v = !_r$6; case 47:
+					/* */ if (_v) { $s = 45; continue; }
+					/* */ $s = 46; continue;
+					/* if (_v) { */ case 45:
 						err = errors.New("You could not move toward stairs.");
-					/* } */ case 45:
+					/* } */ case 46:
 					if (ex.Done()) {
 						position.copy(g.Targeting, $pkg.InvalidPos);
 					}
-					$s = 42; continue;
-				/* } else { */ case 41:
+					$s = 43; continue;
+				/* } else { */ case 42:
 					err = errors.New("You cannot go to any stairs.");
-				/* } */ case 42:
+				/* } */ case 43:
 				$s = 26; continue;
 			/* } else if (_1 === (23)) { */ case 8:
-				_r$7 = ui.Equip(g, g.Ev); /* */ $s = 48; case 48: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+				_r$7 = ui.Equip(g, g.Ev); /* */ $s = 49; case 49: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 				err = _r$7;
 				$s = 26; continue;
 			/* } else if (_1 === (24)) { */ case 9:
-				_r$8 = ui.SelectPotion(g, g.Ev); /* */ $s = 49; case 49: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+				_r$8 = ui.SelectPotion(g, g.Ev); /* */ $s = 50; case 50: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 				err = _r$8;
-				_r$9 = ui.CleanError(err); /* */ $s = 50; case 50: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+				_r$9 = ui.CleanError(err); /* */ $s = 51; case 51: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 				err = _r$9;
 				$s = 26; continue;
 			/* } else if (_1 === (25)) { */ case 10:
-				_r$10 = ui.SelectProjectile(g, g.Ev); /* */ $s = 51; case 51: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+				_r$10 = ui.SelectProjectile(g, g.Ev); /* */ $s = 52; case 52: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 				err = _r$10;
-				_r$11 = ui.CleanError(err); /* */ $s = 52; case 52: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
+				_r$11 = ui.CleanError(err); /* */ $s = 53; case 53: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
 				err = _r$11;
 				$s = 26; continue;
 			/* } else if (_1 === (26)) { */ case 11:
-				_r$12 = ui.SelectRod(g, g.Ev); /* */ $s = 53; case 53: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+				_r$12 = ui.SelectRod(g, g.Ev); /* */ $s = 54; case 54: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 				err = _r$12;
-				_r$13 = ui.CleanError(err); /* */ $s = 54; case 54: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
+				_r$13 = ui.CleanError(err); /* */ $s = 55; case 55: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
 				err = _r$13;
 				$s = 26; continue;
 			/* } else if (_1 === (21)) { */ case 12:
-				_r$14 = g.Autoexplore(g.Ev); /* */ $s = 55; case 55: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
+				_r$14 = g.Autoexplore(g.Ev); /* */ $s = 56; case 56: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
 				err = _r$14;
+				$r = ui.MenuSelectedAnimation(g, 1, $interfaceIsEqual(err, $ifaceNil)); /* */ $s = 57; case 57: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 26; continue;
 			/* } else if (_1 === (22)) { */ case 13:
-				_r$15 = ui.Examine(g, ptrType$1.nil); /* */ $s = 56; case 56: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
+				_r$15 = ui.Examine(g, ptrType$1.nil); /* */ $s = 58; case 58: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
 				_tuple = _r$15;
 				err = _tuple[0];
 				again = _tuple[1];
 				quit = _tuple[2];
 				$s = 26; continue;
 			/* } else if (_1 === (30)) { */ case 14:
-				$r = ui.KeysHelp(g); /* */ $s = 57; case 57: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.KeysHelp(g); /* */ $s = 59; case 59: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				again = true;
 				$s = 26; continue;
 			/* } else if (_1 === (27)) { */ case 15:
-				$r = ui.CharacterInfo(g); /* */ $s = 58; case 58: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.CharacterInfo(g); /* */ $s = 60; case 60: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				again = true;
 				$s = 26; continue;
 			/* } else if (_1 === (28)) { */ case 16:
-				$r = ui.DrawPreviousLogs(g); /* */ $s = 59; case 59: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.DrawPreviousLogs(g); /* */ $s = 61; case 61: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				again = true;
 				$s = 26; continue;
 			/* } else if (_1 === (31)) { */ case 17:
-				$r = g.Ev.Renew(g, 0); /* */ $s = 60; case 60: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				_r$16 = g.Save(); /* */ $s = 61; case 61: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
+				$r = g.Ev.Renew(g, 0); /* */ $s = 62; case 62: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_r$16 = g.Save(); /* */ $s = 63; case 63: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
 				err$1 = _r$16;
-				/* */ if (!($interfaceIsEqual(err$1, $ifaceNil))) { $s = 62; continue; }
-				/* */ $s = 63; continue;
-				/* if (!($interfaceIsEqual(err$1, $ifaceNil))) { */ case 62:
-					$r = g.PrintfStyled("Error: %v", 6, new sliceType$7([err$1])); /* */ $s = 65; case 65: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* */ if (!($interfaceIsEqual(err$1, $ifaceNil))) { $s = 64; continue; }
+				/* */ $s = 65; continue;
+				/* if (!($interfaceIsEqual(err$1, $ifaceNil))) { */ case 64:
+					$r = g.PrintfStyled("Error: %v", 6, new sliceType$8([err$1])); /* */ $s = 67; case 67: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					g.PrintStyled("Could not save game.", 6);
-					$s = 64; continue;
-				/* } else { */ case 63:
+					$s = 66; continue;
+				/* } else { */ case 65:
 					quit = true;
-				/* } */ case 64:
+				/* } */ case 66:
 				$s = 26; continue;
 			/* } else if (_1 === (29)) { */ case 18:
-				_r$17 = g.WriteDump(); /* */ $s = 66; case 66: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
+				_r$17 = g.WriteDump(); /* */ $s = 68; case 68: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
 				err$2 = _r$17;
-				/* */ if (!($interfaceIsEqual(err$2, $ifaceNil))) { $s = 67; continue; }
-				/* */ $s = 68; continue;
-				/* if (!($interfaceIsEqual(err$2, $ifaceNil))) { */ case 67:
+				/* */ if (!($interfaceIsEqual(err$2, $ifaceNil))) { $s = 69; continue; }
+				/* */ $s = 70; continue;
+				/* if (!($interfaceIsEqual(err$2, $ifaceNil))) { */ case 69:
 					g.PrintStyled("Error writing dump to file.", 6);
-					$s = 69; continue;
-				/* } else { */ case 68:
+					$s = 71; continue;
+				/* } else { */ case 70:
 					_tuple$1 = g.DataDir();
 					dataDir = _tuple$1[0];
-					/* */ if (!(dataDir === "")) { $s = 70; continue; }
-					/* */ $s = 71; continue;
-					/* if (!(dataDir === "")) { */ case 70:
-						$r = g.Printf("Dump written to %s.", new sliceType$7([new $String(filepath.Join(new sliceType$3([dataDir, "dump"])))])); /* */ $s = 73; case 73: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-						$s = 72; continue;
-					/* } else { */ case 71:
+					/* */ if (!(dataDir === "")) { $s = 72; continue; }
+					/* */ $s = 73; continue;
+					/* if (!(dataDir === "")) { */ case 72:
+						$r = g.Printf("Dump written to %s.", new sliceType$8([new $String(filepath.Join(new sliceType$4([dataDir, "dump"])))])); /* */ $s = 75; case 75: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$s = 74; continue;
+					/* } else { */ case 73:
 						g.Print("Dump written.");
-					/* } */ case 72:
-				/* } */ case 69:
+					/* } */ case 74:
+				/* } */ case 71:
 				again = true;
 				$s = 26; continue;
 			/* } else if (_1 === (34)) { */ case 19:
-				/* */ if (g.Wizard) { $s = 74; continue; }
-				/* */ $s = 75; continue;
-				/* if (g.Wizard) { */ case 74:
-					$r = ui.WizardInfo(g); /* */ $s = 77; case 77: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* */ if (g.Wizard) { $s = 76; continue; }
+				/* */ $s = 77; continue;
+				/* if (g.Wizard) { */ case 76:
+					$r = ui.WizardInfo(g); /* */ $s = 79; case 79: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					again = true;
-					$s = 76; continue;
-				/* } else { */ case 75:
+					$s = 78; continue;
+				/* } else { */ case 77:
 					err = errors.New("Unknown key. Type ? for help.");
-				/* } */ case 76:
+				/* } */ case 78:
 				$s = 26; continue;
 			/* } else if (_1 === (33)) { */ case 20:
-				$r = ui.EnterWizard(g); /* */ $s = 78; case 78: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.EnterWizard(g); /* */ $s = 80; case 80: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_tmp$3 = $ifaceNil;
 				_tmp$4 = true;
 				_tmp$5 = false;
@@ -40258,10 +40266,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				quit = _tmp$5;
 				$s = -1; return [err, again, quit];
 			/* } else if (_1 === (32)) { */ case 21:
-				_r$18 = ui.Quit(g); /* */ $s = 81; case 81: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
-				/* */ if (_r$18) { $s = 79; continue; }
-				/* */ $s = 80; continue;
-				/* if (_r$18) { */ case 79:
+				_r$18 = ui.Quit(g); /* */ $s = 83; case 83: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
+				/* */ if (_r$18) { $s = 81; continue; }
+				/* */ $s = 82; continue;
+				/* if (_r$18) { */ case 81:
 					_tmp$6 = $ifaceNil;
 					_tmp$7 = false;
 					_tmp$8 = true;
@@ -40269,7 +40277,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					again = _tmp$7;
 					quit = _tmp$8;
 					$s = -1; return [err, again, quit];
-				/* } */ case 80:
+				/* } */ case 82:
 				_tmp$9 = $ifaceNil;
 				_tmp$10 = true;
 				_tmp$11 = false;
@@ -40278,19 +40286,20 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				quit = _tmp$11;
 				$s = -1; return [err, again, quit];
 			/* } else if (_1 === (42)) { */ case 22:
-				$r = ui.Configure(g); /* */ $s = 82; case 82: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.Configure(g); /* */ $s = 84; case 84: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				again = true;
 				$s = 26; continue;
 			/* } else if (_1 === (38)) { */ case 23:
-				_r$19 = fmt.Errorf("Invalid action: no chosen target to describe.", new sliceType$7([])); /* */ $s = 83; case 83: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
+				$r = ui.MenuSelectedAnimation(g, 5, false); /* */ $s = 85; case 85: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_r$19 = fmt.Errorf("You must choose a target to describe.", new sliceType$8([])); /* */ $s = 86; case 86: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
 				err = _r$19;
 				$s = 26; continue;
 			/* } else if (_1 === (40)) { */ case 24:
-				_r$20 = fmt.Errorf("Invalid action: no chosen target for exclusion.", new sliceType$7([])); /* */ $s = 84; case 84: if($c) { $c = false; _r$20 = _r$20.$blk(); } if (_r$20 && _r$20.$blk !== undefined) { break s; }
+				_r$20 = fmt.Errorf("You must choose a target for exclusion.", new sliceType$8([])); /* */ $s = 87; case 87: if($c) { $c = false; _r$20 = _r$20.$blk(); } if (_r$20 && _r$20.$blk !== undefined) { break s; }
 				err = _r$20;
 				$s = 26; continue;
 			/* } else { */ case 25:
-				_r$21 = fmt.Errorf("Unknown key '%c'. Type ? for help.", new sliceType$7([new $Int32(rka.r)])); /* */ $s = 85; case 85: if($c) { $c = false; _r$21 = _r$21.$blk(); } if (_r$21 && _r$21.$blk !== undefined) { break s; }
+				_r$21 = fmt.Errorf("Unknown key '%c'. Type ? for help.", new sliceType$8([new $Int32(rka.r)])); /* */ $s = 88; case 88: if($c) { $c = false; _r$21 = _r$21.$blk(); } if (_r$21 && _r$21.$blk !== undefined) { break s; }
 				err = _r$21;
 			/* } */ case 26:
 		case 1:
@@ -40393,11 +40402,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if ($pkg.CustomKeys) { $s = 2; continue; }
 		/* */ $s = 3; continue;
 		/* if ($pkg.CustomKeys) { */ case 2:
-			_r = fmt.Sprintf(" Default %s ", new sliceType$7([new $String(title)])); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			_r = fmt.Sprintf(" Default %s ", new sliceType$8([new $String(title)])); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			$r = ui.DrawStyledTextLine(_r, 0, 1); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 4; continue;
 		/* } else { */ case 3:
-			_r$1 = fmt.Sprintf(" %s ", new sliceType$7([new $String(title)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+			_r$1 = fmt.Sprintf(" %s ", new sliceType$8([new $String(title)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 			$r = ui.DrawStyledTextLine(_r$1, 0, 1); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 4:
 		i = 0;
@@ -40405,7 +40414,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* if (!(i < (actions.$length - 1 >> 0))) { break; } */ if(!(i < (actions.$length - 1 >> 0))) { $s = 10; continue; }
 			bg = ui.ListItemBG((_q = i / 2, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero")));
 			ui.ClearLineWithColor((_q$1 = i / 2, (_q$1 === _q$1 && _q$1 !== 1/0 && _q$1 !== -1/0) ? _q$1 >> 0 : $throwRuntimeError("integer divide by zero")) + 1 >> 0, bg);
-			_r$2 = fmt.Sprintf(" %-36s %s", new sliceType$7([new $String(((i < 0 || i >= actions.$length) ? ($throwRuntimeError("index out of range"), undefined) : actions.$array[actions.$offset + i])), new $String((x = i + 1 >> 0, ((x < 0 || x >= actions.$length) ? ($throwRuntimeError("index out of range"), undefined) : actions.$array[actions.$offset + x])))])); /* */ $s = 11; case 11: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Sprintf(" %-36s %s", new sliceType$8([new $String(((i < 0 || i >= actions.$length) ? ($throwRuntimeError("index out of range"), undefined) : actions.$array[actions.$offset + i])), new $String((x = i + 1 >> 0, ((x < 0 || x >= actions.$length) ? ($throwRuntimeError("index out of range"), undefined) : actions.$array[actions.$offset + x])))])); /* */ $s = 11; case 11: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			$r = ui.DrawColoredTextOnBG(_r$2, 0, (_q$2 = i / 2, (_q$2 === _q$2 && _q$2 !== 1/0 && _q$2 !== -1/0) ? _q$2 >> 0 : $throwRuntimeError("integer divide by zero")) + 1 >> 0, $pkg.ColorFg, bg); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			i = i + (2) >> 0;
 		/* } */ $s = 9; continue; case 10:
@@ -40421,7 +40430,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var g, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; g = $f.g; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		$r = ui.DrawKeysDescription(g, "Keys", new sliceType$3(["Movement", "h/j/k/l/y/u/b/n or numpad or mouse left", "Rest", "r", "Wait a turn", "\xE2\x80\x9C.\xE2\x80\x9D or 5", "Descend stairs", "> or D", "Go to nearest stairs", "G", "Autoexplore", "o", "Examine", "x or mouse left", "Equip/Get weapon/armour/...", "e or g", "Quaff/Drink potion", "q or d", "Throw/Fire item", "t or f", "Evoke/Zap rod", "v or z", "View Character and Quest Information", "% or C", "View previous messages", "m", "Write game statistics to file", "#", "Save and Quit", "S", "Quit without saving", "Q", "Action Menu", "a or M", "Change key bindings", "="])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawKeysDescription(g, "Keys", new sliceType$4(["Movement", "h/j/k/l/y/u/b/n or numpad or mouse left", "Rest", "r", "Wait a turn", "\xE2\x80\x9C.\xE2\x80\x9D or 5", "Descend stairs", "> or D", "Go to nearest stairs", "G", "Autoexplore", "o", "Examine", "x or mouse left", "Equip/Get weapon/armour/...", "e or g", "Quaff/Drink potion", "q or d", "Throw/Fire item", "t or f", "Evoke/Zap rod", "v or z", "View Character and Quest Information", "% or C", "View previous messages", "m", "Write game statistics to file", "#", "Save and Quit", "S", "Quit without saving", "Q", "Change key bindings", "="])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.KeysHelp }; } $f.g = g; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -40430,7 +40439,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var g, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; g = $f.g; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		$r = ui.DrawKeysDescription(g, "Targeting Keys", new sliceType$3(["Move cursor", "h/j/k/l/y/u/b/n or numpad or mouse left", "Cycle through monsters", "+", "Cycle through stairs", ">", "Cycle through objects", "o", "Go to/select target", "\xE2\x80\x9C.\xE2\x80\x9D or enter or mouse left", "View target description", "v or d", "Toggle exclude area from auto-travel", "e"])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ui.DrawKeysDescription(g, "Targeting Keys", new sliceType$4(["Move cursor", "h/j/k/l/y/u/b/n or numpad or mouse left", "Cycle through monsters", "+", "Cycle through stairs", ">", "Cycle through objects", "o", "Go to/select target", "\xE2\x80\x9C.\xE2\x80\x9D or enter or mouse left", "View target description", "v or d", "Toggle exclude area from auto-travel", "e"])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ExamineHelp }; } $f.g = g; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -40449,18 +40458,18 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; b = $f.b; desc = $f.desc; escspace = $f.escspace; g = $f.g; i = $f.i; lines = $f.lines; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		$r = ui.DrawDungeonView(g, 2); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		b = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
+		b = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
 		b.WriteString(formatText("Every year, the elders send someone to collect medicinal simella plants in the Underground.  This year, the honor fell upon you, and so here you are.  According to the elders, deep in the Underground, magical stairs will lead you back to your village.  Along the way, you will collect simellas, as well as various items that will help you deal with monsters, which you may fight or flee...", 77));
 		b.WriteString("\n\n");
 		_arg = new $String(Indefinite(new weapon(g.Player.Weapon).String(), false));
 		_r = new weapon(g.Player.Weapon).Desc(); /* */ $s = 2; case 2: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_arg$1 = new $String(_r);
-		_r$1 = fmt.Sprintf("You are wielding %s. %s", new sliceType$7([_arg, _arg$1])); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Sprintf("You are wielding %s. %s", new sliceType$8([_arg, _arg$1])); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_r$2 = formatText(_r$1, 77); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		_r$3 = b.WriteString(_r$2); /* */ $s = 5; case 5: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 		_r$3;
 		b.WriteString("\n\n");
-		_r$4 = fmt.Sprintf("You are wearing a %s. %s", new sliceType$7([new armour(g.Player.Armour), new $String(new armour(g.Player.Armour).Desc())])); /* */ $s = 6; case 6: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+		_r$4 = fmt.Sprintf("You are wearing a %s. %s", new sliceType$8([new armour(g.Player.Armour), new $String(new armour(g.Player.Armour).Desc())])); /* */ $s = 6; case 6: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 		_r$5 = formatText(_r$4, 77); /* */ $s = 7; case 7: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 		_r$6 = b.WriteString(_r$5); /* */ $s = 8; case 8: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 		_r$6;
@@ -40468,7 +40477,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!((g.Player.Shield === 0))) { $s = 9; continue; }
 		/* */ $s = 10; continue;
 		/* if (!((g.Player.Shield === 0))) { */ case 9:
-			_r$7 = fmt.Sprintf("You are wearing a %s. %s", new sliceType$7([new shield(g.Player.Shield), new $String(new shield(g.Player.Shield).Desc())])); /* */ $s = 11; case 11: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+			_r$7 = fmt.Sprintf("You are wearing a %s. %s", new sliceType$8([new shield(g.Player.Shield), new $String(new shield(g.Player.Shield).Desc())])); /* */ $s = 11; case 11: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 			_r$8 = formatText(_r$7, 77); /* */ $s = 12; case 12: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 			_r$9 = b.WriteString(_r$8); /* */ $s = 13; case 13: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 			_r$9;
@@ -40507,10 +40516,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; b = $f.b; g = $f.g; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		ui.Clear();
-		b = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
-		_r = fmt.Fprintf(b, "Monsters: %d (%d)\n", new sliceType$7([new $Int(g.Monsters.$length), new $Int(g.MaxMonsters())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		b = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
+		_r = fmt.Fprintf(b, "Monsters: %d (%d)\n", new sliceType$8([new $Int(g.Monsters.$length), new $Int(g.MaxMonsters())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r;
-		_r$1 = fmt.Fprintf(b, "Danger: %d (%d)\n", new sliceType$7([new $Int(g.Danger()), new $Int(g.MaxDanger())])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Fprintf(b, "Danger: %d (%d)\n", new sliceType$8([new $Int(g.Danger()), new $Int(g.MaxDanger())])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_r$1;
 		ui.DrawText(b.String(), 0, 0);
 		ui.Flush();
@@ -40523,7 +40532,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _i, _keys, _ref, apt, apts, b, g, text, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _keys = $f._keys; _ref = $f._ref; apt = $f.apt; apts = $f.apts; b = $f.b; g = $f.g; text = $f.text; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		apts = new sliceType$3([]);
+		apts = new sliceType$4([]);
 		_ref = g.Player.Aptitudes;
 		_i = 0;
 		_keys = $keys(_ref);
@@ -40595,7 +40604,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_arg$1 = new $String(new monsterKind(mons.Kind).Indefinite(false));
 			_r$1 = ui.MonsterInfo(mons); /* */ $s = 8; case 8: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 			_arg$2 = new $String(_r$1);
-			_r$2 = fmt.Sprintf("You %s %s (%s). ", new sliceType$7([_arg, _arg$1, _arg$2])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Sprintf("You %s %s (%s). ", new sliceType$8([_arg, _arg$1, _arg$2])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			desc = desc + (_r$2);
 		/* } */ case 7:
 			/* */ if ((_entry$5 = g.Simellas[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : 0) > 0) { $s = 11; continue; }
@@ -40607,14 +40616,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if ((g.Dungeon.Cell($clone(pos, position)).T === 0) || (_entry$9 = g.UnknownDig[position.keyFor(pos)], _entry$9 !== undefined ? _entry$9.v : false)) { $s = 17; continue; }
 			/* */ $s = 18; continue;
 			/* if ((_entry$5 = g.Simellas[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : 0) > 0) { */ case 11:
-				_r$3 = fmt.Sprintf("You %s some simellas (%d).", new sliceType$7([new $String(see), new $Int((_entry$10 = g.Simellas[position.keyFor(pos)], _entry$10 !== undefined ? _entry$10.v : 0))])); /* */ $s = 20; case 20: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+				_r$3 = fmt.Sprintf("You %s some simellas (%d).", new sliceType$8([new $String(see), new $Int((_entry$10 = g.Simellas[position.keyFor(pos)], _entry$10 !== undefined ? _entry$10.v : 0))])); /* */ $s = 20; case 20: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 				desc = desc + (_r$3);
 				$s = 19; continue;
 			/* } else if (okCollectable) { */ case 12:
 				/* */ if (c.Quantity > 1) { $s = 21; continue; }
 				/* */ $s = 22; continue;
 				/* if (c.Quantity > 1) { */ case 21:
-					_r$4 = fmt.Sprintf("You %s %d %s there.", new sliceType$7([new $String(see), new $Int(c.Quantity), c.Consumable])); /* */ $s = 24; case 24: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+					_r$4 = fmt.Sprintf("You %s %d %s there.", new sliceType$8([new $String(see), new $Int(c.Quantity), c.Consumable])); /* */ $s = 24; case 24: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 					desc = desc + (_r$4);
 					$s = 23; continue;
 				/* } else { */ case 22:
@@ -40622,7 +40631,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					_r$5 = c.Consumable.String(); /* */ $s = 25; case 25: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 					_r$6 = Indefinite(_r$5, false); /* */ $s = 26; case 26: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 					_arg$4 = new $String(_r$6);
-					_r$7 = fmt.Sprintf("You %s %s there.", new sliceType$7([_arg$3, _arg$4])); /* */ $s = 27; case 27: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+					_r$7 = fmt.Sprintf("You %s %s there.", new sliceType$8([_arg$3, _arg$4])); /* */ $s = 27; case 27: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 					desc = desc + (_r$7);
 				/* } */ case 23:
 				$s = 19; continue;
@@ -40631,31 +40640,31 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_r$8 = eq.String(); /* */ $s = 28; case 28: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 				_r$9 = Indefinite(_r$8, false); /* */ $s = 29; case 29: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 				_arg$6 = new $String(_r$9);
-				_r$10 = fmt.Sprintf("You %s %s.", new sliceType$7([_arg$5, _arg$6])); /* */ $s = 30; case 30: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+				_r$10 = fmt.Sprintf("You %s %s.", new sliceType$8([_arg$5, _arg$6])); /* */ $s = 30; case 30: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 				desc = desc + (_r$10);
 				$s = 19; continue;
 			/* } else if (okRod) { */ case 14:
-				_r$11 = fmt.Sprintf("You %s a %v.", new sliceType$7([new $String(see), new rod(rod$1)])); /* */ $s = 31; case 31: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
+				_r$11 = fmt.Sprintf("You %s a %v.", new sliceType$8([new $String(see), new rod(rod$1)])); /* */ $s = 31; case 31: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
 				desc = desc + (_r$11);
 				$s = 19; continue;
 			/* } else if ((_entry$6 = g.Stairs[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : false)) { */ case 15:
 				/* */ if (g.Depth === 12) { $s = 32; continue; }
 				/* */ $s = 33; continue;
 				/* if (g.Depth === 12) { */ case 32:
-					_r$12 = fmt.Sprintf("You %s some glowing stairs.", new sliceType$7([new $String(see)])); /* */ $s = 35; case 35: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+					_r$12 = fmt.Sprintf("You %s some glowing stairs.", new sliceType$8([new $String(see)])); /* */ $s = 35; case 35: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 					desc = desc + (_r$12);
 					$s = 34; continue;
 				/* } else { */ case 33:
-					_r$13 = fmt.Sprintf("You %s stairs downwards.", new sliceType$7([new $String(see)])); /* */ $s = 36; case 36: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
+					_r$13 = fmt.Sprintf("You %s stairs downwards.", new sliceType$8([new $String(see)])); /* */ $s = 36; case 36: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
 					desc = desc + (_r$13);
 				/* } */ case 34:
 				$s = 19; continue;
 			/* } else if ((_entry$7 = g.Doors[position.keyFor(pos)], _entry$7 !== undefined ? _entry$7.v : false) || ((_entry$8 = g.UnknownBurn[position.keyFor(pos)], _entry$8 !== undefined ? _entry$8.v : 0) === 2)) { */ case 16:
-				_r$14 = fmt.Sprintf("You %s a door.", new sliceType$7([new $String(see)])); /* */ $s = 37; case 37: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
+				_r$14 = fmt.Sprintf("You %s a door.", new sliceType$8([new $String(see)])); /* */ $s = 37; case 37: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
 				desc = desc + (_r$14);
 				$s = 19; continue;
 			/* } else if ((g.Dungeon.Cell($clone(pos, position)).T === 0) || (_entry$9 = g.UnknownDig[position.keyFor(pos)], _entry$9 !== undefined ? _entry$9.v : false)) { */ case 17:
-				_r$15 = fmt.Sprintf("You %s a wall.", new sliceType$7([new $String(see)])); /* */ $s = 38; case 38: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
+				_r$15 = fmt.Sprintf("You %s a wall.", new sliceType$8([new $String(see)])); /* */ $s = 38; case 38: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
 				desc = desc + (_r$15);
 				$s = 19; continue;
 			/* } else { */ case 18:
@@ -40668,11 +40677,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* */ if (cld === 1) { $s = 42; continue; }
 					/* */ $s = 43; continue;
 					/* if (cld === 1) { */ case 42:
-						_r$16 = fmt.Sprintf("You %s burning flames.", new sliceType$7([new $String(see)])); /* */ $s = 45; case 45: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
+						_r$16 = fmt.Sprintf("You %s burning flames.", new sliceType$8([new $String(see)])); /* */ $s = 45; case 45: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
 						desc = desc + (_r$16);
 						$s = 44; continue;
 					/* } else { */ case 43:
-						_r$17 = fmt.Sprintf("You %s a dense fog.", new sliceType$7([new $String(see)])); /* */ $s = 46; case 46: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
+						_r$17 = fmt.Sprintf("You %s a dense fog.", new sliceType$8([new $String(see)])); /* */ $s = 46; case 46: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
 						desc = desc + (_r$17);
 					/* } */ case 44:
 					$s = 41; continue;
@@ -40683,11 +40692,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* */ if (desc === "") { $s = 48; continue; }
 					/* */ $s = 49; continue;
 					/* if (ok$1 || ((_entry$14 = g.UnknownBurn[position.keyFor(pos)], _entry$14 !== undefined ? _entry$14.v : 0) === 1)) { */ case 47:
-						_r$18 = fmt.Sprintf("You %s dense foliage there.", new sliceType$7([new $String(see)])); /* */ $s = 50; case 50: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
+						_r$18 = fmt.Sprintf("You %s dense foliage there.", new sliceType$8([new $String(see)])); /* */ $s = 50; case 50: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
 						desc = desc + (_r$18);
 						$s = 49; continue;
 					/* } else if (desc === "") { */ case 48:
-						_r$19 = fmt.Sprintf("You %s the ground.", new sliceType$7([new $String(see)])); /* */ $s = 51; case 51: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
+						_r$19 = fmt.Sprintf("You %s the ground.", new sliceType$8([new $String(see)])); /* */ $s = 51; case 51: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
 						desc = desc + (_r$19);
 					/* } */ case 49:
 				/* } */ case 41:
@@ -40773,9 +40782,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, data, g, stairs, ui, x, x$1, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; data = $f.data; g = $f.g; stairs = $f.stairs; ui = $f.ui; x = $f.x; x$1 = $f.x$1; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		/* */ if (data.sortedStairs === sliceType$5.nil) { $s = 1; continue; }
+		/* */ if (data.sortedStairs === sliceType$6.nil) { $s = 1; continue; }
 		/* */ $s = 2; continue;
-		/* if (data.sortedStairs === sliceType$5.nil) { */ case 1:
+		/* if (data.sortedStairs === sliceType$6.nil) { */ case 1:
 			stairs = g.StairsSlice();
 			_r = g.SortedNearestTo(stairs, $clone(g.Player.Pos, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			data.sortedStairs = _r;
@@ -40934,8 +40943,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.CursorMouseLeft = function(g, targ, pos, data) { return this.$val.CursorMouseLeft(g, targ, pos, data); };
 	termui.ptr.prototype.CursorKeyAction = function(g, targ, rka, data) {
-		var _1, _entry, _entry$1, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tmp, _tmp$1, _tmp$10, _tmp$11, _tmp$12, _tmp$13, _tmp$14, _tmp$15, _tmp$2, _tmp$3, _tmp$4, _tmp$5, _tmp$6, _tmp$7, _tmp$8, _tmp$9, _tuple, _tuple$1, _tuple$2, _tuple$3, again, data, err, err$1, err$2, g, i, notarg, ok, ok$1, p, pos, quit, rka, targ, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _entry$1 = $f._entry$1; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$10 = $f._tmp$10; _tmp$11 = $f._tmp$11; _tmp$12 = $f._tmp$12; _tmp$13 = $f._tmp$13; _tmp$14 = $f._tmp$14; _tmp$15 = $f._tmp$15; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tmp$4 = $f._tmp$4; _tmp$5 = $f._tmp$5; _tmp$6 = $f._tmp$6; _tmp$7 = $f._tmp$7; _tmp$8 = $f._tmp$8; _tmp$9 = $f._tmp$9; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; again = $f.again; data = $f.data; err = $f.err; err$1 = $f.err$1; err$2 = $f.err$2; g = $f.g; i = $f.i; notarg = $f.notarg; ok = $f.ok; ok$1 = $f.ok$1; p = $f.p; pos = $f.pos; quit = $f.quit; rka = $f.rka; targ = $f.targ; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _1, _entry, _entry$1, _r, _r$1, _r$10, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tmp, _tmp$1, _tmp$10, _tmp$11, _tmp$12, _tmp$13, _tmp$14, _tmp$15, _tmp$2, _tmp$3, _tmp$4, _tmp$5, _tmp$6, _tmp$7, _tmp$8, _tmp$9, _tuple, _tuple$1, _tuple$2, _tuple$3, again, data, err, err$1, err$2, g, i, notarg, ok, ok$1, p, pos, quit, rka, targ, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _entry$1 = $f._entry$1; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$10 = $f._tmp$10; _tmp$11 = $f._tmp$11; _tmp$12 = $f._tmp$12; _tmp$13 = $f._tmp$13; _tmp$14 = $f._tmp$14; _tmp$15 = $f._tmp$15; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tmp$4 = $f._tmp$4; _tmp$5 = $f._tmp$5; _tmp$6 = $f._tmp$6; _tmp$7 = $f._tmp$7; _tmp$8 = $f._tmp$8; _tmp$9 = $f._tmp$9; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; again = $f.again; data = $f.data; err = $f.err; err$1 = $f.err$1; err$2 = $f.err$2; g = $f.g; i = $f.i; notarg = $f.notarg; ok = $f.ok; ok$1 = $f.ok$1; p = $f.p; pos = $f.pos; quit = $f.quit; rka = $f.rka; targ = $f.targ; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		err = $ifaceNil;
 		again = false;
 		quit = false;
@@ -40953,7 +40962,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (!ok) { $s = 3; continue; }
 			/* */ $s = 4; continue;
 			/* if (!ok) { */ case 3:
-				_r = fmt.Errorf("Invalid targeting mode key '%c'. Type ? for help.", new sliceType$7([new $Int32(rka.r)])); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+				_r = fmt.Errorf("Invalid targeting mode key '%c'. Type ? for help.", new sliceType$8([new $Int32(rka.r)])); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				err = _r;
 				_tmp = err;
 				_tmp$1 = again;
@@ -40974,7 +40983,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_tuple$1 = _r$1;
 			rka.k = _tuple$1[0];
 			err$1 = _tuple$1[1];
-			if (!($interfaceIsEqual(err$1, $ifaceNil))) {
+			/* */ if (!($interfaceIsEqual(err$1, $ifaceNil))) { $s = 9; continue; }
+			/* */ $s = 10; continue;
+			/* if (!($interfaceIsEqual(err$1, $ifaceNil))) { */ case 9:
+				_r$2 = ui.CleanError(err$1); /* */ $s = 11; case 11: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				err$1 = _r$2;
 				_tmp$4 = err$1;
 				_tmp$5 = again;
 				_tmp$6 = quit;
@@ -40984,28 +40997,28 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				quit = _tmp$6;
 				notarg = _tmp$7;
 				$s = -1; return [err, again, quit, notarg];
-			}
+			/* } */ case 10:
 		/* } */ case 7:
 			_1 = rka.k;
-			/* */ if ((_1 === (1)) || (_1 === (2)) || (_1 === (3)) || (_1 === (4)) || (_1 === (5)) || (_1 === (6)) || (_1 === (7)) || (_1 === (8))) { $s = 10; continue; }
-			/* */ if ((_1 === (9)) || (_1 === (10)) || (_1 === (11)) || (_1 === (12)) || (_1 === (13)) || (_1 === (14)) || (_1 === (15)) || (_1 === (16))) { $s = 11; continue; }
-			/* */ if (_1 === (44)) { $s = 12; continue; }
-			/* */ if (_1 === (19)) { $s = 13; continue; }
-			/* */ if ((_1 === (35)) || (_1 === (36))) { $s = 14; continue; }
-			/* */ if (_1 === (37)) { $s = 15; continue; }
-			/* */ if (_1 === (30)) { $s = 16; continue; }
-			/* */ if (_1 === (39)) { $s = 17; continue; }
-			/* */ if (_1 === (38)) { $s = 18; continue; }
-			/* */ if (_1 === (40)) { $s = 19; continue; }
-			/* */ if (_1 === (41)) { $s = 20; continue; }
-			/* */ if ((_1 === (21)) || (_1 === (17)) || (_1 === (25)) || (_1 === (24)) || (_1 === (26)) || (_1 === (28)) || (_1 === (23)) || (_1 === (27))) { $s = 21; continue; }
-			/* */ if (_1 === (31)) { $s = 22; continue; }
-			/* */ if (_1 === (32)) { $s = 23; continue; }
-			/* */ $s = 24; continue;
-			/* if ((_1 === (1)) || (_1 === (2)) || (_1 === (3)) || (_1 === (4)) || (_1 === (5)) || (_1 === (6)) || (_1 === (7)) || (_1 === (8))) { */ case 10:
+			/* */ if ((_1 === (1)) || (_1 === (2)) || (_1 === (3)) || (_1 === (4)) || (_1 === (5)) || (_1 === (6)) || (_1 === (7)) || (_1 === (8))) { $s = 13; continue; }
+			/* */ if ((_1 === (9)) || (_1 === (10)) || (_1 === (11)) || (_1 === (12)) || (_1 === (13)) || (_1 === (14)) || (_1 === (15)) || (_1 === (16))) { $s = 14; continue; }
+			/* */ if (_1 === (44)) { $s = 15; continue; }
+			/* */ if (_1 === (19)) { $s = 16; continue; }
+			/* */ if ((_1 === (35)) || (_1 === (36))) { $s = 17; continue; }
+			/* */ if (_1 === (37)) { $s = 18; continue; }
+			/* */ if (_1 === (30)) { $s = 19; continue; }
+			/* */ if (_1 === (39)) { $s = 20; continue; }
+			/* */ if (_1 === (38)) { $s = 21; continue; }
+			/* */ if (_1 === (40)) { $s = 22; continue; }
+			/* */ if (_1 === (41)) { $s = 23; continue; }
+			/* */ if ((_1 === (21)) || (_1 === (17)) || (_1 === (25)) || (_1 === (24)) || (_1 === (26)) || (_1 === (28)) || (_1 === (23)) || (_1 === (27))) { $s = 24; continue; }
+			/* */ if (_1 === (31)) { $s = 25; continue; }
+			/* */ if (_1 === (32)) { $s = 26; continue; }
+			/* */ $s = 27; continue;
+			/* if ((_1 === (1)) || (_1 === (2)) || (_1 === (3)) || (_1 === (4)) || (_1 === (5)) || (_1 === (6)) || (_1 === (7)) || (_1 === (8))) { */ case 13:
 				position.copy(data.npos, $clone(pos, position).To(KeyToDir(rka.k)));
-				$s = 25; continue;
-			/* } else if ((_1 === (9)) || (_1 === (10)) || (_1 === (11)) || (_1 === (12)) || (_1 === (13)) || (_1 === (14)) || (_1 === (15)) || (_1 === (16))) { */ case 11:
+				$s = 28; continue;
+			/* } else if ((_1 === (9)) || (_1 === (10)) || (_1 === (11)) || (_1 === (12)) || (_1 === (13)) || (_1 === (14)) || (_1 === (15)) || (_1 === (16))) { */ case 14:
 				i = 0;
 				while (true) {
 					if (!(i < 5)) { break; }
@@ -41016,22 +41029,22 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					position.copy(data.npos, p);
 					i = i + (1) >> 0;
 				}
-				$s = 25; continue;
-			/* } else if (_1 === (44)) { */ case 12:
-				$r = ui.NextStair(g, data); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 25; continue;
-			/* } else if (_1 === (19)) { */ case 13:
-				/* */ if ((_entry$1 = g.Stairs[position.keyFor(g.Player.Pos)], _entry$1 !== undefined ? _entry$1.v : false)) { $s = 27; continue; }
-				/* */ $s = 28; continue;
-				/* if ((_entry$1 = g.Stairs[position.keyFor(g.Player.Pos)], _entry$1 !== undefined ? _entry$1.v : false)) { */ case 27:
+				$s = 28; continue;
+			/* } else if (_1 === (44)) { */ case 15:
+				$r = ui.NextStair(g, data); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$s = 28; continue;
+			/* } else if (_1 === (19)) { */ case 16:
+				/* */ if ((_entry$1 = g.Stairs[position.keyFor(g.Player.Pos)], _entry$1 !== undefined ? _entry$1.v : false)) { $s = 30; continue; }
+				/* */ $s = 31; continue;
+				/* if ((_entry$1 = g.Stairs[position.keyFor(g.Player.Pos)], _entry$1 !== undefined ? _entry$1.v : false)) { */ case 30:
 					again = false;
 					position.copy(g.Targeting, $pkg.InvalidPos);
 					notarg = true;
-					_r$2 = g.Descend(); /* */ $s = 32; case 32: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-					/* */ if (_r$2) { $s = 30; continue; }
-					/* */ $s = 31; continue;
-					/* if (_r$2) { */ case 30:
-						$r = ui.Win(g); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					_r$3 = g.Descend(); /* */ $s = 35; case 35: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+					/* */ if (_r$3) { $s = 33; continue; }
+					/* */ $s = 34; continue;
+					/* if (_r$3) { */ case 33:
+						$r = ui.Win(g); /* */ $s = 36; case 36: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 						quit = true;
 						_tmp$8 = err;
 						_tmp$9 = again;
@@ -41042,64 +41055,64 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						quit = _tmp$10;
 						notarg = _tmp$11;
 						$s = -1; return [err, again, quit, notarg];
-					/* } */ case 31:
-					$s = 29; continue;
-				/* } else { */ case 28:
+					/* } */ case 34:
+					$s = 32; continue;
+				/* } else { */ case 31:
 					err = errors.New("No stairs here.");
-				/* } */ case 29:
-				$s = 25; continue;
-			/* } else if ((_1 === (35)) || (_1 === (36))) { */ case 14:
+				/* } */ case 32:
+				$s = 28; continue;
+			/* } else if ((_1 === (35)) || (_1 === (36))) { */ case 17:
 				ui.NextMonster(g, rka.r, $clone(pos, position), data);
-				$s = 25; continue;
-			/* } else if (_1 === (37)) { */ case 15:
-				$r = ui.NextObject(g, $clone(pos, position), data); /* */ $s = 34; case 34: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 25; continue;
-			/* } else if (_1 === (30)) { */ case 16:
+				$s = 28; continue;
+			/* } else if (_1 === (37)) { */ case 18:
+				$r = ui.NextObject(g, $clone(pos, position), data); /* */ $s = 37; case 37: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$s = 28; continue;
+			/* } else if (_1 === (30)) { */ case 19:
 				ui.HideCursor();
-				$r = ui.ExamineHelp(g); /* */ $s = 35; case 35: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.ExamineHelp(g); /* */ $s = 38; case 38: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				ui.SetCursor($clone(pos, position));
-				$s = 25; continue;
-			/* } else if (_1 === (39)) { */ case 17:
-				_r$3 = targ.Action(g, $clone(pos, position)); /* */ $s = 36; case 36: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-				err = _r$3;
+				$s = 28; continue;
+			/* } else if (_1 === (39)) { */ case 20:
+				_r$4 = targ.Action(g, $clone(pos, position)); /* */ $s = 39; case 39: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+				err = _r$4;
 				if (!($interfaceIsEqual(err, $ifaceNil))) {
-					/* break; */ $s = 9; continue;
+					/* break; */ $s = 12; continue;
 				}
 				position.copy(g.Targeting, $pkg.InvalidPos);
-				_r$4 = g.MoveToTarget(g.Ev); /* */ $s = 39; case 39: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
-				/* */ if (_r$4) { $s = 37; continue; }
-				/* */ $s = 38; continue;
-				/* if (_r$4) { */ case 37:
-					again = false;
-				/* } */ case 38:
-				_r$5 = targ.Done(); /* */ $s = 42; case 42: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+				_r$5 = g.MoveToTarget(g.Ev); /* */ $s = 42; case 42: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 				/* */ if (_r$5) { $s = 40; continue; }
 				/* */ $s = 41; continue;
 				/* if (_r$5) { */ case 40:
-					notarg = true;
+					again = false;
 				/* } */ case 41:
-				$s = 25; continue;
-			/* } else if (_1 === (38)) { */ case 18:
+				_r$6 = targ.Done(); /* */ $s = 45; case 45: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+				/* */ if (_r$6) { $s = 43; continue; }
+				/* */ $s = 44; continue;
+				/* if (_r$6) { */ case 43:
+					notarg = true;
+				/* } */ case 44:
+				$s = 28; continue;
+			/* } else if (_1 === (38)) { */ case 21:
 				ui.HideCursor();
-				$r = ui.ViewPositionDescription(g, $clone(pos, position)); /* */ $s = 43; case 43: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = ui.ViewPositionDescription(g, $clone(pos, position)); /* */ $s = 46; case 46: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				ui.SetCursor($clone(pos, position));
-				$s = 25; continue;
-			/* } else if (_1 === (40)) { */ case 19:
+				$s = 28; continue;
+			/* } else if (_1 === (40)) { */ case 22:
 				ui.ExcludeZone(g, $clone(pos, position));
-				$s = 25; continue;
-			/* } else if (_1 === (41)) { */ case 20:
+				$s = 28; continue;
+			/* } else if (_1 === (41)) { */ case 23:
 				position.copy(g.Targeting, $pkg.InvalidPos);
 				notarg = true;
 				err = errors.New("Do nothing, then.");
-				$s = 25; continue;
-			/* } else if ((_1 === (21)) || (_1 === (17)) || (_1 === (25)) || (_1 === (24)) || (_1 === (26)) || (_1 === (28)) || (_1 === (23)) || (_1 === (27))) { */ case 21:
+				$s = 28; continue;
+			/* } else if ((_1 === (21)) || (_1 === (17)) || (_1 === (25)) || (_1 === (24)) || (_1 === (26)) || (_1 === (28)) || (_1 === (23)) || (_1 === (27))) { */ case 24:
 				_tuple$2 = $assertType(targ, ptrType$4, true);
 				ok$1 = _tuple$2[1];
 				if (!ok$1) {
-					/* break; */ $s = 9; continue;
+					/* break; */ $s = 12; continue;
 				}
-				_r$6 = ui.HandleKey(g, $clone(rka, runeKeyAction)); /* */ $s = 44; case 44: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
-				_tuple$3 = _r$6;
+				_r$7 = ui.HandleKey(g, $clone(rka, runeKeyAction)); /* */ $s = 47; case 47: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+				_tuple$3 = _r$7;
 				err = _tuple$3[0];
 				again = _tuple$3[1];
 				quit = _tuple$3[2];
@@ -41107,39 +41120,39 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					notarg = true;
 				}
 				position.copy(g.Targeting, $pkg.InvalidPos);
-				$s = 25; continue;
-			/* } else if (_1 === (31)) { */ case 22:
-				$r = g.Ev.Renew(g, 0); /* */ $s = 45; case 45: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$s = 28; continue;
+			/* } else if (_1 === (31)) { */ case 25:
+				$r = g.Ev.Renew(g, 0); /* */ $s = 48; case 48: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				g.Highlight = false;
 				position.copy(g.Targeting, $pkg.InvalidPos);
-				_r$7 = g.Save(); /* */ $s = 46; case 46: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
-				err$2 = _r$7;
-				/* */ if (!($interfaceIsEqual(err$2, $ifaceNil))) { $s = 47; continue; }
-				/* */ $s = 48; continue;
-				/* if (!($interfaceIsEqual(err$2, $ifaceNil))) { */ case 47:
-					$r = g.PrintfStyled("Error: %v", 6, new sliceType$7([err$2])); /* */ $s = 50; case 50: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				_r$8 = g.Save(); /* */ $s = 49; case 49: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+				err$2 = _r$8;
+				/* */ if (!($interfaceIsEqual(err$2, $ifaceNil))) { $s = 50; continue; }
+				/* */ $s = 51; continue;
+				/* if (!($interfaceIsEqual(err$2, $ifaceNil))) { */ case 50:
+					$r = g.PrintfStyled("Error: %v", 6, new sliceType$8([err$2])); /* */ $s = 53; case 53: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					g.PrintStyled("Could not save game.", 6);
-					$s = 49; continue;
-				/* } else { */ case 48:
+					$s = 52; continue;
+				/* } else { */ case 51:
 					notarg = true;
 					again = false;
 					quit = true;
-				/* } */ case 49:
-				$s = 25; continue;
-			/* } else if (_1 === (32)) { */ case 23:
-				_r$8 = ui.Quit(g); /* */ $s = 53; case 53: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
-				/* */ if (_r$8) { $s = 51; continue; }
-				/* */ $s = 52; continue;
-				/* if (_r$8) { */ case 51:
+				/* } */ case 52:
+				$s = 28; continue;
+			/* } else if (_1 === (32)) { */ case 26:
+				_r$9 = ui.Quit(g); /* */ $s = 56; case 56: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+				/* */ if (_r$9) { $s = 54; continue; }
+				/* */ $s = 55; continue;
+				/* if (_r$9) { */ case 54:
 					quit = true;
 					again = false;
-				/* } */ case 52:
-				$s = 25; continue;
-			/* } else { */ case 24:
-				_r$9 = fmt.Errorf("Invalid targeting mode key '%c'. Type ? for help.", new sliceType$7([new $Int32(rka.r)])); /* */ $s = 54; case 54: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
-				err = _r$9;
-			/* } */ case 25:
-		case 9:
+				/* } */ case 55:
+				$s = 28; continue;
+			/* } else { */ case 27:
+				_r$10 = fmt.Errorf("Invalid targeting mode key '%c'. Type ? for help.", new sliceType$8([new $Int32(rka.r)])); /* */ $s = 57; case 57: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+				err = _r$10;
+			/* } */ case 28:
+		case 12:
 		_tmp$12 = err;
 		_tmp$13 = again;
 		_tmp$14 = quit;
@@ -41149,7 +41162,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		quit = _tmp$14;
 		notarg = _tmp$15;
 		$s = -1; return [err, again, quit, notarg];
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.CursorKeyAction }; } $f._1 = _1; $f._entry = _entry; $f._entry$1 = _entry$1; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$10 = _tmp$10; $f._tmp$11 = _tmp$11; $f._tmp$12 = _tmp$12; $f._tmp$13 = _tmp$13; $f._tmp$14 = _tmp$14; $f._tmp$15 = _tmp$15; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tmp$4 = _tmp$4; $f._tmp$5 = _tmp$5; $f._tmp$6 = _tmp$6; $f._tmp$7 = _tmp$7; $f._tmp$8 = _tmp$8; $f._tmp$9 = _tmp$9; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f.again = again; $f.data = data; $f.err = err; $f.err$1 = err$1; $f.err$2 = err$2; $f.g = g; $f.i = i; $f.notarg = notarg; $f.ok = ok; $f.ok$1 = ok$1; $f.p = p; $f.pos = pos; $f.quit = quit; $f.rka = rka; $f.targ = targ; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.CursorKeyAction }; } $f._1 = _1; $f._entry = _entry; $f._entry$1 = _entry$1; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$10 = _tmp$10; $f._tmp$11 = _tmp$11; $f._tmp$12 = _tmp$12; $f._tmp$13 = _tmp$13; $f._tmp$14 = _tmp$14; $f._tmp$15 = _tmp$15; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tmp$4 = _tmp$4; $f._tmp$5 = _tmp$5; $f._tmp$6 = _tmp$6; $f._tmp$7 = _tmp$7; $f._tmp$8 = _tmp$8; $f._tmp$9 = _tmp$9; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f.again = again; $f.data = data; $f.err = err; $f.err$1 = err$1; $f.err$2 = err$2; $f.g = g; $f.i = i; $f.notarg = notarg; $f.ok = ok; $f.ok$1 = ok$1; $f.p = p; $f.pos = pos; $f.quit = quit; $f.rka = rka; $f.targ = targ; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.CursorKeyAction = function(g, targ, rka, data) { return this.$val.CursorKeyAction(g, targ, rka, data); };
 	termui.ptr.prototype.CursorAction = function(g, targ, start) {
@@ -41179,7 +41192,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_i++;
 			}
 		}
-		data = new examineData.ptr($clone(pos, position), 0, new sliceType$5([]), 0, sliceType$5.nil, 0);
+		data = new examineData.ptr($clone(pos, position), 0, new sliceType$6([]), 0, sliceType$6.nil, 0);
 		_tuple = $assertType(targ, ptrType$4, true);
 		ok = _tuple[1];
 		/* */ if (ok && $equal(pos, g.Player.Pos, position) && start === ptrType$1.nil) { $s = 1; continue; }
@@ -41254,88 +41267,92 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _arg, _arg$1, _arg$2, _arg$3, _arg$4, _arg$5, _entry, _entry$1, _entry$2, _entry$3, _entry$4, _entry$5, _entry$6, _entry$7, _r, _r$1, _r$2, _tuple, _tuple$1, _tuple$2, _tuple$3, c, eq, g, mons, ok, ok$1, ok$2, ok$3, pos, r, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _entry$3 = $f._entry$3; _entry$4 = $f._entry$4; _entry$5 = $f._entry$5; _entry$6 = $f._entry$6; _entry$7 = $f._entry$7; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; c = $f.c; eq = $f.eq; g = $f.g; mons = $f.mons; ok = $f.ok; ok$1 = $f.ok$1; ok$2 = $f.ok$2; ok$3 = $f.ok$3; pos = $f.pos; r = $f.r; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		if (!g.Dungeon.Cell($clone(pos, position)).Explored) {
+		/* */ if (!g.Dungeon.Cell($clone(pos, position)).Explored) { $s = 1; continue; }
+		/* */ $s = 2; continue;
+		/* if (!g.Dungeon.Cell($clone(pos, position)).Explored) { */ case 1:
+			$r = ui.MenuSelectedAnimation(g, 5, false); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			g.Print("No description: unknown place.");
 			$s = -1; return;
-		}
+		/* } */ case 2:
+		$r = ui.MenuSelectedAnimation(g, 5, true); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		mons = g.MonsterAt($clone(pos, position));
-		/* */ if (mons.Exists() && (_entry = g.Player.LOS[position.keyFor(mons.Pos)], _entry !== undefined ? _entry.v : false)) { $s = 1; continue; }
-		/* */ $s = 2; continue;
-		/* if (mons.Exists() && (_entry = g.Player.LOS[position.keyFor(mons.Pos)], _entry !== undefined ? _entry.v : false)) { */ case 1:
+		/* */ if (mons.Exists() && (_entry = g.Player.LOS[position.keyFor(mons.Pos)], _entry !== undefined ? _entry.v : false)) { $s = 5; continue; }
+		/* */ $s = 6; continue;
+		/* if (mons.Exists() && (_entry = g.Player.LOS[position.keyFor(mons.Pos)], _entry !== undefined ? _entry.v : false)) { */ case 5:
 			ui.HideCursor();
-			$r = ui.DrawMonsterDescription(g, mons); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = ui.DrawMonsterDescription(g, mons); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			ui.SetCursor($clone(pos, position));
-			$s = 3; continue;
-		/* } else { */ case 2:
+			$s = 7; continue;
+		/* } else { */ case 6:
 			_tuple = (_entry$1 = g.Collectables[position.keyFor(pos)], _entry$1 !== undefined ? [_entry$1.v, true] : [new collectable.ptr($ifaceNil, 0), false]);
 			c = $clone(_tuple[0], collectable);
 			ok = _tuple[1];
-			/* */ if (ok) { $s = 5; continue; }
-			/* */ $s = 6; continue;
-			/* if (ok) { */ case 5:
+			/* */ if (ok) { $s = 9; continue; }
+			/* */ $s = 10; continue;
+			/* if (ok) { */ case 9:
 				_arg = g;
-				_r = c.Consumable.Desc(); /* */ $s = 8; case 8: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+				_r = c.Consumable.Desc(); /* */ $s = 12; case 12: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				_arg$1 = _r;
-				$r = ui.DrawDescription(_arg, _arg$1); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$s = 7; continue;
-			/* } else { */ case 6:
+				$r = ui.DrawDescription(_arg, _arg$1); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$s = 11; continue;
+			/* } else { */ case 10:
 				_tuple$1 = (_entry$2 = g.Rods[position.keyFor(pos)], _entry$2 !== undefined ? [_entry$2.v, true] : [0, false]);
 				r = _tuple$1[0];
 				ok$1 = _tuple$1[1];
-				/* */ if (ok$1) { $s = 10; continue; }
-				/* */ $s = 11; continue;
-				/* if (ok$1) { */ case 10:
+				/* */ if (ok$1) { $s = 14; continue; }
+				/* */ $s = 15; continue;
+				/* if (ok$1) { */ case 14:
 					_arg$2 = g;
-					_r$1 = new rod(r).Desc(); /* */ $s = 13; case 13: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+					_r$1 = new rod(r).Desc(); /* */ $s = 17; case 17: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 					_arg$3 = _r$1;
-					$r = ui.DrawDescription(_arg$2, _arg$3); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					$s = 12; continue;
-				/* } else { */ case 11:
+					$r = ui.DrawDescription(_arg$2, _arg$3); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$s = 16; continue;
+				/* } else { */ case 15:
 					_tuple$2 = (_entry$3 = g.Equipables[position.keyFor(pos)], _entry$3 !== undefined ? [_entry$3.v, true] : [$ifaceNil, false]);
 					eq = _tuple$2[0];
 					ok$2 = _tuple$2[1];
-					/* */ if (ok$2) { $s = 15; continue; }
-					/* */ if ((_entry$4 = g.Stairs[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { $s = 16; continue; }
-					/* */ if ((_entry$5 = g.Doors[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : false)) { $s = 17; continue; }
-					/* */ if ((_entry$6 = g.Simellas[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) > 0) { $s = 18; continue; }
-					/* */ $s = 19; continue;
-					/* if (ok$2) { */ case 15:
+					/* */ if (ok$2) { $s = 19; continue; }
+					/* */ if ((_entry$4 = g.Stairs[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { $s = 20; continue; }
+					/* */ if ((_entry$5 = g.Doors[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : false)) { $s = 21; continue; }
+					/* */ if ((_entry$6 = g.Simellas[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) > 0) { $s = 22; continue; }
+					/* */ $s = 23; continue;
+					/* if (ok$2) { */ case 19:
 						_arg$4 = g;
-						_r$2 = eq.Desc(); /* */ $s = 21; case 21: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+						_r$2 = eq.Desc(); /* */ $s = 25; case 25: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 						_arg$5 = _r$2;
-						$r = ui.DrawDescription(_arg$4, _arg$5); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-						$s = 20; continue;
-					/* } else if ((_entry$4 = g.Stairs[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { */ case 16:
-						/* */ if (g.Depth === 12) { $s = 23; continue; }
-						/* */ $s = 24; continue;
-						/* if (g.Depth === 12) { */ case 23:
-							$r = ui.DrawDescription(g, "These shiny-looking stairs are in fact a magical monolith. It is said they were made some centuries ago by Marevor Helith. They will lead you back to your village."); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-							$s = 25; continue;
-						/* } else { */ case 24:
-							$r = ui.DrawDescription(g, "Stairs lead to the next level of the Underground. There's no way back. Monsters do not follow you."); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-						/* } */ case 25:
-						$s = 20; continue;
-					/* } else if ((_entry$5 = g.Doors[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : false)) { */ case 17:
-						$r = ui.DrawDescription(g, "A closed door blocks your line of sight. Doors open automatically when you or a monster stand on them. Doors are flammable."); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-						$s = 20; continue;
-					/* } else if ((_entry$6 = g.Simellas[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) > 0) { */ case 18:
-						$r = ui.DrawDescription(g, "A simella is a plant with big white flowers which are used in the Underground for their medicinal properties. They can also make tasty infusions. You were actually sent here by your village to collect as many as possible of those plants."); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-						$s = 20; continue;
-					/* } else { */ case 19:
+						$r = ui.DrawDescription(_arg$4, _arg$5); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$s = 24; continue;
+					/* } else if ((_entry$4 = g.Stairs[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { */ case 20:
+						/* */ if (g.Depth === 12) { $s = 27; continue; }
+						/* */ $s = 28; continue;
+						/* if (g.Depth === 12) { */ case 27:
+							$r = ui.DrawDescription(g, "These shiny-looking stairs are in fact a magical monolith. It is said they were made some centuries ago by Marevor Helith. They will lead you back to your village."); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+							$s = 29; continue;
+						/* } else { */ case 28:
+							$r = ui.DrawDescription(g, "Stairs lead to the next level of the Underground. There's no way back. Monsters do not follow you."); /* */ $s = 31; case 31: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						/* } */ case 29:
+						$s = 24; continue;
+					/* } else if ((_entry$5 = g.Doors[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : false)) { */ case 21:
+						$r = ui.DrawDescription(g, "A closed door blocks your line of sight. Doors open automatically when you or a monster stand on them. Doors are flammable."); /* */ $s = 32; case 32: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$s = 24; continue;
+					/* } else if ((_entry$6 = g.Simellas[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) > 0) { */ case 22:
+						$r = ui.DrawDescription(g, "A simella is a plant with big white flowers which are used in the Underground for their medicinal properties. They can also make tasty infusions. You were actually sent here by your village to collect as many as possible of those plants."); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$s = 24; continue;
+					/* } else { */ case 23:
 						_tuple$3 = (_entry$7 = g.Fungus[position.keyFor(pos)], _entry$7 !== undefined ? [_entry$7.v, true] : [0, false]);
 						ok$3 = _tuple$3[1];
-						/* */ if (ok$3 && (g.Dungeon.Cell($clone(pos, position)).T === 1)) { $s = 30; continue; }
-						/* */ $s = 31; continue;
-						/* if (ok$3 && (g.Dungeon.Cell($clone(pos, position)).T === 1)) { */ case 30:
-							$r = ui.DrawDescription(g, "Dense foliage is difficult to see through. It is flammable."); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-							$s = 32; continue;
-						/* } else { */ case 31:
+						/* */ if (ok$3 && (g.Dungeon.Cell($clone(pos, position)).T === 1)) { $s = 34; continue; }
+						/* */ $s = 35; continue;
+						/* if (ok$3 && (g.Dungeon.Cell($clone(pos, position)).T === 1)) { */ case 34:
+							$r = ui.DrawDescription(g, "Dense foliage is difficult to see through. It is flammable."); /* */ $s = 37; case 37: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+							$s = 36; continue;
+						/* } else { */ case 35:
 							g.Print("Nothing worth of description here.");
-						/* } */ case 32:
-					/* } */ case 20:
-				/* } */ case 12:
-			/* } */ case 7:
-		/* } */ case 3:
+						/* } */ case 36:
+					/* } */ case 24:
+				/* } */ case 16:
+			/* } */ case 11:
+		/* } */ case 7:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ViewPositionDescription }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._arg$3 = _arg$3; $f._arg$4 = _arg$4; $f._arg$5 = _arg$5; $f._entry = _entry; $f._entry$1 = _entry$1; $f._entry$2 = _entry$2; $f._entry$3 = _entry$3; $f._entry$4 = _entry$4; $f._entry$5 = _entry$5; $f._entry$6 = _entry$6; $f._entry$7 = _entry$7; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f.c = c; $f.eq = eq; $f.g = g; $f.mons = mons; $f.ok = ok; $f.ok$1 = ok$1; $f.ok$2 = ok$2; $f.ok$3 = ok$3; $f.pos = pos; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -41344,7 +41361,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _i, _q, _r, _ref, health, i, infos, m, p, st, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _q = $f._q; _r = $f._r; _ref = $f._ref; health = $f.health; i = $f.i; infos = $f.infos; m = $f.m; p = $f.p; st = $f.st; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		infos = new sliceType$3([]);
+		infos = new sliceType$4([]);
 		infos = $append(infos, new monsterState(m.State).String());
 		_ref = m.Statuses;
 		_i = 0;
@@ -41358,7 +41375,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_i++;
 		}
 		p = (_q = (($imul(m.HP, 100))) / m.HPmax, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"));
-		_r = fmt.Sprintf("%d %% HP", new sliceType$7([new $Int(p)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("%d %% HP", new sliceType$8([new $Int(p)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		health = _r;
 		infos = $append(infos, health);
 		$s = -1; return strings.Join(infos, ", ");
@@ -41472,12 +41489,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!ui.Small()) { $s = 5; continue; }
 		/* */ $s = 6; continue;
 		/* if (!ui.Small()) { */ case 5:
-			ui.DrawColoredTextOnBG("\xE2\x86\x92Menu", 81, line, $pkg.ColorBlue, $pkg.ColorBg);
-			line = line + (1) >> 0;
-			_r$1 = fmt.Sprintf("[ %v (%d)", new sliceType$7([new armour(g.Player.Armour), new $Int(g.Player.Armor())])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+			_r$1 = fmt.Sprintf("[ %v (%d)", new sliceType$8([new armour(g.Player.Armour), new $Int(g.Player.Armor())])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 			$r = ui.DrawText(_r$1, 81, line); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			line = line + (1) >> 0;
-			_r$2 = fmt.Sprintf(") %v (%d)", new sliceType$7([new weapon(g.Player.Weapon), new $Int(g.Player.Attack())])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Sprintf(") %v (%d)", new sliceType$8([new weapon(g.Player.Weapon), new $Int(g.Player.Attack())])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			$r = ui.DrawText(_r$2, 81, line); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			line = line + (1) >> 0;
 			/* */ if (!((g.Player.Shield === 0))) { $s = 11; continue; }
@@ -41486,11 +41501,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* */ if (new weapon(g.Player.Weapon).TwoHanded()) { $s = 13; continue; }
 				/* */ $s = 14; continue;
 				/* if (new weapon(g.Player.Weapon).TwoHanded()) { */ case 13:
-					_r$3 = fmt.Sprintf("] %v (unusable)", new sliceType$7([new shield(g.Player.Shield)])); /* */ $s = 16; case 16: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+					_r$3 = fmt.Sprintf("] %v (unusable)", new sliceType$8([new shield(g.Player.Shield)])); /* */ $s = 16; case 16: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 					$r = ui.DrawText(_r$3, 81, line); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					$s = 15; continue;
 				/* } else { */ case 14:
-					_r$4 = fmt.Sprintf("] %v (%d)", new sliceType$7([new shield(g.Player.Shield), new $Int(g.Player.Block())])); /* */ $s = 18; case 18: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+					_r$4 = fmt.Sprintf("] %v (%d)", new sliceType$8([new shield(g.Player.Shield), new $Int(g.Player.Block())])); /* */ $s = 18; case 18: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 					$r = ui.DrawText(_r$4, 81, line); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* } */ case 15:
 			/* } */ case 12:
@@ -41504,6 +41519,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$s = 22; continue;
 		/* } else { */ case 21:
 			$r = ui.DrawStatusBar(g, line); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			ui.DrawMenus(g);
 		/* } */ case 22:
 		/* */ if (ui.Small()) { $s = 25; continue; }
 		/* */ $s = 26; continue;
@@ -42116,14 +42132,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		} else if ((_q$3 = ($imul(g[0].Player.MP, 100)) / g[0].Player.MPMax(), (_q$3 === _q$3 && _q$3 !== 1/0 && _q$3 !== -1/0) ? _q$3 >> 0 : $throwRuntimeError("integer divide by zero")) < 70) {
 			mpColor = $pkg.ColorFgMPpartial;
 		}
-		_r = fmt.Sprintf("HP: %d", new sliceType$7([new $Int(g[0].Player.HP)])); /* */ $s = 4; case 4: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("HP: %d", new sliceType$8([new $Int(g[0].Player.HP)])); /* */ $s = 4; case 4: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$r = ui.DrawColoredText(_r, 81, line, hpColor); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		line = line + (1) >> 0;
-		_r$1 = fmt.Sprintf("MP: %d", new sliceType$7([new $Int(g[0].Player.MP)])); /* */ $s = 6; case 6: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Sprintf("MP: %d", new sliceType$8([new $Int(g[0].Player.MP)])); /* */ $s = 6; case 6: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		$r = ui.DrawColoredText(_r$1, 81, line, mpColor); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		line = line + (1) >> 0;
 		line = line + (1) >> 0;
-		_r$2 = fmt.Sprintf("Simellas: %d", new sliceType$7([new $Int(g[0].Player.Simellas)])); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+		_r$2 = fmt.Sprintf("Simellas: %d", new sliceType$8([new $Int(g[0].Player.Simellas)])); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		$r = ui.DrawText(_r$2, 81, line); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		line = line + (1) >> 0;
 		/* */ if (g[0].Depth > 12) { $s = 10; continue; }
@@ -42132,11 +42148,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			ui.DrawText("Depth: Out!", 81, line);
 			$s = 12; continue;
 		/* } else { */ case 11:
-			_r$3 = fmt.Sprintf("Depth: %d", new sliceType$7([new $Int(g[0].Depth)])); /* */ $s = 13; case 13: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+			_r$3 = fmt.Sprintf("Depth: %d", new sliceType$8([new $Int(g[0].Depth)])); /* */ $s = 13; case 13: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			$r = ui.DrawText(_r$3, 81, line); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 12:
 		line = line + (1) >> 0;
-		_r$4 = fmt.Sprintf("Turns: %.1f", new sliceType$7([new $Float64((g[0].Turn) / 10)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+		_r$4 = fmt.Sprintf("Turns: %.1f", new sliceType$8([new $Float64((g[0].Turn) / 10)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 		$r = ui.DrawText(_r$4, 81, line); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		line = line + (1) >> 0;
 		_ref$1 = sts;
@@ -42153,7 +42169,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if ((_entry$2 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$2 !== undefined ? _entry$2.v : 0) > 1) { $s = 19; continue; }
 			/* */ $s = 20; continue;
 			/* if ((_entry$2 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$2 !== undefined ? _entry$2.v : 0) > 1) { */ case 19:
-				_r$5 = fmt.Sprintf("%s (%d)", new sliceType$7([new status(st$1), new $Int((_entry$3 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$3 !== undefined ? _entry$3.v : 0))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+				_r$5 = fmt.Sprintf("%s (%d)", new sliceType$8([new status(st$1), new $Int((_entry$3 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$3 !== undefined ? _entry$3.v : 0))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 				$r = ui.DrawColoredText(_r$5, 81, line, fg); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 21; continue;
 			/* } else { */ case 20:
@@ -42216,23 +42232,23 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		}
 		line = 21;
 		col = 2;
-		_r = fmt.Sprintf(" )%s ", new sliceType$7([new $String(new weapon(g[0].Player.Weapon).Short())])); /* */ $s = 4; case 4: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf(" )%s ", new sliceType$8([new $String(new weapon(g[0].Player.Weapon).Short())])); /* */ $s = 4; case 4: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		weapon$1 = _r;
 		ui.DrawText(weapon$1, col, line);
 		col = col + (utf8.RuneCountInString(weapon$1)) >> 0;
-		_r$1 = fmt.Sprintf("[%s ", new sliceType$7([new $String(new armour(g[0].Player.Armour).Short())])); /* */ $s = 5; case 5: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Sprintf("[%s ", new sliceType$8([new $String(new armour(g[0].Player.Armour).Short())])); /* */ $s = 5; case 5: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		armour$1 = _r$1;
 		ui.DrawText(armour$1, col, line);
 		col = col + (utf8.RuneCountInString(armour$1)) >> 0;
 		/* */ if (!((g[0].Player.Shield === 0))) { $s = 6; continue; }
 		/* */ $s = 7; continue;
 		/* if (!((g[0].Player.Shield === 0))) { */ case 6:
-			_r$2 = fmt.Sprintf("[%s ", new sliceType$7([new $String(new shield(g[0].Player.Shield).Short())])); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Sprintf("[%s ", new sliceType$8([new $String(new shield(g[0].Player.Shield).Short())])); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			shield$1 = _r$2;
 			ui.DrawText(shield$1, col, line);
 			col = col + (utf8.RuneCountInString(shield$1)) >> 0;
 		/* } */ case 7:
-		_r$3 = fmt.Sprintf("\xE2\x99\xA3:%d ", new sliceType$7([new $Int(g[0].Player.Simellas)])); /* */ $s = 9; case 9: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+		_r$3 = fmt.Sprintf("\xE2\x99\xA3:%d ", new sliceType$8([new $Int(g[0].Player.Simellas)])); /* */ $s = 9; case 9: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 		simellas = _r$3;
 		ui.DrawText(simellas, col, line);
 		col = col + (utf8.RuneCountInString(simellas)) >> 0;
@@ -42243,20 +42259,20 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			depth = "D: Out! ";
 			$s = 12; continue;
 		/* } else { */ case 11:
-			_r$4 = fmt.Sprintf("D:%d ", new sliceType$7([new $Int(g[0].Depth)])); /* */ $s = 13; case 13: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+			_r$4 = fmt.Sprintf("D:%d ", new sliceType$8([new $Int(g[0].Depth)])); /* */ $s = 13; case 13: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			depth = _r$4;
 		/* } */ case 12:
 		ui.DrawText(depth, col, line);
 		col = col + (utf8.RuneCountInString(depth)) >> 0;
-		_r$5 = fmt.Sprintf("T:%.1f ", new sliceType$7([new $Float64((g[0].Turn) / 10)])); /* */ $s = 14; case 14: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+		_r$5 = fmt.Sprintf("T:%.1f ", new sliceType$8([new $Float64((g[0].Turn) / 10)])); /* */ $s = 14; case 14: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 		turns = _r$5;
 		ui.DrawText(turns, col, line);
 		col = col + (utf8.RuneCountInString(turns)) >> 0;
-		_r$6 = fmt.Sprintf("HP:%2d ", new sliceType$7([new $Int(g[0].Player.HP)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+		_r$6 = fmt.Sprintf("HP:%2d ", new sliceType$8([new $Int(g[0].Player.HP)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 		hp = _r$6;
 		ui.DrawColoredText(hp, col, line, hpColor);
 		col = col + (utf8.RuneCountInString(hp)) >> 0;
-		_r$7 = fmt.Sprintf("MP:%2d ", new sliceType$7([new $Int(g[0].Player.MP)])); /* */ $s = 16; case 16: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+		_r$7 = fmt.Sprintf("MP:%2d ", new sliceType$8([new $Int(g[0].Player.MP)])); /* */ $s = 16; case 16: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 		mp = _r$7;
 		ui.DrawColoredText(mp, col, line, mpColor);
 		col = col + (utf8.RuneCountInString(mp)) >> 0;
@@ -42279,11 +42295,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if ((_entry$2 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$2 !== undefined ? _entry$2.v : 0) > 1) { $s = 19; continue; }
 			/* */ $s = 20; continue;
 			/* if ((_entry$2 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$2 !== undefined ? _entry$2.v : 0) > 1) { */ case 19:
-				_r$8 = fmt.Sprintf("%s(%d) ", new sliceType$7([new $String(new status(st$1).Short()), new $Int((_entry$3 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$3 !== undefined ? _entry$3.v : 0))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+				_r$8 = fmt.Sprintf("%s(%d) ", new sliceType$8([new $String(new status(st$1).Short()), new $Int((_entry$3 = g[0].Player.Statuses[status.keyFor(st$1)], _entry$3 !== undefined ? _entry$3.v : 0))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 				sttext = _r$8;
 				$s = 21; continue;
 			/* } else { */ case 20:
-				_r$9 = fmt.Sprintf("%s ", new sliceType$7([new $String(new status(st$1).Short())])); /* */ $s = 23; case 23: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+				_r$9 = fmt.Sprintf("%s ", new sliceType$8([new $String(new status(st$1).Short())])); /* */ $s = 23; case 23: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 				sttext = _r$9;
 			/* } */ case 21:
 			ui.DrawColoredText(sttext, col, line, fg);
@@ -42294,6 +42310,106 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ } return; } } catch(err) { $err = err; $s = -1; } finally { $callDeferred($deferred, $err); if($curGoroutine.asleep) { if ($f === undefined) { $f = { $blk: termui.ptr.prototype.DrawStatusLine }; } $f._entry = _entry; $f._entry$1 = _entry$1; $f._entry$2 = _entry$2; $f._entry$3 = _entry$3; $f._i = _i; $f._i$1 = _i$1; $f._key = _key; $f._keys = _keys; $f._q = _q; $f._q$1 = _q$1; $f._q$2 = _q$2; $f._q$3 = _q$3; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._ref = _ref; $f._ref$1 = _ref$1; $f._tuple = _tuple; $f.armour$1 = armour$1; $f.c = c; $f.cld = cld; $f.col = col; $f.depth = depth; $f.fg = fg; $f.g = g; $f.hp = hp; $f.hpColor = hpColor; $f.line = line; $f.mp = mp; $f.mpColor = mpColor; $f.ok = ok; $f.shield$1 = shield$1; $f.simellas = simellas; $f.st = st; $f.st$1 = st$1; $f.sts = sts; $f.sttext = sttext; $f.turns = turns; $f.ui = ui; $f.weapon$1 = weapon$1; $f.$s = $s; $f.$deferred = $deferred; $f.$r = $r; return $f; } }
 	};
 	termui.prototype.DrawStatusLine = function(g) { return this.$val.DrawStatusLine(g); };
+	menu.prototype.String = function() {
+		var _1, m, text;
+		text = "";
+		m = this.$val;
+		_1 = m;
+		if (_1 === (0)) {
+			text = "rest";
+		} else if (_1 === (1)) {
+			text = "explore";
+		} else if (_1 === (2)) {
+			text = "throw";
+		} else if (_1 === (3)) {
+			text = "drink";
+		} else if (_1 === (4)) {
+			text = "evoke";
+		} else if (_1 === (5)) {
+			text = "view";
+		} else if (_1 === (6)) {
+			text = "other";
+		}
+		text = "[" + text + "]";
+		return text;
+	};
+	$ptrType(menu).prototype.String = function() { return new menu(this.$get()).String(); };
+	menu.prototype.Key = function() {
+		var _1, key, m;
+		key = 0;
+		m = this.$val;
+		_1 = m;
+		if (_1 === (0)) {
+			key = 17;
+		} else if (_1 === (1)) {
+			key = 21;
+		} else if (_1 === (2)) {
+			key = 25;
+		} else if (_1 === (3)) {
+			key = 24;
+		} else if (_1 === (4)) {
+			key = 26;
+		} else if (_1 === (5)) {
+			key = 38;
+		} else if (_1 === (6)) {
+			key = 43;
+		}
+		key = key;
+		return key;
+	};
+	$ptrType(menu).prototype.Key = function() { return new menu(this.$get()).Key(); };
+	init$1 = function() {
+		var _i, _ref, i, runes, x, x$1;
+		_ref = $pkg.MenuCols;
+		_i = 0;
+		while (true) {
+			if (!(_i < _ref.$length)) { break; }
+			i = _i;
+			runes = utf8.RuneCountInString(new menu(((i >> 0))).String());
+			if (i === 0) {
+				arrayType$1.copy((0 >= $pkg.MenuCols.$length ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + 0]), $toNativeArray($kindInt, [7, 7 + runes >> 0]));
+				_i++;
+				continue;
+			}
+			arrayType$1.copy(((i < 0 || i >= $pkg.MenuCols.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + i]), $toNativeArray($kindInt, [(x = i - 1 >> 0, ((x < 0 || x >= $pkg.MenuCols.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + x]))[1] + 2 >> 0, ((x$1 = i - 1 >> 0, ((x$1 < 0 || x$1 >= $pkg.MenuCols.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + x$1]))[1] + 2 >> 0) + runes >> 0]));
+			_i++;
+		}
+	};
+	termui.ptr.prototype.WhichButton = function(col) {
+		var _i, _ref, col, cols, i, ui;
+		ui = this;
+		if (ui.Small()) {
+			return [6, false];
+		}
+		_ref = $pkg.MenuCols;
+		_i = 0;
+		while (true) {
+			if (!(_i < _ref.$length)) { break; }
+			i = _i;
+			cols = $clone(((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]), arrayType$1);
+			if (col >= cols[0] && col < cols[1]) {
+				return [((i >> 0)), true];
+			}
+			_i++;
+		}
+		return [6, false];
+	};
+	termui.prototype.WhichButton = function(col) { return this.$val.WhichButton(col); };
+	termui.ptr.prototype.DrawMenus = function(g) {
+		var _i, _ref, cols, g, i, line, ui;
+		ui = this;
+		line = 21;
+		_ref = $pkg.MenuCols;
+		_i = 0;
+		while (true) {
+			if (!(_i < _ref.$length)) { break; }
+			i = _i;
+			cols = $clone(((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]), arrayType$1);
+			ui.DrawColoredText(new menu(((i >> 0))).String(), cols[0], line, $pkg.ColorViolet);
+			_i++;
+		}
+	};
+	termui.prototype.DrawMenus = function(g) { return this.$val.DrawMenus(g); };
 	termui.ptr.prototype.LogColor = function(e) {
 		var _1, e, fg, ui;
 		ui = this;
@@ -42399,7 +42515,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _i, _i$1, _keys, _keys$1, _ref, _ref$1, chars, k, ka, ka$1, r, r$1, runes, text, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _i = $f._i; _i$1 = $f._i$1; _keys = $f._keys; _keys$1 = $f._keys$1; _ref = $f._ref; _ref$1 = $f._ref$1; chars = $f.chars; k = $f.k; ka = $f.ka; ka$1 = $f.ka$1; r = $f.r; r$1 = $f.r$1; runes = $f.runes; text = $f.text; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
-		runes = new sliceType$9([]);
+		runes = new sliceType$10([]);
 		_ref = runeNormalKeyActions;
 		_i = 0;
 		_keys = $keys(_ref);
@@ -42446,7 +42562,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _arg = $f._arg; _arg$1 = $f._arg$1; _key = $f._key; _key$1 = $f._key$1; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _tuple = $f._tuple; action = $f.action; bg = $f.bg; desc = $f.desc; err = $f.err; err$1 = $f.err$1; g = $f.g; i = $f.i; ka = $f.ka; ka$1 = $f.ka$1; lines = $f.lines; n = $f.n; nmax = $f.nmax; r = $f.r; s = $f.s; to = $f.to; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		lines = 21;
-		nmax = 39 - lines >> 0;
+		nmax = 38 - lines >> 0;
 		n = 0;
 		s = 0;
 		/* while (true) { */ case 1:
@@ -42458,8 +42574,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				n = 0;
 			}
 			to = n + lines >> 0;
-			if (to >= 39) {
-				to = 39;
+			if (to >= 38) {
+				to = 38;
 			}
 			i = n;
 			/* while (true) { */ case 4:
@@ -42474,7 +42590,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_arg = new $String(desc);
 				_r = ui.RunesForKeyAction(ka); /* */ $s = 6; case 6: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				_arg$1 = new $String(_r);
-				_r$1 = fmt.Sprintf(" %-36s %s", new sliceType$7([_arg, _arg$1])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+				_r$1 = fmt.Sprintf(" %-36s %s", new sliceType$8([_arg, _arg$1])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				desc = _r$1;
 				if (i === s) {
 					ui.DrawColoredTextOnBG(desc, 0, i - n >> 0, $pkg.ColorYellow, bg);
@@ -42491,8 +42607,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_tuple = _r$2;
 			s = _tuple[0];
 			action = _tuple[1];
-			if (s >= 39) {
-				s = 38;
+			if (s >= 38) {
+				s = 37;
 			}
 			if (s < 0) {
 				s = 0;
@@ -42521,7 +42637,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* */ if (FixedRuneKey(r)) { $s = 17; continue; }
 					/* */ $s = 18; continue;
 					/* if (FixedRuneKey(r)) { */ case 17:
-						$r = g.Printf("You cannot rebind \xE2\x80\x9C%c\xE2\x80\x9D.", new sliceType$7([new $Int32(r)])); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$r = g.Printf("You cannot rebind \xE2\x80\x9C%c\xE2\x80\x9D.", new sliceType$8([new $Int32(r)])); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 						/* continue loop; */ $s = 1; continue s;
 					/* } */ case 18:
 					$pkg.CustomKeys = true;
@@ -42632,7 +42748,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				i$2 = i$2 + (1) >> 0;
 			}
 			ui.ClearLine(lines);
-			_r$4 = fmt.Sprintf(" half-page up/down (u/d) quit (esc or space) \xE2\x80\x94 (%d/%d) \n", new sliceType$7([new $Int((g.Log.$length - to >> 0)), new $Int(g.Log.$length)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+			_r$4 = fmt.Sprintf(" half-page up/down (u/d) quit (esc or space) \xE2\x80\x94 (%d/%d) \n", new sliceType$8([new $Int((g.Log.$length - to >> 0)), new $Int(g.Log.$length)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			s = _r$4;
 			ui.DrawStyledTextLine(s, lines, 2);
 			ui.Flush();
@@ -42654,9 +42770,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; g = $f.g; mons = $f.mons; s = $f.s; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		ui = this;
 		s = new monsterKind(mons.Kind).Desc();
-		_r = fmt.Sprintf("They can hit for up to %d damage.", new sliceType$7([new $Int(new monsterKind(mons.Kind).BaseAttack())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("They can hit for up to %d damage.", new sliceType$8([new $Int(new monsterKind(mons.Kind).BaseAttack())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		s = s + (" " + _r);
-		_r$1 = fmt.Sprintf("They have around %d HP.", new sliceType$7([new $Int(new monsterKind(mons.Kind).MaxHP())])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Sprintf("They have around %d HP.", new sliceType$8([new $Int(new monsterKind(mons.Kind).MaxHP())])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		s = s + (" " + _r$1);
 		$r = ui.DrawDescription(g, s); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
@@ -42831,7 +42947,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		ui = this;
 		bg = ui.ListItemBG(i);
 		ui.ClearLineWithColor(lnum, bg);
-		_r = fmt.Sprintf("%c - %s (%d available)", new sliceType$7([new $Int32((((i + 97 >> 0) >> 0))), c, new $Int((_entry = g.Player.Consumables[consumable.keyFor(c)], _entry !== undefined ? _entry.v : 0))])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("%c - %s (%d available)", new sliceType$8([new $Int32((((i + 97 >> 0) >> 0))), c, new $Int((_entry = g.Player.Consumables[consumable.keyFor(c)], _entry !== undefined ? _entry.v : 0))])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$r = ui.DrawColoredTextOnBG(_r, 0, lnum, fg, bg); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ConsumableItem }; } $f._entry = _entry; $f._r = _r; $f.bg = bg; $f.c = c; $f.fg = fg; $f.g = g; $f.i = i; $f.lnum = lnum; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
@@ -42846,6 +42962,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r = g.SortedProjectiles(); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			cs = _r;
 			ui.ClearLine(0);
+			if (!ui.Small()) {
+				ui.DrawColoredText(new menu(2).String(), (2 >= $pkg.MenuCols.$length ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + 2])[0], 21, $pkg.ColorCyan);
+			}
 			if (desc) {
 				ui.DrawColoredText("Describe", 0, 0, $pkg.ColorBlue);
 				col = utf8.RuneCountInString("Describe");
@@ -42910,6 +43029,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r = g.SortedPotions(); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			cs = _r;
 			ui.ClearLine(0);
+			if (!ui.Small()) {
+				ui.DrawColoredText(new menu(3).String(), (3 >= $pkg.MenuCols.$length ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + 3])[0], 21, $pkg.ColorCyan);
+			}
 			if (desc) {
 				ui.DrawColoredText("Describe", 0, 0, $pkg.ColorBlue);
 				col = utf8.RuneCountInString("Describe");
@@ -42971,7 +43093,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		ui = this;
 		bg = ui.ListItemBG(i);
 		ui.ClearLineWithColor(lnum, bg);
-		_r = fmt.Sprintf("%c - %s (%d/%d charges, %d mana cost)", new sliceType$7([new $Int32((((i + 97 >> 0) >> 0))), new rod(r), new $Int((_entry = g.Player.Rods[rod.keyFor(r)], _entry !== undefined ? _entry.v : new rodProps.ptr(0)).Charge), new $Int(new rod(r).MaxCharge()), new $Int(new rod(r).MPCost())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("%c - %s (%d/%d charges, %d mana cost)", new sliceType$8([new $Int32((((i + 97 >> 0) >> 0))), new rod(r), new $Int((_entry = g.Player.Rods[rod.keyFor(r)], _entry !== undefined ? _entry.v : new rodProps.ptr(0)).Charge), new $Int(new rod(r).MaxCharge()), new $Int(new rod(r).MPCost())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$r = ui.DrawColoredTextOnBG(_r, 0, lnum, fg, bg); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.RodItem }; } $f._entry = _entry; $f._r = _r; $f.bg = bg; $f.fg = fg; $f.g = g; $f.i = i; $f.lnum = lnum; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
@@ -42986,6 +43108,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r = g.SortedRods(); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			rs = _r;
 			ui.ClearLine(0);
+			if (!ui.Small()) {
+				ui.DrawColoredText(new menu(4).String(), (4 >= $pkg.MenuCols.$length ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + 4])[0], 21, $pkg.ColorCyan);
+			}
 			if (desc) {
 				ui.DrawColoredText("Describe", 0, 0, $pkg.ColorBlue);
 				col = utf8.RuneCountInString("Describe");
@@ -43051,7 +43176,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (!new keyAction(ka).NormalModeKey()) {
 			desc = new keyAction(ka).TargetingModeDescription();
 		}
-		_r = fmt.Sprintf("%c - %s", new sliceType$7([new $Int32((((i + 97 >> 0) >> 0))), new $String(desc)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("%c - %s", new sliceType$8([new $Int32((((i + 97 >> 0) >> 0))), new $String(desc)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$r = ui.DrawColoredTextOnBG(_r, 0, lnum, fg, bg); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.ActionItem }; } $f._r = _r; $f.bg = bg; $f.desc = desc; $f.fg = fg; $f.g = g; $f.i = i; $f.ka = ka; $f.lnum = lnum; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
@@ -43063,7 +43188,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		ui = this;
 		/* while (true) { */ case 1:
 			ui.ClearLine(0);
-			ui.DrawColoredTextOnBG("\xE2\x86\x92Menu", 81, 0, $pkg.ColorCyan, $pkg.ColorBg);
+			if (!ui.Small()) {
+				ui.DrawColoredText(new menu(6).String(), (6 >= $pkg.MenuCols.$length ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + 6])[0], 21, $pkg.ColorCyan);
+			}
 			ui.DrawColoredText("Choose", 0, 0, $pkg.ColorCyan);
 			col = utf8.RuneCountInString("Choose");
 			ui.DrawText(" which action?", col, 0);
@@ -43127,7 +43254,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!($interfaceIsEqual(err, $ifaceNil))) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 1:
-			$r = g.PrintfStyled("Error removing saved file: %v", 6, new sliceType$7([err])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.PrintfStyled("Error removing saved file: %v", 6, new sliceType$8([err])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 2:
 		if (g.Wizard) {
 			g.Print("You escape by the magic stairs! **WIZARD** --press esc or space to continue--");
@@ -43231,6 +43358,26 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.StatusEndAnimation }; } $f._r = _r; $f._tuple = _tuple; $f.bg = bg; $f.fg = fg; $f.g = g; $f.r = r; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.StatusEndAnimation = function(g) { return this.$val.StatusEndAnimation(g); };
+	termui.ptr.prototype.MenuSelectedAnimation = function(g, m, ok) {
+		var g, m, ok, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; g = $f.g; m = $f.m; ok = $f.ok; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		ui = this;
+		/* */ if (!ui.Small()) { $s = 1; continue; }
+		/* */ $s = 2; continue;
+		/* if (!ui.Small()) { */ case 1:
+			if (ok) {
+				ui.DrawColoredText(new menu(m).String(), ((m < 0 || m >= $pkg.MenuCols.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + m])[0], 21, $pkg.ColorCyan);
+			} else {
+				ui.DrawColoredText(new menu(m).String(), ((m < 0 || m >= $pkg.MenuCols.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + m])[0], 21, $pkg.ColorMagenta);
+			}
+			ui.Flush();
+			$r = time.Sleep(new time.Duration(0, 25000000)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			ui.DrawColoredText(new menu(m).String(), ((m < 0 || m >= $pkg.MenuCols.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MenuCols.$array[$pkg.MenuCols.$offset + m])[0], 21, $pkg.ColorViolet);
+		/* } */ case 2:
+		$s = -1; return;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.MenuSelectedAnimation }; } $f.g = g; $f.m = m; $f.ok = ok; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+	};
+	termui.prototype.MenuSelectedAnimation = function(g, m, ok) { return this.$val.MenuSelectedAnimation(g, m, ok); };
 	termui.ptr.prototype.MagicMappingAnimation = function(g, border) {
 		var _i, _r, _ref, _tuple, bg, border, fg, g, i, pos, r, ui, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _ref = $f._ref; _tuple = $f._tuple; bg = $f.bg; border = $f.border; fg = $f.fg; g = $f.g; i = $f.i; pos = $f.pos; r = $f.r; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -43270,7 +43417,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (!($interfaceIsEqual(err, $ifaceNil))) { $s = 6; continue; }
 			/* */ $s = 7; continue;
 			/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 6:
-				$r = g.PrintfStyled("Error removing save file: %v \xE2\x80\x94\xE2\x80\x94press any key to quit\xE2\x80\x94\xE2\x80\x94", 6, new sliceType$7([err])); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("Error removing save file: %v \xE2\x80\x94\xE2\x80\x94press any key to quit\xE2\x80\x94\xE2\x80\x94", 6, new sliceType$8([err])); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = ui.DrawDungeonView(g, 0); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_r$1 = ui.PressAnyKey(); /* */ $s = 10; case 10: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_r$1;
@@ -43431,7 +43578,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _i, _keys, _ref, apt, apts, b, g, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _keys = $f._keys; _ref = $f._ref; apt = $f.apt; apts = $f.apts; b = $f.b; g = $f.g; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		apts = new sliceType$3([]);
+		apts = new sliceType$4([]);
 		_ref = g.Player.Aptitudes;
 		_i = 0;
 		_keys = $keys(_ref);
@@ -43483,7 +43630,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (sts.$length === 0) {
 			$s = -1; return "You are free of any status effects.";
 		}
-		$s = -1; return "Statuses:\n" + strings.Join($subslice(new sliceType$3(sts.$array), sts.$offset, sts.$offset + sts.$length), "\n");
+		$s = -1; return "Statuses:\n" + strings.Join($subslice(new sliceType$4(sts.$array), sts.$offset, sts.$offset + sts.$length), "\n");
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.DumpStatuses }; } $f._entry = _entry; $f._i = _i; $f._keys = _keys; $f._ref = _ref; $f.c = c; $f.g = g; $f.st = st; $f.sts = sts; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.DumpStatuses = function() { return this.$val.DumpStatuses(); };
@@ -43600,55 +43747,55 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _arg, _arg$1, _arg$2, _arg$3, _arg$4, _arg$5, _entry, _entry$1, _entry$2, _i, _i$1, _i$2, _r, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$16, _r$17, _r$18, _r$19, _r$2, _r$20, _r$21, _r$22, _r$23, _r$24, _r$25, _r$26, _r$27, _r$28, _r$29, _r$3, _r$30, _r$31, _r$32, _r$33, _r$34, _r$35, _r$36, _r$37, _r$38, _r$39, _r$4, _r$40, _r$41, _r$42, _r$43, _r$44, _r$45, _r$46, _r$47, _r$48, _r$49, _r$5, _r$50, _r$51, _r$52, _r$53, _r$54, _r$6, _r$7, _r$8, _r$9, _ref, _ref$1, _ref$2, buf, g, i, p, p$1, ps, r, rs, x, x$1, x$2, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$2 = $f._arg$2; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$16 = $f._r$16; _r$17 = $f._r$17; _r$18 = $f._r$18; _r$19 = $f._r$19; _r$2 = $f._r$2; _r$20 = $f._r$20; _r$21 = $f._r$21; _r$22 = $f._r$22; _r$23 = $f._r$23; _r$24 = $f._r$24; _r$25 = $f._r$25; _r$26 = $f._r$26; _r$27 = $f._r$27; _r$28 = $f._r$28; _r$29 = $f._r$29; _r$3 = $f._r$3; _r$30 = $f._r$30; _r$31 = $f._r$31; _r$32 = $f._r$32; _r$33 = $f._r$33; _r$34 = $f._r$34; _r$35 = $f._r$35; _r$36 = $f._r$36; _r$37 = $f._r$37; _r$38 = $f._r$38; _r$39 = $f._r$39; _r$4 = $f._r$4; _r$40 = $f._r$40; _r$41 = $f._r$41; _r$42 = $f._r$42; _r$43 = $f._r$43; _r$44 = $f._r$44; _r$45 = $f._r$45; _r$46 = $f._r$46; _r$47 = $f._r$47; _r$48 = $f._r$48; _r$49 = $f._r$49; _r$5 = $f._r$5; _r$50 = $f._r$50; _r$51 = $f._r$51; _r$52 = $f._r$52; _r$53 = $f._r$53; _r$54 = $f._r$54; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; buf = $f.buf; g = $f.g; i = $f.i; p = $f.p; p$1 = $f.p$1; ps = $f.ps; r = $f.r; rs = $f.rs; x = $f.x; x$1 = $f.x$1; x$2 = $f.x$2; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		buf = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
-		_r = fmt.Fprintf(buf, " -- Boohu version %s character file --\n\n", new sliceType$7([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		buf = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
+		_r = fmt.Fprintf(buf, " -- Boohu version %s character file --\n\n", new sliceType$8([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r;
 		/* */ if (g.Wizard) { $s = 2; continue; }
 		/* */ $s = 3; continue;
 		/* if (g.Wizard) { */ case 2:
-			_r$1 = fmt.Fprintf(buf, "**WIZARD MODE**\n", new sliceType$7([])); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+			_r$1 = fmt.Fprintf(buf, "**WIZARD MODE**\n", new sliceType$8([])); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 			_r$1;
 		/* } */ case 3:
 		/* */ if (g.Player.HP > 0 && g.Depth > 12) { $s = 5; continue; }
 		/* */ if (g.Player.HP <= 0) { $s = 6; continue; }
 		/* */ $s = 7; continue;
 		/* if (g.Player.HP > 0 && g.Depth > 12) { */ case 5:
-			_r$2 = fmt.Fprintf(buf, "You escaped from Hareka's Underground alive!\n", new sliceType$7([])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Fprintf(buf, "You escaped from Hareka's Underground alive!\n", new sliceType$8([])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_r$2;
 			$s = 8; continue;
 		/* } else if (g.Player.HP <= 0) { */ case 6:
-			_r$3 = fmt.Fprintf(buf, "You died while exploring depth %d of Hareka's Underground.\n", new sliceType$7([new $Int(g.Depth)])); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+			_r$3 = fmt.Fprintf(buf, "You died while exploring depth %d of Hareka's Underground.\n", new sliceType$8([new $Int(g.Depth)])); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			_r$3;
 			$s = 8; continue;
 		/* } else { */ case 7:
-			_r$4 = fmt.Fprintf(buf, "You are exploring depth %d of Hareka's Underground.\n", new sliceType$7([new $Int(g.Depth)])); /* */ $s = 11; case 11: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+			_r$4 = fmt.Fprintf(buf, "You are exploring depth %d of Hareka's Underground.\n", new sliceType$8([new $Int(g.Depth)])); /* */ $s = 11; case 11: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			_r$4;
 		/* } */ case 8:
-		_r$5 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 12; case 12: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+		_r$5 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 12; case 12: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 		_r$5;
-		_r$6 = fmt.Fprintf(buf, "You have %d/%d HP, and %d/%d MP.\n", new sliceType$7([new $Int(g.Player.HP), new $Int(g.Player.HPMax()), new $Int(g.Player.MP), new $Int(g.Player.MPMax())])); /* */ $s = 13; case 13: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+		_r$6 = fmt.Fprintf(buf, "You have %d/%d HP, and %d/%d MP.\n", new sliceType$8([new $Int(g.Player.HP), new $Int(g.Player.HPMax()), new $Int(g.Player.MP), new $Int(g.Player.MPMax())])); /* */ $s = 13; case 13: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 		_r$6;
-		_r$7 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 14; case 14: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+		_r$7 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 14; case 14: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 		_r$7;
 		_arg = buf;
 		_r$8 = g.DumpAptitudes(); /* */ $s = 15; case 15: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 		_arg$1 = _r$8;
-		_r$9 = fmt.Fprintf(_arg, _arg$1, new sliceType$7([])); /* */ $s = 16; case 16: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+		_r$9 = fmt.Fprintf(_arg, _arg$1, new sliceType$8([])); /* */ $s = 16; case 16: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 		_r$9;
-		_r$10 = fmt.Fprintf(buf, "\n\n", new sliceType$7([])); /* */ $s = 17; case 17: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+		_r$10 = fmt.Fprintf(buf, "\n\n", new sliceType$8([])); /* */ $s = 17; case 17: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 		_r$10;
 		_arg$2 = buf;
 		_r$11 = g.DumpStatuses(); /* */ $s = 18; case 18: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
 		_arg$3 = _r$11;
-		_r$12 = fmt.Fprintf(_arg$2, _arg$3, new sliceType$7([])); /* */ $s = 19; case 19: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+		_r$12 = fmt.Fprintf(_arg$2, _arg$3, new sliceType$8([])); /* */ $s = 19; case 19: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 		_r$12;
-		_r$13 = fmt.Fprintf(buf, "\n\n", new sliceType$7([])); /* */ $s = 20; case 20: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
+		_r$13 = fmt.Fprintf(buf, "\n\n", new sliceType$8([])); /* */ $s = 20; case 20: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
 		_r$13;
-		_r$14 = fmt.Fprintf(buf, "Equipment:\n", new sliceType$7([])); /* */ $s = 21; case 21: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
+		_r$14 = fmt.Fprintf(buf, "Equipment:\n", new sliceType$8([])); /* */ $s = 21; case 21: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
 		_r$14;
-		_r$15 = fmt.Fprintf(buf, "You are wearing %s.\n", new sliceType$7([new $String(Indefinite(new armour(g.Player.Armour).String(), false))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
+		_r$15 = fmt.Fprintf(buf, "You are wearing %s.\n", new sliceType$8([new $String(Indefinite(new armour(g.Player.Armour).String(), false))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
 		_r$15;
-		_r$16 = fmt.Fprintf(buf, "You are wielding %s.\n", new sliceType$7([new $String(Indefinite(new weapon(g.Player.Weapon).String(), false))])); /* */ $s = 23; case 23: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
+		_r$16 = fmt.Fprintf(buf, "You are wielding %s.\n", new sliceType$8([new $String(Indefinite(new weapon(g.Player.Weapon).String(), false))])); /* */ $s = 23; case 23: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
 		_r$16;
 		/* */ if (!((g.Player.Shield === 0))) { $s = 24; continue; }
 		/* */ $s = 25; continue;
@@ -43656,96 +43803,96 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (new weapon(g.Player.Weapon).TwoHanded()) { $s = 26; continue; }
 			/* */ $s = 27; continue;
 			/* if (new weapon(g.Player.Weapon).TwoHanded()) { */ case 26:
-				_r$17 = fmt.Fprintf(buf, "You have %s (unused).\n", new sliceType$7([new $String(Indefinite(new shield(g.Player.Shield).String(), false))])); /* */ $s = 29; case 29: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
+				_r$17 = fmt.Fprintf(buf, "You have %s (unused).\n", new sliceType$8([new $String(Indefinite(new shield(g.Player.Shield).String(), false))])); /* */ $s = 29; case 29: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
 				_r$17;
 				$s = 28; continue;
 			/* } else { */ case 27:
-				_r$18 = fmt.Fprintf(buf, "You are wearing %s.\n", new sliceType$7([new $String(Indefinite(new shield(g.Player.Shield).String(), false))])); /* */ $s = 30; case 30: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
+				_r$18 = fmt.Fprintf(buf, "You are wearing %s.\n", new sliceType$8([new $String(Indefinite(new shield(g.Player.Shield).String(), false))])); /* */ $s = 30; case 30: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
 				_r$18;
 			/* } */ case 28:
 		/* } */ case 25:
-		_r$19 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 31; case 31: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
+		_r$19 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 31; case 31: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
 		_r$19;
 		_r$20 = g.SortedRods(); /* */ $s = 32; case 32: if($c) { $c = false; _r$20 = _r$20.$blk(); } if (_r$20 && _r$20.$blk !== undefined) { break s; }
 		rs = _r$20;
 		/* */ if (rs.$length > 0) { $s = 33; continue; }
 		/* */ $s = 34; continue;
 		/* if (rs.$length > 0) { */ case 33:
-			_r$21 = fmt.Fprintf(buf, "Rods:\n", new sliceType$7([])); /* */ $s = 36; case 36: if($c) { $c = false; _r$21 = _r$21.$blk(); } if (_r$21 && _r$21.$blk !== undefined) { break s; }
+			_r$21 = fmt.Fprintf(buf, "Rods:\n", new sliceType$8([])); /* */ $s = 36; case 36: if($c) { $c = false; _r$21 = _r$21.$blk(); } if (_r$21 && _r$21.$blk !== undefined) { break s; }
 			_r$21;
 			_ref = rs;
 			_i = 0;
 			/* while (true) { */ case 37:
 				/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 38; continue; }
 				r = ((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]);
-				_r$22 = fmt.Fprintf(buf, "- %s (%d/%d charges) (used %d times)\n", new sliceType$7([new rod(r), new $Int((_entry = g.Player.Rods[rod.keyFor(r)], _entry !== undefined ? _entry.v : new rodProps.ptr(0)).Charge), new $Int(new rod(r).MaxCharge()), new $Int((x = g.Stats.UsedRod, ((r < 0 || r >= x.length) ? ($throwRuntimeError("index out of range"), undefined) : x[r])))])); /* */ $s = 39; case 39: if($c) { $c = false; _r$22 = _r$22.$blk(); } if (_r$22 && _r$22.$blk !== undefined) { break s; }
+				_r$22 = fmt.Fprintf(buf, "- %s (%d/%d charges) (used %d times)\n", new sliceType$8([new rod(r), new $Int((_entry = g.Player.Rods[rod.keyFor(r)], _entry !== undefined ? _entry.v : new rodProps.ptr(0)).Charge), new $Int(new rod(r).MaxCharge()), new $Int((x = g.Stats.UsedRod, ((r < 0 || r >= x.length) ? ($throwRuntimeError("index out of range"), undefined) : x[r])))])); /* */ $s = 39; case 39: if($c) { $c = false; _r$22 = _r$22.$blk(); } if (_r$22 && _r$22.$blk !== undefined) { break s; }
 				_r$22;
 				_i++;
 			/* } */ $s = 37; continue; case 38:
 			$s = 35; continue;
 		/* } else { */ case 34:
-			_r$23 = fmt.Fprintf(buf, "You do not have any rods.\n", new sliceType$7([])); /* */ $s = 40; case 40: if($c) { $c = false; _r$23 = _r$23.$blk(); } if (_r$23 && _r$23.$blk !== undefined) { break s; }
+			_r$23 = fmt.Fprintf(buf, "You do not have any rods.\n", new sliceType$8([])); /* */ $s = 40; case 40: if($c) { $c = false; _r$23 = _r$23.$blk(); } if (_r$23 && _r$23.$blk !== undefined) { break s; }
 			_r$23;
 		/* } */ case 35:
-		_r$24 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 41; case 41: if($c) { $c = false; _r$24 = _r$24.$blk(); } if (_r$24 && _r$24.$blk !== undefined) { break s; }
+		_r$24 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 41; case 41: if($c) { $c = false; _r$24 = _r$24.$blk(); } if (_r$24 && _r$24.$blk !== undefined) { break s; }
 		_r$24;
 		_r$25 = g.SortedPotions(); /* */ $s = 42; case 42: if($c) { $c = false; _r$25 = _r$25.$blk(); } if (_r$25 && _r$25.$blk !== undefined) { break s; }
 		ps = _r$25;
 		/* */ if (ps.$length > 0) { $s = 43; continue; }
 		/* */ $s = 44; continue;
 		/* if (ps.$length > 0) { */ case 43:
-			_r$26 = fmt.Fprintf(buf, "Potions:\n", new sliceType$7([])); /* */ $s = 46; case 46: if($c) { $c = false; _r$26 = _r$26.$blk(); } if (_r$26 && _r$26.$blk !== undefined) { break s; }
+			_r$26 = fmt.Fprintf(buf, "Potions:\n", new sliceType$8([])); /* */ $s = 46; case 46: if($c) { $c = false; _r$26 = _r$26.$blk(); } if (_r$26 && _r$26.$blk !== undefined) { break s; }
 			_r$26;
 			_ref$1 = ps;
 			_i$1 = 0;
 			/* while (true) { */ case 47:
 				/* if (!(_i$1 < _ref$1.$length)) { break; } */ if(!(_i$1 < _ref$1.$length)) { $s = 48; continue; }
 				p = ((_i$1 < 0 || _i$1 >= _ref$1.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref$1.$array[_ref$1.$offset + _i$1]);
-				_r$27 = fmt.Fprintf(buf, "- %s (%d available)\n", new sliceType$7([p, new $Int((_entry$1 = g.Player.Consumables[consumable.keyFor(p)], _entry$1 !== undefined ? _entry$1.v : 0))])); /* */ $s = 49; case 49: if($c) { $c = false; _r$27 = _r$27.$blk(); } if (_r$27 && _r$27.$blk !== undefined) { break s; }
+				_r$27 = fmt.Fprintf(buf, "- %s (%d available)\n", new sliceType$8([p, new $Int((_entry$1 = g.Player.Consumables[consumable.keyFor(p)], _entry$1 !== undefined ? _entry$1.v : 0))])); /* */ $s = 49; case 49: if($c) { $c = false; _r$27 = _r$27.$blk(); } if (_r$27 && _r$27.$blk !== undefined) { break s; }
 				_r$27;
 				_i$1++;
 			/* } */ $s = 47; continue; case 48:
 			$s = 45; continue;
 		/* } else { */ case 44:
-			_r$28 = fmt.Fprintf(buf, "You do not have any potions.\n", new sliceType$7([])); /* */ $s = 50; case 50: if($c) { $c = false; _r$28 = _r$28.$blk(); } if (_r$28 && _r$28.$blk !== undefined) { break s; }
+			_r$28 = fmt.Fprintf(buf, "You do not have any potions.\n", new sliceType$8([])); /* */ $s = 50; case 50: if($c) { $c = false; _r$28 = _r$28.$blk(); } if (_r$28 && _r$28.$blk !== undefined) { break s; }
 			_r$28;
 		/* } */ case 45:
-		_r$29 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 51; case 51: if($c) { $c = false; _r$29 = _r$29.$blk(); } if (_r$29 && _r$29.$blk !== undefined) { break s; }
+		_r$29 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 51; case 51: if($c) { $c = false; _r$29 = _r$29.$blk(); } if (_r$29 && _r$29.$blk !== undefined) { break s; }
 		_r$29;
 		_r$30 = g.SortedProjectiles(); /* */ $s = 52; case 52: if($c) { $c = false; _r$30 = _r$30.$blk(); } if (_r$30 && _r$30.$blk !== undefined) { break s; }
 		ps = _r$30;
 		/* */ if (ps.$length > 0) { $s = 53; continue; }
 		/* */ $s = 54; continue;
 		/* if (ps.$length > 0) { */ case 53:
-			_r$31 = fmt.Fprintf(buf, "Projectiles:\n", new sliceType$7([])); /* */ $s = 56; case 56: if($c) { $c = false; _r$31 = _r$31.$blk(); } if (_r$31 && _r$31.$blk !== undefined) { break s; }
+			_r$31 = fmt.Fprintf(buf, "Projectiles:\n", new sliceType$8([])); /* */ $s = 56; case 56: if($c) { $c = false; _r$31 = _r$31.$blk(); } if (_r$31 && _r$31.$blk !== undefined) { break s; }
 			_r$31;
 			_ref$2 = ps;
 			_i$2 = 0;
 			/* while (true) { */ case 57:
 				/* if (!(_i$2 < _ref$2.$length)) { break; } */ if(!(_i$2 < _ref$2.$length)) { $s = 58; continue; }
 				p$1 = ((_i$2 < 0 || _i$2 >= _ref$2.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref$2.$array[_ref$2.$offset + _i$2]);
-				_r$32 = fmt.Fprintf(buf, "- %s (%d available)\n", new sliceType$7([p$1, new $Int((_entry$2 = g.Player.Consumables[consumable.keyFor(p$1)], _entry$2 !== undefined ? _entry$2.v : 0))])); /* */ $s = 59; case 59: if($c) { $c = false; _r$32 = _r$32.$blk(); } if (_r$32 && _r$32.$blk !== undefined) { break s; }
+				_r$32 = fmt.Fprintf(buf, "- %s (%d available)\n", new sliceType$8([p$1, new $Int((_entry$2 = g.Player.Consumables[consumable.keyFor(p$1)], _entry$2 !== undefined ? _entry$2.v : 0))])); /* */ $s = 59; case 59: if($c) { $c = false; _r$32 = _r$32.$blk(); } if (_r$32 && _r$32.$blk !== undefined) { break s; }
 				_r$32;
 				_i$2++;
 			/* } */ $s = 57; continue; case 58:
 			$s = 55; continue;
 		/* } else { */ case 54:
-			_r$33 = fmt.Fprintf(buf, "You do not have any projectiles.\n", new sliceType$7([])); /* */ $s = 60; case 60: if($c) { $c = false; _r$33 = _r$33.$blk(); } if (_r$33 && _r$33.$blk !== undefined) { break s; }
+			_r$33 = fmt.Fprintf(buf, "You do not have any projectiles.\n", new sliceType$8([])); /* */ $s = 60; case 60: if($c) { $c = false; _r$33 = _r$33.$blk(); } if (_r$33 && _r$33.$blk !== undefined) { break s; }
 			_r$33;
 		/* } */ case 55:
-		_r$34 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 61; case 61: if($c) { $c = false; _r$34 = _r$34.$blk(); } if (_r$34 && _r$34.$blk !== undefined) { break s; }
+		_r$34 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 61; case 61: if($c) { $c = false; _r$34 = _r$34.$blk(); } if (_r$34 && _r$34.$blk !== undefined) { break s; }
 		_r$34;
-		_r$35 = fmt.Fprintf(buf, "Miscellaneous:\n", new sliceType$7([])); /* */ $s = 62; case 62: if($c) { $c = false; _r$35 = _r$35.$blk(); } if (_r$35 && _r$35.$blk !== undefined) { break s; }
+		_r$35 = fmt.Fprintf(buf, "Miscellaneous:\n", new sliceType$8([])); /* */ $s = 62; case 62: if($c) { $c = false; _r$35 = _r$35.$blk(); } if (_r$35 && _r$35.$blk !== undefined) { break s; }
 		_r$35;
-		_r$36 = fmt.Fprintf(buf, "You collected %d simellas.\n", new sliceType$7([new $Int(g.Player.Simellas)])); /* */ $s = 63; case 63: if($c) { $c = false; _r$36 = _r$36.$blk(); } if (_r$36 && _r$36.$blk !== undefined) { break s; }
+		_r$36 = fmt.Fprintf(buf, "You collected %d simellas.\n", new sliceType$8([new $Int(g.Player.Simellas)])); /* */ $s = 63; case 63: if($c) { $c = false; _r$36 = _r$36.$blk(); } if (_r$36 && _r$36.$blk !== undefined) { break s; }
 		_r$36;
-		_r$37 = fmt.Fprintf(buf, "You killed %d monsters.\n", new sliceType$7([new $Int(g.Stats.Killed)])); /* */ $s = 64; case 64: if($c) { $c = false; _r$37 = _r$37.$blk(); } if (_r$37 && _r$37.$blk !== undefined) { break s; }
+		_r$37 = fmt.Fprintf(buf, "You killed %d monsters.\n", new sliceType$8([new $Int(g.Stats.Killed)])); /* */ $s = 64; case 64: if($c) { $c = false; _r$37 = _r$37.$blk(); } if (_r$37 && _r$37.$blk !== undefined) { break s; }
 		_r$37;
-		_r$38 = fmt.Fprintf(buf, "You spent %.1f turns in the Underground.\n", new sliceType$7([new $Float64((g.Turn) / 10)])); /* */ $s = 65; case 65: if($c) { $c = false; _r$38 = _r$38.$blk(); } if (_r$38 && _r$38.$blk !== undefined) { break s; }
+		_r$38 = fmt.Fprintf(buf, "You spent %.1f turns in the Underground.\n", new sliceType$8([new $Float64((g.Turn) / 10)])); /* */ $s = 65; case 65: if($c) { $c = false; _r$38 = _r$38.$blk(); } if (_r$38 && _r$38.$blk !== undefined) { break s; }
 		_r$38;
-		_r$39 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 66; case 66: if($c) { $c = false; _r$39 = _r$39.$blk(); } if (_r$39 && _r$39.$blk !== undefined) { break s; }
+		_r$39 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 66; case 66: if($c) { $c = false; _r$39 = _r$39.$blk(); } if (_r$39 && _r$39.$blk !== undefined) { break s; }
 		_r$39;
-		_r$40 = fmt.Fprintf(buf, "Last messages:\n", new sliceType$7([])); /* */ $s = 67; case 67: if($c) { $c = false; _r$40 = _r$40.$blk(); } if (_r$40 && _r$40.$blk !== undefined) { break s; }
+		_r$40 = fmt.Fprintf(buf, "Last messages:\n", new sliceType$8([])); /* */ $s = 67; case 67: if($c) { $c = false; _r$40 = _r$40.$blk(); } if (_r$40 && _r$40.$blk !== undefined) { break s; }
 		_r$40;
 		i = g.Log.$length - 10 >> 0;
 		/* while (true) { */ case 68:
@@ -43753,36 +43900,36 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (i >= 0) { $s = 70; continue; }
 			/* */ $s = 71; continue;
 			/* if (i >= 0) { */ case 70:
-				_r$41 = fmt.Fprintf(buf, "%s\n", new sliceType$7([(x$1 = (x$2 = g.Log, ((i < 0 || i >= x$2.$length) ? ($throwRuntimeError("index out of range"), undefined) : x$2.$array[x$2.$offset + i])), new x$1.constructor.elem(x$1))])); /* */ $s = 72; case 72: if($c) { $c = false; _r$41 = _r$41.$blk(); } if (_r$41 && _r$41.$blk !== undefined) { break s; }
+				_r$41 = fmt.Fprintf(buf, "%s\n", new sliceType$8([(x$1 = (x$2 = g.Log, ((i < 0 || i >= x$2.$length) ? ($throwRuntimeError("index out of range"), undefined) : x$2.$array[x$2.$offset + i])), new x$1.constructor.elem(x$1))])); /* */ $s = 72; case 72: if($c) { $c = false; _r$41 = _r$41.$blk(); } if (_r$41 && _r$41.$blk !== undefined) { break s; }
 				_r$41;
 			/* } */ case 71:
 			i = i + (1) >> 0;
 		/* } */ $s = 68; continue; case 69:
-		_r$42 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 73; case 73: if($c) { $c = false; _r$42 = _r$42.$blk(); } if (_r$42 && _r$42.$blk !== undefined) { break s; }
+		_r$42 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 73; case 73: if($c) { $c = false; _r$42 = _r$42.$blk(); } if (_r$42 && _r$42.$blk !== undefined) { break s; }
 		_r$42;
-		_r$43 = fmt.Fprintf(buf, "Dungeon:\n", new sliceType$7([])); /* */ $s = 74; case 74: if($c) { $c = false; _r$43 = _r$43.$blk(); } if (_r$43 && _r$43.$blk !== undefined) { break s; }
+		_r$43 = fmt.Fprintf(buf, "Dungeon:\n", new sliceType$8([])); /* */ $s = 74; case 74: if($c) { $c = false; _r$43 = _r$43.$blk(); } if (_r$43 && _r$43.$blk !== undefined) { break s; }
 		_r$43;
-		_r$44 = fmt.Fprintf(buf, "\xE2\x94\x8C%s\xE2\x94\x90\n", new sliceType$7([new $String(strings.Repeat("\xE2\x94\x80", 79))])); /* */ $s = 75; case 75: if($c) { $c = false; _r$44 = _r$44.$blk(); } if (_r$44 && _r$44.$blk !== undefined) { break s; }
+		_r$44 = fmt.Fprintf(buf, "\xE2\x94\x8C%s\xE2\x94\x90\n", new sliceType$8([new $String(strings.Repeat("\xE2\x94\x80", 79))])); /* */ $s = 75; case 75: if($c) { $c = false; _r$44 = _r$44.$blk(); } if (_r$44 && _r$44.$blk !== undefined) { break s; }
 		_r$44;
 		_r$45 = g.DumpDungeon(); /* */ $s = 76; case 76: if($c) { $c = false; _r$45 = _r$45.$blk(); } if (_r$45 && _r$45.$blk !== undefined) { break s; }
 		_r$46 = buf.WriteString(_r$45); /* */ $s = 77; case 77: if($c) { $c = false; _r$46 = _r$46.$blk(); } if (_r$46 && _r$46.$blk !== undefined) { break s; }
 		_r$46;
-		_r$47 = fmt.Fprintf(buf, "\xE2\x94\x94%s\xE2\x94\x98\n", new sliceType$7([new $String(strings.Repeat("\xE2\x94\x80", 79))])); /* */ $s = 78; case 78: if($c) { $c = false; _r$47 = _r$47.$blk(); } if (_r$47 && _r$47.$blk !== undefined) { break s; }
+		_r$47 = fmt.Fprintf(buf, "\xE2\x94\x94%s\xE2\x94\x98\n", new sliceType$8([new $String(strings.Repeat("\xE2\x94\x80", 79))])); /* */ $s = 78; case 78: if($c) { $c = false; _r$47 = _r$47.$blk(); } if (_r$47 && _r$47.$blk !== undefined) { break s; }
 		_r$47;
-		_r$48 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 79; case 79: if($c) { $c = false; _r$48 = _r$48.$blk(); } if (_r$48 && _r$48.$blk !== undefined) { break s; }
+		_r$48 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 79; case 79: if($c) { $c = false; _r$48 = _r$48.$blk(); } if (_r$48 && _r$48.$blk !== undefined) { break s; }
 		_r$48;
 		_arg$4 = buf;
 		_r$49 = g.DumpedKilledMonsters(); /* */ $s = 80; case 80: if($c) { $c = false; _r$49 = _r$49.$blk(); } if (_r$49 && _r$49.$blk !== undefined) { break s; }
 		_arg$5 = _r$49;
-		_r$50 = fmt.Fprintf(_arg$4, _arg$5, new sliceType$7([])); /* */ $s = 81; case 81: if($c) { $c = false; _r$50 = _r$50.$blk(); } if (_r$50 && _r$50.$blk !== undefined) { break s; }
+		_r$50 = fmt.Fprintf(_arg$4, _arg$5, new sliceType$8([])); /* */ $s = 81; case 81: if($c) { $c = false; _r$50 = _r$50.$blk(); } if (_r$50 && _r$50.$blk !== undefined) { break s; }
 		_r$50;
-		_r$51 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 82; case 82: if($c) { $c = false; _r$51 = _r$51.$blk(); } if (_r$51 && _r$51.$blk !== undefined) { break s; }
+		_r$51 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 82; case 82: if($c) { $c = false; _r$51 = _r$51.$blk(); } if (_r$51 && _r$51.$blk !== undefined) { break s; }
 		_r$51;
-		_r$52 = fmt.Fprintf(buf, "Timeline:\n", new sliceType$7([])); /* */ $s = 83; case 83: if($c) { $c = false; _r$52 = _r$52.$blk(); } if (_r$52 && _r$52.$blk !== undefined) { break s; }
+		_r$52 = fmt.Fprintf(buf, "Timeline:\n", new sliceType$8([])); /* */ $s = 83; case 83: if($c) { $c = false; _r$52 = _r$52.$blk(); } if (_r$52 && _r$52.$blk !== undefined) { break s; }
 		_r$52;
-		_r$53 = fmt.Fprintf(buf, g.DumpStory(), new sliceType$7([])); /* */ $s = 84; case 84: if($c) { $c = false; _r$53 = _r$53.$blk(); } if (_r$53 && _r$53.$blk !== undefined) { break s; }
+		_r$53 = fmt.Fprintf(buf, g.DumpStory(), new sliceType$8([])); /* */ $s = 84; case 84: if($c) { $c = false; _r$53 = _r$53.$blk(); } if (_r$53 && _r$53.$blk !== undefined) { break s; }
 		_r$53;
-		_r$54 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 85; case 85: if($c) { $c = false; _r$54 = _r$54.$blk(); } if (_r$54 && _r$54.$blk !== undefined) { break s; }
+		_r$54 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 85; case 85: if($c) { $c = false; _r$54 = _r$54.$blk(); } if (_r$54 && _r$54.$blk !== undefined) { break s; }
 		_r$54;
 		$r = g.DetailedStatistics(buf); /* */ $s = 86; case 86: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return buf.String();
@@ -43793,25 +43940,25 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _i, _i$1, _i$2, _i$3, _i$4, _r, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$16, _r$17, _r$18, _r$19, _r$2, _r$20, _r$21, _r$22, _r$23, _r$24, _r$25, _r$26, _r$27, _r$28, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, _ref$1, _ref$2, _ref$3, _ref$4, c, g, hfmt, i, i$1, i$2, i$3, i$4, maxDepth, n, n$1, n$2, s, w, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _i$3 = $f._i$3; _i$4 = $f._i$4; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$16 = $f._r$16; _r$17 = $f._r$17; _r$18 = $f._r$18; _r$19 = $f._r$19; _r$2 = $f._r$2; _r$20 = $f._r$20; _r$21 = $f._r$21; _r$22 = $f._r$22; _r$23 = $f._r$23; _r$24 = $f._r$24; _r$25 = $f._r$25; _r$26 = $f._r$26; _r$27 = $f._r$27; _r$28 = $f._r$28; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; _ref$3 = $f._ref$3; _ref$4 = $f._ref$4; c = $f.c; g = $f.g; hfmt = $f.hfmt; i = $f.i; i$1 = $f.i$1; i$2 = $f.i$2; i$3 = $f.i$3; i$4 = $f.i$4; maxDepth = $f.maxDepth; n = $f.n; n$1 = $f.n$1; n$2 = $f.n$2; s = $f.s; w = $f.w; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		_r = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r;
-		_r$1 = fmt.Fprintf(w, "Statistics:\n", new sliceType$7([])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Fprintf(w, "Statistics:\n", new sliceType$8([])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_r$1;
-		_r$2 = fmt.Fprintf(w, "You had %d hits (%.1f per 100 turns), %d misses (%.1f), and %d moves (%.1f).\n", new sliceType$7([new $Int(g.Stats.Hits), new $Float64((g.Stats.Hits) * 100 / ((g.Stats.Turns + 1 >> 0))), new $Int(g.Stats.Misses), new $Float64((g.Stats.Misses) * 100 / ((g.Stats.Turns + 1 >> 0))), new $Int(g.Stats.Moves), new $Float64((g.Stats.Moves) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 3; case 3: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+		_r$2 = fmt.Fprintf(w, "You had %d hits (%.1f per 100 turns), %d misses (%.1f), and %d moves (%.1f).\n", new sliceType$8([new $Int(g.Stats.Hits), new $Float64((g.Stats.Hits) * 100 / ((g.Stats.Turns + 1 >> 0))), new $Int(g.Stats.Misses), new $Float64((g.Stats.Misses) * 100 / ((g.Stats.Turns + 1 >> 0))), new $Int(g.Stats.Moves), new $Float64((g.Stats.Moves) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 3; case 3: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		_r$2;
-		_r$3 = fmt.Fprintf(w, "You were lucky %d times.\n", new sliceType$7([new $Int(g.Stats.TimesLucky)])); /* */ $s = 4; case 4: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+		_r$3 = fmt.Fprintf(w, "You were lucky %d times.\n", new sliceType$8([new $Int(g.Stats.TimesLucky)])); /* */ $s = 4; case 4: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 		_r$3;
-		_r$4 = fmt.Fprintf(w, "There were %d fires.\n", new sliceType$7([new $Int(g.Stats.Burns)])); /* */ $s = 5; case 5: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+		_r$4 = fmt.Fprintf(w, "There were %d fires.\n", new sliceType$8([new $Int(g.Stats.Burns)])); /* */ $s = 5; case 5: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 		_r$4;
-		_r$5 = fmt.Fprintf(w, "There were %d destroyed walls.\n", new sliceType$7([new $Int(g.Stats.Digs)])); /* */ $s = 6; case 6: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+		_r$5 = fmt.Fprintf(w, "There were %d destroyed walls.\n", new sliceType$8([new $Int(g.Stats.Digs)])); /* */ $s = 6; case 6: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 		_r$5;
-		_r$6 = fmt.Fprintf(w, "You rested %d times (%d interruptions).\n", new sliceType$7([new $Int(g.Stats.Rest), new $Int(g.Stats.RestInterrupt)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+		_r$6 = fmt.Fprintf(w, "You rested %d times (%d interruptions).\n", new sliceType$8([new $Int(g.Stats.Rest), new $Int(g.Stats.RestInterrupt)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 		_r$6;
-		_r$7 = fmt.Fprintf(w, "You spent %.1f%% turns wounded.\n", new sliceType$7([new $Float64((g.Stats.TWounded) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 8; case 8: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+		_r$7 = fmt.Fprintf(w, "You spent %.1f%% turns wounded.\n", new sliceType$8([new $Float64((g.Stats.TWounded) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 8; case 8: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 		_r$7;
-		_r$8 = fmt.Fprintf(w, "You spent %.1f%% turns with monsters in sight.\n", new sliceType$7([new $Float64((g.Stats.TMonsLOS) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 9; case 9: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+		_r$8 = fmt.Fprintf(w, "You spent %.1f%% turns with monsters in sight.\n", new sliceType$8([new $Float64((g.Stats.TMonsLOS) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 9; case 9: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 		_r$8;
-		_r$9 = fmt.Fprintf(w, "You spent %.1f%% turns wounded with monsters in sight.\n", new sliceType$7([new $Float64((g.Stats.TMWounded) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 10; case 10: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+		_r$9 = fmt.Fprintf(w, "You spent %.1f%% turns wounded with monsters in sight.\n", new sliceType$8([new $Float64((g.Stats.TMWounded) * 100 / ((g.Stats.Turns + 1 >> 0)))])); /* */ $s = 10; case 10: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 		_r$9;
 		maxDepth = g.Depth;
 		if (g.Player.HP <= 0) {
@@ -43820,21 +43967,21 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (maxDepth > 13) {
 			maxDepth = 13;
 		}
-		_r$10 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 11; case 11: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+		_r$10 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 11; case 11: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 		_r$10;
 		hfmt = "%-23s";
-		_r$11 = fmt.Fprintf(w, hfmt, new sliceType$7([new $String("Quantity/Depth")])); /* */ $s = 12; case 12: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
+		_r$11 = fmt.Fprintf(w, hfmt, new sliceType$8([new $String("Quantity/Depth")])); /* */ $s = 12; case 12: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
 		_r$11;
 		i = 0;
 		/* while (true) { */ case 13:
 			/* if (!(i < maxDepth)) { break; } */ if(!(i < maxDepth)) { $s = 14; continue; }
-			_r$12 = fmt.Fprintf(w, " %3d", new sliceType$7([new $Int(i)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+			_r$12 = fmt.Fprintf(w, " %3d", new sliceType$8([new $Int(i)])); /* */ $s = 15; case 15: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 			_r$12;
 			i = i + (1) >> 0;
 		/* } */ $s = 13; continue; case 14:
-		_r$13 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 16; case 16: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
+		_r$13 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 16; case 16: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
 		_r$13;
-		_r$14 = fmt.Fprintf(w, hfmt, new sliceType$7([new $String("Explored (%)")])); /* */ $s = 17; case 17: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
+		_r$14 = fmt.Fprintf(w, hfmt, new sliceType$8([new $String("Explored (%)")])); /* */ $s = 17; case 17: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
 		_r$14;
 		_ref = g.Stats.DExplPerc;
 		_i = 0;
@@ -43845,13 +43992,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			if (i$1 >= maxDepth) {
 				/* break; */ $s = 19; continue;
 			}
-			_r$15 = fmt.Fprintf(w, " %3d", new sliceType$7([new $Int(n)])); /* */ $s = 20; case 20: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
+			_r$15 = fmt.Fprintf(w, " %3d", new sliceType$8([new $Int(n)])); /* */ $s = 20; case 20: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
 			_r$15;
 			_i++;
 		/* } */ $s = 18; continue; case 19:
-		_r$16 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 21; case 21: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
+		_r$16 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 21; case 21: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
 		_r$16;
-		_r$17 = fmt.Fprintf(w, hfmt, new sliceType$7([new $String("Sleeping monsters (%)")])); /* */ $s = 22; case 22: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
+		_r$17 = fmt.Fprintf(w, hfmt, new sliceType$8([new $String("Sleeping monsters (%)")])); /* */ $s = 22; case 22: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
 		_r$17;
 		_ref$1 = g.Stats.DSleepingPerc;
 		_i$1 = 0;
@@ -43862,13 +44009,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			if (i$2 >= maxDepth) {
 				/* break; */ $s = 24; continue;
 			}
-			_r$18 = fmt.Fprintf(w, " %3d", new sliceType$7([new $Int(n$1)])); /* */ $s = 25; case 25: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
+			_r$18 = fmt.Fprintf(w, " %3d", new sliceType$8([new $Int(n$1)])); /* */ $s = 25; case 25: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
 			_r$18;
 			_i$1++;
 		/* } */ $s = 23; continue; case 24:
-		_r$19 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 26; case 26: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
+		_r$19 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 26; case 26: if($c) { $c = false; _r$19 = _r$19.$blk(); } if (_r$19 && _r$19.$blk !== undefined) { break s; }
 		_r$19;
-		_r$20 = fmt.Fprintf(w, hfmt, new sliceType$7([new $String("Dead monsters (%)")])); /* */ $s = 27; case 27: if($c) { $c = false; _r$20 = _r$20.$blk(); } if (_r$20 && _r$20.$blk !== undefined) { break s; }
+		_r$20 = fmt.Fprintf(w, hfmt, new sliceType$8([new $String("Dead monsters (%)")])); /* */ $s = 27; case 27: if($c) { $c = false; _r$20 = _r$20.$blk(); } if (_r$20 && _r$20.$blk !== undefined) { break s; }
 		_r$20;
 		_ref$2 = g.Stats.DKilledPerc;
 		_i$2 = 0;
@@ -43879,13 +44026,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			if (i$3 >= maxDepth) {
 				/* break; */ $s = 29; continue;
 			}
-			_r$21 = fmt.Fprintf(w, " %3d", new sliceType$7([new $Int(n$2)])); /* */ $s = 30; case 30: if($c) { $c = false; _r$21 = _r$21.$blk(); } if (_r$21 && _r$21.$blk !== undefined) { break s; }
+			_r$21 = fmt.Fprintf(w, " %3d", new sliceType$8([new $Int(n$2)])); /* */ $s = 30; case 30: if($c) { $c = false; _r$21 = _r$21.$blk(); } if (_r$21 && _r$21.$blk !== undefined) { break s; }
 			_r$21;
 			_i$2++;
 		/* } */ $s = 28; continue; case 29:
-		_r$22 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 31; case 31: if($c) { $c = false; _r$22 = _r$22.$blk(); } if (_r$22 && _r$22.$blk !== undefined) { break s; }
+		_r$22 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 31; case 31: if($c) { $c = false; _r$22 = _r$22.$blk(); } if (_r$22 && _r$22.$blk !== undefined) { break s; }
 		_r$22;
-		_r$23 = fmt.Fprintf(w, hfmt, new sliceType$7([new $String("Dungeon Layout")])); /* */ $s = 32; case 32: if($c) { $c = false; _r$23 = _r$23.$blk(); } if (_r$23 && _r$23.$blk !== undefined) { break s; }
+		_r$23 = fmt.Fprintf(w, hfmt, new sliceType$8([new $String("Dungeon Layout")])); /* */ $s = 32; case 32: if($c) { $c = false; _r$23 = _r$23.$blk(); } if (_r$23 && _r$23.$blk !== undefined) { break s; }
 		_r$23;
 		_ref$3 = g.Stats.DLayout;
 		_i$3 = 0;
@@ -43896,22 +44043,22 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			if (i$4 >= maxDepth) {
 				/* break; */ $s = 34; continue;
 			}
-			_r$24 = fmt.Fprintf(w, " %3s", new sliceType$7([new $String(s)])); /* */ $s = 35; case 35: if($c) { $c = false; _r$24 = _r$24.$blk(); } if (_r$24 && _r$24.$blk !== undefined) { break s; }
+			_r$24 = fmt.Fprintf(w, " %3s", new sliceType$8([new $String(s)])); /* */ $s = 35; case 35: if($c) { $c = false; _r$24 = _r$24.$blk(); } if (_r$24 && _r$24.$blk !== undefined) { break s; }
 			_r$24;
 			_i$3++;
 		/* } */ $s = 33; continue; case 34:
-		_r$25 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 36; case 36: if($c) { $c = false; _r$25 = _r$25.$blk(); } if (_r$25 && _r$25.$blk !== undefined) { break s; }
+		_r$25 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 36; case 36: if($c) { $c = false; _r$25 = _r$25.$blk(); } if (_r$25 && _r$25.$blk !== undefined) { break s; }
 		_r$25;
-		_r$26 = fmt.Fprintf(w, "\n", new sliceType$7([])); /* */ $s = 37; case 37: if($c) { $c = false; _r$26 = _r$26.$blk(); } if (_r$26 && _r$26.$blk !== undefined) { break s; }
+		_r$26 = fmt.Fprintf(w, "\n", new sliceType$8([])); /* */ $s = 37; case 37: if($c) { $c = false; _r$26 = _r$26.$blk(); } if (_r$26 && _r$26.$blk !== undefined) { break s; }
 		_r$26;
-		_r$27 = fmt.Fprintf(w, "Legend:", new sliceType$7([])); /* */ $s = 38; case 38: if($c) { $c = false; _r$27 = _r$27.$blk(); } if (_r$27 && _r$27.$blk !== undefined) { break s; }
+		_r$27 = fmt.Fprintf(w, "Legend:", new sliceType$8([])); /* */ $s = 38; case 38: if($c) { $c = false; _r$27 = _r$27.$blk(); } if (_r$27 && _r$27.$blk !== undefined) { break s; }
 		_r$27;
-		_ref$4 = new sliceType$10([0, 1, 2, 3, 4]);
+		_ref$4 = new sliceType$11([0, 1, 2, 3, 4]);
 		_i$4 = 0;
 		/* while (true) { */ case 39:
 			/* if (!(_i$4 < _ref$4.$length)) { break; } */ if(!(_i$4 < _ref$4.$length)) { $s = 40; continue; }
 			c = ((_i$4 < 0 || _i$4 >= _ref$4.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref$4.$array[_ref$4.$offset + _i$4]);
-			_r$28 = fmt.Fprintf(w, " %s (%s)", new sliceType$7([new $String(new dungen(c).Description()), new $String(new dungen(c).String())])); /* */ $s = 41; case 41: if($c) { $c = false; _r$28 = _r$28.$blk(); } if (_r$28 && _r$28.$blk !== undefined) { break s; }
+			_r$28 = fmt.Fprintf(w, " %s (%s)", new sliceType$8([new $String(new dungen(c).Description()), new $String(new dungen(c).String())])); /* */ $s = 41; case 41: if($c) { $c = false; _r$28 = _r$28.$blk(); } if (_r$28 && _r$28.$blk !== undefined) { break s; }
 			_r$28;
 			_i$4++;
 		/* } */ $s = 39; continue; case 40:
@@ -43929,7 +44076,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _1, _entry, _entry$1, _entry$2, _entry$3, _entry$4, _entry$5, _entry$6, _entry$7, _entry$8, _entry$9, _i, _r, _r$1, _r$2, _ref, _tuple, _tuple$1, _tuple$2, _tuple$3, _tuple$4, _tuple$5, _tuple$6, _tuple$7, buf, c, c$1, eq, g, i, m, ok, ok$1, ok$2, ok$3, ok$4, ok$5, ok$6, ok$7, pos, r, rod$1, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _entry$3 = $f._entry$3; _entry$4 = $f._entry$4; _entry$5 = $f._entry$5; _entry$6 = $f._entry$6; _entry$7 = $f._entry$7; _entry$8 = $f._entry$8; _entry$9 = $f._entry$9; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; _tuple$4 = $f._tuple$4; _tuple$5 = $f._tuple$5; _tuple$6 = $f._tuple$6; _tuple$7 = $f._tuple$7; buf = $f.buf; c = $f.c; c$1 = $f.c$1; eq = $f.eq; g = $f.g; i = $f.i; m = $f.m; ok = $f.ok; ok$1 = $f.ok$1; ok$2 = $f.ok$2; ok$3 = $f.ok$3; ok$4 = $f.ok$4; ok$5 = $f.ok$5; ok$6 = $f.ok$6; ok$7 = $f.ok$7; pos = $f.pos; r = $f.r; rod$1 = $f.rod$1; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		buf = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
+		buf = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
 		_ref = g.Dungeon.Cells;
 		_i = 0;
 		/* while (true) { */ case 1:
@@ -44048,8 +44195,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _i, _r, _r$1, _r$2, _ref, buf, g, mk, ms, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; buf = $f.buf; g = $f.g; mk = $f.mk; ms = $f.ms; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		buf = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
-		_r = fmt.Fprint(buf, new sliceType$7([new $String("Killed Monsters:\n")])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		buf = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
+		_r = fmt.Fprint(buf, new sliceType$8([new $String("Killed Monsters:\n")])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r;
 		_r$1 = g.SortedKilledMonsters(); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		ms = _r$1;
@@ -44058,7 +44205,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* while (true) { */ case 3:
 			/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 4; continue; }
 			mk = ((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]);
-			_r$2 = fmt.Fprintf(buf, "- %s: %d\n", new sliceType$7([new monsterKind(mk), new $Int((_entry = g.Stats.KilledMons[monsterKind.keyFor(mk)], _entry !== undefined ? _entry.v : 0))])); /* */ $s = 5; case 5: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Fprintf(buf, "- %s: %d\n", new sliceType$8([new monsterKind(mk), new $Int((_entry = g.Stats.KilledMons[monsterKind.keyFor(mk)], _entry !== undefined ? _entry.v : 0))])); /* */ $s = 5; case 5: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_r$2;
 			_i++;
 		/* } */ $s = 3; continue; case 4:
@@ -44070,42 +44217,42 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, _r$1, _r$10, _r$11, _r$12, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _tuple, buf, dataDir, err, err$1, g, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _tuple = $f._tuple; buf = $f.buf; dataDir = $f.dataDir; err = $f.err; err$1 = $f.err$1; g = $f.g; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		buf = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
-		_r = fmt.Fprintf(buf, " \xE2\x99\xA3 Boohu version %s play summary \xE2\x99\xA3\n\n", new sliceType$7([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		buf = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
+		_r = fmt.Fprintf(buf, " \xE2\x99\xA3 Boohu version %s play summary \xE2\x99\xA3\n\n", new sliceType$8([new $String($pkg.Version)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r;
 		/* */ if (g.Wizard) { $s = 2; continue; }
 		/* */ $s = 3; continue;
 		/* if (g.Wizard) { */ case 2:
-			_r$1 = fmt.Fprintf(buf, "**WIZARD MODE**\n", new sliceType$7([])); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+			_r$1 = fmt.Fprintf(buf, "**WIZARD MODE**\n", new sliceType$8([])); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 			_r$1;
 		/* } */ case 3:
 		/* */ if (g.Player.HP > 0 && g.Depth > 12) { $s = 5; continue; }
 		/* */ if (g.Player.HP <= 0) { $s = 6; continue; }
 		/* */ $s = 7; continue;
 		/* if (g.Player.HP > 0 && g.Depth > 12) { */ case 5:
-			_r$2 = fmt.Fprintf(buf, "You escaped from Hareka's Underground alive!\n", new sliceType$7([])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+			_r$2 = fmt.Fprintf(buf, "You escaped from Hareka's Underground alive!\n", new sliceType$8([])); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_r$2;
 			$s = 8; continue;
 		/* } else if (g.Player.HP <= 0) { */ case 6:
-			_r$3 = fmt.Fprintf(buf, "You died while exploring depth %d of Hareka's Underground.\n", new sliceType$7([new $Int(g.Depth)])); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+			_r$3 = fmt.Fprintf(buf, "You died while exploring depth %d of Hareka's Underground.\n", new sliceType$8([new $Int(g.Depth)])); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			_r$3;
 			$s = 8; continue;
 		/* } else { */ case 7:
-			_r$4 = fmt.Fprintf(buf, "You are exploring depth %d of Hareka's Underground.\n", new sliceType$7([new $Int(g.Depth)])); /* */ $s = 11; case 11: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+			_r$4 = fmt.Fprintf(buf, "You are exploring depth %d of Hareka's Underground.\n", new sliceType$8([new $Int(g.Depth)])); /* */ $s = 11; case 11: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			_r$4;
 		/* } */ case 8:
-		_r$5 = fmt.Fprintf(buf, "You collected %d simellas.\n", new sliceType$7([new $Int(g.Player.Simellas)])); /* */ $s = 12; case 12: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+		_r$5 = fmt.Fprintf(buf, "You collected %d simellas.\n", new sliceType$8([new $Int(g.Player.Simellas)])); /* */ $s = 12; case 12: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 		_r$5;
-		_r$6 = fmt.Fprintf(buf, "You killed %d monsters.\n", new sliceType$7([new $Int(g.Stats.Killed)])); /* */ $s = 13; case 13: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
+		_r$6 = fmt.Fprintf(buf, "You killed %d monsters.\n", new sliceType$8([new $Int(g.Stats.Killed)])); /* */ $s = 13; case 13: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 		_r$6;
-		_r$7 = fmt.Fprintf(buf, "You spent %.1f turns in the Underground.\n", new sliceType$7([new $Float64((g.Turn) / 10)])); /* */ $s = 14; case 14: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+		_r$7 = fmt.Fprintf(buf, "You spent %.1f turns in the Underground.\n", new sliceType$8([new $Float64((g.Turn) / 10)])); /* */ $s = 14; case 14: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 		_r$7;
-		_r$8 = fmt.Fprintf(buf, "\n", new sliceType$7([])); /* */ $s = 15; case 15: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+		_r$8 = fmt.Fprintf(buf, "\n", new sliceType$8([])); /* */ $s = 15; case 15: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 		_r$8;
 		/* */ if (!($interfaceIsEqual(err, $ifaceNil))) { $s = 16; continue; }
 		/* */ $s = 17; continue;
 		/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 16:
-			_r$9 = fmt.Fprintf(buf, "Error writing dump: %v.\n", new sliceType$7([err])); /* */ $s = 19; case 19: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+			_r$9 = fmt.Fprintf(buf, "Error writing dump: %v.\n", new sliceType$8([err])); /* */ $s = 19; case 19: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 			_r$9;
 			$s = 18; continue;
 		/* } else { */ case 17:
@@ -44115,13 +44262,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if ($interfaceIsEqual(err$1, $ifaceNil)) { $s = 20; continue; }
 			/* */ $s = 21; continue;
 			/* if ($interfaceIsEqual(err$1, $ifaceNil)) { */ case 20:
-				_r$10 = fmt.Fprintf(buf, "Full game statistics dump written to %s.\n", new sliceType$7([new $String(filepath.Join(new sliceType$3([dataDir, "dump"])))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+				_r$10 = fmt.Fprintf(buf, "Full game statistics dump written to %s.\n", new sliceType$8([new $String(filepath.Join(new sliceType$4([dataDir, "dump"])))])); /* */ $s = 22; case 22: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 				_r$10;
 			/* } */ case 21:
 		/* } */ case 18:
-		_r$11 = fmt.Fprintf(buf, "\n\n", new sliceType$7([])); /* */ $s = 23; case 23: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
+		_r$11 = fmt.Fprintf(buf, "\n\n", new sliceType$8([])); /* */ $s = 23; case 23: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
 		_r$11;
-		_r$12 = fmt.Fprintf(buf, "\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80Press esc or space to quit\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80", new sliceType$7([])); /* */ $s = 24; case 24: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
+		_r$12 = fmt.Fprintf(buf, "\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80Press esc or space to quit\xE2\x94\x80\xE2\x94\x80\xE2\x94\x80", new sliceType$8([])); /* */ $s = 24; case 24: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 		_r$12;
 		$s = -1; return buf.String();
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.SimplifedDump }; } $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$11 = _r$11; $f._r$12 = _r$12; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f.buf = buf; $f.dataDir = dataDir; $f.err = err; $f.err$1 = err$1; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
@@ -44456,7 +44603,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (r2pos.Y < r1.pos.Y) {
 			r2pos.Y = (r2.pos.Y + r2.h >> 0) - 1 >> 0;
 		}
-		mp = new dungeonPath.ptr(d, arrayType$1.zero());
+		mp = new dungeonPath.ptr(d, arrayType$2.zero());
 		_r$4 = AstarPath(mp, $clone(r1pos, position), $clone(r2pos, position)); /* */ $s = 5; case 5: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 		_tuple = _r$4;
 		path = _tuple[0];
@@ -44666,7 +44813,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				x$1 = x$1 + (2) >> 0;
 			}
 		/* } */ case 3:
-		area = $makeSlice(sliceType$5, 9);
+		area = $makeSlice(sliceType$6, 9);
 		_ref = $toNativeArray($kindStruct, [$clone(pos, position), new position.ptr(pos.X, (pos.Y + h >> 0) - 1 >> 0), new position.ptr((pos.X + w >> 0) - 1 >> 0, pos.Y), new position.ptr((pos.X + w >> 0) - 1 >> 0, (pos.Y + h >> 0) - 1 >> 0)]);
 		_i = 0;
 		while (true) {
@@ -44757,9 +44904,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, _r$1, _r$10, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, count, d, g, h, i, r, ro, rooms, w, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; count = $f.count; d = $f.d; g = $f.g; h = $f.h; i = $f.i; r = $f.r; ro = $f.ro; rooms = $f.rooms; w = $f.w; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		d = new dungeon.ptr(sliceType$11.nil);
-		d.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
-		rooms = new sliceType$12([]);
+		d = new dungeon.ptr(sliceType$12.nil);
+		d.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
+		rooms = new sliceType$13([]);
 		i = 0;
 		/* while (true) { */ case 1:
 			/* if (!(i < 45)) { break; } */ if(!(i < 45)) { $s = 2; continue; }
@@ -44916,9 +45063,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _i, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, count, d, g, h, i, i$1, r, ro, ro$1, rooms, w, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; count = $f.count; d = $f.d; g = $f.g; h = $f.h; i = $f.i; i$1 = $f.i$1; r = $f.r; ro = $f.ro; ro$1 = $f.ro$1; rooms = $f.rooms; w = $f.w; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		d = new dungeon.ptr(sliceType$11.nil);
-		d.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
-		rooms = new sliceType$12([]);
+		d = new dungeon.ptr(sliceType$12.nil);
+		d.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
+		rooms = new sliceType$13([]);
 		i = 0;
 		/* while (true) { */ case 1:
 			/* if (!(i < 35)) { break; } */ if(!(i < 35)) { $s = 2; continue; }
@@ -45045,8 +45192,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _entry$2, _i, _i$1, _i$2, _i$3, _key, _key$1, _key$2, _keys, _keys$1, _keys$2, _r, _r$1, _r$10, _r$11, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, _ref$1, _ref$2, _ref$3, _tuple, _tuple$1, _v, block, cells, d, diag, digs, doors, g, h, h$1, h$2, i, lastValid, max, notValid, npos, pos, pos$1, pos$2, pos$3, pos$4, w, w$1, w$2, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _i$3 = $f._i$3; _key = $f._key; _key$1 = $f._key$1; _key$2 = $f._key$2; _keys = $f._keys; _keys$1 = $f._keys$1; _keys$2 = $f._keys$2; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; _ref$3 = $f._ref$3; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _v = $f._v; block = $f.block; cells = $f.cells; d = $f.d; diag = $f.diag; digs = $f.digs; doors = $f.doors; g = $f.g; h = $f.h; h$1 = $f.h$1; h$2 = $f.h$2; i = $f.i; lastValid = $f.lastValid; max = $f.max; notValid = $f.notValid; npos = $f.npos; pos = $f.pos; pos$1 = $f.pos$1; pos$2 = $f.pos$2; pos$3 = $f.pos$3; pos$4 = $f.pos$4; w = $f.w; w$1 = $f.w$1; w$2 = $f.w$2; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		d = new dungeon.ptr(sliceType$11.nil);
-		d.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
+		d = new dungeon.ptr(sliceType$12.nil);
+		d.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
 		pos = new position.ptr(40, 10);
 		max = 882;
 		d.SetCell($clone(pos, position), 1);
@@ -45082,7 +45229,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		max = 21;
 		digs = 0;
 		i = 0;
-		block = $makeSlice(sliceType$5, 0, 64);
+		block = $makeSlice(sliceType$6, 0, 64);
 		/* while (true) { */ case 5:
 			/* if (!(cells < max)) { break; } */ if(!(cells < max)) { $s = 6; continue; }
 			i = i + (1) >> 0;
@@ -45268,7 +45415,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* continue; */ $s = 2; continue;
 			/* } */ case 9:
 			if (!$clone(pos, position).valid()) {
-				$s = -1; return sliceType$5.nil;
+				$s = -1; return sliceType$6.nil;
 			}
 		/* } */ $s = 2; continue; case 3:
 		$s = -1; return block;
@@ -45279,8 +45426,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _entry$2, _i, _i$1, _i$2, _i$3, _key, _key$1, _key$2, _keys, _keys$1, _keys$2, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, _ref$1, _ref$2, _ref$3, _tuple, _tuple$1, _v, block, cells, center, d, diag, doors, g, h, h$1, h$2, max, pos, pos$1, pos$2, pos$3, w, w$1, w$2, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _i$3 = $f._i$3; _key = $f._key; _key$1 = $f._key$1; _key$2 = $f._key$2; _keys = $f._keys; _keys$1 = $f._keys$1; _keys$2 = $f._keys$2; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; _ref$3 = $f._ref$3; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _v = $f._v; block = $f.block; cells = $f.cells; center = $f.center; d = $f.d; diag = $f.diag; doors = $f.doors; g = $f.g; h = $f.h; h$1 = $f.h$1; h$2 = $f.h$2; max = $f.max; pos = $f.pos; pos$1 = $f.pos$1; pos$2 = $f.pos$2; pos$3 = $f.pos$3; w = $f.w; w$1 = $f.w$1; w$2 = $f.w$2; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		d = new dungeon.ptr(sliceType$11.nil);
-		d.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
+		d = new dungeon.ptr(sliceType$12.nil);
+		d.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
 		center = new position.ptr(40, 10);
 		d.SetCell($clone(center, position), 1);
 		d.SetCell($clone($clone(center, position).E(), position), 1);
@@ -45295,7 +45442,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		cells = 1;
 		_r = RandInt(2); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		diag = _r === 0;
-		block = $makeSlice(sliceType$5, 0, 64);
+		block = $makeSlice(sliceType$6, 0, 64);
 		/* while (true) { */ case 2:
 			/* if (!(cells < max)) { break; } */ if(!(cells < max)) { $s = 3; continue; }
 			_r$1 = d.DigBlock(block, diag); /* */ $s = 4; case 4: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
@@ -45423,10 +45570,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _key = $f._key; _key$1 = $f._key$1; _r = $f._r; _ref = $f._ref; conn = $f.conn; count = $f.count; d = $f.d; nb = $f.nb; nf = $f.nf; npos = $f.npos; pos = $f.pos; stack = $f.stack; x = $f.x; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		d = this;
 		conn = $makeMap(position.keyFor, []);
-		stack = new sliceType$5([$clone(pos, position)]);
+		stack = new sliceType$6([$clone(pos, position)]);
 		count = 0;
 		_key = $clone(pos, position); (conn || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key)] = { k: _key, v: true };
-		nb = $makeSlice(sliceType$5, 0, 8);
+		nb = $makeSlice(sliceType$6, 0, 8);
 		/* while (true) { */ case 1:
 			/* if (!(stack.$length > 0)) { break; } */ if(!(stack.$length > 0)) { $s = 2; continue; }
 			position.copy(pos, (x = stack.$length - 1 >> 0, ((x < 0 || x >= stack.$length) ? ($throwRuntimeError("index out of range"), undefined) : stack.$array[stack.$offset + x])));
@@ -45454,8 +45601,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _i, _i$1, _i$2, _i$3, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _ref, _ref$1, _ref$2, _ref$3, _tuple, _tuple$1, area, block, bufm, c, c1, c2, cells, conn, count, d, diag, digs, g, h, i, i$1, i$2, i$3, i$4, j, max, ncount, pos, pos$1, pos$2, pos$3, pos$4, r, w, winner, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _i$3 = $f._i$3; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; _ref$3 = $f._ref$3; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; area = $f.area; block = $f.block; bufm = $f.bufm; c = $f.c; c1 = $f.c1; c2 = $f.c2; cells = $f.cells; conn = $f.conn; count = $f.count; d = $f.d; diag = $f.diag; digs = $f.digs; g = $f.g; h = $f.h; i = $f.i; i$1 = $f.i$1; i$2 = $f.i$2; i$3 = $f.i$3; i$4 = $f.i$4; j = $f.j; max = $f.max; ncount = $f.ncount; pos = $f.pos; pos$1 = $f.pos$1; pos$2 = $f.pos$2; pos$3 = $f.pos$3; pos$4 = $f.pos$4; r = $f.r; w = $f.w; winner = $f.winner; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		d = new dungeon.ptr(sliceType$11.nil);
-		d.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
+		d = new dungeon.ptr(sliceType$12.nil);
+		d.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
 		_ref = d.Cells;
 		_i = 0;
 		/* while (true) { */ case 1:
@@ -45471,9 +45618,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			}
 			_i++;
 		/* } */ $s = 1; continue; case 2:
-		bufm = new dungeon.ptr(sliceType$11.nil);
-		bufm.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
-		area = $makeSlice(sliceType$5, 0, 25);
+		bufm = new dungeon.ptr(sliceType$12.nil);
+		bufm.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
+		area = $makeSlice(sliceType$6, 0, 25);
 		i$1 = 0;
 		while (true) {
 			if (!(i$1 < 5)) { break; }
@@ -45551,7 +45698,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		cells = 1;
 		digs = 0;
 		i$4 = 0;
-		block = $makeSlice(sliceType$5, 0, 64);
+		block = $makeSlice(sliceType$6, 0, 64);
 		/* while (true) { */ case 11:
 			/* if (!(cells < max)) { break; } */ if(!(cells < max)) { $s = 12; continue; }
 			i$4 = i$4 + (1) >> 0;
@@ -45615,8 +45762,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _i, _i$1, _i$2, _key, _r, _ref, _ref$1, _ref$2, area, bufm, c, c1, c2, d, fungus, g, h, i, i$1, i$2, j, pos, pos$1, r, w, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _key = $f._key; _r = $f._r; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; area = $f.area; bufm = $f.bufm; c = $f.c; c1 = $f.c1; c2 = $f.c2; d = $f.d; fungus = $f.fungus; g = $f.g; h = $f.h; i = $f.i; i$1 = $f.i$1; i$2 = $f.i$2; j = $f.j; pos = $f.pos; pos$1 = $f.pos$1; r = $f.r; w = $f.w; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		d = new dungeon.ptr(sliceType$11.nil);
-		d.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
+		d = new dungeon.ptr(sliceType$12.nil);
+		d.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
 		_ref = d.Cells;
 		_i = 0;
 		/* while (true) { */ case 1:
@@ -45632,12 +45779,12 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			}
 			_i++;
 		/* } */ $s = 1; continue; case 2:
-		area = $makeSlice(sliceType$5, 0, 25);
+		area = $makeSlice(sliceType$6, 0, 25);
 		i$1 = 0;
 		while (true) {
 			if (!(i$1 < 6)) { break; }
-			bufm = new dungeon.ptr(sliceType$11.nil);
-			bufm.Cells = $makeSlice(sliceType$11, ($imul(h, w)));
+			bufm = new dungeon.ptr(sliceType$12.nil);
+			bufm.Cells = $makeSlice(sliceType$12, ($imul(h, w)));
 			$copySlice(bufm.Cells, d.Cells);
 			_ref$1 = bufm.Cells;
 			_i$1 = 0;
@@ -45720,7 +45867,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.PutDoors }; } $f._i = _i; $f._key = _key; $f._r = _r; $f._ref = _ref; $f._v = _v; $f.g = g; $f.i = i; $f.percentage = percentage; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.PutDoors = function(percentage) { return this.$val.PutDoors(percentage); };
-	init$1 = function() {
+	init$2 = function() {
 		var $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		$r = gob.Register(new potion(0)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -45732,19 +45879,19 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		$r = gob.Register(new weapon(0)); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = gob.Register(new shield(0)); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: init$1 }; } $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: init$2 }; } $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.ptr.prototype.GameSave = function() {
 		var _r, data, enc, err, g, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; data = $f.data; enc = $f.enc; err = $f.err; g = $f.g; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		data = [data];
 		g = this;
-		data[0] = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
+		data[0] = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
 		enc = gob.NewEncoder(data[0]);
 		_r = enc.Encode(g); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		err = _r;
 		if (!($interfaceIsEqual(err, $ifaceNil))) {
-			$s = -1; return [sliceType$8.nil, err];
+			$s = -1; return [sliceType$9.nil, err];
 		}
 		$s = -1; return [data[0].Bytes(), $ifaceNil];
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.GameSave }; } $f._r = _r; $f.data = data; $f.enc = enc; $f.err = err; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
@@ -45755,12 +45902,12 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; c = $f.c; data = $f.data; enc = $f.enc; err = $f.err; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		data = [data];
 		c = this;
-		data[0] = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
+		data[0] = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
 		enc = gob.NewEncoder(data[0]);
 		_r = enc.Encode(c); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		err = _r;
 		if (!($interfaceIsEqual(err, $ifaceNil))) {
-			$s = -1; return [sliceType$8.nil, err];
+			$s = -1; return [sliceType$9.nil, err];
 		}
 		$s = -1; return [data[0].Bytes(), $ifaceNil];
 		/* */ } return; } if ($f === undefined) { $f = { $blk: config.ptr.prototype.ConfigSave }; } $f._r = _r; $f.c = c; $f.data = data; $f.enc = enc; $f.err = err; $f.$s = $s; $f.$r = $r; return $f;
@@ -45772,7 +45919,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		g = this;
 		buf = bytes.NewBuffer(data);
 		dec = gob.NewDecoder(buf);
-		lg = new game.ptr(ptrType$5.nil, ptrType$6.nil, sliceType$13.nil, sliceType$6.nil, sliceType$14.nil, ptrType$8.nil, $ifaceNil, 0, 0, 0, false, false, 0, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, new position.ptr(0, 0), new position.ptr(0, 0), 0, false, false, sliceType$15.nil, 0, 0, "", new stats.ptr(sliceType$3.nil, 0, false, 0, 0, 0, 0, 0, arrayType$4.zero(), arrayType$4.zero(), arrayType$4.zero(), arrayType$5.zero(), 0, 0, 0, 0, 0, 0, 0, 0, arrayType$6.zero()), 0, false, false, $ifaceNil);
+		lg = new game.ptr(ptrType$5.nil, ptrType$6.nil, sliceType$14.nil, sliceType$7.nil, sliceType$15.nil, ptrType$8.nil, $ifaceNil, 0, 0, 0, false, false, 0, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, new position.ptr(0, 0), new position.ptr(0, 0), 0, false, false, sliceType$16.nil, 0, 0, "", new stats.ptr(sliceType$4.nil, 0, false, 0, 0, 0, 0, 0, arrayType$5.zero(), arrayType$5.zero(), arrayType$5.zero(), arrayType$6.zero(), 0, 0, 0, 0, 0, 0, 0, 0, arrayType$7.zero()), 0, false, false, $ifaceNil);
 		_r = dec.Decode(lg); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		err = _r;
 		if (!($interfaceIsEqual(err, $ifaceNil))) {
@@ -45853,6 +46000,16 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.PushEvent }; } $f.ev = ev; $f.g = g; $f.iev = iev; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.PushEvent = function(ev) { return this.$val.PushEvent(ev); };
+	game.ptr.prototype.PushAgainEvent = function(ev) {
+		var ev, g, iev, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; ev = $f.ev; g = $f.g; iev = $f.iev; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		g = this;
+		iev = new iEvent.ptr(ev, 0);
+		$r = heap.Push(g.Events, new iev.constructor.elem(iev)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$s = -1; return;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.PushAgainEvent }; } $f.ev = ev; $f.g = g; $f.iev = iev; $f.$s = $s; $f.$r = $r; return $f;
+	};
+	game.prototype.PushAgainEvent = function(ev) { return this.$val.PushAgainEvent(ev); };
 	game.ptr.prototype.PopIEvent = function() {
 		var _r, g, iev, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; g = $f.g; iev = $f.iev; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -45874,7 +46031,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; delay = $f.delay; g = $f.g; sev = $f.sev; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		sev = this;
 		sev.ERank = sev.ERank + (delay) >> 0;
-		$r = g.PushEvent(sev); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* */ if (delay === 0) { $s = 1; continue; }
+		/* */ $s = 2; continue;
+		/* if (delay === 0) { */ case 1:
+			$r = g.PushAgainEvent(sev); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$s = 3; continue;
+		/* } else { */ case 2:
+			$r = g.PushEvent(sev); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* } */ case 3:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: simpleEvent.ptr.prototype.Renew }; } $f.delay = delay; $f.g = g; $f.sev = sev; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -46069,7 +46233,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* */ $s = 14; continue;
 				/* if (mons$2.Exists()) { */ case 13:
 					mons$2.Statuses[0] = 0;
-					$r = g.Printf("The %s is no longer confused.", new sliceType$7([new monsterKind(mons$2.Kind)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$r = g.Printf("The %s is no longer confused.", new sliceType$8([new monsterKind(mons$2.Kind)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* } */ case 14:
 				$s = 6; continue;
 			/* } else if (_1 === (3)) { */ case 5:
@@ -46180,7 +46344,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* if (mons.HP <= 0) { */ case 4:
 				_r$1 = new monsterKind(mons.Kind).Definite(true); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_arg = new $String(_r$1);
-				$r = g.PrintfStyled("%s is killed by the fire.", 2, new sliceType$7([_arg])); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("%s is killed by the fire.", 2, new sliceType$8([_arg])); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = g.HandleKill(mons, ev); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 6; continue;
 			/* } else { */ case 5:
@@ -46199,10 +46363,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				damage = 1 + _r$3 >> 0;
 			/* } */ case 15:
 			g.Player.HP = g.Player.HP - (damage) >> 0;
-			$r = g.PrintfStyled("The fire burns you (%d dmg).", 3, new sliceType$7([new $Int(damage)])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.PrintfStyled("The fire burns you (%d dmg).", 3, new sliceType$8([new $Int(damage)])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			if ((g.Player.HP + damage >> 0) < 10) {
 				g.Stats.TimesLucky = g.Stats.TimesLucky + (1) >> 0;
 			}
+			g.StopAuto();
 		/* } */ case 12:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.BurnCreature }; } $f._arg = _arg; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f.damage = damage; $f.ev = ev; $f.g = g; $f.mons = mons; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
@@ -46568,7 +46733,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			g.GeneratedBands = $makeMap(monsterBand.keyFor, []);
 			g.Stats.KilledMons = $makeMap(monsterKind.keyFor, []);
 		/* } */ case 3:
-		g.MonstersPosCache = $makeSlice(sliceType$6, 1659);
+		g.MonstersPosCache = $makeSlice(sliceType$7, 1659);
 		_r = g.FreeCell(); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		position.copy(g.Player.Pos, _r);
 		g.UnknownDig = $makeMap(position.keyFor, []);
@@ -46681,7 +46846,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* } */ $s = 32; continue; case 33:
 		if (g.Depth === 0) {
 			g.Print("You're in Hareka's Underground searching for medicinal simellas. Good luck!");
-			g.PrintStyled("\xE2\x96\xBA Press ? for help or click on right upper \xE2\x86\x92Menu button.", 4);
+			g.PrintStyled("\xE2\x96\xBA Press ? for help on keys or use the mouse and [buttons].", 4);
 		}
 		if (g.Depth === 12) {
 			g.PrintStyled("You feel magic in the air. The way out is close.", 4);
@@ -46780,7 +46945,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	game.ptr.prototype.StairsSlice = function() {
 		var _entry, _i, _keys, _ref, b, g, stairPos, stairs;
 		g = this;
-		stairs = new sliceType$5([]);
+		stairs = new sliceType$6([]);
 		_ref = g.Stairs;
 		_i = 0;
 		_keys = $keys(_ref);
@@ -47116,26 +47281,30 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			g.Autoexploring = false;
 			$s = 5; continue;
 		/* } else if ($clone(g.AutoTarget, position).valid()) { */ case 3:
-			_r$7 = g.ui.ExploreStep(g); /* */ $s = 39; case 39: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
-			if (!(!_r$7)) { _v$1 = false; $s = 38; continue s; }
-			_r$8 = g.MoveToTarget(ev); /* */ $s = 40; case 40: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
-			_v$1 = _r$8; case 38:
+			_r$7 = g.ui.ExploreStep(g); /* */ $s = 40; case 40: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
+			if (!(!_r$7)) { _v$1 = false; $s = 39; continue s; }
+			_r$8 = g.MoveToTarget(ev); /* */ $s = 41; case 41: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+			_v$1 = _r$8; case 39:
 			/* */ if (_v$1) { $s = 36; continue; }
 			/* */ $s = 37; continue;
 			/* if (_v$1) { */ case 36:
 				$s = -1; return true;
-			/* } */ case 37:
+			/* } else { */ case 37:
+				position.copy(g.AutoTarget, $pkg.InvalidPos);
+			/* } */ case 38:
 			$s = 5; continue;
 		/* } else if (!((g.AutoDir === 0))) { */ case 4:
-			_r$9 = g.ui.ExploreStep(g); /* */ $s = 44; case 44: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
-			if (!(!_r$9)) { _v$2 = false; $s = 43; continue s; }
-			_r$10 = g.AutoToDir(ev); /* */ $s = 45; case 45: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
-			_v$2 = _r$10; case 43:
-			/* */ if (_v$2) { $s = 41; continue; }
-			/* */ $s = 42; continue;
-			/* if (_v$2) { */ case 41:
+			_r$9 = g.ui.ExploreStep(g); /* */ $s = 46; case 46: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
+			if (!(!_r$9)) { _v$2 = false; $s = 45; continue s; }
+			_r$10 = g.AutoToDir(ev); /* */ $s = 47; case 47: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
+			_v$2 = _r$10; case 45:
+			/* */ if (_v$2) { $s = 42; continue; }
+			/* */ $s = 43; continue;
+			/* if (_v$2) { */ case 42:
 				$s = -1; return true;
-			/* } */ case 42:
+			/* } else { */ case 43:
+				g.AutoDir = 0;
+			/* } */ case 44:
 		/* } */ case 5:
 		$s = -1; return false;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.AutoPlayer }; } $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._tuple = _tuple; $f._v = _v; $f._v$1 = _v$1; $f._v$2 = _v$2; $f.err = err; $f.ev = ev; $f.finished = finished; $f.g = g; $f.mons = mons; $f.n = n; $f.sources = sources; $f.$s = $s; $f.$r = $r; return $f;
@@ -47162,7 +47331,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 8:
 						_r = err.Error(); /* */ $s = 10; case 10: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 						_arg = new $String(_r);
-						$r = g.PrintfStyled("Error removing save file: %v", 6, new sliceType$7([_arg])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$r = g.PrintfStyled("Error removing save file: %v", 6, new sliceType$8([_arg])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					/* } */ case 9:
 					$r = g.ui.Death(g); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					/* break loop; */ $s = 2; continue s;
@@ -47196,7 +47365,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r = c.String(); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r$1 = Indefinite(_r, false); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_arg = new $String(_r$1);
-		$r = g.StoryPrintf("You used %s.", new sliceType$7([_arg])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.StoryPrintf("You used %s.", new sliceType$8([_arg])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		if ((_entry$1 = g.Player.Consumables[consumable.keyFor(c)], _entry$1 !== undefined ? _entry$1.v : 0) <= 0) {
 			delete g.Player.Consumables[consumable.keyFor(c)];
 		}
@@ -47279,7 +47448,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		} else if (_1 === (11)) {
 			text = "makes you swap positions with monsters instead of attacking.";
 		}
-		_r = fmt.Sprintf("The %s %s", new sliceType$7([new potion(p), new $String(text)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("The %s %s", new sliceType$8([new potion(p), new $String(text)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		text = _r;
 		$s = -1; return text;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: potion.prototype.Desc }; } $f._1 = _1; $f._r = _r; $f.p = p; $f.text = text; $f.$s = $s; $f.$r = $r; return $f;
@@ -47402,7 +47571,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_key = 7; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key)] = { k: _key, v: 1 };
 		_r$1 = ev.Rank(); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new simpleEvent.ptr(_r$1 + delay >> 0, 3)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You quaff a %s. You feel unstable.", new sliceType$7([new potion(1)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff a %s. You feel unstable.", new sliceType$8([new potion(1)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffTeleportation }; } $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f.delay = delay; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47418,7 +47587,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r = ev.Rank(); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r$1 = RandInt(20); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new simpleEvent.ptr((_r + 65 >> 0) + _r$1 >> 0, 4)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You quaff a %s. You feel a sudden urge to kill things.", new sliceType$7([new potion(2)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff a %s. You feel a sudden urge to kill things.", new sliceType$8([new potion(2)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		g.Player.HP = g.Player.HP + (10) >> 0;
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffBerserk }; } $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
@@ -47433,7 +47602,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (g.Player.HP > g.Player.HPMax()) {
 			g.Player.HP = g.Player.HPMax();
 		}
-		$r = g.Printf("You quaff a %s (%d -> %d).", new sliceType$7([new potion(0), new $Int(hp), new $Int(g.Player.HP)])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff a %s (%d -> %d).", new sliceType$8([new potion(0), new $Int(hp), new $Int(g.Player.HP)])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffHealWounds }; } $f._q = _q; $f.ev = ev; $f.g = g; $f.hp = hp; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47447,7 +47616,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (g.Player.MP > g.Player.MPMax()) {
 			g.Player.MP = g.Player.MPMax();
 		}
-		$r = g.Printf("You quaff the %s (%d -> %d).", new sliceType$7([new potion(7), new $Int(mp), new $Int(g.Player.MP)])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s (%d -> %d).", new sliceType$8([new potion(7), new $Int(mp), new $Int(g.Player.MP)])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffMagic }; } $f._q = _q; $f.ev = ev; $f.g = g; $f.mp = mp; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47459,7 +47628,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (g.Depth >= 12) {
 			$s = -1; return errors.New("You cannot descend more!");
 		}
-		$r = g.Printf("You quaff the %s. You feel yourself falling through the ground.", new sliceType$7([new potion(3)])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You fall through the ground.", new sliceType$8([new potion(3)])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		g.LevelStats();
 		g.Depth = g.Depth + (1) >> 0;
 		$r = g.InitLevel(); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -47476,7 +47645,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (g.Player.HasStatus(3) && g.Player.HasStatus(4)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (g.Player.HasStatus(3) && g.Player.HasStatus(4)) { */ case 1:
-			_r = fmt.Errorf("You already quaffed a %s potion.", new sliceType$7([new potion(4)])); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			_r = fmt.Errorf("You already quaffed a %s potion.", new sliceType$8([new potion(4)])); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			$s = -1; return _r;
 		/* } */ case 2:
 		_key = 3; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key)] = { k: _key, v: (_entry = g.Player.Statuses[status.keyFor(3)], _entry !== undefined ? _entry.v : 0) + (1) >> 0 };
@@ -47487,7 +47656,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r$3 = ev.Rank(); /* */ $s = 7; case 7: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 		_r$4 = RandInt(20); /* */ $s = 8; case 8: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new simpleEvent.ptr((_r$3 + 85 >> 0) + _r$4 >> 0, 8)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You quaff the %s. You feel speedy and agile.", new sliceType$7([new potion(4)])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You feel speedy and agile.", new sliceType$8([new potion(4)])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffSwiftness }; } $f._entry = _entry; $f._entry$1 = _entry$1; $f._key = _key; $f._key$1 = _key$1; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47503,7 +47672,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r = ev.Rank(); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r$1 = RandInt(20); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new simpleEvent.ptr((_r + 75 >> 0) + _r$1 >> 0, 14)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You quaff the %s. You feel like an earth dragon.", new sliceType$7([new potion(10)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You feel like an earth dragon.", new sliceType$8([new potion(10)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffDigPotion }; } $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47522,7 +47691,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r = ev.Rank(); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r$1 = RandInt(20); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new simpleEvent.ptr((_r + 200 >> 0) + _r$1 >> 0, 15)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You quaff the %s. You feel like dancing.", new sliceType$7([new potion(11)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You feel like dancing.", new sliceType$8([new potion(11)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffSwapPotion }; } $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47538,7 +47707,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r = ev.Rank(); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_r$1 = RandInt(100); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new simpleEvent.ptr((_r + 150 >> 0) + _r$1 >> 0, 9)); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You quaff the %s. You feel rooted to the ground.", new sliceType$7([new potion(5)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You feel rooted to the ground.", new sliceType$8([new potion(5)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		g.Player.HP = g.Player.HP + (10) >> 0;
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffLignification }; } $f._entry = _entry; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
@@ -47548,8 +47717,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _entry$2, _entry$3, _i, _i$1, _i$2, _i$3, _key, _keys, _r, _ref, _ref$1, _ref$2, _ref$3, _v, c, cdists, d, dist, dist$1, dists, dp, draw, ev, g, i, i$1, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _entry$3 = $f._entry$3; _i = $f._i; _i$1 = $f._i$1; _i$2 = $f._i$2; _i$3 = $f._i$3; _key = $f._key; _keys = $f._keys; _r = $f._r; _ref = $f._ref; _ref$1 = $f._ref$1; _ref$2 = $f._ref$2; _ref$3 = $f._ref$3; _v = $f._v; c = $f.c; cdists = $f.cdists; d = $f.d; dist = $f.dist; dist$1 = $f.dist$1; dists = $f.dists; dp = $f.dp; draw = $f.draw; ev = $f.ev; g = $f.g; i = $f.i; i$1 = $f.i$1; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		dp = new dungeonPath.ptr(g.Dungeon, arrayType$1.zero());
-		$r = g.AutoExploreDijkstra(dp, new sliceType$6([$clone(g.Player.Pos, position).idx()])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		dp = new dungeonPath.ptr(g.Dungeon, arrayType$2.zero());
+		$r = g.AutoExploreDijkstra(dp, new sliceType$7([$clone(g.Player.Pos, position).idx()])); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		cdists = {};
 		_ref = $pkg.DijkstraMapCache;
 		_i = 0;
@@ -47557,10 +47726,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			if (!(_i < 1659)) { break; }
 			i = _i;
 			dist = ((_i < 0 || _i >= _ref.length) ? ($throwRuntimeError("index out of range"), undefined) : _ref[_i]);
-			_key = dist; (cdists || $throwRuntimeError("assignment to entry in nil map"))[$Int.keyFor(_key)] = { k: _key, v: $append((_entry = cdists[$Int.keyFor(dist)], _entry !== undefined ? _entry.v : sliceType$6.nil), i) };
+			_key = dist; (cdists || $throwRuntimeError("assignment to entry in nil map"))[$Int.keyFor(_key)] = { k: _key, v: $append((_entry = cdists[$Int.keyFor(dist)], _entry !== undefined ? _entry.v : sliceType$7.nil), i) };
 			_i++;
 		}
-		dists = sliceType$6.nil;
+		dists = sliceType$7.nil;
 		_ref$1 = cdists;
 		_i$1 = 0;
 		_keys = $keys(_ref$1);
@@ -47583,7 +47752,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* if (!(_i$2 < _ref$2.$length)) { break; } */ if(!(_i$2 < _ref$2.$length)) { $s = 5; continue; }
 			d = ((_i$2 < 0 || _i$2 >= _ref$2.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref$2.$array[_ref$2.$offset + _i$2]);
 			draw = false;
-			_ref$3 = (_entry$2 = cdists[$Int.keyFor(d)], _entry$2 !== undefined ? _entry$2.v : sliceType$6.nil);
+			_ref$3 = (_entry$2 = cdists[$Int.keyFor(d)], _entry$2 !== undefined ? _entry$2.v : sliceType$7.nil);
 			_i$3 = 0;
 			/* while (true) { */ case 6:
 				/* if (!(_i$3 < _ref$3.$length)) { break; } */ if(!(_i$3 < _ref$3.$length)) { $s = 7; continue; }
@@ -47604,11 +47773,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (draw) { $s = 12; continue; }
 			/* */ $s = 13; continue;
 			/* if (draw) { */ case 12:
-				$r = g.ui.MagicMappingAnimation(g, (_entry$3 = cdists[$Int.keyFor(d)], _entry$3 !== undefined ? _entry$3.v : sliceType$6.nil)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.ui.MagicMappingAnimation(g, (_entry$3 = cdists[$Int.keyFor(d)], _entry$3 !== undefined ? _entry$3.v : sliceType$7.nil)); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 13:
 			_i$2++;
 		/* } */ $s = 4; continue; case 5:
-		$r = g.Printf("You quaff the %s. You feel wiser.", new sliceType$7([new potion(6)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You feel wiser.", new sliceType$8([new potion(6)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffMagicMapping }; } $f._entry = _entry; $f._entry$1 = _entry$1; $f._entry$2 = _entry$2; $f._entry$3 = _entry$3; $f._i = _i; $f._i$1 = _i$1; $f._i$2 = _i$2; $f._i$3 = _i$3; $f._key = _key; $f._keys = _keys; $f._r = _r; $f._ref = _ref; $f._ref$1 = _ref$1; $f._ref$2 = _ref$2; $f._ref$3 = _ref$3; $f._v = _v; $f.c = c; $f.cdists = cdists; $f.d = d; $f.dist = dist; $f.dist$1 = dist$1; $f.dists = dists; $f.dp = dp; $f.draw = draw; $f.ev = ev; $f.g = g; $f.i = i; $f.i$1 = i$1; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -47642,7 +47811,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$r = g.PushEvent(new cloudEvent.ptr((_r$1 + 200 >> 0) + _r$2 >> 0, $clone(pos, position), 1)); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_i++;
 		/* } */ $s = 2; continue; case 3:
-		$r = g.Printf("You quaff the %s. You feel surrounded by temporal walls.", new sliceType$7([new potion(8)])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You feel surrounded by temporal walls.", new sliceType$8([new potion(8)])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.ComputeLOS(); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.QuaffWallPotion }; } $f._i = _i; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._ref = _ref; $f.ev = ev; $f.g = g; $f.mons = mons; $f.neighbors = neighbors; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
@@ -47661,7 +47830,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$s = -1; return err;
 		}
 		position.copy(g.Player.Pos, g.Player.Target);
-		$r = g.Printf("You quaff the %s. You blink.", new sliceType$7([new potion(9)])); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You quaff the %s. You blink.", new sliceType$8([new potion(9)])); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.CollectGround(); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.ComputeLOS(); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.MakeMonstersAware(); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -47708,7 +47877,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		} else if (_1 === (1)) {
 			text = "can be thrown to cause a fire explosion halving HP of monsters in a square area. It can occasionally destroy walls.";
 		}
-		_r = fmt.Sprintf("The %s %s", new sliceType$7([new projectile(p), new $String(text)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("The %s %s", new sliceType$8([new projectile(p), new $String(text)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		text = _r;
 		$s = -1; return text;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: projectile.prototype.Desc }; } $f._1 = _1; $f._r = _r; $f.p = p; $f.text = text; $f.$s = $s; $f.$r = $r; return $f;
@@ -47795,7 +47964,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ $s = 12; continue;
 			/* if (mons.HP > 0) { */ case 11:
 				$r = mons.EnterConfusion(g, ev); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.PrintfStyled("Your %s hits the %s (%d dmg), who appears confused.", 2, new sliceType$7([new projectile(0), new monsterKind(mons.Kind), new $Int(attack)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("Your %s hits the %s (%d dmg), who appears confused.", 2, new sliceType$8([new projectile(0), new monsterKind(mons.Kind), new $Int(attack)])); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_arg = g;
 				_r$5 = g.Ray($clone(mons.Pos, position)); /* */ $s = 16; case 16: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 				_arg$1 = _r$5;
@@ -47803,7 +47972,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				$r = mons.MakeHuntIfHurt(g); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 13; continue;
 			/* } else { */ case 12:
-				$r = g.PrintfStyled("Your %s kills the %s.", 2, new sliceType$7([new projectile(0), new monsterKind(mons.Kind)])); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("Your %s kills the %s.", 2, new sliceType$8([new projectile(0), new monsterKind(mons.Kind)])); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_arg$2 = g;
 				_r$6 = g.Ray($clone(mons.Pos, position)); /* */ $s = 20; case 20: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 				_arg$3 = _r$6;
@@ -47812,7 +47981,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* } */ case 13:
 			$s = 6; continue;
 		/* } else { */ case 5:
-			$r = g.Printf("Your %s missed the %s.", new sliceType$7([new projectile(0), new monsterKind(mons.Kind)])); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("Your %s missed the %s.", new sliceType$8([new projectile(0), new monsterKind(mons.Kind)])); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$4 = g;
 			_r$7 = g.Ray($clone(mons.Pos, position)); /* */ $s = 24; case 24: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 			_arg$5 = _r$7;
@@ -47836,7 +48005,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		neighbors = _r$1;
 		_r$2 = g.ExplosionSound(); /* */ $s = 3; case 3: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		_arg = new $String(_r$2);
-		$r = g.Printf("You throw the explosive magara... %s", new sliceType$7([_arg])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You throw the explosive magara... %s", new sliceType$8([_arg])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.MakeNoise(18, $clone(g.Player.Target, position)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		_arg$1 = g;
 		_r$3 = g.Ray($clone(g.Player.Target, position)); /* */ $s = 6; case 6: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
@@ -47895,10 +48064,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!(_entry = g.FoundEquipables[equipable.keyFor(new armour(ar))], _entry !== undefined ? _entry.v : false)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (!(_entry = g.FoundEquipables[equipable.keyFor(new armour(ar))], _entry !== undefined ? _entry.v : false)) { */ case 1:
-			$r = g.StoryPrintf("You found and put on %s.", new sliceType$7([new $String(Indefinite(new armour(ar).String(), false))])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.StoryPrintf("You found and put on %s.", new sliceType$8([new $String(Indefinite(new armour(ar).String(), false))])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_key = new armour(ar); (g.FoundEquipables || $throwRuntimeError("assignment to entry in nil map"))[equipable.keyFor(_key)] = { k: _key, v: true };
 		/* } */ case 2:
-		$r = g.Printf("You put the %s on and leave your %s on the ground.", new sliceType$7([new armour(ar), new armour(oar)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You put the %s on and leave your %s on the ground.", new sliceType$8([new armour(ar), new armour(oar)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		_key$1 = $clone(g.Player.Pos, position); (g.Equipables || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key$1)] = { k: _key$1, v: new armour(oar) };
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: armour.prototype.Equip }; } $f._entry = _entry; $f._key = _key; $f._key$1 = _key$1; $f.ar = ar; $f.g = g; $f.oar = oar; $f.$s = $s; $f.$r = $r; return $f;
@@ -47970,14 +48139,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!(_entry = g.FoundEquipables[equipable.keyFor(new weapon(wp))], _entry !== undefined ? _entry.v : false)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (!(_entry = g.FoundEquipables[equipable.keyFor(new weapon(wp))], _entry !== undefined ? _entry.v : false)) { */ case 1:
-			$r = g.StoryPrintf("You found and took %s.", new sliceType$7([new $String(Indefinite(new weapon(wp).String(), false))])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.StoryPrintf("You found and took %s.", new sliceType$8([new $String(Indefinite(new weapon(wp).String(), false))])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_key = new weapon(wp); (g.FoundEquipables || $throwRuntimeError("assignment to entry in nil map"))[equipable.keyFor(_key)] = { k: _key, v: true };
 		/* } */ case 2:
-		$r = g.Printf("You take the %s and leave your %s on the ground.", new sliceType$7([new weapon(wp), new weapon(owp)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You take the %s and leave your %s on the ground.", new sliceType$8([new weapon(wp), new weapon(owp)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* */ if (wp === 7) { $s = 5; continue; }
 		/* */ $s = 6; continue;
 		/* if (wp === 7) { */ case 5:
-			$r = g.PrintfStyled("\xE2\x99\xAB \xE2\x99\xAA \xE2\x80\xA6 Oh, you're there, let's fight our way out!", 4, new sliceType$7([])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.PrintfStyled("\xE2\x99\xAB \xE2\x99\xAA \xE2\x80\xA6 Oh, you're there, let's fight our way out!", 4, new sliceType$8([])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 6:
 		_key$1 = $clone(g.Player.Pos, position); (g.Equipables || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key$1)] = { k: _key$1, v: new weapon(owp) };
 		$s = -1; return;
@@ -48063,7 +48232,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		} else if (_1 === (8)) {
 			text = "The lightning whip is a one-handed weapon that inflicts electrical damage to a monster and any foes connected to it.";
 		}
-		_r = fmt.Sprintf("%s It can hit for up to %d damage.", new sliceType$7([new $String(text), new $Int(new weapon(wp).Attack())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("%s It can hit for up to %d damage.", new sliceType$8([new $String(text), new $Int(new weapon(wp).Attack())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$s = -1; return _r;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: weapon.prototype.Desc }; } $f._1 = _1; $f._r = _r; $f.text = text; $f.wp = wp; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -48135,18 +48304,18 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!(_entry = g.FoundEquipables[equipable.keyFor(new shield(sh))], _entry !== undefined ? _entry.v : false)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (!(_entry = g.FoundEquipables[equipable.keyFor(new shield(sh))], _entry !== undefined ? _entry.v : false)) { */ case 1:
-			$r = g.StoryPrintf("You found and put on %s.", new sliceType$7([new $String(Indefinite(new shield(sh).String(), false))])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.StoryPrintf("You found and put on %s.", new sliceType$8([new $String(Indefinite(new shield(sh).String(), false))])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_key = new shield(sh); (g.FoundEquipables || $throwRuntimeError("assignment to entry in nil map"))[equipable.keyFor(_key)] = { k: _key, v: true };
 		/* } */ case 2:
 		/* */ if (!((osh === 0))) { $s = 4; continue; }
 		/* */ $s = 5; continue;
 		/* if (!((osh === 0))) { */ case 4:
 			_key$1 = $clone(g.Player.Pos, position); (g.Equipables || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key$1)] = { k: _key$1, v: new shield(osh) };
-			$r = g.Printf("You put the %s on and leave your %s on the ground.", new sliceType$7([new shield(sh), new shield(osh)])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You put the %s on and leave your %s on the ground.", new sliceType$8([new shield(sh), new shield(osh)])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 6; continue;
 		/* } else { */ case 5:
 			delete g.Equipables[position.keyFor(g.Player.Pos)];
-			$r = g.Printf("You put the %s on.", new sliceType$7([new shield(sh)])); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You put the %s on.", new sliceType$8([new shield(sh)])); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 6:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: shield.prototype.Equip }; } $f._entry = _entry; $f._key = _key; $f._key$1 = _key$1; $f.g = g; $f.osh = osh; $f.sh = sh; $f.$s = $s; $f.$r = $r; return $f;
@@ -48237,19 +48406,19 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	main = function() {
 		var _r, _tuple, err, g, load, tui, $s, $deferred, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _tuple = $f._tuple; err = $f.err; g = $f.g; load = $f.load; tui = $f.tui; $s = $f.$s; $deferred = $f.$deferred; $r = $f.$r; } var $err = null; try { s: while (true) { switch ($s) { case 0: $deferred = []; $deferred.index = $curGoroutine.deferStack.length; $curGoroutine.deferStack.push($deferred);
-		tui = new termui.ptr(sliceType$16.nil, sliceType$16.nil, new position.ptr(0, 0), null, false, null, 0);
+		tui = new termui.ptr(sliceType$17.nil, sliceType$17.nil, new position.ptr(0, 0), null, false, null, 0);
 		err = tui.Init();
 		/* */ if (!($interfaceIsEqual(err, $ifaceNil))) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 1:
-			$r = log.Fatalf("boohu: %v\n", new sliceType$7([err])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = log.Fatalf("boohu: %v\n", new sliceType$8([err])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 2:
 		$deferred.push([$methodVal(tui, "Close"), []]);
 		ApplyDefaultKeyBindings();
 		tui.PostInit();
 		LinkColors();
 		$r = tui.DrawWelcome(); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		g = new game.ptr(ptrType$5.nil, ptrType$6.nil, sliceType$13.nil, sliceType$6.nil, sliceType$14.nil, ptrType$8.nil, $ifaceNil, 0, 0, 0, false, false, 0, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, new position.ptr(0, 0), new position.ptr(0, 0), 0, false, false, sliceType$15.nil, 0, 0, "", new stats.ptr(sliceType$3.nil, 0, false, 0, 0, 0, 0, 0, arrayType$4.zero(), arrayType$4.zero(), arrayType$4.zero(), arrayType$5.zero(), 0, 0, 0, 0, 0, 0, 0, 0, arrayType$6.zero()), 0, false, false, $ifaceNil);
+		g = new game.ptr(ptrType$5.nil, ptrType$6.nil, sliceType$14.nil, sliceType$7.nil, sliceType$15.nil, ptrType$8.nil, $ifaceNil, 0, 0, 0, false, false, 0, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, new position.ptr(0, 0), new position.ptr(0, 0), 0, false, false, sliceType$16.nil, 0, 0, "", new stats.ptr(sliceType$4.nil, 0, false, 0, 0, 0, 0, 0, arrayType$5.zero(), arrayType$5.zero(), arrayType$5.zero(), arrayType$6.zero(), 0, 0, 0, 0, 0, 0, 0, 0, arrayType$7.zero()), 0, false, false, $ifaceNil);
 		_r = g.Load(); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_tuple = _r;
 		load = _tuple[0];
@@ -48262,7 +48431,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$s = 8; continue;
 		/* } else if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 7:
 			$r = g.InitLevel(); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.Printf("Error loading saved game\xE2\x80\xA6 starting new game. (%v)", new sliceType$7([err])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("Error loading saved game\xE2\x80\xA6 starting new game. (%v)", new sliceType$8([err])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 8:
 		g.ui = tui;
 		$r = g.EventLoop(); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -48373,7 +48542,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	termui.ptr.prototype.Init = function() {
 		var ui;
 		ui = this;
-		ui.cells = $makeSlice(sliceType$16, 2781);
+		ui.cells = $makeSlice(sliceType$17, ($imul($pkg.UIWidth, $pkg.UIHeight)));
 		$global.document.addEventListener($externalize("keypress", $String), $externalize((function $b(e) {
 			var e, s, $s, $r;
 			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; e = $f.e; s = $f.s; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -48393,7 +48562,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ } return; } if ($f === undefined) { $f = { $blk: $b }; } $f._tuple = _tuple; $f.e = e; $f.x = x; $f.y = y; $f.$s = $s; $f.$r = $r; return $f;
 		}), funcType));
 		ui.ResetCells();
-		ui.backBuffer = $makeSlice(sliceType$16, 2781);
+		ui.backBuffer = $makeSlice(sliceType$17, ($imul($pkg.UIWidth, $pkg.UIHeight)));
 		ui.InitElements();
 		return $ifaceNil;
 	};
@@ -48442,13 +48611,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	termui.ptr.prototype.GetIndex = function(x, y) {
 		var ui, x, y;
 		ui = this;
-		return ($imul(y, 103)) + x >> 0;
+		return ($imul(y, $pkg.UIWidth)) + x >> 0;
 	};
 	termui.prototype.GetIndex = function(x, y) { return this.$val.GetIndex(x, y); };
 	termui.ptr.prototype.GetPos = function(i) {
 		var _q, _q$1, i, ui;
 		ui = this;
-		return [i - ($imul(((_q = i / 103, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"))), 103)) >> 0, (_q$1 = i / 103, (_q$1 === _q$1 && _q$1 !== 1/0 && _q$1 !== -1/0) ? _q$1 >> 0 : $throwRuntimeError("integer divide by zero"))];
+		return [i - ($imul(((_q = i / $pkg.UIWidth, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"))), $pkg.UIWidth)) >> 0, (_q$1 = i / $pkg.UIWidth, (_q$1 === _q$1 && _q$1 !== 1/0 && _q$1 !== -1/0) ? _q$1 >> 0 : $throwRuntimeError("integer divide by zero"))];
 	};
 	termui.prototype.GetPos = function(i) { return this.$val.GetPos(i); };
 	termui.ptr.prototype.ResetCells = function() {
@@ -48463,7 +48632,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		}
 	};
 	termui.prototype.ResetCells = function() { return this.$val.ResetCells(); };
-	init$2 = function() {
+	init$3 = function() {
 		ch = new $Chan(jsInput, 100);
 		interrupt = new $Chan($Bool, 0);
 	};
@@ -48639,8 +48808,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.PressAnyKey = function() { return this.$val.PressAnyKey(); };
 	termui.ptr.prototype.PlayerTurnEvent = function(g, ev) {
-		var _1, _2, _3, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _tmp, _tmp$1, _tmp$2, _tmp$3, _tmp$4, _tmp$5, _tmp$6, _tmp$7, _tmp$8, _tuple, _tuple$1, _tuple$2, _tuple$3, again, err, ev, g, in$1, pos, quit, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _2 = $f._2; _3 = $f._3; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tmp$4 = $f._tmp$4; _tmp$5 = $f._tmp$5; _tmp$6 = $f._tmp$6; _tmp$7 = $f._tmp$7; _tmp$8 = $f._tmp$8; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; again = $f.again; err = $f.err; ev = $f.ev; g = $f.g; in$1 = $f.in$1; pos = $f.pos; quit = $f.quit; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _1, _2, _3, _r, _r$1, _r$2, _r$3, _r$4, _r$5, _tmp, _tmp$1, _tmp$2, _tmp$3, _tmp$4, _tmp$5, _tmp$6, _tmp$7, _tmp$8, _tuple, _tuple$1, _tuple$2, _tuple$3, _tuple$4, again, err, ev, g, in$1, m, ok, pos, quit, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _2 = $f._2; _3 = $f._3; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tmp$4 = $f._tmp$4; _tmp$5 = $f._tmp$5; _tmp$6 = $f._tmp$6; _tmp$7 = $f._tmp$7; _tmp$8 = $f._tmp$8; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; _tuple$4 = $f._tuple$4; again = $f.again; err = $f.err; ev = $f.ev; g = $f.g; in$1 = $f.in$1; m = $f.m; ok = $f.ok; pos = $f.pos; quit = $f.quit; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		err = $ifaceNil;
 		again = false;
 		quit = false;
@@ -48661,15 +48830,22 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						/* */ if (_2 === (2)) { $s = 10; continue; }
 						/* */ $s = 11; continue;
 						/* if (_2 === (0)) { */ case 9:
-							/* */ if (in$1.mouseX > 79 && (in$1.mouseY === 0)) { $s = 12; continue; }
-							/* */ if (in$1.mouseX > 79 || in$1.mouseY > 21) { $s = 13; continue; }
+							/* */ if (in$1.mouseY === 21) { $s = 12; continue; }
+							/* */ if (in$1.mouseX >= 79 || in$1.mouseY >= 21) { $s = 13; continue; }
 							/* */ $s = 14; continue;
-							/* if (in$1.mouseX > 79 && (in$1.mouseY === 0)) { */ case 12:
-								_r$1 = ui.HandleKeyAction(g, new runeKeyAction.ptr(0, 43)); /* */ $s = 16; case 16: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
-								_tuple = _r$1;
-								err = _tuple[0];
-								again = _tuple[1];
-								quit = _tuple[2];
+							/* if (in$1.mouseY === 21) { */ case 12:
+								_tuple = ui.WhichButton(in$1.mouseX);
+								m = _tuple[0];
+								ok = _tuple[1];
+								if (!ok) {
+									again = true;
+									/* break; */ $s = 8; continue;
+								}
+								_r$1 = ui.HandleKeyAction(g, new runeKeyAction.ptr(0, new menu(m).Key())); /* */ $s = 16; case 16: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+								_tuple$1 = _r$1;
+								err = _tuple$1[0];
+								again = _tuple$1[1];
+								quit = _tuple$1[2];
 								if (!($interfaceIsEqual(err, $ifaceNil))) {
 									again = true;
 								}
@@ -48680,23 +48856,23 @@ $packages["github.com/anaseto/boohu"] = (function() {
 								again = _tmp$1;
 								quit = _tmp$2;
 								$s = -1; return [err, again, quit];
-							/* } else if (in$1.mouseX > 79 || in$1.mouseY > 21) { */ case 13:
+							/* } else if (in$1.mouseX >= 79 || in$1.mouseY >= 21) { */ case 13:
 								again = true;
 								$s = 15; continue;
 							/* } else { */ case 14:
 								_r$2 = ui.ExaminePos(g, ev, $clone(pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-								_tuple$1 = _r$2;
-								err = _tuple$1[0];
-								again = _tuple$1[1];
-								quit = _tuple$1[2];
+								_tuple$2 = _r$2;
+								err = _tuple$2[0];
+								again = _tuple$2[1];
+								quit = _tuple$2[2];
 							/* } */ case 15:
 							$s = 11; continue;
 						/* } else if (_2 === (2)) { */ case 10:
 							_r$3 = ui.HandleKeyAction(g, new runeKeyAction.ptr(0, 43)); /* */ $s = 18; case 18: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-							_tuple$2 = _r$3;
-							err = _tuple$2[0];
-							again = _tuple$2[1];
-							quit = _tuple$2[2];
+							_tuple$3 = _r$3;
+							err = _tuple$3[0];
+							again = _tuple$3[1];
+							quit = _tuple$3[2];
 							if (!($interfaceIsEqual(err, $ifaceNil))) {
 								again = true;
 							}
@@ -48727,15 +48903,15 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* */ if (utf8.RuneCountInString(in$1.key) > 1) { $s = 19; continue; }
 				/* */ $s = 20; continue;
 				/* if (utf8.RuneCountInString(in$1.key) > 1) { */ case 19:
-					_r$4 = fmt.Errorf("Invalid key: \xE2\x80\x9C%s\xE2\x80\x9D.", new sliceType$7([new $String(in$1.key)])); /* */ $s = 22; case 22: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
+					_r$4 = fmt.Errorf("Invalid key: \xE2\x80\x9C%s\xE2\x80\x9D.", new sliceType$8([new $String(in$1.key)])); /* */ $s = 22; case 22: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 					err = _r$4;
 					$s = 21; continue;
 				/* } else { */ case 20:
 					_r$5 = ui.HandleKeyAction(g, new runeKeyAction.ptr(ui.ReadKey(in$1.key), 0)); /* */ $s = 23; case 23: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
-					_tuple$3 = _r$5;
-					err = _tuple$3[0];
-					again = _tuple$3[1];
-					quit = _tuple$3[2];
+					_tuple$4 = _r$5;
+					err = _tuple$4[0];
+					again = _tuple$4[1];
+					quit = _tuple$4[2];
 				/* } */ case 21:
 			/* } */ case 5:
 		case 2:
@@ -48749,7 +48925,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		again = _tmp$7;
 		quit = _tmp$8;
 		$s = -1; return [err, again, quit];
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.PlayerTurnEvent }; } $f._1 = _1; $f._2 = _2; $f._3 = _3; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tmp$4 = _tmp$4; $f._tmp$5 = _tmp$5; $f._tmp$6 = _tmp$6; $f._tmp$7 = _tmp$7; $f._tmp$8 = _tmp$8; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f.again = again; $f.err = err; $f.ev = ev; $f.g = g; $f.in$1 = in$1; $f.pos = pos; $f.quit = quit; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.PlayerTurnEvent }; } $f._1 = _1; $f._2 = _2; $f._3 = _3; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tmp$4 = _tmp$4; $f._tmp$5 = _tmp$5; $f._tmp$6 = _tmp$6; $f._tmp$7 = _tmp$7; $f._tmp$8 = _tmp$8; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f._tuple$4 = _tuple$4; $f.again = again; $f.err = err; $f.ev = ev; $f.g = g; $f.in$1 = in$1; $f.m = m; $f.ok = ok; $f.pos = pos; $f.quit = quit; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.PlayerTurnEvent = function(g, ev) { return this.$val.PlayerTurnEvent(g, ev); };
 	termui.ptr.prototype.Scroll = function(n) {
@@ -48782,7 +48958,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 							quit = true;
 							break;
 						}
-						if (y > 27) {
+						if (y > $pkg.UIHeight) {
 							break;
 						}
 						n = n + ((y - 12 >> 0)) >> 0;
@@ -48853,8 +49029,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	termui.prototype.MenuAction = function(n) { return this.$val.MenuAction(n); };
 	termui.ptr.prototype.TargetModeEvent = function(g, targ, data) {
-		var _1, _2, _r, _r$1, _r$2, _r$3, _r$4, _tmp, _tmp$1, _tmp$2, _tmp$3, _tuple, _tuple$1, _tuple$2, _tuple$3, again, data, err, g, in$1, notarg, quit, targ, ui, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _2 = $f._2; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; again = $f.again; data = $f.data; err = $f.err; g = $f.g; in$1 = $f.in$1; notarg = $f.notarg; quit = $f.quit; targ = $f.targ; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _1, _2, _r, _r$1, _r$2, _r$3, _r$4, _tmp, _tmp$1, _tmp$2, _tmp$3, _tuple, _tuple$1, _tuple$2, _tuple$3, _tuple$4, again, data, err, g, in$1, m, notarg, ok, quit, targ, ui, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _2 = $f._2; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tmp$2 = $f._tmp$2; _tmp$3 = $f._tmp$3; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; _tuple$2 = $f._tuple$2; _tuple$3 = $f._tuple$3; _tuple$4 = $f._tuple$4; again = $f.again; data = $f.data; err = $f.err; g = $f.g; in$1 = $f.in$1; m = $f.m; notarg = $f.notarg; ok = $f.ok; quit = $f.quit; targ = $f.targ; ui = $f.ui; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		err = $ifaceNil;
 		again = false;
 		quit = false;
@@ -48889,36 +49065,45 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						/* */ if (_2 === (1)) { $s = 16; continue; }
 						/* */ $s = 17; continue;
 						/* if (_2 === (0)) { */ case 14:
-							/* */ if (in$1.mouseX > 79 && (in$1.mouseY === 0)) { $s = 18; continue; }
-							/* */ if (in$1.mouseX > 79 || in$1.mouseY > 21) { $s = 19; continue; }
+							/* */ if (in$1.mouseY === 21) { $s = 18; continue; }
+							/* */ if (in$1.mouseX >= 79 || in$1.mouseY >= 21) { $s = 19; continue; }
 							/* */ $s = 20; continue;
-							/* if (in$1.mouseX > 79 && (in$1.mouseY === 0)) { */ case 18:
-								_r$1 = ui.CursorKeyAction(g, targ, new runeKeyAction.ptr(0, 43), data); /* */ $s = 22; case 22: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
-								_tuple = _r$1;
-								err = _tuple[0];
-								again = _tuple[1];
-								quit = _tuple[2];
-								notarg = _tuple[3];
+							/* if (in$1.mouseY === 21) { */ case 18:
+								_tuple = ui.WhichButton(in$1.mouseX);
+								m = _tuple[0];
+								ok = _tuple[1];
+								if (!ok) {
+									position.copy(g.Targeting, $pkg.InvalidPos);
+									notarg = true;
+									err = errors.New("Do nothing, then.");
+									/* break; */ $s = 13; continue;
+								}
+								_r$1 = ui.CursorKeyAction(g, targ, new runeKeyAction.ptr(0, new menu(m).Key()), data); /* */ $s = 22; case 22: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+								_tuple$1 = _r$1;
+								err = _tuple$1[0];
+								again = _tuple$1[1];
+								quit = _tuple$1[2];
+								notarg = _tuple$1[3];
 								$s = 21; continue;
-							/* } else if (in$1.mouseX > 79 || in$1.mouseY > 21) { */ case 19:
+							/* } else if (in$1.mouseX >= 79 || in$1.mouseY >= 21) { */ case 19:
 								position.copy(g.Targeting, $pkg.InvalidPos);
 								notarg = true;
 								err = errors.New("Do nothing, then.");
 								$s = 21; continue;
 							/* } else { */ case 20:
 								_r$2 = ui.CursorMouseLeft(g, targ, new position.ptr(in$1.mouseX, in$1.mouseY), data); /* */ $s = 23; case 23: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
-								_tuple$1 = _r$2;
-								again = _tuple$1[0];
-								notarg = _tuple$1[1];
+								_tuple$2 = _r$2;
+								again = _tuple$2[0];
+								notarg = _tuple$2[1];
 							/* } */ case 21:
 							$s = 17; continue;
 						/* } else if (_2 === (2)) { */ case 15:
 							_r$3 = ui.CursorKeyAction(g, targ, new runeKeyAction.ptr(0, 43), data); /* */ $s = 24; case 24: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
-							_tuple$2 = _r$3;
-							err = _tuple$2[0];
-							again = _tuple$2[1];
-							quit = _tuple$2[2];
-							notarg = _tuple$2[3];
+							_tuple$3 = _r$3;
+							err = _tuple$3[0];
+							again = _tuple$3[1];
+							quit = _tuple$3[2];
+							notarg = _tuple$3[3];
 							$s = 17; continue;
 						/* } else if (_2 === (1)) { */ case 16:
 							position.copy(g.Targeting, $pkg.InvalidPos);
@@ -48951,18 +49136,18 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (utf8.RuneCountInString(in$1.key) > 1) { $s = 25; continue; }
 		/* */ $s = 26; continue;
 		/* if (utf8.RuneCountInString(in$1.key) > 1) { */ case 25:
-			$r = g.Printf("Invalid key: \xE2\x80\x9C%s\xE2\x80\x9D.", new sliceType$7([new $String(in$1.key)])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("Invalid key: \xE2\x80\x9C%s\xE2\x80\x9D.", new sliceType$8([new $String(in$1.key)])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			notarg = true;
 			$s = -1; return [err, again, quit, notarg];
 		/* } */ case 26:
 		_r$4 = ui.CursorKeyAction(g, targ, new runeKeyAction.ptr(ui.ReadKey(in$1.key), 0), data); /* */ $s = 28; case 28: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
-		_tuple$3 = _r$4;
-		err = _tuple$3[0];
-		again = _tuple$3[1];
-		quit = _tuple$3[2];
-		notarg = _tuple$3[3];
+		_tuple$4 = _r$4;
+		err = _tuple$4[0];
+		again = _tuple$4[1];
+		quit = _tuple$4[2];
+		notarg = _tuple$4[3];
 		$s = -1; return [err, again, quit, notarg];
-		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.TargetModeEvent }; } $f._1 = _1; $f._2 = _2; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f.again = again; $f.data = data; $f.err = err; $f.g = g; $f.in$1 = in$1; $f.notarg = notarg; $f.quit = quit; $f.targ = targ; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: termui.ptr.prototype.TargetModeEvent }; } $f._1 = _1; $f._2 = _2; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tmp$2 = _tmp$2; $f._tmp$3 = _tmp$3; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f._tuple$2 = _tuple$2; $f._tuple$3 = _tuple$3; $f._tuple$4 = _tuple$4; $f.again = again; $f.data = data; $f.err = err; $f.g = g; $f.in$1 = in$1; $f.m = m; $f.notarg = notarg; $f.ok = ok; $f.quit = quit; $f.targ = targ; $f.ui = ui; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	termui.prototype.TargetModeEvent = function(g, targ, data) { return this.$val.TargetModeEvent(g, targ, data); };
 	termui.ptr.prototype.Select = function(g, ev, l) {
@@ -49117,7 +49302,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (e.Dups > 0) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (e.Dups > 0) { */ case 1:
-			_r = fmt.Sprintf("%s (%d\xC3\x97)", new sliceType$7([new $String(e.Text), new $Int((e.Dups + 1 >> 0))])); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			_r = fmt.Sprintf("%s (%d\xC3\x97)", new sliceType$8([new $String(e.Text), new $Int((e.Dups + 1 >> 0))])); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			$s = -1; return _r;
 		/* } */ case 2:
 		$s = -1; return e.Text;
@@ -49185,7 +49370,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, g, s, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; g = $f.g; s = $f.s; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		_r = fmt.Sprintf("Depth %2d|Turn %7.1f| %s", new sliceType$7([new $Int(g.Depth), new $Float64((g.Turn) / 10), new $String(s)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("Depth %2d|Turn %7.1f| %s", new sliceType$8([new $Int(g.Depth), new $Float64((g.Turn) / 10), new $String(s)])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		g.Stats.Story = $append(g.Stats.Story, _r);
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.StoryPrint }; } $f._r = _r; $f.g = g; $f.s = s; $f.$s = $s; $f.$r = $r; return $f;
@@ -49199,7 +49384,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_arg$1 = new $Float64((g.Turn) / 10);
 		_r = fmt.Sprintf(format, a); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_arg$2 = new $String(_r);
-		_r$1 = fmt.Sprintf("Depth %2d|Turn %7.1f| %s", new sliceType$7([_arg, _arg$1, _arg$2])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Sprintf("Depth %2d|Turn %7.1f| %s", new sliceType$8([_arg, _arg$1, _arg$2])); /* */ $s = 2; case 2: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		g.Stats.Story = $append(g.Stats.Story, _r$1);
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.StoryPrintf }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._r = _r; $f._r$1 = _r$1; $f.a = a; $f.format = format; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
@@ -49306,7 +49491,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			x = -d + from.X >> 0;
 			/* while (true) { */ case 3:
 				/* if (!(x <= (d + from.X >> 0))) { break; } */ if(!(x <= (d + from.X >> 0))) { $s = 4; continue; }
-				_ref = new sliceType$5([new position.ptr(x, from.Y + d >> 0), new position.ptr(x, from.Y - d >> 0)]);
+				_ref = new sliceType$6([new position.ptr(x, from.Y + d >> 0), new position.ptr(x, from.Y - d >> 0)]);
 				_i = 0;
 				/* while (true) { */ case 5:
 					/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 6; continue; }
@@ -49328,7 +49513,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			y = (-d + 1 >> 0) + from.Y >> 0;
 			/* while (true) { */ case 10:
 				/* if (!(y <= ((d - 1 >> 0) + from.Y >> 0))) { break; } */ if(!(y <= ((d - 1 >> 0) + from.Y >> 0))) { $s = 11; continue; }
-				_ref$1 = new sliceType$5([new position.ptr(from.X + d >> 0, y), new position.ptr(from.X - d >> 0, y)]);
+				_ref$1 = new sliceType$6([new position.ptr(from.X + d >> 0, y), new position.ptr(from.X - d >> 0, y)]);
 				_i$1 = 0;
 				/* while (true) { */ case 12:
 					/* if (!(_i$1 < _ref$1.$length)) { break; } */ if(!(_i$1 < _ref$1.$length)) { $s = 13; continue; }
@@ -49427,7 +49612,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* continue; */ $s = 7; continue;
 				/* } */ case 12:
 				mons.Seen = true;
-				$r = g.Printf("You see %s (%v).", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(false)), new monsterState(mons.State)])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You see %s (%v).", new sliceType$8([new $String(new monsterKind(mons.Kind).Indefinite(false)), new monsterState(mons.State)])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* */ if (new monsterKind(mons.Kind).Dangerousness() > 10) { $s = 14; continue; }
 				/* */ $s = 15; continue;
 				/* if (new monsterKind(mons.Kind).Dangerousness() > 10) { */ case 14:
@@ -49463,14 +49648,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					_arg$1 = new $Int(c.Quantity);
 					_r = c.Consumable.Plural(); /* */ $s = 10; case 10: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 					_arg$2 = new $String(_r);
-					$r = g.Printf("You %s %d %s.", new sliceType$7([_arg, _arg$1, _arg$2])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$r = g.Printf("You %s %d %s.", new sliceType$8([_arg, _arg$1, _arg$2])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					$s = 9; continue;
 				/* } else { */ case 8:
 					_arg$3 = new $String(see);
 					_r$1 = c.Consumable.String(); /* */ $s = 12; case 12: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 					_r$2 = Indefinite(_r$1, false); /* */ $s = 13; case 13: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 					_arg$4 = new $String(_r$2);
-					$r = g.Printf("You %s %s.", new sliceType$7([_arg$3, _arg$4])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$r = g.Printf("You %s %s.", new sliceType$8([_arg$3, _arg$4])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				/* } */ case 9:
 				g.StopAuto();
 				$s = 6; continue;
@@ -49480,7 +49665,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* */ if (ok$1) { $s = 15; continue; }
 				/* */ $s = 16; continue;
 				/* if (ok$1) { */ case 15:
-					$r = g.Printf("You %s stairs.", new sliceType$7([new $String(see)])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$r = g.Printf("You %s stairs.", new sliceType$8([new $String(see)])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					g.StopAuto();
 					$s = 17; continue;
 				/* } else { */ case 16:
@@ -49494,7 +49679,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						_r$3 = eq.String(); /* */ $s = 22; case 22: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 						_r$4 = Indefinite(_r$3, false); /* */ $s = 23; case 23: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 						_arg$6 = new $String(_r$4);
-						$r = g.Printf("You %s %s.", new sliceType$7([_arg$5, _arg$6])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$r = g.Printf("You %s %s.", new sliceType$8([_arg$5, _arg$6])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 						g.StopAuto();
 						$s = 21; continue;
 					/* } else { */ case 20:
@@ -49504,7 +49689,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 						/* */ if (ok$3) { $s = 25; continue; }
 						/* */ $s = 26; continue;
 						/* if (ok$3) { */ case 25:
-							$r = g.Printf("You %s %s.", new sliceType$7([new $String(see), new $String(Indefinite(new rod(rod$1).String(), false))])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+							$r = g.Printf("You %s %s.", new sliceType$8([new $String(see), new $String(Indefinite(new rod(rod$1).String(), false))])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 							g.StopAuto();
 						/* } */ case 26:
 					/* } */ case 21:
@@ -49518,7 +49703,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if ((_entry$4 = g.UnknownDig[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { $s = 28; continue; }
 			/* */ $s = 29; continue;
 			/* if ((_entry$4 = g.UnknownDig[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false)) { */ case 28:
-				$r = g.Printf("There is no more a wall there.", new sliceType$7([])); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("There is no more a wall there.", new sliceType$8([])); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				g.StopAuto();
 				g.DijkstraMapRebuild = true;
 			/* } */ case 29:
@@ -49528,7 +49713,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (ok$4 && (cld === 1) && !(((_entry$6 = g.UnknownBurn[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) === 0))) { $s = 31; continue; }
 			/* */ $s = 32; continue;
 			/* if (ok$4 && (cld === 1) && !(((_entry$6 = g.UnknownBurn[position.keyFor(pos)], _entry$6 !== undefined ? _entry$6.v : 0) === 0))) { */ case 31:
-				$r = g.Printf("There are flames there.", new sliceType$7([])); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("There are flames there.", new sliceType$8([])); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				g.StopAuto();
 				g.DijkstraMapRebuild = true;
 			/* } */ case 32:
@@ -49557,7 +49742,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			x = -d + pos.X >> 0;
 			while (true) {
 				if (!(x <= (d + pos.X >> 0))) { break; }
-				_ref = new sliceType$5([new position.ptr(x, pos.Y + d >> 0), new position.ptr(x, pos.Y - d >> 0)]);
+				_ref = new sliceType$6([new position.ptr(x, pos.Y + d >> 0), new position.ptr(x, pos.Y - d >> 0)]);
 				_i = 0;
 				while (true) {
 					if (!(_i < _ref.$length)) { break; }
@@ -49574,7 +49759,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			y = (-d + 1 >> 0) + pos.Y >> 0;
 			while (true) {
 				if (!(y <= ((d - 1 >> 0) + pos.Y >> 0))) { break; }
-				_ref$1 = new sliceType$5([new position.ptr(pos.X + d >> 0, y), new position.ptr(pos.X - d >> 0, y)]);
+				_ref$1 = new sliceType$6([new position.ptr(pos.X + d >> 0, y), new position.ptr(pos.X - d >> 0, y)]);
 				_i$1 = 0;
 				while (true) {
 					if (!(_i$1 < _ref$1.$length)) { break; }
@@ -49597,9 +49782,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _r = $f._r; _tuple = $f._tuple; g = $f.g; pos = $f.pos; ray = $f.ray; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		if (!(_entry = g.Player.LOS[position.keyFor(pos)], _entry !== undefined ? _entry.v : false)) {
-			$s = -1; return sliceType$5.nil;
+			$s = -1; return sliceType$6.nil;
 		}
-		ray = new sliceType$5([]);
+		ray = new sliceType$6([]);
 		/* while (true) { */ case 1:
 			/* if (!(!($equal(pos, g.Player.Pos, position)))) { break; } */ if(!(!($equal(pos, g.Player.Pos, position)))) { $s = 2; continue; }
 			ray = $append(ray, pos);
@@ -49634,8 +49819,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _1, _entry, _entry$1, _i, _key, _keys, _r, _r$1, _ref, _v, count, dij, g, mons, nm, noise, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _entry = $f._entry; _entry$1 = $f._entry$1; _i = $f._i; _key = $f._key; _keys = $f._keys; _r = $f._r; _r$1 = $f._r$1; _ref = $f._ref; _v = $f._v; count = $f.count; dij = $f.dij; g = $f.g; mons = $f.mons; nm = $f.nm; noise = $f.noise; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		dij = new noisePath.ptr(g, arrayType$1.zero());
-		_r = Dijkstra(dij, new sliceType$5([$clone(g.Player.Pos, position)]), g.LosRange() + 2 >> 0); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		dij = new noisePath.ptr(g, arrayType$2.zero());
+		_r = Dijkstra(dij, new sliceType$6([$clone(g.Player.Pos, position)]), g.LosRange() + 2 >> 0); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nm = _r;
 		count = 0;
 		noise = $makeMap(position.keyFor, []);
@@ -49794,7 +49979,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				text = "You saw Marevor.";
 				$s = 4; continue;
 			/* } else { */ case 3:
-				_r = fmt.Sprintf("You saw %s.", new sliceType$7([new $String(Indefinite(new monsterKind(mk).String(), false))])); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+				_r = fmt.Sprintf("You saw %s.", new sliceType$8([new $String(Indefinite(new monsterKind(mk).String(), false))])); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				text = _r;
 			/* } */ case 4:
 		case 1:
@@ -49830,11 +50015,11 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				text = new monsterKind(mk).String();
 				$s = 5; continue;
 			/* } else if (capital) { */ case 3:
-				_r = fmt.Sprintf("The %s", new sliceType$7([new $String(new monsterKind(mk).String())])); /* */ $s = 6; case 6: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+				_r = fmt.Sprintf("The %s", new sliceType$8([new $String(new monsterKind(mk).String())])); /* */ $s = 6; case 6: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				text = _r;
 				$s = 5; continue;
 			/* } else { */ case 4:
-				_r$1 = fmt.Sprintf("the %s", new sliceType$7([new $String(new monsterKind(mk).String())])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+				_r$1 = fmt.Sprintf("the %s", new sliceType$8([new $String(new monsterKind(mk).String())])); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				text = _r$1;
 			/* } */ case 5:
 		case 1:
@@ -49848,7 +50033,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _i = $f._i; _keys = $f._keys; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _ref = $f._ref; _v = $f._v; band = $f.band; bandMonsters = $f.bandMonsters; g = $f.g; i = $f.i; interval = $f.interval; m = $f.m; mbd = $f.mbd; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		if ((_entry = g.GeneratedBands[monsterBand.keyFor(band)], _entry !== undefined ? _entry.v : 0) > 0 && mbd.unique) {
-			$s = -1; return sliceType$17.nil;
+			$s = -1; return sliceType$18.nil;
 		}
 		_r = RandInt(3); /* */ $s = 4; case 4: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		if (g.Depth > (mbd.maxDepth + _r >> 0)) { _v = true; $s = 3; continue s; }
@@ -49857,18 +50042,18 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (_v) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (_v) { */ case 1:
-			$s = -1; return sliceType$17.nil;
+			$s = -1; return sliceType$18.nil;
 		/* } */ case 2:
 		_r$2 = RandInt(3); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		/* */ if (g.Depth < (mbd.minDepth - _r$2 >> 0)) { $s = 6; continue; }
 		/* */ $s = 7; continue;
 		/* if (g.Depth < (mbd.minDepth - _r$2 >> 0)) { */ case 6:
-			$s = -1; return sliceType$17.nil;
+			$s = -1; return sliceType$18.nil;
 		/* } */ case 7:
 		if (!mbd.band) {
-			$s = -1; return new sliceType$17([mbd.monster]);
+			$s = -1; return new sliceType$18([mbd.monster]);
 		}
-		bandMonsters = new sliceType$17([]);
+		bandMonsters = new sliceType$18([]);
 		_ref = mbd.distribution;
 		_i = 0;
 		_keys = $keys(_ref);
@@ -49929,7 +50114,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r = $f._r; _r$1 = $f._r$1; _ref = $f._ref; g = $f.g; m = $f.m; mons = $f.mons; neighbors = $f.neighbors; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		pos = [pos];
 		m = this;
-		neighbors = sliceType$5.nil;
+		neighbors = sliceType$6.nil;
 		/* */ if (m.Status(0)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (m.Status(0)) { */ case 1:
@@ -50017,7 +50202,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* if ((_entry = g.Player.LOS[position.keyFor(m.Pos)], _entry !== undefined ? _entry.v : false)) { */ case 4:
 			_r$1 = new monsterKind(m.Kind).Definite(true); /* */ $s = 6; case 6: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 			_arg = new $String(_r$1);
-			$r = g.Printf("%s teleports away.", new sliceType$7([_arg])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s teleports away.", new sliceType$8([_arg])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 5:
 		opos = $clone(m.Pos, position);
 		$r = m.MoveTo(g, $clone(pos, position)); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -50031,8 +50216,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	monster.prototype.TeleportAway = function(g) { return this.$val.TeleportAway(g); };
 	monster.ptr.prototype.MoveTo = function(g, pos) {
-		var _entry, _entry$1, g, m, pos, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; g = $f.g; m = $f.m; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _entry, _entry$1, _entry$2, _entry$3, _entry$4, _entry$5, g, m, pos, recomputeLOS, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _entry$3 = $f._entry$3; _entry$4 = $f._entry$4; _entry$5 = $f._entry$5; g = $f.g; m = $f.m; pos = $f.pos; recomputeLOS = $f.recomputeLOS; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
 		/* */ if (!(_entry = g.Player.LOS[position.keyFor(m.Pos)], _entry !== undefined ? _entry.v : false) && (_entry$1 = g.Player.LOS[position.keyFor(pos)], _entry$1 !== undefined ? _entry$1.v : false)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
@@ -50041,13 +50226,19 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ $s = 4; continue;
 			/* if (!m.Seen) { */ case 3:
 				m.Seen = true;
-				$r = g.Printf("%s (%v) comes into view.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(true)), new monsterState(m.State)])); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s (%v) comes into view.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(true)), new monsterState(m.State)])); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 4:
 			g.StopAuto();
 		/* } */ case 2:
+		recomputeLOS = (_entry$2 = g.Player.LOS[position.keyFor(m.Pos)], _entry$2 !== undefined ? _entry$2.v : false) && (_entry$3 = g.Doors[position.keyFor(m.Pos)], _entry$3 !== undefined ? _entry$3.v : false) || (_entry$4 = g.Player.LOS[position.keyFor(pos)], _entry$4 !== undefined ? _entry$4.v : false) && (_entry$5 = g.Doors[position.keyFor(pos)], _entry$5 !== undefined ? _entry$5.v : false);
 		m.PlaceAt(g, $clone(pos, position));
+		/* */ if (recomputeLOS) { $s = 6; continue; }
+		/* */ $s = 7; continue;
+		/* if (recomputeLOS) { */ case 6:
+			$r = g.ComputeLOS(); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		/* } */ case 7:
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.MoveTo }; } $f._entry = _entry; $f._entry$1 = _entry$1; $f.g = g; $f.m = m; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.MoveTo }; } $f._entry = _entry; $f._entry$1 = _entry$1; $f._entry$2 = _entry$2; $f._entry$3 = _entry$3; $f._entry$4 = _entry$4; $f._entry$5 = _entry$5; $f.g = g; $f.m = m; $f.pos = pos; $f.recomputeLOS = recomputeLOS; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	monster.prototype.MoveTo = function(g, pos) { return this.$val.MoveTo(g, pos); };
 	monster.ptr.prototype.PlaceAt = function(g, pos) {
@@ -50156,8 +50347,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	monster.prototype.AttackAction = function(g, ev) { return this.$val.AttackAction(g, ev); };
 	monster.ptr.prototype.HandleTurn = function(g, ev) {
-		var _1, _2, _arg, _entry, _entry$1, _entry$2, _entry$3, _entry$4, _i, _i$1, _key, _r, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$16, _r$17, _r$18, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, _ref$1, _v, _v$1, attack, ev, g, keepWandering, m, mons, mons$1, mpos, npos, ppos, r, recomputeLOS, target, wander, x, x$1, x$2, x$3, x$4, x$5, x$6, x$7, x$8, x$9, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _2 = $f._2; _arg = $f._arg; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _entry$3 = $f._entry$3; _entry$4 = $f._entry$4; _i = $f._i; _i$1 = $f._i$1; _key = $f._key; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$16 = $f._r$16; _r$17 = $f._r$17; _r$18 = $f._r$18; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _ref$1 = $f._ref$1; _v = $f._v; _v$1 = $f._v$1; attack = $f.attack; ev = $f.ev; g = $f.g; keepWandering = $f.keepWandering; m = $f.m; mons = $f.mons; mons$1 = $f.mons$1; mpos = $f.mpos; npos = $f.npos; ppos = $f.ppos; r = $f.r; recomputeLOS = $f.recomputeLOS; target = $f.target; wander = $f.wander; x = $f.x; x$1 = $f.x$1; x$2 = $f.x$2; x$3 = $f.x$3; x$4 = $f.x$4; x$5 = $f.x$5; x$6 = $f.x$6; x$7 = $f.x$7; x$8 = $f.x$8; x$9 = $f.x$9; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _1, _2, _arg, _entry, _entry$1, _entry$2, _i, _i$1, _key, _r, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$16, _r$17, _r$18, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, _ref$1, _v, _v$1, attack, ev, g, keepWandering, m, mons, mons$1, mpos, npos, ppos, r, target, wander, x, x$1, x$2, x$3, x$4, x$5, x$6, x$7, x$8, x$9, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _2 = $f._2; _arg = $f._arg; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _i = $f._i; _i$1 = $f._i$1; _key = $f._key; _r = $f._r; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$16 = $f._r$16; _r$17 = $f._r$17; _r$18 = $f._r$18; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; _ref$1 = $f._ref$1; _v = $f._v; _v$1 = $f._v$1; attack = $f.attack; ev = $f.ev; g = $f.g; keepWandering = $f.keepWandering; m = $f.m; mons = $f.mons; mons$1 = $f.mons$1; mpos = $f.mpos; npos = $f.npos; ppos = $f.ppos; r = $f.r; target = $f.target; wander = $f.wander; x = $f.x; x$1 = $f.x$1; x$2 = $f.x$2; x$3 = $f.x$3; x$4 = $f.x$4; x$5 = $f.x$5; x$6 = $f.x$6; x$7 = $f.x$7; x$8 = $f.x$8; x$9 = $f.x$9; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
 		ppos = $clone(g.Player.Pos, position);
 		mpos = $clone(m.Pos, position);
@@ -50303,14 +50494,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (($clone(mons$1.Pos, position).Distance($clone(g.Player.Pos, position)) === 1)) { $s = 63; continue; }
 			/* */ $s = 64; continue;
 			/* if (!mons$1.Exists()) { */ case 61:
-				recomputeLOS = (_entry$1 = g.Doors[position.keyFor(m.Pos)], _entry$1 !== undefined ? _entry$1.v : false) || (_entry$2 = g.Doors[position.keyFor(target)], _entry$2 !== undefined ? _entry$2.v : false);
 				/* */ if ((m.Kind === 14) && (g.Dungeon.Cell($clone(target, position)).T === 0)) { $s = 66; continue; }
 				/* */ if (g.Dungeon.Cell($clone(target, position)).T === 0) { $s = 67; continue; }
 				/* */ $s = 68; continue;
 				/* if ((m.Kind === 14) && (g.Dungeon.Cell($clone(target, position)).T === 0)) { */ case 66:
 					g.Dungeon.SetCell($clone(target, position), 1);
 					g.Stats.Digs = g.Stats.Digs + (1) >> 0;
-					if (!(_entry$3 = g.Player.LOS[position.keyFor(target)], _entry$3 !== undefined ? _entry$3.v : false)) {
+					if (!(_entry$1 = g.Player.LOS[position.keyFor(target)], _entry$1 !== undefined ? _entry$1.v : false)) {
 						_key = $clone(m.Pos, position); (g.UnknownDig || $throwRuntimeError("assignment to entry in nil map"))[position.keyFor(_key)] = { k: _key, v: true };
 					}
 					$r = g.MakeNoise(18, $clone(m.Pos, position)); /* */ $s = 70; case 70: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -50320,67 +50510,57 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					/* if ($clone(g.Player.Pos, position).Distance($clone(target, position)) < 12) { */ case 72:
 						_r$12 = g.CrackSound(); /* */ $s = 74; case 74: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 						_arg = new $String(_r$12);
-						$r = g.Printf("%s You hear an earth-breaking noise.", new sliceType$7([_arg])); /* */ $s = 75; case 75: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+						$r = g.Printf("%s You hear an earth-breaking noise.", new sliceType$8([_arg])); /* */ $s = 75; case 75: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 						g.StopAuto();
 					/* } */ case 73:
 					$r = m.MoveTo(g, $clone(target, position)); /* */ $s = 76; case 76: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					m.Path = $subslice(m.Path, 0, (m.Path.$length - 1 >> 0));
-					/* */ if (recomputeLOS) { $s = 77; continue; }
-					/* */ $s = 78; continue;
-					/* if (recomputeLOS) { */ case 77:
-						$r = g.ComputeLOS(); /* */ $s = 79; case 79: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					/* } */ case 78:
 					$s = 69; continue;
 				/* } else if (g.Dungeon.Cell($clone(target, position)).T === 0) { */ case 67:
-					_r$13 = m.APath(g, $clone(mpos, position), $clone(m.Target, position)); /* */ $s = 80; case 80: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
+					_r$13 = m.APath(g, $clone(mpos, position), $clone(m.Target, position)); /* */ $s = 77; case 77: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
 					m.Path = _r$13;
 					$s = 69; continue;
 				/* } else { */ case 68:
-					$r = m.MoveTo(g, $clone(target, position)); /* */ $s = 81; case 81: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					if (new monsterKind(m.Kind).Ranged() && !m.FireReady && (_entry$4 = g.Player.LOS[position.keyFor(m.Pos)], _entry$4 !== undefined ? _entry$4.v : false)) {
+					$r = m.MoveTo(g, $clone(target, position)); /* */ $s = 78; case 78: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					if (new monsterKind(m.Kind).Ranged() && !m.FireReady && (_entry$2 = g.Player.LOS[position.keyFor(m.Pos)], _entry$2 !== undefined ? _entry$2.v : false)) {
 						m.FireReady = true;
 					}
 					m.Path = $subslice(m.Path, 0, (m.Path.$length - 1 >> 0));
-					/* */ if (recomputeLOS) { $s = 82; continue; }
-					/* */ $s = 83; continue;
-					/* if (recomputeLOS) { */ case 82:
-						$r = g.ComputeLOS(); /* */ $s = 84; case 84: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					/* } */ case 83:
 				/* } */ case 69:
 				$s = 65; continue;
 			/* } else if (!(_entry = g.Player.LOS[position.keyFor(mons$1.Pos)], _entry !== undefined ? _entry.v : false) && $clone(g.Player.Pos, position).Distance($clone(mons$1.Target, position)) > 2 && !((mons$1.State === 1))) { */ case 62:
-				_r$14 = RandInt(5); /* */ $s = 85; case 85: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
+				_r$14 = RandInt(5); /* */ $s = 79; case 79: if($c) { $c = false; _r$14 = _r$14.$blk(); } if (_r$14 && _r$14.$blk !== undefined) { break s; }
 				r = _r$14;
-				/* */ if (r === 0) { $s = 86; continue; }
-				/* */ if (((r === 1) || (r === 2)) && (mons$1.State === 0)) { $s = 87; continue; }
-				/* */ $s = 88; continue;
-				/* if (r === 0) { */ case 86:
-					_r$15 = g.FreeCell(); /* */ $s = 89; case 89: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
+				/* */ if (r === 0) { $s = 80; continue; }
+				/* */ if (((r === 1) || (r === 2)) && (mons$1.State === 0)) { $s = 81; continue; }
+				/* */ $s = 82; continue;
+				/* if (r === 0) { */ case 80:
+					_r$15 = g.FreeCell(); /* */ $s = 83; case 83: if($c) { $c = false; _r$15 = _r$15.$blk(); } if (_r$15 && _r$15.$blk !== undefined) { break s; }
 					position.copy(m.Target, _r$15);
-					$r = m.GatherBand(g); /* */ $s = 90; case 90: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-					$s = 88; continue;
-				/* } else if (((r === 1) || (r === 2)) && (mons$1.State === 0)) { */ case 87:
-					_r$16 = g.FreeCell(); /* */ $s = 91; case 91: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
+					$r = m.GatherBand(g); /* */ $s = 84; case 84: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+					$s = 82; continue;
+				/* } else if (((r === 1) || (r === 2)) && (mons$1.State === 0)) { */ case 81:
+					_r$16 = g.FreeCell(); /* */ $s = 85; case 85: if($c) { $c = false; _r$16 = _r$16.$blk(); } if (_r$16 && _r$16.$blk !== undefined) { break s; }
 					position.copy(mons$1.Target, _r$16);
 					mons$1.State = 2;
-					$r = mons$1.GatherBand(g); /* */ $s = 92; case 92: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				/* } */ case 88:
+					$r = mons$1.GatherBand(g); /* */ $s = 86; case 86: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				/* } */ case 82:
 				$s = 65; continue;
 			/* } else if (($clone(mons$1.Pos, position).Distance($clone(g.Player.Pos, position)) === 1)) { */ case 63:
-				_r$17 = m.APath(g, $clone(mpos, position), $clone(m.Target, position)); /* */ $s = 93; case 93: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
+				_r$17 = m.APath(g, $clone(mpos, position), $clone(m.Target, position)); /* */ $s = 87; case 87: if($c) { $c = false; _r$17 = _r$17.$blk(); } if (_r$17 && _r$17.$blk !== undefined) { break s; }
 				m.Path = _r$17;
 				if (m.Path.$length < 2 || $equal((x$8 = m.Path, x$9 = m.Path.$length - 2 >> 0, ((x$9 < 0 || x$9 >= x$8.$length) ? ($throwRuntimeError("index out of range"), undefined) : x$8.$array[x$8.$offset + x$9])), mons$1.Pos, position)) {
 					mons$1.Obstructing = true;
 				}
 				$s = 65; continue;
 			/* } else { */ case 64:
-				_r$18 = m.APath(g, $clone(mpos, position), $clone(m.Target, position)); /* */ $s = 94; case 94: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
+				_r$18 = m.APath(g, $clone(mpos, position), $clone(m.Target, position)); /* */ $s = 88; case 88: if($c) { $c = false; _r$18 = _r$18.$blk(); } if (_r$18 && _r$18.$blk !== undefined) { break s; }
 				m.Path = _r$18;
 			/* } */ case 65:
 		case 60:
-		$r = ev.Renew(g, new monsterKind(m.Kind).MovementDelay()); /* */ $s = 95; case 95: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = ev.Renew(g, new monsterKind(m.Kind).MovementDelay()); /* */ $s = 89; case 89: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.HandleTurn }; } $f._1 = _1; $f._2 = _2; $f._arg = _arg; $f._entry = _entry; $f._entry$1 = _entry$1; $f._entry$2 = _entry$2; $f._entry$3 = _entry$3; $f._entry$4 = _entry$4; $f._i = _i; $f._i$1 = _i$1; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$11 = _r$11; $f._r$12 = _r$12; $f._r$13 = _r$13; $f._r$14 = _r$14; $f._r$15 = _r$15; $f._r$16 = _r$16; $f._r$17 = _r$17; $f._r$18 = _r$18; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._ref = _ref; $f._ref$1 = _ref$1; $f._v = _v; $f._v$1 = _v$1; $f.attack = attack; $f.ev = ev; $f.g = g; $f.keepWandering = keepWandering; $f.m = m; $f.mons = mons; $f.mons$1 = mons$1; $f.mpos = mpos; $f.npos = npos; $f.ppos = ppos; $f.r = r; $f.recomputeLOS = recomputeLOS; $f.target = target; $f.wander = wander; $f.x = x; $f.x$1 = x$1; $f.x$2 = x$2; $f.x$3 = x$3; $f.x$4 = x$4; $f.x$5 = x$5; $f.x$6 = x$6; $f.x$7 = x$7; $f.x$8 = x$8; $f.x$9 = x$9; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.HandleTurn }; } $f._1 = _1; $f._2 = _2; $f._arg = _arg; $f._entry = _entry; $f._entry$1 = _entry$1; $f._entry$2 = _entry$2; $f._i = _i; $f._i$1 = _i$1; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f._r$10 = _r$10; $f._r$11 = _r$11; $f._r$12 = _r$12; $f._r$13 = _r$13; $f._r$14 = _r$14; $f._r$15 = _r$15; $f._r$16 = _r$16; $f._r$17 = _r$17; $f._r$18 = _r$18; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._r$9 = _r$9; $f._ref = _ref; $f._ref$1 = _ref$1; $f._v = _v; $f._v$1 = _v$1; $f.attack = attack; $f.ev = ev; $f.g = g; $f.keepWandering = keepWandering; $f.m = m; $f.mons = mons; $f.mons$1 = mons$1; $f.mpos = mpos; $f.npos = npos; $f.ppos = ppos; $f.r = r; $f.target = target; $f.wander = wander; $f.x = x; $f.x$1 = x$1; $f.x$2 = x$2; $f.x$3 = x$3; $f.x$4 = x$4; $f.x$5 = x$5; $f.x$6 = x$6; $f.x$7 = x$7; $f.x$8 = x$8; $f.x$9 = x$9; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	monster.prototype.HandleTurn = function(g, ev) { return this.$val.HandleTurn(g, ev); };
 	monster.ptr.prototype.DramaticAdjustment = function(g, baseAttack, attack, evasion, acc) {
@@ -50438,7 +50618,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (_r$4) { $s = 8; continue; }
 			/* */ $s = 9; continue;
 			/* if (_r$4) { */ case 8:
-				$r = g.Printf("You block the %s's attack with your %s.", new sliceType$7([new monsterKind(m.Kind), new shield(g.Player.Shield)])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You block the %s's attack with your %s.", new sliceType$8([new monsterKind(m.Kind), new shield(g.Player.Shield)])); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = -1; return;
 			/* } */ case 9:
 			/* */ if (g.Player.HasStatus(13) && !g.Player.HasStatus(5)) { $s = 12; continue; }
@@ -50452,7 +50632,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r$5 = new monsterKind(m.Kind).Definite(true); /* */ $s = 16; case 16: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 			_arg = new $String(_r$5);
 			_arg$1 = new $Int(attack);
-			$r = g.PrintfStyled("%s hits you (%d dmg).", 3, new sliceType$7([_arg, _arg$1])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.PrintfStyled("%s hits you (%d dmg).", 3, new sliceType$8([_arg, _arg$1])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$r = m.InflictDamage(g, attack, m.Attack); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			if (g.Player.HP <= 0) {
 				$s = -1; return;
@@ -50465,7 +50645,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ $s = 21; continue;
 			/* if (_v) { */ case 20:
 				$r = m.EnterConfusion(g, ev); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.Printf("You release a confusing gas on the %s.", new sliceType$7([new monsterKind(m.Kind)])); /* */ $s = 25; case 25: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You release a confusing gas on the %s.", new sliceType$8([new monsterKind(m.Kind)])); /* */ $s = 25; case 25: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 21:
 			if (!((_entry$1 = g.Player.Aptitudes[aptitude.keyFor(9)], _entry$1 !== undefined ? _entry$1.v : false) && g.Player.HP < (_q$1 = g.Player.HPMax() / 2, (_q$1 === _q$1 && _q$1 !== 1/0 && _q$1 !== -1/0) ? _q$1 >> 0 : $throwRuntimeError("integer divide by zero")))) { _v$1 = false; $s = 28; continue s; }
 			_r$7 = RandInt(2); /* */ $s = 29; case 29: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
@@ -50479,7 +50659,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* } else { */ case 6:
 			_r$8 = new monsterKind(m.Kind).Definite(true); /* */ $s = 31; case 31: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 			_arg$2 = new $String(_r$8);
-			$r = g.Printf("%s misses you.", new sliceType$7([_arg$2])); /* */ $s = 32; case 32: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s misses you.", new sliceType$8([_arg$2])); /* */ $s = 32; case 32: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 7:
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.HitPlayer }; } $f._arg = _arg; $f._arg$1 = _arg$1; $f._arg$2 = _arg$2; $f._entry = _entry; $f._entry$1 = _entry$1; $f._q = _q; $f._q$1 = _q$1; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._r$4 = _r$4; $f._r$5 = _r$5; $f._r$6 = _r$6; $f._r$7 = _r$7; $f._r$8 = _r$8; $f._tuple = _tuple; $f._v = _v; $f._v$1 = _v$1; $f.acc = acc; $f.attack = attack; $f.ev = ev; $f.evasion = evasion; $f.g = g; $f.m = m; $f.noise = noise; $f.$s = $s; $f.$r = $r; return $f;
@@ -50666,7 +50846,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			damage = g.Player.HP - (_q = g.Player.HP / 2, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero")) >> 0;
 			_r$2 = new monsterKind(m.Kind).Definite(true); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_arg = new $String(_r$2);
-			$r = g.PrintfStyled("%s throws a bolt of torment at you.", 3, new sliceType$7([_arg])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.PrintfStyled("%s throws a bolt of torment at you.", 3, new sliceType$8([_arg])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$1 = g;
 			_r$3 = g.Ray($clone(m.Pos, position)); /* */ $s = 10; case 10: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			_arg$2 = _r$3;
@@ -50675,7 +50855,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$r = m.InflictDamage(g, damage, 15); /* */ $s = 12; case 12: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 6; continue;
 		/* } else { */ case 5:
-			$r = g.Printf("You block the %s's bolt of torment.", new sliceType$7([new monsterKind(m.Kind)])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You block the %s's bolt of torment.", new sliceType$8([new monsterKind(m.Kind)])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$4 = g;
 			_r$4 = g.Ray($clone(m.Pos, position)); /* */ $s = 14; case 14: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			_arg$5 = _r$4;
@@ -50754,7 +50934,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r$6 = new monsterKind(m.Kind).Definite(true); /* */ $s = 15; case 15: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 			_arg = new $String(_r$6);
 			_arg$1 = new $Int(attack);
-			$r = g.PrintfStyled("%s throws a rock at you (%d dmg).", 3, new sliceType$7([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.PrintfStyled("%s throws a rock at you (%d dmg).", 3, new sliceType$8([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$2 = g;
 			_r$7 = g.Ray($clone(m.Pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 			_arg$3 = _r$7;
@@ -50769,7 +50949,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$r = m.InflictDamage(g, attack, 15); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 13; continue;
 		/* } else if (block) { */ case 11:
-			$r = g.Printf("You block %s's rock.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You block %s's rock.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$5 = g;
 			_r$9 = g.Ray($clone(m.Pos, position)); /* */ $s = 25; case 25: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 			_arg$6 = _r$9;
@@ -50777,7 +50957,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			$r = g.ui.MonsterProjectileAnimation(_arg$5, _arg$6, 9679, _arg$7); /* */ $s = 26; case 26: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 13; continue;
 		/* } else { */ case 12:
-			$r = g.Printf("You dodge %s's rock.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You dodge %s's rock.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$8 = g;
 			_r$10 = g.Ray($clone(m.Pos, position)); /* */ $s = 28; case 28: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 			_arg$9 = _r$10;
@@ -50830,7 +51010,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_arg = new $String(_r$6);
 			_arg$1 = new $String(Indefinite("javelin", false));
 			_arg$2 = new $Int(attack);
-			$r = g.Printf("%s throws %s at you (%d dmg).", new sliceType$7([_arg, _arg$1, _arg$2])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s throws %s at you (%d dmg).", new sliceType$8([_arg, _arg$1, _arg$2])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$3 = g;
 			_r$7 = g.Ray($clone(m.Pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 			_arg$4 = _r$7;
@@ -50843,7 +51023,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (!g.Player.HasStatus(9)) { $s = 21; continue; }
 			/* */ $s = 22; continue;
 			/* if (_r$8 === 0) { */ case 20:
-				$r = g.Printf("You block %s's %s.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You block %s's %s.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 24; case 24: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_arg$5 = g;
 				_r$9 = g.Ray($clone(m.Pos, position)); /* */ $s = 25; case 25: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 				_arg$6 = _r$9;
@@ -50854,7 +51034,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_r$10 = ev.Rank(); /* */ $s = 27; case 27: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 				_r$11 = RandInt(100); /* */ $s = 28; case 28: if($c) { $c = false; _r$11 = _r$11.$blk(); } if (_r$11 && _r$11.$blk !== undefined) { break s; }
 				$r = g.PushEvent(new simpleEvent.ptr((_r$10 + 100 >> 0) + _r$11 >> 0, 12)); /* */ $s = 29; case 29: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-				$r = g.Printf("%s's %s gets fixed on your shield.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(true)), new $String("javelin")])); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s's %s gets fixed on your shield.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(true)), new $String("javelin")])); /* */ $s = 30; case 30: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_arg$7 = g;
 				_r$12 = g.Ray($clone(m.Pos, position)); /* */ $s = 31; case 31: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 				_arg$8 = _r$12;
@@ -50862,7 +51042,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* } */ case 22:
 			$s = 13; continue;
 		/* } else { */ case 12:
-			$r = g.Printf("You dodge %s's %s.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You dodge %s's %s.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(false)), new $String("javelin")])); /* */ $s = 33; case 33: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$9 = g;
 			_r$13 = g.Ray($clone(m.Pos, position)); /* */ $s = 34; case 34: if($c) { $c = false; _r$13 = _r$13.$blk(); } if (_r$13 && _r$13.$blk !== undefined) { break s; }
 			_arg$10 = _r$13;
@@ -50917,7 +51097,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r$6 = new monsterKind(m.Kind).Definite(true); /* */ $s = 15; case 15: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 			_arg = new $String(_r$6);
 			_arg$1 = new $Int(attack);
-			$r = g.Printf("%s throws acid at you (%d dmg).", new sliceType$7([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s throws acid at you (%d dmg).", new sliceType$8([_arg, _arg$1])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$2 = g;
 			_r$7 = g.Ray($clone(m.Pos, position)); /* */ $s = 17; case 17: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 			_arg$3 = _r$7;
@@ -50938,7 +51118,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* } */ case 21:
 			$s = 13; continue;
 		/* } else if (block) { */ case 11:
-			$r = g.Printf("You block %s's acid projectile.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You block %s's acid projectile.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 28; case 28: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$5 = g;
 			_r$10 = g.Ray($clone(m.Pos, position)); /* */ $s = 29; case 29: if($c) { $c = false; _r$10 = _r$10.$blk(); } if (_r$10 && _r$10.$blk !== undefined) { break s; }
 			_arg$6 = _r$10;
@@ -50952,7 +51132,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* } */ case 32:
 			$s = 13; continue;
 		/* } else { */ case 12:
-			$r = g.Printf("You dodge %s's acid projectile.", new sliceType$7([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 35; case 35: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You dodge %s's acid projectile.", new sliceType$8([new $String(new monsterKind(m.Kind).Indefinite(false))])); /* */ $s = 35; case 35: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			_arg$8 = g;
 			_r$12 = g.Ray($clone(m.Pos, position)); /* */ $s = 36; case 36: if($c) { $c = false; _r$12 = _r$12.$blk(); } if (_r$12 && _r$12.$blk !== undefined) { break s; }
 			_arg$9 = _r$12;
@@ -51013,7 +51193,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		g.Player.MP = (_q = ($imul(2, g.Player.MP)) / 3, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"));
 		_r = new monsterKind(m.Kind).Definite(true); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_arg = new $String(_r);
-		$r = g.Printf("%s absorbs your mana.", new sliceType$7([_arg])); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("%s absorbs your mana.", new sliceType$8([_arg])); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		m.Statuses[1] = 1;
 		_r$1 = ev.Rank(); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_r$2 = RandInt(20); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
@@ -51034,7 +51214,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_arg = new $String(_r$1);
 		_r$2 = new monsterKind(m.Kind).Definite(true); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		_arg$1 = new $String(_r$2);
-		$r = g.Printf("%s %s blows with a noisy pop.", new sliceType$7([_arg, _arg$1])); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("%s %s blows with a noisy pop.", new sliceType$8([_arg, _arg$1])); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.ui.ExplosionAnimation(g, 0, $clone(m.Pos, position)); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		_ref = $append(neighbors, m.Pos);
 		_i = 0;
@@ -51107,14 +51287,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* if (m.State === 0) { */ case 3:
 				_r = new monsterKind(m.Kind).Definite(true); /* */ $s = 5; case 5: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				_arg = new $String(_r);
-				$r = g.Printf("%s awakes.", new sliceType$7([_arg])); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s awakes.", new sliceType$8([_arg])); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 4:
 			/* */ if (m.Kind === 5) { $s = 7; continue; }
 			/* */ $s = 8; continue;
 			/* if (m.Kind === 5) { */ case 7:
 				_r$1 = new monsterKind(m.Kind).Definite(true); /* */ $s = 9; case 9: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_arg$1 = new $String(_r$1);
-				$r = g.Printf("%s barks.", new sliceType$7([_arg$1])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s barks.", new sliceType$8([_arg$1])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = g.MakeNoise(12, $clone(m.Pos, position)); /* */ $s = 11; case 11: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 8:
 		/* } */ case 2:
@@ -51188,21 +51368,21 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* if (m.State === 0) { */ case 7:
 			_r$2 = new monsterKind(m.Kind).Definite(true); /* */ $s = 9; case 9: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_arg = new $String(_r$2);
-			$r = g.Printf("%s awakes.", new sliceType$7([_arg])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s awakes.", new sliceType$8([_arg])); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 8:
 		/* */ if (m.State === 2) { $s = 11; continue; }
 		/* */ $s = 12; continue;
 		/* if (m.State === 2) { */ case 11:
 			_r$3 = new monsterKind(m.Kind).Definite(true); /* */ $s = 13; case 13: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			_arg$1 = new $String(_r$3);
-			$r = g.Printf("%s notices you.", new sliceType$7([_arg$1])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s notices you.", new sliceType$8([_arg$1])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 12:
 		/* */ if (!((m.State === 1)) && (m.Kind === 5)) { $s = 15; continue; }
 		/* */ $s = 16; continue;
 		/* if (!((m.State === 1)) && (m.Kind === 5)) { */ case 15:
 			_r$4 = new monsterKind(m.Kind).Definite(true); /* */ $s = 17; case 17: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			_arg$2 = new $String(_r$4);
-			$r = g.Printf("%s barks.", new sliceType$7([_arg$2])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("%s barks.", new sliceType$8([_arg$2])); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$r = g.MakeNoise(12, $clone(m.Pos, position)); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 16:
 		m.MakeHunt(g);
@@ -51229,8 +51409,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (!(x = (x$1 = g.Bands, x$2 = m.Band, ((x$2 < 0 || x$2 >= x$1.$length) ? ($throwRuntimeError("index out of range"), undefined) : x$1.$array[x$1.$offset + x$2])), ((x < 0 || x >= $pkg.MonsBands.$length) ? ($throwRuntimeError("index out of range"), undefined) : $pkg.MonsBands.$array[$pkg.MonsBands.$offset + x])).band) {
 			$s = -1; return;
 		}
-		dij = new normalPath.ptr(g, arrayType$1.zero());
-		_r = Dijkstra(dij, new sliceType$5([$clone(m.Pos, position)]), 4); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		dij = new normalPath.ptr(g, arrayType$2.zero());
+		_r = Dijkstra(dij, new sliceType$6([$clone(m.Pos, position)]), 4); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nm = _r;
 		_ref = g.Monsters;
 		_i = 0;
@@ -51390,8 +51570,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _i, _i$1, _index, _key, _r, _r$1, _r$2, _r$3, _ref, _ref$1, band, danger, data, g, i, mk, mons, monsters, nband, nmons, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _i$1 = $f._i$1; _index = $f._index; _key = $f._key; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _ref = $f._ref; _ref$1 = $f._ref$1; band = $f.band; danger = $f.danger; data = $f.data; g = $f.g; i = $f.i; mk = $f.mk; mons = $f.mons; monsters = $f.monsters; nband = $f.nband; nmons = $f.nmons; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		g.Monsters = new sliceType$13([]);
-		g.Bands = new sliceType$14([]);
+		g.Monsters = new sliceType$14([]);
+		g.Bands = new sliceType$15([]);
 		danger = g.MaxDanger();
 		nmons = g.MaxMonsters();
 		nband = 0;
@@ -51413,9 +51593,9 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* } */ case 6:
 				_r$1 = g.GenBand($clone(data, monsterBandData), ((band >> 0))); /* */ $s = 8; case 8: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				monsters = _r$1;
-				/* */ if (monsters === sliceType$17.nil) { $s = 9; continue; }
+				/* */ if (monsters === sliceType$18.nil) { $s = 9; continue; }
 				/* */ $s = 10; continue;
-				/* if (monsters === sliceType$17.nil) { */ case 9:
+				/* if (monsters === sliceType$18.nil) { */ case 9:
 					_i++;
 					/* continue; */ $s = 3; continue;
 				/* } */ case 10:
@@ -51434,7 +51614,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 					if (danger <= 0 || nmons <= 0) {
 						$s = -1; return;
 					}
-					mons = new monster.ptr(mk, 0, 0, 0, 0, 0, 0, 0, 0, 0, arrayType$7.zero(), new position.ptr(0, 0), new position.ptr(0, 0), sliceType$5.nil, false, false, false);
+					mons = new monster.ptr(mk, 0, 0, 0, 0, 0, 0, 0, 0, 0, arrayType$1.zero(), new position.ptr(0, 0), new position.ptr(0, 0), sliceType$6.nil, false, false, false);
 					$r = mons.Init(); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 					mons.Index = i;
 					mons.Band = nband;
@@ -51519,7 +51699,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, nb, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; nb = $f.nb; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		pos = this;
-		nb = $makeSlice(sliceType$5, 0, 8);
+		nb = $makeSlice(sliceType$6, 0, 8);
 		_r = $clone(pos, position).Neighbors(nb, (function(npos) {
 			var npos;
 			return !$clone(npos, position).valid();
@@ -51533,7 +51713,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, nb, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; nb = $f.nb; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		pos = this;
-		nb = $makeSlice(sliceType$5, 0, 8);
+		nb = $makeSlice(sliceType$6, 0, 8);
 		_r = $clone(pos, position).Neighbors(nb, $methodExpr(position, "valid")); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nb = _r;
 		$s = -1; return nb;
@@ -51550,7 +51730,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, d, nb, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; d = $f.d; nb = $f.nb; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		d = this;
-		nb = $makeSlice(sliceType$5, 0, 8);
+		nb = $makeSlice(sliceType$6, 0, 8);
 		_r = $clone(pos, position).Neighbors(nb, $methodVal(d, "IsFreeCell")); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nb = _r;
 		$s = -1; return nb;
@@ -51561,7 +51741,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, d, nb, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; d = $f.d; nb = $f.nb; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		d = this;
-		nb = $makeSlice(sliceType$5, 0, 4);
+		nb = $makeSlice(sliceType$6, 0, 4);
 		_r = $clone(pos, position).CardinalNeighbors(nb, $methodVal(d, "IsFreeCell")); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nb = _r;
 		$s = -1; return nb;
@@ -51572,7 +51752,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, dp, nb, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; dp = $f.dp; nb = $f.nb; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		dp = this;
-		nb = $subslice(new sliceType$5(dp.neighbors), 0, 0);
+		nb = $subslice(new sliceType$6(dp.neighbors), 0, 0);
 		_r = $clone(pos, position).Neighbors(nb, $methodExpr(position, "valid")); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$s = -1; return _r;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: dungeonPath.ptr.prototype.Neighbors }; } $f._r = _r; $f.dp = dp; $f.nb = nb; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
@@ -51600,7 +51780,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		pp = [pp];
 		pp[0] = this;
 		d[0] = pp[0].game.Dungeon;
-		nb = $subslice(new sliceType$5(pp[0].neighbors), 0, 0);
+		nb = $subslice(new sliceType$6(pp[0].neighbors), 0, 0);
 		keep = (function(d, pp) { return function(npos) {
 			var _entry, _entry$1, _entry$2, _entry$3, _tuple, cld, npos, ok;
 			_tuple = (_entry = pp[0].game.Clouds[position.keyFor(npos)], _entry !== undefined ? [_entry.v, true] : [0, false]);
@@ -51642,7 +51822,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; d = $f.d; fp = $f.fp; keep = $f.keep; nb = $f.nb; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		d = [d];
 		fp = this;
-		nb = $subslice(new sliceType$5(fp.neighbors), 0, 0);
+		nb = $subslice(new sliceType$6(fp.neighbors), 0, 0);
 		d[0] = fp.game.Dungeon;
 		keep = (function(d) { return function(npos) {
 			var npos;
@@ -51664,7 +51844,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _r$1 = $f._r$1; d = $f.d; keep = $f.keep; nb = $f.nb; np = $f.np; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		d = [d];
 		np = this;
-		nb = $subslice(new sliceType$5(np.neighbors), 0, 0);
+		nb = $subslice(new sliceType$6(np.neighbors), 0, 0);
 		d[0] = np.game.Dungeon;
 		keep = (function(d) { return function(npos) {
 			var npos;
@@ -51694,10 +51874,10 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		d = [d];
 		ap[0] = this;
 		if ((_entry = ap[0].game.ExclusionsMap[position.keyFor(pos)], _entry !== undefined ? _entry.v : false)) {
-			$s = -1; return sliceType$5.nil;
+			$s = -1; return sliceType$6.nil;
 		}
 		d[0] = ap[0].game.Dungeon;
-		nb = $subslice(new sliceType$5(ap[0].neighbors), 0, 0);
+		nb = $subslice(new sliceType$6(ap[0].neighbors), 0, 0);
 		keep = (function(ap, d) { return function(npos) {
 			var _entry$1, _entry$2, _entry$3, _tuple, cld, npos, ok;
 			_tuple = (_entry$1 = ap[0].game.Clouds[position.keyFor(npos)], _entry$1 !== undefined ? [_entry$1.v, true] : [0, false]);
@@ -51734,7 +51914,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		d = [d];
 		mp = [mp];
 		mp[0] = this;
-		nb = $subslice(new sliceType$5(mp[0].neighbors), 0, 0);
+		nb = $subslice(new sliceType$6(mp[0].neighbors), 0, 0);
 		d[0] = mp[0].game.Dungeon;
 		keep = (function(d, mp) { return function(npos) {
 			var npos;
@@ -51775,7 +51955,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, _tuple, found, from, g, m, mp, path, to, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _tuple = $f._tuple; found = $f.found; from = $f.from; g = $f.g; m = $f.m; mp = $f.mp; path = $f.path; to = $f.to; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		m = this;
-		mp = new monPath.ptr(g, m, false, arrayType$1.zero());
+		mp = new monPath.ptr(g, m, false, arrayType$2.zero());
 		if (m.Kind === 14) {
 			mp.wall = true;
 		}
@@ -51784,7 +51964,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		path = _tuple[0];
 		found = _tuple[2];
 		if (!found) {
-			$s = -1; return sliceType$5.nil;
+			$s = -1; return sliceType$6.nil;
 		}
 		$s = -1; return path;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: monster.ptr.prototype.APath }; } $f._r = _r; $f._tuple = _tuple; $f.found = found; $f.from = from; $f.g = g; $f.m = m; $f.mp = mp; $f.path = path; $f.to = to; $f.$s = $s; $f.$r = $r; return $f;
@@ -51794,13 +51974,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _r, _tuple, found, from, g, path, pp, to, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; _tuple = $f._tuple; found = $f.found; from = $f.from; g = $f.g; path = $f.path; pp = $f.pp; to = $f.to; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		pp = new playerPath.ptr(g, arrayType$1.zero());
+		pp = new playerPath.ptr(g, arrayType$2.zero());
 		_r = AstarPath(pp, $clone(from, position), $clone(to, position)); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		_tuple = _r;
 		path = _tuple[0];
 		found = _tuple[2];
 		if (!found) {
-			$s = -1; return sliceType$5.nil;
+			$s = -1; return sliceType$6.nil;
 		}
 		$s = -1; return path;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.PlayerPath }; } $f._r = _r; $f._tuple = _tuple; $f.found = found; $f.from = from; $f.g = g; $f.path = path; $f.pp = pp; $f.to = to; $f.$s = $s; $f.$r = $r; return $f;
@@ -51816,7 +51996,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* while (true) { */ case 1:
 			/* if (!(_i < _ref.$length)) { break; } */ if(!(_i < _ref.$length)) { $s = 2; continue; }
 			pos = $clone(((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]), position);
-			pp = new dungeonPath.ptr(g.Dungeon, arrayType$1.zero());
+			pp = new dungeonPath.ptr(g.Dungeon, arrayType$2.zero());
 			_r = AstarPath(pp, $clone(pos, position), $clone(to, position)); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			_tuple = _r;
 			cost = _tuple[1];
@@ -51827,7 +52007,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_i++;
 		/* } */ $s = 1; continue; case 2:
 		$r = sort.Sort(ps); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		sorted = new sliceType$5([]);
+		sorted = new sliceType$6([]);
 		_ref$1 = ps;
 		_i$1 = 0;
 		while (true) {
@@ -52152,7 +52332,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				/* } */ $s = 9; continue; case 10:
 				_r$3 = g.ExplosionSound(); /* */ $s = 16; case 16: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 				_arg = new $String(_r$3);
-				$r = g.PrintfStyled("%s An explosion comes from the ground. You are lignified.", 1, new sliceType$7([_arg])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.PrintfStyled("%s An explosion comes from the ground. You are lignified.", 1, new sliceType$8([_arg])); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				_key = 5; (g.Player.Statuses || $throwRuntimeError("assignment to entry in nil map"))[status.keyFor(_key)] = { k: _key, v: (_entry = g.Player.Statuses[status.keyFor(5)], _entry !== undefined ? _entry.v : 0) + (1) >> 0 };
 				_r$4 = ev.Rank(); /* */ $s = 18; case 18: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 				_r$5 = RandInt(10); /* */ $s = 19; case 19: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
@@ -52183,15 +52363,21 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	};
 	game.prototype.FairAction = function() { return this.$val.FairAction(); };
 	game.ptr.prototype.Rest = function(ev) {
-		var _r, ev, g, $s, $r;
-		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _r = $f._r; ev = $f.ev; g = $f.g; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
+		var _entry, _r, _tuple, cld, ev, g, ok, $s, $r;
+		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _r = $f._r; _tuple = $f._tuple; cld = $f.cld; ev = $f.ev; g = $f.g; ok = $f.ok; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
 		/* */ if (!(g.MonsterInLOS() === ptrType$7.nil)) { $s = 1; continue; }
 		/* */ $s = 2; continue;
 		/* if (!(g.MonsterInLOS() === ptrType$7.nil)) { */ case 1:
-			_r = fmt.Errorf("You cannot sleep while monsters are in view.", new sliceType$7([])); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+			_r = fmt.Errorf("You cannot sleep while monsters are in view.", new sliceType$8([])); /* */ $s = 3; case 3: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			$s = -1; return _r;
 		/* } */ case 2:
+		_tuple = (_entry = g.Clouds[position.keyFor(g.Player.Pos)], _entry !== undefined ? [_entry.v, true] : [0, false]);
+		cld = _tuple[0];
+		ok = _tuple[1];
+		if (ok && (cld === 1)) {
+			$s = -1; return errors.New("You cannot rest on flames.");
+		}
 		if ((g.Player.HP === g.Player.HPMax()) && (g.Player.MP === g.Player.MPMax()) && !g.Player.HasStatus(2) && !g.Player.HasStatus(6) && !g.Player.HasStatus(5)) {
 			$s = -1; return errors.New("You do not need to rest.");
 		}
@@ -52200,7 +52386,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		g.Stats.Rest = g.Stats.Rest + (1) >> 0;
 		g.Resting = true;
 		$s = -1; return $ifaceNil;
-		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.Rest }; } $f._r = _r; $f.ev = ev; $f.g = g; $f.$s = $s; $f.$r = $r; return $f;
+		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.Rest }; } $f._entry = _entry; $f._r = _r; $f._tuple = _tuple; $f.cld = cld; $f.ev = ev; $f.g = g; $f.ok = ok; $f.$s = $s; $f.$r = $r; return $f;
 	};
 	game.prototype.Rest = function(ev) { return this.$val.Rest(ev); };
 	game.ptr.prototype.Equip = function(ev) {
@@ -52274,7 +52460,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				g.Print("You pick up a simella.");
 				$s = 5; continue;
 			/* } else { */ case 4:
-				$r = g.Printf("You pick up %d simellas.", new sliceType$7([new $Int((_entry$3 = g.Simellas[position.keyFor(pos)], _entry$3 !== undefined ? _entry$3.v : 0))])); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You pick up %d simellas.", new sliceType$8([new $Int((_entry$3 = g.Simellas[position.keyFor(pos)], _entry$3 !== undefined ? _entry$3.v : 0))])); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 5:
 			g.DijkstraMapRebuild = true;
 			delete g.Simellas[position.keyFor(pos)];
@@ -52294,13 +52480,13 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				_arg = new $Int(c.Quantity);
 				_r = c.Consumable.Plural(); /* */ $s = 12; case 12: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				_arg$1 = new $String(_r);
-				$r = g.Printf("You take %d %s.", new sliceType$7([_arg, _arg$1])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You take %d %s.", new sliceType$8([_arg, _arg$1])); /* */ $s = 13; case 13: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$s = 11; continue;
 			/* } else { */ case 10:
 				_r$1 = c.Consumable.String(); /* */ $s = 14; case 14: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_r$2 = Indefinite(_r$1, false); /* */ $s = 15; case 15: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 				_arg$2 = new $String(_r$2);
-				$r = g.Printf("You take %s.", new sliceType$7([_arg$2])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("You take %s.", new sliceType$8([_arg$2])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 11:
 		/* } */ case 8:
 		_tuple$1 = (_entry$6 = g.Rods[position.keyFor(pos)], _entry$6 !== undefined ? [_entry$6.v, true] : [0, false]);
@@ -52312,8 +52498,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_key$1 = r; (g.Player.Rods || $throwRuntimeError("assignment to entry in nil map"))[rod.keyFor(_key$1)] = { k: _key$1, v: new rodProps.ptr(new rod(r).MaxCharge() - 1 >> 0) };
 			g.DijkstraMapRebuild = true;
 			delete g.Rods[position.keyFor(pos)];
-			$r = g.Printf("You take a %s.", new sliceType$7([new rod(r)])); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-			$r = g.StoryPrintf("You found and took a %s.", new sliceType$7([new rod(r)])); /* */ $s = 20; case 20: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You take a %s.", new sliceType$8([new rod(r)])); /* */ $s = 19; case 19: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.StoryPrintf("You found and took a %s.", new sliceType$8([new rod(r)])); /* */ $s = 20; case 20: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 18:
 		_tuple$2 = (_entry$7 = g.Equipables[position.keyFor(pos)], _entry$7 !== undefined ? [_entry$7.v, true] : [$ifaceNil, false]);
 		eq = _tuple$2[0];
@@ -52326,7 +52512,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			_r$3 = eq.String(); /* */ $s = 25; case 25: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			_r$4 = Indefinite(_r$3, false); /* */ $s = 26; case 26: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
 			_arg$3 = new $String(_r$4);
-			$r = g.Printf("You stand over %s.", new sliceType$7([_arg$3])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = g.Printf("You stand over %s.", new sliceType$8([_arg$3])); /* */ $s = 27; case 27: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = 24; continue;
 		/* } else if ((_entry$8 = g.Stairs[position.keyFor(pos)], _entry$8 !== undefined ? _entry$8.v : false)) { */ case 22:
 			g.Print("You stand over stairs.");
@@ -52444,8 +52630,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _entry$2, _i, _key, _key$1, _keys, _r, _r$1, _r$2, _r$3, _r$4, _ref, _tuple, dij, ev, g, nm, ok, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _entry$2 = $f._entry$2; _i = $f._i; _key = $f._key; _key$1 = $f._key$1; _keys = $f._keys; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _ref = $f._ref; _tuple = $f._tuple; dij = $f.dij; ev = $f.ev; g = $f.g; nm = $f.nm; ok = $f.ok; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		dij = new normalPath.ptr(g, arrayType$1.zero());
-		_r = Dijkstra(dij, new sliceType$5([$clone(g.Player.Pos, position)]), 2); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		dij = new normalPath.ptr(g, arrayType$2.zero());
+		_r = Dijkstra(dij, new sliceType$6([$clone(g.Player.Pos, position)]), 2); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nm = _r;
 		_ref = nm;
 		_i = 0;
@@ -52693,7 +52879,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				}
 				$s = 11; continue;
 			/* } else { */ case 10:
-				_r = fmt.Sprintf("internal error: invalid position:%+v-%+v", new sliceType$7([new pos.constructor.elem(pos), new from.constructor.elem(from)])); /* */ $s = 12; case 12: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+				_r = fmt.Sprintf("internal error: invalid position:%+v-%+v", new sliceType$8([new pos.constructor.elem(pos), new from.constructor.elem(from)])); /* */ $s = 12; case 12: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 				$panic(new $String(_r));
 			/* } */ case 11:
 		case 1:
@@ -52705,7 +52891,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _1, _r, from, p, pos, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _1 = $f._1; _r = $f._r; from = $f.from; p = $f.p; pos = $f.pos; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		pos = this;
-		p = new sliceType$5([]);
+		p = new sliceType$6([]);
 			_r = $clone(pos, position).Dir($clone(from, position)); /* */ $s = 2; case 2: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 			_1 = _r;
 			if (_1 === (1)) {
@@ -52773,15 +52959,15 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (_1 === (1)) { $s = 4; continue; }
 			/* */ $s = 5; continue;
 			/* if (_1 === (0)) { */ case 3:
-				_r$1 = RandInt($subslice(new sliceType$5(neighbors), 0, 4).$length); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+				_r$1 = RandInt($subslice(new sliceType$6(neighbors), 0, 4).$length); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				r = _r$1;
 				$s = 6; continue;
 			/* } else if (_1 === (1)) { */ case 4:
-				_r$2 = RandInt($subslice(new sliceType$5(neighbors), 0, 2).$length); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
+				_r$2 = RandInt($subslice(new sliceType$6(neighbors), 0, 2).$length); /* */ $s = 8; case 8: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 				r = _r$2;
 				$s = 6; continue;
 			/* } else { */ case 5:
-				_r$3 = RandInt($subslice(new sliceType$5(neighbors), 4).$length); /* */ $s = 9; case 9: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+				_r$3 = RandInt($subslice(new sliceType$6(neighbors), 4).$length); /* */ $s = 9; case 9: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 				r = _r$3;
 			/* } */ case 6:
 		case 1:
@@ -52801,7 +52987,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (_1 === (1)) { $s = 4; continue; }
 			/* */ $s = 5; continue;
 			/* if (_1 === (0)) { */ case 3:
-				_r$1 = RandInt($subslice(new sliceType$5(neighbors), 0, 4).$length); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+				_r$1 = RandInt($subslice(new sliceType$6(neighbors), 0, 4).$length); /* */ $s = 7; case 7: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				r = _r$1;
 				$s = 6; continue;
 			/* } else if (_1 === (1)) { */ case 4:
@@ -52809,7 +52995,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 				r = _r$2;
 				$s = 6; continue;
 			/* } else { */ case 5:
-				_r$3 = RandInt($subslice(new sliceType$5(neighbors), 0, 2).$length); /* */ $s = 9; case 9: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+				_r$3 = RandInt($subslice(new sliceType$6(neighbors), 0, 2).$length); /* */ $s = 9; case 9: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 				r = _r$3;
 			/* } */ case 6:
 		case 1:
@@ -52914,7 +53100,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		} else if (_1 === (9)) {
 			text = "TODO";
 		}
-		_r = fmt.Sprintf("The %s %s Rods sometimes regain charges as you go deeper. This rod can have up to %d charges.", new sliceType$7([new rod(r), new $String(text), new $Int(new rod(r).MaxCharge())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		_r = fmt.Sprintf("The %s %s Rods sometimes regain charges as you go deeper. This rod can have up to %d charges.", new sliceType$8([new rod(r), new $String(text), new $Int(new rod(r).MaxCharge())])); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		$s = -1; return _r;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: rod.prototype.Desc }; } $f._1 = _1; $f._r = _r; $f.r = r; $f.text = text; $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -53028,7 +53214,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		rp.Charge = rp.Charge - (1) >> 0;
 		_key = r; (rods || $throwRuntimeError("assignment to entry in nil map"))[rod.keyFor(_key)] = { k: _key, v: $clone(rp, rodProps) };
 		g.Player.MP = g.Player.MP - (new rod(r).MPCost()) >> 0;
-		$r = g.StoryPrintf("You evoked your %s.", new sliceType$7([new rod(r)])); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.StoryPrintf("You evoked your %s.", new sliceType$8([new rod(r)])); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		(x$1 = g.Stats.UsedRod, ((r < 0 || r >= x$1.length) ? ($throwRuntimeError("index out of range"), undefined) : x$1[r] = ((x = g.Stats.UsedRod, ((r < 0 || r >= x.length) ? ($throwRuntimeError("index out of range"), undefined) : x[r])) + (1) >> 0)));
 		g.FairAction();
 		$r = ev.Renew(g, 7); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -53055,7 +53241,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		if (g.Player.HasStatus(5)) {
 			$s = -1; return;
 		}
-		losPos = new sliceType$5([]);
+		losPos = new sliceType$6([]);
 		_ref = g.Player.LOS;
 		_i = 0;
 		_keys = $keys(_ref);
@@ -53163,7 +53349,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (mons.HP <= 0) { $s = 12; continue; }
 			/* */ $s = 13; continue;
 			/* if (mons.HP <= 0) { */ case 12:
-				$r = g.Printf("%s is killed by the bolt.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s is killed by the bolt.", new sliceType$8([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 14; case 14: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = g.HandleKill(mons, ev); /* */ $s = 15; case 15: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 13:
 			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -53218,7 +53404,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (mons.HP <= 0) { $s = 14; continue; }
 			/* */ $s = 15; continue;
 			/* if (mons.HP <= 0) { */ case 14:
-				$r = g.Printf("%s is killed by the fireball.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s is killed by the fireball.", new sliceType$8([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 16; case 16: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = g.HandleKill(mons, ev); /* */ $s = 17; case 17: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 15:
 			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -53243,8 +53429,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		var _entry, _entry$1, _i, _key, _keys, _r, _r$1, _r$2, _ref, _tuple, at, dij, ev, g, nm, ok, pos, radius, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _entry$1 = $f._entry$1; _i = $f._i; _key = $f._key; _keys = $f._keys; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; _tuple = $f._tuple; at = $f.at; dij = $f.dij; ev = $f.ev; g = $f.g; nm = $f.nm; ok = $f.ok; pos = $f.pos; radius = $f.radius; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		g = this;
-		dij = new normalPath.ptr(g, arrayType$1.zero());
-		_r = Dijkstra(dij, new sliceType$5([$clone(at, position)]), radius); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
+		dij = new normalPath.ptr(g, arrayType$2.zero());
+		_r = Dijkstra(dij, new sliceType$6([$clone(at, position)]), radius); /* */ $s = 1; case 1: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
 		nm = _r;
 		_ref = nm;
 		_i = 0;
@@ -53327,7 +53513,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		$r = g.MakeNoise(18, $clone(g.Player.Target, position)); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		_r$2 = g.CrackSound(); /* */ $s = 6; case 6: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		_arg = new $String(_r$2);
-		$r = g.Printf("%s The wall disappeared.", new sliceType$7([_arg])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("%s The wall disappeared.", new sliceType$8([_arg])); /* */ $s = 7; case 7: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		_arg$1 = g;
 		_r$3 = g.Ray($clone(g.Player.Target, position)); /* */ $s = 8; case 8: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 		_arg$2 = _r$3;
@@ -53360,7 +53546,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 			/* */ if (mons.HP <= 0) { $s = 19; continue; }
 			/* */ $s = 20; continue;
 			/* if (mons.HP <= 0) { */ case 19:
-				$r = g.Printf("%s is killed by the explosion.", new sliceType$7([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+				$r = g.Printf("%s is killed by the explosion.", new sliceType$8([new $String(new monsterKind(mons.Kind).Indefinite(true))])); /* */ $s = 21; case 21: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 				$r = g.HandleKill(mons, ev); /* */ $s = 22; case 22: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			/* } */ case 20:
 			$r = g.MakeNoise(12, $clone(mons.Pos, position)); /* */ $s = 23; case 23: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -53398,7 +53584,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		_r$2 = ev.Rank(); /* */ $s = 6; case 6: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 		_r$3 = RandInt(50); /* */ $s = 7; case 7: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 		$r = g.PushEvent(new cloudEvent.ptr((_r$2 + 200 >> 0) + _r$3 >> 0, $clone(g.Player.Target, position), 1)); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You see a wall appear from nothing.", new sliceType$7([])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You see a wall appear from nothing.", new sliceType$8([])); /* */ $s = 9; case 9: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.ComputeLOS(); /* */ $s = 10; case 10: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return $ifaceNil;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: game.ptr.prototype.EvokeRodObstruction }; } $f._i = _i; $f._key = _key; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._r$3 = _r$3; $f._ref = _ref; $f.err = err; $f.ev = ev; $f.g = g; $f.neighbors = neighbors; $f.pos = pos; $f.$s = $s; $f.$r = $r; return $f;
@@ -53430,7 +53616,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		$r = mons.MoveTo(g, $clone(g.Player.Pos, position)); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		position.copy(g.Player.Pos, ompos);
 		$r = mons.MakeAware(g); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = g.Printf("You swap positions with the %s.", new sliceType$7([new monsterKind(mons.Kind)])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = g.Printf("You swap positions with the %s.", new sliceType$8([new monsterKind(mons.Kind)])); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.ui.SwappingAnimation(g, $clone(mons.Pos, position), $clone(g.Player.Pos, position)); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.CollectGround(); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = g.ComputeLOS(); /* */ $s = 6; case 6: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
@@ -53988,7 +54174,7 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		/* */ if (!($interfaceIsEqual(err, $ifaceNil))) { $s = 2; continue; }
 		/* */ $s = 3; continue;
 		/* if (!($interfaceIsEqual(err, $ifaceNil))) { */ case 2:
-			$r = log.Println(new sliceType$7([err, new $String(":"), new $Int(n)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+			$r = log.Println(new sliceType$8([err, new $String(":"), new $Int(n)])); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 			$s = -1; return (_q = n / 2, (_q === _q && _q !== 1/0 && _q !== -1/0) ? _q >> 0 : $throwRuntimeError("integer divide by zero"));
 		/* } */ case 3:
 		$s = -1; return (((x$1 = x.Int64(), x$1.$low + ((x$1.$high >> 31) * 4294967296)) >> 0));
@@ -54034,8 +54220,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	$pkg.Indefinite = Indefinite;
 	formatText = function(text, width) {
 		var _i, _ref, _rune, c, col, pbuf, text, wantspace, width, wlen, wordbuf;
-		pbuf = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
-		wordbuf = new bytes.Buffer.ptr(sliceType$8.nil, 0, arrayType$2.zero(), 0);
+		pbuf = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
+		wordbuf = new bytes.Buffer.ptr(sliceType$9.nil, 0, arrayType$3.zero(), 0);
 		col = 0;
 		wantspace = false;
 		wlen = 0;
@@ -54089,41 +54275,42 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	ptrType$2.methods = [{prop: "Push", name: "Push", pkg: "", typ: $funcType([$emptyInterface], [], false)}, {prop: "Pop", name: "Pop", pkg: "", typ: $funcType([], [$emptyInterface], false)}];
 	uicolor.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
 	keyAction.methods = [{prop: "NormalModeKey", name: "NormalModeKey", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "NormalModeDescription", name: "NormalModeDescription", pkg: "", typ: $funcType([], [$String], false)}, {prop: "TargetingModeDescription", name: "TargetingModeDescription", pkg: "", typ: $funcType([], [$String], false)}, {prop: "TargetingModeKey", name: "TargetingModeKey", pkg: "", typ: $funcType([], [$Bool], false)}];
+	menu.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Key", name: "Key", pkg: "", typ: $funcType([], [keyAction], false)}];
 	rodSlice.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}];
 	consumableSlice.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}];
 	statusSlice.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}];
 	monsSlice.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}];
-	ptrType$5.methods = [{prop: "Cell", name: "Cell", pkg: "", typ: $funcType([position], [cell], false)}, {prop: "Border", name: "Border", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "SetCell", name: "SetCell", pkg: "", typ: $funcType([position, terrain], [], false)}, {prop: "SetExplored", name: "SetExplored", pkg: "", typ: $funcType([position], [], false)}, {prop: "connectRooms", name: "connectRooms", pkg: "github.com/anaseto/boohu", typ: $funcType([room, room], [], false)}, {prop: "connectRoomsDiagonally", name: "connectRoomsDiagonally", pkg: "github.com/anaseto/boohu", typ: $funcType([room, room], [], false)}, {prop: "Area", name: "Area", pkg: "", typ: $funcType([sliceType$5, position, $Int], [sliceType$5], false)}, {prop: "ConnectRoomsShortestPath", name: "ConnectRoomsShortestPath", pkg: "", typ: $funcType([room, room], [], false)}, {prop: "DigRoom", name: "DigRoom", pkg: "", typ: $funcType([room], [], false)}, {prop: "PutCols", name: "PutCols", pkg: "", typ: $funcType([room], [], false)}, {prop: "PutDiagCols", name: "PutDiagCols", pkg: "", typ: $funcType([room], [], false)}, {prop: "IsAreaFree", name: "IsAreaFree", pkg: "", typ: $funcType([position, $Int, $Int], [$Bool], false)}, {prop: "RoomDigCanditate", name: "RoomDigCanditate", pkg: "", typ: $funcType([position, $Int, $Int], [$Bool], false)}, {prop: "DigArea", name: "DigArea", pkg: "", typ: $funcType([position, $Int, $Int], [], false)}, {prop: "BuildRoom", name: "BuildRoom", pkg: "", typ: $funcType([position, $Int, $Int], [mapType], false)}, {prop: "BuildSomeRoom", name: "BuildSomeRoom", pkg: "", typ: $funcType([$Int, $Int], [mapType], false)}, {prop: "DigSomeRoom", name: "DigSomeRoom", pkg: "", typ: $funcType([$Int, $Int], [mapType], false)}, {prop: "ResizeRoom", name: "ResizeRoom", pkg: "", typ: $funcType([room], [room], false)}, {prop: "FreeCell", name: "FreeCell", pkg: "", typ: $funcType([], [position], false)}, {prop: "WallCell", name: "WallCell", pkg: "", typ: $funcType([], [position], false)}, {prop: "HasFreeNeighbor", name: "HasFreeNeighbor", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "DigBlock", name: "DigBlock", pkg: "", typ: $funcType([sliceType$5, $Bool], [sliceType$5], false)}, {prop: "WallAreaCount", name: "WallAreaCount", pkg: "", typ: $funcType([sliceType$5, position, $Int], [$Int], false)}, {prop: "Connected", name: "Connected", pkg: "", typ: $funcType([position, funcType$2], [mapType, $Int], false)}, {prop: "connex", name: "connex", pkg: "github.com/anaseto/boohu", typ: $funcType([], [$Bool], false)}, {prop: "IsFreeCell", name: "IsFreeCell", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "FreeNeighbors", name: "FreeNeighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "CardinalFreeNeighbors", name: "CardinalFreeNeighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}];
+	ptrType$5.methods = [{prop: "Cell", name: "Cell", pkg: "", typ: $funcType([position], [cell], false)}, {prop: "Border", name: "Border", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "SetCell", name: "SetCell", pkg: "", typ: $funcType([position, terrain], [], false)}, {prop: "SetExplored", name: "SetExplored", pkg: "", typ: $funcType([position], [], false)}, {prop: "connectRooms", name: "connectRooms", pkg: "github.com/anaseto/boohu", typ: $funcType([room, room], [], false)}, {prop: "connectRoomsDiagonally", name: "connectRoomsDiagonally", pkg: "github.com/anaseto/boohu", typ: $funcType([room, room], [], false)}, {prop: "Area", name: "Area", pkg: "", typ: $funcType([sliceType$6, position, $Int], [sliceType$6], false)}, {prop: "ConnectRoomsShortestPath", name: "ConnectRoomsShortestPath", pkg: "", typ: $funcType([room, room], [], false)}, {prop: "DigRoom", name: "DigRoom", pkg: "", typ: $funcType([room], [], false)}, {prop: "PutCols", name: "PutCols", pkg: "", typ: $funcType([room], [], false)}, {prop: "PutDiagCols", name: "PutDiagCols", pkg: "", typ: $funcType([room], [], false)}, {prop: "IsAreaFree", name: "IsAreaFree", pkg: "", typ: $funcType([position, $Int, $Int], [$Bool], false)}, {prop: "RoomDigCanditate", name: "RoomDigCanditate", pkg: "", typ: $funcType([position, $Int, $Int], [$Bool], false)}, {prop: "DigArea", name: "DigArea", pkg: "", typ: $funcType([position, $Int, $Int], [], false)}, {prop: "BuildRoom", name: "BuildRoom", pkg: "", typ: $funcType([position, $Int, $Int], [mapType], false)}, {prop: "BuildSomeRoom", name: "BuildSomeRoom", pkg: "", typ: $funcType([$Int, $Int], [mapType], false)}, {prop: "DigSomeRoom", name: "DigSomeRoom", pkg: "", typ: $funcType([$Int, $Int], [mapType], false)}, {prop: "ResizeRoom", name: "ResizeRoom", pkg: "", typ: $funcType([room], [room], false)}, {prop: "FreeCell", name: "FreeCell", pkg: "", typ: $funcType([], [position], false)}, {prop: "WallCell", name: "WallCell", pkg: "", typ: $funcType([], [position], false)}, {prop: "HasFreeNeighbor", name: "HasFreeNeighbor", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "DigBlock", name: "DigBlock", pkg: "", typ: $funcType([sliceType$6, $Bool], [sliceType$6], false)}, {prop: "WallAreaCount", name: "WallAreaCount", pkg: "", typ: $funcType([sliceType$6, position, $Int], [$Int], false)}, {prop: "Connected", name: "Connected", pkg: "", typ: $funcType([position, funcType$2], [mapType, $Int], false)}, {prop: "connex", name: "connex", pkg: "github.com/anaseto/boohu", typ: $funcType([], [$Bool], false)}, {prop: "IsFreeCell", name: "IsFreeCell", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "FreeNeighbors", name: "FreeNeighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "CardinalFreeNeighbors", name: "CardinalFreeNeighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}];
 	dungen.methods = [{prop: "Use", name: "Use", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Description", name: "Description", pkg: "", typ: $funcType([], [$String], false)}];
 	roomSlice.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}];
-	ptrType$9.methods = [{prop: "ConfigSave", name: "ConfigSave", pkg: "", typ: $funcType([], [sliceType$8, $error], false)}];
+	ptrType$9.methods = [{prop: "ConfigSave", name: "ConfigSave", pkg: "", typ: $funcType([], [sliceType$9, $error], false)}];
 	eventQueue.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}];
 	ptrType$8.methods = [{prop: "Push", name: "Push", pkg: "", typ: $funcType([$emptyInterface], [], false)}, {prop: "Pop", name: "Pop", pkg: "", typ: $funcType([], [$emptyInterface], false)}];
 	ptrType$13.methods = [{prop: "Rank", name: "Rank", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Renew", name: "Renew", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "Action", name: "Action", pkg: "", typ: $funcType([ptrType$3], [], false)}];
 	ptrType$10.methods = [{prop: "Rank", name: "Rank", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Action", name: "Action", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Renew", name: "Renew", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}];
 	ptrType$11.methods = [{prop: "Rank", name: "Rank", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Action", name: "Action", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Renew", name: "Renew", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}];
-	ptrType$3.methods = [{prop: "RandomApt", name: "RandomApt", pkg: "", typ: $funcType([], [aptitude, $Bool], false)}, {prop: "ApplyAptitude", name: "ApplyAptitude", pkg: "", typ: $funcType([aptitude], [], false)}, {prop: "Autoexplore", name: "Autoexplore", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "AllExplored", name: "AllExplored", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "AutoexploreSources", name: "AutoexploreSources", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "BuildAutoexploreMap", name: "BuildAutoexploreMap", pkg: "", typ: $funcType([sliceType$6], [], false)}, {prop: "NextAuto", name: "NextAuto", pkg: "", typ: $funcType([], [ptrType$1, $Bool], false)}, {prop: "HitDamage", name: "HitDamage", pkg: "", typ: $funcType([dmgType, $Int, $Int], [$Int], false)}, {prop: "MakeMonstersAware", name: "MakeMonstersAware", pkg: "", typ: $funcType([], [], false)}, {prop: "MakeNoise", name: "MakeNoise", pkg: "", typ: $funcType([$Int, position], [], false)}, {prop: "AttackMonster", name: "AttackMonster", pkg: "", typ: $funcType([ptrType$7, event], [], false)}, {prop: "HitConnected", name: "HitConnected", pkg: "", typ: $funcType([position, dmgType, event], [], false)}, {prop: "HitNoise", name: "HitNoise", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "HitMonster", name: "HitMonster", pkg: "", typ: $funcType([dmgType, ptrType$7, event], [$Bool], false)}, {prop: "HandleKill", name: "HandleKill", pkg: "", typ: $funcType([ptrType$7, event], [], false)}, {prop: "drawDijkstra", name: "drawDijkstra", pkg: "github.com/anaseto/boohu", typ: $funcType([nodeMap], [$String], false)}, {prop: "AutoExploreDijkstra", name: "AutoExploreDijkstra", pkg: "", typ: $funcType([Dijkstrer, sliceType$6], [], false)}, {prop: "DumpAptitudes", name: "DumpAptitudes", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DumpStatuses", name: "DumpStatuses", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SortedRods", name: "SortedRods", pkg: "", typ: $funcType([], [rodSlice], false)}, {prop: "SortedKilledMonsters", name: "SortedKilledMonsters", pkg: "", typ: $funcType([], [monsSlice], false)}, {prop: "SortedPotions", name: "SortedPotions", pkg: "", typ: $funcType([], [consumableSlice], false)}, {prop: "SortedProjectiles", name: "SortedProjectiles", pkg: "", typ: $funcType([], [consumableSlice], false)}, {prop: "Dump", name: "Dump", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DetailedStatistics", name: "DetailedStatistics", pkg: "", typ: $funcType([io.Writer], [], false)}, {prop: "DumpStory", name: "DumpStory", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DumpDungeon", name: "DumpDungeon", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DumpedKilledMonsters", name: "DumpedKilledMonsters", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SimplifedDump", name: "SimplifedDump", pkg: "", typ: $funcType([$error], [$String], false)}, {prop: "GenRuinsMap", name: "GenRuinsMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "DigFungus", name: "DigFungus", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "GenRoomMap", name: "GenRoomMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "GenCaveMap", name: "GenCaveMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "HasFreeExploredNeighbor", name: "HasFreeExploredNeighbor", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "GenCaveMapTree", name: "GenCaveMapTree", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "RunCellularAutomataCave", name: "RunCellularAutomataCave", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}, {prop: "GenCellularAutomataCaveMap", name: "GenCellularAutomataCaveMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Foliage", name: "Foliage", pkg: "", typ: $funcType([$Int, $Int], [mapType$2], false)}, {prop: "DoorCandidate", name: "DoorCandidate", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "PutDoors", name: "PutDoors", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "GameSave", name: "GameSave", pkg: "", typ: $funcType([], [sliceType$8, $error], false)}, {prop: "DecodeGameSave", name: "DecodeGameSave", pkg: "", typ: $funcType([sliceType$8], [ptrType$3, $error], false)}, {prop: "DecodeConfigSave", name: "DecodeConfigSave", pkg: "", typ: $funcType([sliceType$8], [ptrType$9, $error], false)}, {prop: "PushEvent", name: "PushEvent", pkg: "", typ: $funcType([event], [], false)}, {prop: "PopIEvent", name: "PopIEvent", pkg: "", typ: $funcType([], [iEvent], false)}, {prop: "BurnCreature", name: "BurnCreature", pkg: "", typ: $funcType([position, event], [], false)}, {prop: "Burn", name: "Burn", pkg: "", typ: $funcType([position, event], [], false)}, {prop: "FreeCell", name: "FreeCell", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForImportantStair", name: "FreeCellForImportantStair", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForStatic", name: "FreeCellForStatic", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForMonster", name: "FreeCellForMonster", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForBandMonster", name: "FreeCellForBandMonster", pkg: "", typ: $funcType([position], [position], false)}, {prop: "FreeForStairs", name: "FreeForStairs", pkg: "", typ: $funcType([], [position], false)}, {prop: "GenDungeon", name: "GenDungeon", pkg: "", typ: $funcType([], [], false)}, {prop: "InitPlayer", name: "InitPlayer", pkg: "", typ: $funcType([], [], false)}, {prop: "InitLevel", name: "InitLevel", pkg: "", typ: $funcType([], [], false)}, {prop: "CleanEvents", name: "CleanEvents", pkg: "", typ: $funcType([], [], false)}, {prop: "StairsSlice", name: "StairsSlice", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "GenCollectables", name: "GenCollectables", pkg: "", typ: $funcType([], [], false)}, {prop: "SeenGoodWeapon", name: "SeenGoodWeapon", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "GenWeapon", name: "GenWeapon", pkg: "", typ: $funcType([], [], false)}, {prop: "GenEquip", name: "GenEquip", pkg: "", typ: $funcType([equipable, equipableData], [], false)}, {prop: "FrundisInLevel", name: "FrundisInLevel", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Descend", name: "Descend", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "WizardMode", name: "WizardMode", pkg: "", typ: $funcType([], [], false)}, {prop: "AutoPlayer", name: "AutoPlayer", pkg: "", typ: $funcType([event], [$Bool], false)}, {prop: "EventLoop", name: "EventLoop", pkg: "", typ: $funcType([], [], false)}, {prop: "UseConsumable", name: "UseConsumable", pkg: "", typ: $funcType([consumable], [], false)}, {prop: "QuaffTeleportation", name: "QuaffTeleportation", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffBerserk", name: "QuaffBerserk", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffHealWounds", name: "QuaffHealWounds", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffMagic", name: "QuaffMagic", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffDescent", name: "QuaffDescent", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffSwiftness", name: "QuaffSwiftness", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffDigPotion", name: "QuaffDigPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffSwapPotion", name: "QuaffSwapPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffLignification", name: "QuaffLignification", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffMagicMapping", name: "QuaffMagicMapping", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffWallPotion", name: "QuaffWallPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffCBlinkPotion", name: "QuaffCBlinkPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "ThrowConfusingDart", name: "ThrowConfusingDart", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "ThrowExplosiveMagara", name: "ThrowExplosiveMagara", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "DataDir", name: "DataDir", pkg: "", typ: $funcType([], [$String, $error], false)}, {prop: "Save", name: "Save", pkg: "", typ: $funcType([], [$error], false)}, {prop: "SaveConfig", name: "SaveConfig", pkg: "", typ: $funcType([], [$error], false)}, {prop: "RemoveSaveFile", name: "RemoveSaveFile", pkg: "", typ: $funcType([], [$error], false)}, {prop: "RemoveDataFile", name: "RemoveDataFile", pkg: "", typ: $funcType([$String], [$error], false)}, {prop: "Load", name: "Load", pkg: "", typ: $funcType([], [$Bool, $error], false)}, {prop: "WriteDump", name: "WriteDump", pkg: "", typ: $funcType([], [$error], false)}, {prop: "Print", name: "Print", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PrintStyled", name: "PrintStyled", pkg: "", typ: $funcType([$String, logStyle], [], false)}, {prop: "Printf", name: "Printf", pkg: "", typ: $funcType([$String, sliceType$7], [], true)}, {prop: "PrintfStyled", name: "PrintfStyled", pkg: "", typ: $funcType([$String, logStyle, sliceType$7], [], true)}, {prop: "PrintEntry", name: "PrintEntry", pkg: "", typ: $funcType([logEntry], [], false)}, {prop: "StoryPrint", name: "StoryPrint", pkg: "", typ: $funcType([$String], [], false)}, {prop: "StoryPrintf", name: "StoryPrintf", pkg: "", typ: $funcType([$String, sliceType$7], [], true)}, {prop: "CrackSound", name: "CrackSound", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ExplosionSound", name: "ExplosionSound", pkg: "", typ: $funcType([], [$String], false)}, {prop: "bestParent", name: "bestParent", pkg: "github.com/anaseto/boohu", typ: $funcType([rayMap, position, position], [position, $Int], false)}, {prop: "losCost", name: "losCost", pkg: "github.com/anaseto/boohu", typ: $funcType([position], [$Int], false)}, {prop: "buildRayMap", name: "buildRayMap", pkg: "github.com/anaseto/boohu", typ: $funcType([position, $Int], [rayMap], false)}, {prop: "LosRange", name: "LosRange", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "StopAuto", name: "StopAuto", pkg: "", typ: $funcType([], [], false)}, {prop: "ComputeLOS", name: "ComputeLOS", pkg: "", typ: $funcType([], [], false)}, {prop: "SeePosition", name: "SeePosition", pkg: "", typ: $funcType([position], [], false)}, {prop: "ComputeExclusion", name: "ComputeExclusion", pkg: "", typ: $funcType([position, $Bool], [], false)}, {prop: "Ray", name: "Ray", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "ComputeRayHighlight", name: "ComputeRayHighlight", pkg: "", typ: $funcType([position], [], false)}, {prop: "ComputeNoise", name: "ComputeNoise", pkg: "", typ: $funcType([], [], false)}, {prop: "GenBand", name: "GenBand", pkg: "", typ: $funcType([monsterBandData, monsterBand], [sliceType$17], false)}, {prop: "MonsterAt", name: "MonsterAt", pkg: "", typ: $funcType([position], [ptrType$7], false)}, {prop: "Danger", name: "Danger", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MaxDanger", name: "MaxDanger", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MaxMonsters", name: "MaxMonsters", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "GenMonsters", name: "GenMonsters", pkg: "", typ: $funcType([], [], false)}, {prop: "MonsterInLOS", name: "MonsterInLOS", pkg: "", typ: $funcType([], [ptrType$7], false)}, {prop: "PlayerPath", name: "PlayerPath", pkg: "", typ: $funcType([position, position], [sliceType$5], false)}, {prop: "SortedNearestTo", name: "SortedNearestTo", pkg: "", typ: $funcType([sliceType$5, position], [sliceType$5], false)}, {prop: "AutoToDir", name: "AutoToDir", pkg: "", typ: $funcType([event], [$Bool], false)}, {prop: "GoToDir", name: "GoToDir", pkg: "", typ: $funcType([direction, event], [$error], false)}, {prop: "MoveToTarget", name: "MoveToTarget", pkg: "", typ: $funcType([event], [$Bool], false)}, {prop: "WaitTurn", name: "WaitTurn", pkg: "", typ: $funcType([event], [], false)}, {prop: "ExistsMonster", name: "ExistsMonster", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "ScummingAction", name: "ScummingAction", pkg: "", typ: $funcType([event], [], false)}, {prop: "FairAction", name: "FairAction", pkg: "", typ: $funcType([], [], false)}, {prop: "Rest", name: "Rest", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Equip", name: "Equip", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Teleportation", name: "Teleportation", pkg: "", typ: $funcType([event], [], false)}, {prop: "CollectGround", name: "CollectGround", pkg: "", typ: $funcType([], [], false)}, {prop: "MovePlayer", name: "MovePlayer", pkg: "", typ: $funcType([position, event], [$error], false)}, {prop: "HealPlayer", name: "HealPlayer", pkg: "", typ: $funcType([event], [], false)}, {prop: "MPRegen", name: "MPRegen", pkg: "", typ: $funcType([event], [], false)}, {prop: "Smoke", name: "Smoke", pkg: "", typ: $funcType([event], [], false)}, {prop: "Corrosion", name: "Corrosion", pkg: "", typ: $funcType([event], [], false)}, {prop: "Confusion", name: "Confusion", pkg: "", typ: $funcType([event], [], false)}, {prop: "EvokeRodBlink", name: "EvokeRodBlink", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Blink", name: "Blink", pkg: "", typ: $funcType([event], [], false)}, {prop: "EvokeRodTeleportOther", name: "EvokeRodTeleportOther", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodLightningBolt", name: "EvokeRodLightningBolt", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodFireball", name: "EvokeRodFireball", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodFog", name: "EvokeRodFog", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Fog", name: "Fog", pkg: "", typ: $funcType([position, $Int, event], [], false)}, {prop: "EvokeRodDigging", name: "EvokeRodDigging", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodShatter", name: "EvokeRodShatter", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodObstruction", name: "EvokeRodObstruction", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodSwapping", name: "EvokeRodSwapping", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "SwapWithMonster", name: "SwapWithMonster", pkg: "", typ: $funcType([ptrType$7], [], false)}, {prop: "GeneratedRodsCount", name: "GeneratedRodsCount", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "GenerateRod", name: "GenerateRod", pkg: "", typ: $funcType([], [], false)}, {prop: "TurnStats", name: "TurnStats", pkg: "", typ: $funcType([], [], false)}, {prop: "LevelStats", name: "LevelStats", pkg: "", typ: $funcType([], [], false)}, {prop: "ComputePathHighlight", name: "ComputePathHighlight", pkg: "", typ: $funcType([position], [], false)}];
+	ptrType$3.methods = [{prop: "RandomApt", name: "RandomApt", pkg: "", typ: $funcType([], [aptitude, $Bool], false)}, {prop: "ApplyAptitude", name: "ApplyAptitude", pkg: "", typ: $funcType([aptitude], [], false)}, {prop: "Autoexplore", name: "Autoexplore", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "AllExplored", name: "AllExplored", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "AutoexploreSources", name: "AutoexploreSources", pkg: "", typ: $funcType([], [sliceType$7], false)}, {prop: "BuildAutoexploreMap", name: "BuildAutoexploreMap", pkg: "", typ: $funcType([sliceType$7], [], false)}, {prop: "NextAuto", name: "NextAuto", pkg: "", typ: $funcType([], [ptrType$1, $Bool], false)}, {prop: "HitDamage", name: "HitDamage", pkg: "", typ: $funcType([dmgType, $Int, $Int], [$Int], false)}, {prop: "MakeMonstersAware", name: "MakeMonstersAware", pkg: "", typ: $funcType([], [], false)}, {prop: "MakeNoise", name: "MakeNoise", pkg: "", typ: $funcType([$Int, position], [], false)}, {prop: "AttackMonster", name: "AttackMonster", pkg: "", typ: $funcType([ptrType$7, event], [], false)}, {prop: "HitConnected", name: "HitConnected", pkg: "", typ: $funcType([position, dmgType, event], [], false)}, {prop: "HitNoise", name: "HitNoise", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "HitMonster", name: "HitMonster", pkg: "", typ: $funcType([dmgType, ptrType$7, event], [$Bool], false)}, {prop: "HandleKill", name: "HandleKill", pkg: "", typ: $funcType([ptrType$7, event], [], false)}, {prop: "drawDijkstra", name: "drawDijkstra", pkg: "github.com/anaseto/boohu", typ: $funcType([nodeMap], [$String], false)}, {prop: "AutoExploreDijkstra", name: "AutoExploreDijkstra", pkg: "", typ: $funcType([Dijkstrer, sliceType$7], [], false)}, {prop: "DumpAptitudes", name: "DumpAptitudes", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DumpStatuses", name: "DumpStatuses", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SortedRods", name: "SortedRods", pkg: "", typ: $funcType([], [rodSlice], false)}, {prop: "SortedKilledMonsters", name: "SortedKilledMonsters", pkg: "", typ: $funcType([], [monsSlice], false)}, {prop: "SortedPotions", name: "SortedPotions", pkg: "", typ: $funcType([], [consumableSlice], false)}, {prop: "SortedProjectiles", name: "SortedProjectiles", pkg: "", typ: $funcType([], [consumableSlice], false)}, {prop: "Dump", name: "Dump", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DetailedStatistics", name: "DetailedStatistics", pkg: "", typ: $funcType([io.Writer], [], false)}, {prop: "DumpStory", name: "DumpStory", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DumpDungeon", name: "DumpDungeon", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DumpedKilledMonsters", name: "DumpedKilledMonsters", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SimplifedDump", name: "SimplifedDump", pkg: "", typ: $funcType([$error], [$String], false)}, {prop: "GenRuinsMap", name: "GenRuinsMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "DigFungus", name: "DigFungus", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "GenRoomMap", name: "GenRoomMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "GenCaveMap", name: "GenCaveMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "HasFreeExploredNeighbor", name: "HasFreeExploredNeighbor", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "GenCaveMapTree", name: "GenCaveMapTree", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "RunCellularAutomataCave", name: "RunCellularAutomataCave", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}, {prop: "GenCellularAutomataCaveMap", name: "GenCellularAutomataCaveMap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Foliage", name: "Foliage", pkg: "", typ: $funcType([$Int, $Int], [mapType$2], false)}, {prop: "DoorCandidate", name: "DoorCandidate", pkg: "", typ: $funcType([position], [$Bool], false)}, {prop: "PutDoors", name: "PutDoors", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "GameSave", name: "GameSave", pkg: "", typ: $funcType([], [sliceType$9, $error], false)}, {prop: "DecodeGameSave", name: "DecodeGameSave", pkg: "", typ: $funcType([sliceType$9], [ptrType$3, $error], false)}, {prop: "DecodeConfigSave", name: "DecodeConfigSave", pkg: "", typ: $funcType([sliceType$9], [ptrType$9, $error], false)}, {prop: "PushEvent", name: "PushEvent", pkg: "", typ: $funcType([event], [], false)}, {prop: "PushAgainEvent", name: "PushAgainEvent", pkg: "", typ: $funcType([event], [], false)}, {prop: "PopIEvent", name: "PopIEvent", pkg: "", typ: $funcType([], [iEvent], false)}, {prop: "BurnCreature", name: "BurnCreature", pkg: "", typ: $funcType([position, event], [], false)}, {prop: "Burn", name: "Burn", pkg: "", typ: $funcType([position, event], [], false)}, {prop: "FreeCell", name: "FreeCell", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForImportantStair", name: "FreeCellForImportantStair", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForStatic", name: "FreeCellForStatic", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForMonster", name: "FreeCellForMonster", pkg: "", typ: $funcType([], [position], false)}, {prop: "FreeCellForBandMonster", name: "FreeCellForBandMonster", pkg: "", typ: $funcType([position], [position], false)}, {prop: "FreeForStairs", name: "FreeForStairs", pkg: "", typ: $funcType([], [position], false)}, {prop: "GenDungeon", name: "GenDungeon", pkg: "", typ: $funcType([], [], false)}, {prop: "InitPlayer", name: "InitPlayer", pkg: "", typ: $funcType([], [], false)}, {prop: "InitLevel", name: "InitLevel", pkg: "", typ: $funcType([], [], false)}, {prop: "CleanEvents", name: "CleanEvents", pkg: "", typ: $funcType([], [], false)}, {prop: "StairsSlice", name: "StairsSlice", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "GenCollectables", name: "GenCollectables", pkg: "", typ: $funcType([], [], false)}, {prop: "SeenGoodWeapon", name: "SeenGoodWeapon", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "GenWeapon", name: "GenWeapon", pkg: "", typ: $funcType([], [], false)}, {prop: "GenEquip", name: "GenEquip", pkg: "", typ: $funcType([equipable, equipableData], [], false)}, {prop: "FrundisInLevel", name: "FrundisInLevel", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Descend", name: "Descend", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "WizardMode", name: "WizardMode", pkg: "", typ: $funcType([], [], false)}, {prop: "AutoPlayer", name: "AutoPlayer", pkg: "", typ: $funcType([event], [$Bool], false)}, {prop: "EventLoop", name: "EventLoop", pkg: "", typ: $funcType([], [], false)}, {prop: "UseConsumable", name: "UseConsumable", pkg: "", typ: $funcType([consumable], [], false)}, {prop: "QuaffTeleportation", name: "QuaffTeleportation", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffBerserk", name: "QuaffBerserk", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffHealWounds", name: "QuaffHealWounds", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffMagic", name: "QuaffMagic", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffDescent", name: "QuaffDescent", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffSwiftness", name: "QuaffSwiftness", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffDigPotion", name: "QuaffDigPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffSwapPotion", name: "QuaffSwapPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffLignification", name: "QuaffLignification", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffMagicMapping", name: "QuaffMagicMapping", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffWallPotion", name: "QuaffWallPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "QuaffCBlinkPotion", name: "QuaffCBlinkPotion", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "ThrowConfusingDart", name: "ThrowConfusingDart", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "ThrowExplosiveMagara", name: "ThrowExplosiveMagara", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "DataDir", name: "DataDir", pkg: "", typ: $funcType([], [$String, $error], false)}, {prop: "Save", name: "Save", pkg: "", typ: $funcType([], [$error], false)}, {prop: "SaveConfig", name: "SaveConfig", pkg: "", typ: $funcType([], [$error], false)}, {prop: "RemoveSaveFile", name: "RemoveSaveFile", pkg: "", typ: $funcType([], [$error], false)}, {prop: "RemoveDataFile", name: "RemoveDataFile", pkg: "", typ: $funcType([$String], [$error], false)}, {prop: "Load", name: "Load", pkg: "", typ: $funcType([], [$Bool, $error], false)}, {prop: "WriteDump", name: "WriteDump", pkg: "", typ: $funcType([], [$error], false)}, {prop: "Print", name: "Print", pkg: "", typ: $funcType([$String], [], false)}, {prop: "PrintStyled", name: "PrintStyled", pkg: "", typ: $funcType([$String, logStyle], [], false)}, {prop: "Printf", name: "Printf", pkg: "", typ: $funcType([$String, sliceType$8], [], true)}, {prop: "PrintfStyled", name: "PrintfStyled", pkg: "", typ: $funcType([$String, logStyle, sliceType$8], [], true)}, {prop: "PrintEntry", name: "PrintEntry", pkg: "", typ: $funcType([logEntry], [], false)}, {prop: "StoryPrint", name: "StoryPrint", pkg: "", typ: $funcType([$String], [], false)}, {prop: "StoryPrintf", name: "StoryPrintf", pkg: "", typ: $funcType([$String, sliceType$8], [], true)}, {prop: "CrackSound", name: "CrackSound", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ExplosionSound", name: "ExplosionSound", pkg: "", typ: $funcType([], [$String], false)}, {prop: "bestParent", name: "bestParent", pkg: "github.com/anaseto/boohu", typ: $funcType([rayMap, position, position], [position, $Int], false)}, {prop: "losCost", name: "losCost", pkg: "github.com/anaseto/boohu", typ: $funcType([position], [$Int], false)}, {prop: "buildRayMap", name: "buildRayMap", pkg: "github.com/anaseto/boohu", typ: $funcType([position, $Int], [rayMap], false)}, {prop: "LosRange", name: "LosRange", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "StopAuto", name: "StopAuto", pkg: "", typ: $funcType([], [], false)}, {prop: "ComputeLOS", name: "ComputeLOS", pkg: "", typ: $funcType([], [], false)}, {prop: "SeePosition", name: "SeePosition", pkg: "", typ: $funcType([position], [], false)}, {prop: "ComputeExclusion", name: "ComputeExclusion", pkg: "", typ: $funcType([position, $Bool], [], false)}, {prop: "Ray", name: "Ray", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "ComputeRayHighlight", name: "ComputeRayHighlight", pkg: "", typ: $funcType([position], [], false)}, {prop: "ComputeNoise", name: "ComputeNoise", pkg: "", typ: $funcType([], [], false)}, {prop: "GenBand", name: "GenBand", pkg: "", typ: $funcType([monsterBandData, monsterBand], [sliceType$18], false)}, {prop: "MonsterAt", name: "MonsterAt", pkg: "", typ: $funcType([position], [ptrType$7], false)}, {prop: "Danger", name: "Danger", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MaxDanger", name: "MaxDanger", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MaxMonsters", name: "MaxMonsters", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "GenMonsters", name: "GenMonsters", pkg: "", typ: $funcType([], [], false)}, {prop: "MonsterInLOS", name: "MonsterInLOS", pkg: "", typ: $funcType([], [ptrType$7], false)}, {prop: "PlayerPath", name: "PlayerPath", pkg: "", typ: $funcType([position, position], [sliceType$6], false)}, {prop: "SortedNearestTo", name: "SortedNearestTo", pkg: "", typ: $funcType([sliceType$6, position], [sliceType$6], false)}, {prop: "AutoToDir", name: "AutoToDir", pkg: "", typ: $funcType([event], [$Bool], false)}, {prop: "GoToDir", name: "GoToDir", pkg: "", typ: $funcType([direction, event], [$error], false)}, {prop: "MoveToTarget", name: "MoveToTarget", pkg: "", typ: $funcType([event], [$Bool], false)}, {prop: "WaitTurn", name: "WaitTurn", pkg: "", typ: $funcType([event], [], false)}, {prop: "ExistsMonster", name: "ExistsMonster", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "ScummingAction", name: "ScummingAction", pkg: "", typ: $funcType([event], [], false)}, {prop: "FairAction", name: "FairAction", pkg: "", typ: $funcType([], [], false)}, {prop: "Rest", name: "Rest", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Equip", name: "Equip", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Teleportation", name: "Teleportation", pkg: "", typ: $funcType([event], [], false)}, {prop: "CollectGround", name: "CollectGround", pkg: "", typ: $funcType([], [], false)}, {prop: "MovePlayer", name: "MovePlayer", pkg: "", typ: $funcType([position, event], [$error], false)}, {prop: "HealPlayer", name: "HealPlayer", pkg: "", typ: $funcType([event], [], false)}, {prop: "MPRegen", name: "MPRegen", pkg: "", typ: $funcType([event], [], false)}, {prop: "Smoke", name: "Smoke", pkg: "", typ: $funcType([event], [], false)}, {prop: "Corrosion", name: "Corrosion", pkg: "", typ: $funcType([event], [], false)}, {prop: "Confusion", name: "Confusion", pkg: "", typ: $funcType([event], [], false)}, {prop: "EvokeRodBlink", name: "EvokeRodBlink", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Blink", name: "Blink", pkg: "", typ: $funcType([event], [], false)}, {prop: "EvokeRodTeleportOther", name: "EvokeRodTeleportOther", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodLightningBolt", name: "EvokeRodLightningBolt", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodFireball", name: "EvokeRodFireball", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodFog", name: "EvokeRodFog", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "Fog", name: "Fog", pkg: "", typ: $funcType([position, $Int, event], [], false)}, {prop: "EvokeRodDigging", name: "EvokeRodDigging", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodShatter", name: "EvokeRodShatter", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodObstruction", name: "EvokeRodObstruction", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "EvokeRodSwapping", name: "EvokeRodSwapping", pkg: "", typ: $funcType([event], [$error], false)}, {prop: "SwapWithMonster", name: "SwapWithMonster", pkg: "", typ: $funcType([ptrType$7], [], false)}, {prop: "GeneratedRodsCount", name: "GeneratedRodsCount", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "GenerateRod", name: "GenerateRod", pkg: "", typ: $funcType([], [], false)}, {prop: "TurnStats", name: "TurnStats", pkg: "", typ: $funcType([], [], false)}, {prop: "LevelStats", name: "LevelStats", pkg: "", typ: $funcType([], [], false)}, {prop: "ComputePathHighlight", name: "ComputePathHighlight", pkg: "", typ: $funcType([position], [], false)}];
 	potion.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Plural", name: "Plural", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Int", name: "Int", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Use", name: "Use", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}];
 	projectile.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Plural", name: "Plural", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Int", name: "Int", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Use", name: "Use", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}];
 	armour.methods = [{prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Short", name: "Short", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}];
 	weapon.methods = [{prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Short", name: "Short", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Attack", name: "Attack", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "TwoHanded", name: "TwoHanded", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Cleave", name: "Cleave", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Pierce", name: "Pierce", pkg: "", typ: $funcType([], [$Bool], false)}];
 	shield.methods = [{prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Short", name: "Short", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Block", name: "Block", pkg: "", typ: $funcType([], [$Int], false)}];
 	equipableData.methods = [{prop: "FavorableRoll", name: "FavorableRoll", pkg: "", typ: $funcType([$Int], [$Int], false)}];
-	ptrType$15.methods = [{prop: "DrawWelcome", name: "DrawWelcome", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawColored", name: "DrawColored", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawDark", name: "DrawDark", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLight", name: "DrawLight", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLightAlt", name: "DrawLightAlt", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "EnterWizard", name: "EnterWizard", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "CleanError", name: "CleanError", pkg: "", typ: $funcType([$error], [$error], false)}, {prop: "HandleKeyAction", name: "HandleKeyAction", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "HandleKey", name: "HandleKey", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "GoToPos", name: "GoToPos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool], false)}, {prop: "ExaminePos", name: "ExaminePos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool, $Bool], false)}, {prop: "DrawKeysDescription", name: "DrawKeysDescription", pkg: "", typ: $funcType([ptrType$3, $String, sliceType$3], [], false)}, {prop: "KeysHelp", name: "KeysHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExamineHelp", name: "ExamineHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "CharacterInfo", name: "CharacterInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WizardInfo", name: "WizardInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "AptitudesText", name: "AptitudesText", pkg: "", typ: $funcType([ptrType$3], [$String], false)}, {prop: "DescribePosition", name: "DescribePosition", pkg: "", typ: $funcType([ptrType$3, position, Targeter], [], false)}, {prop: "Examine", name: "Examine", pkg: "", typ: $funcType([ptrType$3, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "NextMonster", name: "NextMonster", pkg: "", typ: $funcType([ptrType$3, $Int32, position, ptrType$14], [], false)}, {prop: "NextStair", name: "NextStair", pkg: "", typ: $funcType([ptrType$3, ptrType$14], [], false)}, {prop: "NextObject", name: "NextObject", pkg: "", typ: $funcType([ptrType$3, position, ptrType$14], [], false)}, {prop: "ExcludeZone", name: "ExcludeZone", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "CursorMouseLeft", name: "CursorMouseLeft", pkg: "", typ: $funcType([ptrType$3, Targeter, position, ptrType$14], [$Bool, $Bool], false)}, {prop: "CursorKeyAction", name: "CursorKeyAction", pkg: "", typ: $funcType([ptrType$3, Targeter, runeKeyAction, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "CursorAction", name: "CursorAction", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ViewPositionDescription", name: "ViewPositionDescription", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "MonsterInfo", name: "MonsterInfo", pkg: "", typ: $funcType([ptrType$7], [$String], false)}, {prop: "InView", name: "InView", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "CameraOffset", name: "CameraOffset", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Int, $Int], false)}, {prop: "InViewBorder", name: "InViewBorder", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "DrawAtPosition", name: "DrawAtPosition", pkg: "", typ: $funcType([ptrType$3, position, $Bool, $Int32, uicolor, uicolor], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, uicolor], [], false)}, {prop: "MonsterProjectileAnimation", name: "MonsterProjectileAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Int32, uicolor], [], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5], [], false)}, {prop: "ProjectileSymbol", name: "ProjectileSymbol", pkg: "", typ: $funcType([direction], [$Int32], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "MonsterJavelinAnimation", name: "MonsterJavelinAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "PositionDrawing", name: "PositionDrawing", pkg: "", typ: $funcType([ptrType$3, position], [$Int32, uicolor, uicolor], false)}, {prop: "DrawStatusBar", name: "DrawStatusBar", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "DrawStatusLine", name: "DrawStatusLine", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "LogColor", name: "LogColor", pkg: "", typ: $funcType([logEntry], [uicolor], false)}, {prop: "DrawLog", name: "DrawLog", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "RunesForKeyAction", name: "RunesForKeyAction", pkg: "", typ: $funcType([keyAction], [$String], false)}, {prop: "Configure", name: "Configure", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawPreviousLogs", name: "DrawPreviousLogs", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawMonsterDescription", name: "DrawMonsterDescription", pkg: "", typ: $funcType([ptrType$3, ptrType$7], [], false)}, {prop: "DrawConsumableDescription", name: "DrawConsumableDescription", pkg: "", typ: $funcType([ptrType$3, consumable], [], false)}, {prop: "DrawDescription", name: "DrawDescription", pkg: "", typ: $funcType([ptrType$3, $String], [], false)}, {prop: "DrawText", name: "DrawText", pkg: "", typ: $funcType([$String, $Int, $Int], [], false)}, {prop: "DrawColoredText", name: "DrawColoredText", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawColoredTextOnBG", name: "DrawColoredTextOnBG", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawLine", name: "DrawLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "DrawTextLine", name: "DrawTextLine", pkg: "", typ: $funcType([$String, $Int], [], false)}, {prop: "DrawInfoLine", name: "DrawInfoLine", pkg: "", typ: $funcType([$String], [], false)}, {prop: "DrawStyledTextLine", name: "DrawStyledTextLine", pkg: "", typ: $funcType([$String, $Int, linestyle], [], false)}, {prop: "ClearLine", name: "ClearLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearLineWithColor", name: "ClearLineWithColor", pkg: "", typ: $funcType([$Int, uicolor], [], false)}, {prop: "ListItemBG", name: "ListItemBG", pkg: "", typ: $funcType([$Int], [uicolor], false)}, {prop: "ConsumableItem", name: "ConsumableItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, consumable, uicolor], [], false)}, {prop: "SelectProjectile", name: "SelectProjectile", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "SelectPotion", name: "SelectPotion", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "RodItem", name: "RodItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, rod, uicolor], [], false)}, {prop: "SelectRod", name: "SelectRod", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "ActionItem", name: "ActionItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, keyAction, uicolor], [], false)}, {prop: "SelectAction", name: "SelectAction", pkg: "", typ: $funcType([ptrType$3, sliceType$1, event], [keyAction, $error], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Win", name: "Win", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Dump", name: "Dump", pkg: "", typ: $funcType([ptrType$3, $error], [], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "StatusEndAnimation", name: "StatusEndAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "Quit", name: "Quit", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Wizard", name: "Wizard", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Init", name: "Init", pkg: "", typ: $funcType([], [$error], false)}, {prop: "GetIndex", name: "GetIndex", pkg: "", typ: $funcType([$Int, $Int], [$Int], false)}, {prop: "GetPos", name: "GetPos", pkg: "", typ: $funcType([$Int], [$Int, $Int], false)}, {prop: "ResetCells", name: "ResetCells", pkg: "", typ: $funcType([], [], false)}, {prop: "Interrupt", name: "Interrupt", pkg: "", typ: $funcType([], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "PostInit", name: "PostInit", pkg: "", typ: $funcType([], [], false)}, {prop: "Clear", name: "Clear", pkg: "", typ: $funcType([], [], false)}, {prop: "Flush", name: "Flush", pkg: "", typ: $funcType([], [], false)}, {prop: "Small", name: "Small", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "FlushCallback", name: "FlushCallback", pkg: "", typ: $funcType([ptrType$12], [], false)}, {prop: "HideCursor", name: "HideCursor", pkg: "", typ: $funcType([], [], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([position], [], false)}, {prop: "SetCell", name: "SetCell", pkg: "", typ: $funcType([$Int, $Int, $Int32, uicolor, uicolor], [], false)}, {prop: "ReadKey", name: "ReadKey", pkg: "", typ: $funcType([$String], [$Int32], false)}, {prop: "PollEvent", name: "PollEvent", pkg: "", typ: $funcType([], [jsInput], false)}, {prop: "WaitForContinue", name: "WaitForContinue", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "PromptConfirmation", name: "PromptConfirmation", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "PressAnyKey", name: "PressAnyKey", pkg: "", typ: $funcType([], [$error], false)}, {prop: "PlayerTurnEvent", name: "PlayerTurnEvent", pkg: "", typ: $funcType([ptrType$3, event], [$error, $Bool, $Bool], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int], [$Int, $Bool], false)}, {prop: "ReadRuneKey", name: "ReadRuneKey", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "MenuAction", name: "MenuAction", pkg: "", typ: $funcType([$Int], [$Int, configAction], false)}, {prop: "TargetModeEvent", name: "TargetModeEvent", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([ptrType$3, event, $Int], [$Int, $Bool, $error], false)}, {prop: "InitElements", name: "InitElements", pkg: "", typ: $funcType([], [$error], false)}, {prop: "Draw", name: "Draw", pkg: "", typ: $funcType([UICell, $Int, $Int], [], false)}, {prop: "GetMousePos", name: "GetMousePos", pkg: "", typ: $funcType([ptrType$12], [$Int, $Int], false)}];
+	ptrType$15.methods = [{prop: "DrawWelcome", name: "DrawWelcome", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawColored", name: "DrawColored", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawDark", name: "DrawDark", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLight", name: "DrawLight", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawLightAlt", name: "DrawLightAlt", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "EnterWizard", name: "EnterWizard", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "CleanError", name: "CleanError", pkg: "", typ: $funcType([$error], [$error], false)}, {prop: "HandleKeyAction", name: "HandleKeyAction", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "HandleKey", name: "HandleKey", pkg: "", typ: $funcType([ptrType$3, runeKeyAction], [$error, $Bool, $Bool], false)}, {prop: "GoToPos", name: "GoToPos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool], false)}, {prop: "ExaminePos", name: "ExaminePos", pkg: "", typ: $funcType([ptrType$3, event, position], [$error, $Bool, $Bool], false)}, {prop: "DrawKeysDescription", name: "DrawKeysDescription", pkg: "", typ: $funcType([ptrType$3, $String, sliceType$4], [], false)}, {prop: "KeysHelp", name: "KeysHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExamineHelp", name: "ExamineHelp", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Equip", name: "Equip", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "CharacterInfo", name: "CharacterInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WizardInfo", name: "WizardInfo", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "AptitudesText", name: "AptitudesText", pkg: "", typ: $funcType([ptrType$3], [$String], false)}, {prop: "DescribePosition", name: "DescribePosition", pkg: "", typ: $funcType([ptrType$3, position, Targeter], [], false)}, {prop: "Examine", name: "Examine", pkg: "", typ: $funcType([ptrType$3, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "NextMonster", name: "NextMonster", pkg: "", typ: $funcType([ptrType$3, $Int32, position, ptrType$14], [], false)}, {prop: "NextStair", name: "NextStair", pkg: "", typ: $funcType([ptrType$3, ptrType$14], [], false)}, {prop: "NextObject", name: "NextObject", pkg: "", typ: $funcType([ptrType$3, position, ptrType$14], [], false)}, {prop: "ExcludeZone", name: "ExcludeZone", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "CursorMouseLeft", name: "CursorMouseLeft", pkg: "", typ: $funcType([ptrType$3, Targeter, position, ptrType$14], [$Bool, $Bool], false)}, {prop: "CursorKeyAction", name: "CursorKeyAction", pkg: "", typ: $funcType([ptrType$3, Targeter, runeKeyAction, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "CursorAction", name: "CursorAction", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$1], [$error, $Bool, $Bool], false)}, {prop: "ViewPositionDescription", name: "ViewPositionDescription", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "MonsterInfo", name: "MonsterInfo", pkg: "", typ: $funcType([ptrType$7], [$String], false)}, {prop: "InView", name: "InView", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "CameraOffset", name: "CameraOffset", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Int, $Int], false)}, {prop: "InViewBorder", name: "InViewBorder", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [$Bool], false)}, {prop: "DrawAtPosition", name: "DrawAtPosition", pkg: "", typ: $funcType([ptrType$3, position, $Bool, $Int32, uicolor, uicolor], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, uicolor], [], false)}, {prop: "MonsterProjectileAnimation", name: "MonsterProjectileAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, $Int32, uicolor], [], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "ProjectileSymbol", name: "ProjectileSymbol", pkg: "", typ: $funcType([direction], [$Int32], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, $Bool], [], false)}, {prop: "MonsterJavelinAnimation", name: "MonsterJavelinAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, $Bool], [], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "PositionDrawing", name: "PositionDrawing", pkg: "", typ: $funcType([ptrType$3, position], [$Int32, uicolor, uicolor], false)}, {prop: "DrawStatusBar", name: "DrawStatusBar", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "DrawStatusLine", name: "DrawStatusLine", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WhichButton", name: "WhichButton", pkg: "", typ: $funcType([$Int], [menu, $Bool], false)}, {prop: "DrawMenus", name: "DrawMenus", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "LogColor", name: "LogColor", pkg: "", typ: $funcType([logEntry], [uicolor], false)}, {prop: "DrawLog", name: "DrawLog", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "RunesForKeyAction", name: "RunesForKeyAction", pkg: "", typ: $funcType([keyAction], [$String], false)}, {prop: "Configure", name: "Configure", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawPreviousLogs", name: "DrawPreviousLogs", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawMonsterDescription", name: "DrawMonsterDescription", pkg: "", typ: $funcType([ptrType$3, ptrType$7], [], false)}, {prop: "DrawConsumableDescription", name: "DrawConsumableDescription", pkg: "", typ: $funcType([ptrType$3, consumable], [], false)}, {prop: "DrawDescription", name: "DrawDescription", pkg: "", typ: $funcType([ptrType$3, $String], [], false)}, {prop: "DrawText", name: "DrawText", pkg: "", typ: $funcType([$String, $Int, $Int], [], false)}, {prop: "DrawColoredText", name: "DrawColoredText", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor], [], false)}, {prop: "DrawColoredTextOnBG", name: "DrawColoredTextOnBG", pkg: "", typ: $funcType([$String, $Int, $Int, uicolor, uicolor], [], false)}, {prop: "DrawLine", name: "DrawLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "DrawTextLine", name: "DrawTextLine", pkg: "", typ: $funcType([$String, $Int], [], false)}, {prop: "DrawInfoLine", name: "DrawInfoLine", pkg: "", typ: $funcType([$String], [], false)}, {prop: "DrawStyledTextLine", name: "DrawStyledTextLine", pkg: "", typ: $funcType([$String, $Int, linestyle], [], false)}, {prop: "ClearLine", name: "ClearLine", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearLineWithColor", name: "ClearLineWithColor", pkg: "", typ: $funcType([$Int, uicolor], [], false)}, {prop: "ListItemBG", name: "ListItemBG", pkg: "", typ: $funcType([$Int], [uicolor], false)}, {prop: "ConsumableItem", name: "ConsumableItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, consumable, uicolor], [], false)}, {prop: "SelectProjectile", name: "SelectProjectile", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "SelectPotion", name: "SelectPotion", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "RodItem", name: "RodItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, rod, uicolor], [], false)}, {prop: "SelectRod", name: "SelectRod", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}, {prop: "ActionItem", name: "ActionItem", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, keyAction, uicolor], [], false)}, {prop: "SelectAction", name: "SelectAction", pkg: "", typ: $funcType([ptrType$3, sliceType$2, event], [keyAction, $error], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Win", name: "Win", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Dump", name: "Dump", pkg: "", typ: $funcType([ptrType$3, $error], [], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "StatusEndAnimation", name: "StatusEndAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MenuSelectedAnimation", name: "MenuSelectedAnimation", pkg: "", typ: $funcType([ptrType$3, menu, $Bool], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$7], [], false)}, {prop: "Quit", name: "Quit", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Wizard", name: "Wizard", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "Init", name: "Init", pkg: "", typ: $funcType([], [$error], false)}, {prop: "GetIndex", name: "GetIndex", pkg: "", typ: $funcType([$Int, $Int], [$Int], false)}, {prop: "GetPos", name: "GetPos", pkg: "", typ: $funcType([$Int], [$Int, $Int], false)}, {prop: "ResetCells", name: "ResetCells", pkg: "", typ: $funcType([], [], false)}, {prop: "Interrupt", name: "Interrupt", pkg: "", typ: $funcType([], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "PostInit", name: "PostInit", pkg: "", typ: $funcType([], [], false)}, {prop: "Clear", name: "Clear", pkg: "", typ: $funcType([], [], false)}, {prop: "Flush", name: "Flush", pkg: "", typ: $funcType([], [], false)}, {prop: "Small", name: "Small", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "FlushCallback", name: "FlushCallback", pkg: "", typ: $funcType([ptrType$12], [], false)}, {prop: "HideCursor", name: "HideCursor", pkg: "", typ: $funcType([], [], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([position], [], false)}, {prop: "SetCell", name: "SetCell", pkg: "", typ: $funcType([$Int, $Int, $Int32, uicolor, uicolor], [], false)}, {prop: "ReadKey", name: "ReadKey", pkg: "", typ: $funcType([$String], [$Int32], false)}, {prop: "PollEvent", name: "PollEvent", pkg: "", typ: $funcType([], [jsInput], false)}, {prop: "WaitForContinue", name: "WaitForContinue", pkg: "", typ: $funcType([ptrType$3, $Int], [], false)}, {prop: "PromptConfirmation", name: "PromptConfirmation", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "PressAnyKey", name: "PressAnyKey", pkg: "", typ: $funcType([], [$error], false)}, {prop: "PlayerTurnEvent", name: "PlayerTurnEvent", pkg: "", typ: $funcType([ptrType$3, event], [$error, $Bool, $Bool], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int], [$Int, $Bool], false)}, {prop: "ReadRuneKey", name: "ReadRuneKey", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "MenuAction", name: "MenuAction", pkg: "", typ: $funcType([$Int], [$Int, configAction], false)}, {prop: "TargetModeEvent", name: "TargetModeEvent", pkg: "", typ: $funcType([ptrType$3, Targeter, ptrType$14], [$error, $Bool, $Bool, $Bool], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([ptrType$3, event, $Int], [$Int, $Bool, $error], false)}, {prop: "InitElements", name: "InitElements", pkg: "", typ: $funcType([], [$error], false)}, {prop: "Draw", name: "Draw", pkg: "", typ: $funcType([UICell, $Int, $Int], [], false)}, {prop: "GetMousePos", name: "GetMousePos", pkg: "", typ: $funcType([ptrType$12], [$Int, $Int], false)}];
 	logEntry.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
 	monsterState.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
 	monsterStatus.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}];
 	monsterKind.methods = [{prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "MovementDelay", name: "MovementDelay", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "AttackDelay", name: "AttackDelay", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "BaseAttack", name: "BaseAttack", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MaxHP", name: "MaxHP", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Dangerousness", name: "Dangerousness", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Ranged", name: "Ranged", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Smiting", name: "Smiting", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SeenStoryText", name: "SeenStoryText", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Indefinite", name: "Indefinite", pkg: "", typ: $funcType([$Bool], [$String], false)}, {prop: "Definite", name: "Definite", pkg: "", typ: $funcType([$Bool], [$String], false)}];
-	ptrType$7.methods = [{prop: "InflictDamage", name: "InflictDamage", pkg: "", typ: $funcType([ptrType$3, $Int, $Int], [], false)}, {prop: "Init", name: "Init", pkg: "", typ: $funcType([], [], false)}, {prop: "Status", name: "Status", pkg: "", typ: $funcType([monsterStatus], [$Bool], false)}, {prop: "Exists", name: "Exists", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "AlternatePlacement", name: "AlternatePlacement", pkg: "", typ: $funcType([ptrType$3], [ptrType$1], false)}, {prop: "TeleportPlayer", name: "TeleportPlayer", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "TeleportAway", name: "TeleportAway", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "PlaceAt", name: "PlaceAt", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "TeleportMonsterAway", name: "TeleportMonsterAway", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "AttackAction", name: "AttackAction", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "HandleTurn", name: "HandleTurn", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "DramaticAdjustment", name: "DramaticAdjustment", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, $Int, $Int], [$Int, $Int], false)}, {prop: "HitPlayer", name: "HitPlayer", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "EnterConfusion", name: "EnterConfusion", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "HitSideEffects", name: "HitSideEffects", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "RangedAttack", name: "RangedAttack", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "RangeBlocked", name: "RangeBlocked", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "TormentBolt", name: "TormentBolt", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "Blocked", name: "Blocked", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "ThrowRock", name: "ThrowRock", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ThrowJavelin", name: "ThrowJavelin", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ThrowAcid", name: "ThrowAcid", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "SmitingAttack", name: "SmitingAttack", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "AbsorbMana", name: "AbsorbMana", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "Explode", name: "Explode", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "MakeHunt", name: "MakeHunt", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MakeHuntIfHurt", name: "MakeHuntIfHurt", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MakeAwareIfHurt", name: "MakeAwareIfHurt", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MakeAware", name: "MakeAware", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Heal", name: "Heal", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "GatherBand", name: "GatherBand", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "APath", name: "APath", pkg: "", typ: $funcType([ptrType$3, position, position], [sliceType$5], false)}];
-	ptrType$16.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Estimation", name: "Estimation", pkg: "", typ: $funcType([position, position], [$Int], false)}];
-	ptrType$17.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Estimation", name: "Estimation", pkg: "", typ: $funcType([position, position], [$Int], false)}];
-	ptrType$18.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}];
-	ptrType$19.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}];
-	ptrType$20.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}];
-	ptrType$21.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Estimation", name: "Estimation", pkg: "", typ: $funcType([position, position], [$Int], false)}];
+	ptrType$7.methods = [{prop: "InflictDamage", name: "InflictDamage", pkg: "", typ: $funcType([ptrType$3, $Int, $Int], [], false)}, {prop: "Init", name: "Init", pkg: "", typ: $funcType([], [], false)}, {prop: "Status", name: "Status", pkg: "", typ: $funcType([monsterStatus], [$Bool], false)}, {prop: "Exists", name: "Exists", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "AlternatePlacement", name: "AlternatePlacement", pkg: "", typ: $funcType([ptrType$3], [ptrType$1], false)}, {prop: "TeleportPlayer", name: "TeleportPlayer", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "TeleportAway", name: "TeleportAway", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "PlaceAt", name: "PlaceAt", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "TeleportMonsterAway", name: "TeleportMonsterAway", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "AttackAction", name: "AttackAction", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "HandleTurn", name: "HandleTurn", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "DramaticAdjustment", name: "DramaticAdjustment", pkg: "", typ: $funcType([ptrType$3, $Int, $Int, $Int, $Int], [$Int, $Int], false)}, {prop: "HitPlayer", name: "HitPlayer", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "EnterConfusion", name: "EnterConfusion", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "HitSideEffects", name: "HitSideEffects", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "RangedAttack", name: "RangedAttack", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "RangeBlocked", name: "RangeBlocked", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "TormentBolt", name: "TormentBolt", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "Blocked", name: "Blocked", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "ThrowRock", name: "ThrowRock", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ThrowJavelin", name: "ThrowJavelin", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "ThrowAcid", name: "ThrowAcid", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "SmitingAttack", name: "SmitingAttack", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "AbsorbMana", name: "AbsorbMana", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "Explode", name: "Explode", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "MakeHunt", name: "MakeHunt", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MakeHuntIfHurt", name: "MakeHuntIfHurt", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MakeAwareIfHurt", name: "MakeAwareIfHurt", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "MakeAware", name: "MakeAware", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Heal", name: "Heal", pkg: "", typ: $funcType([ptrType$3, event], [], false)}, {prop: "GatherBand", name: "GatherBand", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "APath", name: "APath", pkg: "", typ: $funcType([ptrType$3, position, position], [sliceType$6], false)}];
+	ptrType$16.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Estimation", name: "Estimation", pkg: "", typ: $funcType([position, position], [$Int], false)}];
+	ptrType$17.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Estimation", name: "Estimation", pkg: "", typ: $funcType([position, position], [$Int], false)}];
+	ptrType$18.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}];
+	ptrType$19.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}];
+	ptrType$20.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}];
+	ptrType$21.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Estimation", name: "Estimation", pkg: "", typ: $funcType([position, position], [$Int], false)}];
 	posSlice.methods = [{prop: "Len", name: "Len", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Swap", name: "Swap", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Less", name: "Less", pkg: "", typ: $funcType([$Int, $Int], [$Bool], false)}];
 	ptrType$6.methods = [{prop: "HPMax", name: "HPMax", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MPMax", name: "MPMax", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Accuracy", name: "Accuracy", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "RangedAccuracy", name: "RangedAccuracy", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Armor", name: "Armor", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Attack", name: "Attack", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Block", name: "Block", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Evasion", name: "Evasion", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "HasStatus", name: "HasStatus", pkg: "", typ: $funcType([status], [$Bool], false)}, {prop: "AptitudeCount", name: "AptitudeCount", pkg: "", typ: $funcType([], [$Int], false)}];
-	position.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([sliceType$5, funcType$2], [sliceType$5], false)}, {prop: "CardinalNeighbors", name: "CardinalNeighbors", pkg: "", typ: $funcType([sliceType$5, funcType$2], [sliceType$5], false)}, {prop: "OutsideNeighbors", name: "OutsideNeighbors", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "ValidNeighbors", name: "ValidNeighbors", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "E", name: "E", pkg: "", typ: $funcType([], [position], false)}, {prop: "SE", name: "SE", pkg: "", typ: $funcType([], [position], false)}, {prop: "NE", name: "NE", pkg: "", typ: $funcType([], [position], false)}, {prop: "N", name: "N", pkg: "", typ: $funcType([], [position], false)}, {prop: "S", name: "S", pkg: "", typ: $funcType([], [position], false)}, {prop: "W", name: "W", pkg: "", typ: $funcType([], [position], false)}, {prop: "SW", name: "SW", pkg: "", typ: $funcType([], [position], false)}, {prop: "NW", name: "NW", pkg: "", typ: $funcType([], [position], false)}, {prop: "Distance", name: "Distance", pkg: "", typ: $funcType([position], [$Int], false)}, {prop: "DistanceX", name: "DistanceX", pkg: "", typ: $funcType([position], [$Int], false)}, {prop: "DistanceY", name: "DistanceY", pkg: "", typ: $funcType([position], [$Int], false)}, {prop: "To", name: "To", pkg: "", typ: $funcType([direction], [position], false)}, {prop: "Dir", name: "Dir", pkg: "", typ: $funcType([position], [direction], false)}, {prop: "Parents", name: "Parents", pkg: "", typ: $funcType([position], [sliceType$5], false)}, {prop: "RandomNeighbor", name: "RandomNeighbor", pkg: "", typ: $funcType([$Bool], [position], false)}, {prop: "RandomNeighborDiagonals", name: "RandomNeighborDiagonals", pkg: "", typ: $funcType([], [position], false)}, {prop: "RandomNeighborCardinal", name: "RandomNeighborCardinal", pkg: "", typ: $funcType([], [position], false)}, {prop: "idx", name: "idx", pkg: "github.com/anaseto/boohu", typ: $funcType([], [$Int], false)}, {prop: "valid", name: "valid", pkg: "github.com/anaseto/boohu", typ: $funcType([], [$Bool], false)}];
+	position.methods = [{prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([sliceType$6, funcType$2], [sliceType$6], false)}, {prop: "CardinalNeighbors", name: "CardinalNeighbors", pkg: "", typ: $funcType([sliceType$6, funcType$2], [sliceType$6], false)}, {prop: "OutsideNeighbors", name: "OutsideNeighbors", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "ValidNeighbors", name: "ValidNeighbors", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "E", name: "E", pkg: "", typ: $funcType([], [position], false)}, {prop: "SE", name: "SE", pkg: "", typ: $funcType([], [position], false)}, {prop: "NE", name: "NE", pkg: "", typ: $funcType([], [position], false)}, {prop: "N", name: "N", pkg: "", typ: $funcType([], [position], false)}, {prop: "S", name: "S", pkg: "", typ: $funcType([], [position], false)}, {prop: "W", name: "W", pkg: "", typ: $funcType([], [position], false)}, {prop: "SW", name: "SW", pkg: "", typ: $funcType([], [position], false)}, {prop: "NW", name: "NW", pkg: "", typ: $funcType([], [position], false)}, {prop: "Distance", name: "Distance", pkg: "", typ: $funcType([position], [$Int], false)}, {prop: "DistanceX", name: "DistanceX", pkg: "", typ: $funcType([position], [$Int], false)}, {prop: "DistanceY", name: "DistanceY", pkg: "", typ: $funcType([position], [$Int], false)}, {prop: "To", name: "To", pkg: "", typ: $funcType([direction], [position], false)}, {prop: "Dir", name: "Dir", pkg: "", typ: $funcType([position], [direction], false)}, {prop: "Parents", name: "Parents", pkg: "", typ: $funcType([position], [sliceType$6], false)}, {prop: "RandomNeighbor", name: "RandomNeighbor", pkg: "", typ: $funcType([$Bool], [position], false)}, {prop: "RandomNeighborDiagonals", name: "RandomNeighborDiagonals", pkg: "", typ: $funcType([], [position], false)}, {prop: "RandomNeighborCardinal", name: "RandomNeighborCardinal", pkg: "", typ: $funcType([], [position], false)}, {prop: "idx", name: "idx", pkg: "github.com/anaseto/boohu", typ: $funcType([], [$Int], false)}, {prop: "valid", name: "valid", pkg: "github.com/anaseto/boohu", typ: $funcType([], [$Bool], false)}];
 	rod.methods = [{prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Rare", name: "Rare", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "MaxCharge", name: "MaxCharge", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Rate", name: "Rate", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "MPCost", name: "MPCost", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Use", name: "Use", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}];
 	status.methods = [{prop: "Good", name: "Good", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Bad", name: "Bad", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Short", name: "Short", pkg: "", typ: $funcType([], [$String], false)}];
 	ptrType$4.methods = [{prop: "ComputeHighlight", name: "ComputeHighlight", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "Action", name: "Action", pkg: "", typ: $funcType([ptrType$3, position], [$error], false)}, {prop: "Reachable", name: "Reachable", pkg: "", typ: $funcType([ptrType$3, position], [$Bool], false)}, {prop: "Done", name: "Done", pkg: "", typ: $funcType([], [$Bool], false)}];
@@ -54132,14 +54319,14 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	node.init("", [{prop: "Pos", name: "Pos", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "Cost", name: "Cost", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Rank", name: "Rank", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Parent", name: "Parent", anonymous: false, exported: true, typ: ptrType$1, tag: ""}, {prop: "Open", name: "Open", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Closed", name: "Closed", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Index", name: "Index", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Num", name: "Num", anonymous: false, exported: true, typ: $Int, tag: ""}]);
 	nodeMap.init(position, ptrType);
 	priorityQueue.init(ptrType);
-	Dijkstrer.init([{prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$5], false)}]);
+	Dijkstrer.init([{prop: "Cost", name: "Cost", pkg: "", typ: $funcType([position, position], [$Int], false)}, {prop: "Neighbors", name: "Neighbors", pkg: "", typ: $funcType([position], [sliceType$6], false)}]);
 	runeKeyAction.init("github.com/anaseto/boohu", [{prop: "r", name: "r", anonymous: false, exported: false, typ: $Int32, tag: ""}, {prop: "k", name: "k", anonymous: false, exported: false, typ: keyAction, tag: ""}]);
-	examineData.init("github.com/anaseto/boohu", [{prop: "npos", name: "npos", anonymous: false, exported: false, typ: position, tag: ""}, {prop: "nmonster", name: "nmonster", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "objects", name: "objects", anonymous: false, exported: false, typ: sliceType$5, tag: ""}, {prop: "nobject", name: "nobject", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "sortedStairs", name: "sortedStairs", anonymous: false, exported: false, typ: sliceType$5, tag: ""}, {prop: "stairIndex", name: "stairIndex", anonymous: false, exported: false, typ: $Int, tag: ""}]);
+	examineData.init("github.com/anaseto/boohu", [{prop: "npos", name: "npos", anonymous: false, exported: false, typ: position, tag: ""}, {prop: "nmonster", name: "nmonster", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "objects", name: "objects", anonymous: false, exported: false, typ: sliceType$6, tag: ""}, {prop: "nobject", name: "nobject", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "sortedStairs", name: "sortedStairs", anonymous: false, exported: false, typ: sliceType$6, tag: ""}, {prop: "stairIndex", name: "stairIndex", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	rodSlice.init(rod);
 	consumableSlice.init(consumable);
 	statusSlice.init(status);
 	monsSlice.init(monsterKind);
-	dungeon.init("", [{prop: "Cells", name: "Cells", anonymous: false, exported: true, typ: sliceType$11, tag: ""}]);
+	dungeon.init("", [{prop: "Cells", name: "Cells", anonymous: false, exported: true, typ: sliceType$12, tag: ""}]);
 	cell.init("", [{prop: "T", name: "T", anonymous: false, exported: true, typ: terrain, tag: ""}, {prop: "Explored", name: "Explored", anonymous: false, exported: true, typ: $Bool, tag: ""}]);
 	room.init("github.com/anaseto/boohu", [{prop: "pos", name: "pos", anonymous: false, exported: false, typ: position, tag: ""}, {prop: "w", name: "w", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "h", name: "h", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	roomSlice.init(room);
@@ -54150,8 +54337,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	simpleEvent.init("", [{prop: "ERank", name: "ERank", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "EAction", name: "EAction", anonymous: false, exported: true, typ: simpleAction, tag: ""}]);
 	monsterEvent.init("", [{prop: "ERank", name: "ERank", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "NMons", name: "NMons", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "EAction", name: "EAction", anonymous: false, exported: true, typ: monsterAction, tag: ""}]);
 	cloudEvent.init("", [{prop: "ERank", name: "ERank", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Pos", name: "Pos", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "EAction", name: "EAction", anonymous: false, exported: true, typ: cloudAction, tag: ""}]);
-	game.init("github.com/anaseto/boohu", [{prop: "Dungeon", name: "Dungeon", anonymous: false, exported: true, typ: ptrType$5, tag: ""}, {prop: "Player", name: "Player", anonymous: false, exported: true, typ: ptrType$6, tag: ""}, {prop: "Monsters", name: "Monsters", anonymous: false, exported: true, typ: sliceType$13, tag: ""}, {prop: "MonstersPosCache", name: "MonstersPosCache", anonymous: false, exported: true, typ: sliceType$6, tag: ""}, {prop: "Bands", name: "Bands", anonymous: false, exported: true, typ: sliceType$14, tag: ""}, {prop: "Events", name: "Events", anonymous: false, exported: true, typ: ptrType$8, tag: ""}, {prop: "Ev", name: "Ev", anonymous: false, exported: true, typ: event, tag: ""}, {prop: "EventIndex", name: "EventIndex", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Depth", name: "Depth", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Turn", name: "Turn", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Highlight", name: "Highlight", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Collectables", name: "Collectables", anonymous: false, exported: true, typ: mapType$3, tag: ""}, {prop: "CollectableScore", name: "CollectableScore", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Equipables", name: "Equipables", anonymous: false, exported: true, typ: mapType$4, tag: ""}, {prop: "Rods", name: "Rods", anonymous: false, exported: true, typ: mapType$5, tag: ""}, {prop: "Stairs", name: "Stairs", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Clouds", name: "Clouds", anonymous: false, exported: true, typ: mapType$6, tag: ""}, {prop: "Fungus", name: "Fungus", anonymous: false, exported: true, typ: mapType$2, tag: ""}, {prop: "Doors", name: "Doors", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "TemporalWalls", name: "TemporalWalls", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "GeneratedBands", name: "GeneratedBands", anonymous: false, exported: true, typ: mapType$7, tag: ""}, {prop: "GeneratedEquipables", name: "GeneratedEquipables", anonymous: false, exported: true, typ: mapType$8, tag: ""}, {prop: "GeneratedRods", name: "GeneratedRods", anonymous: false, exported: true, typ: mapType$9, tag: ""}, {prop: "FoundEquipables", name: "FoundEquipables", anonymous: false, exported: true, typ: mapType$8, tag: ""}, {prop: "Simellas", name: "Simellas", anonymous: false, exported: true, typ: mapType$10, tag: ""}, {prop: "UnknownDig", name: "UnknownDig", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "UnknownBurn", name: "UnknownBurn", anonymous: false, exported: true, typ: mapType$11, tag: ""}, {prop: "ExclusionsMap", name: "ExclusionsMap", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Noise", name: "Noise", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Resting", name: "Resting", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Autoexploring", name: "Autoexploring", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "DijkstraMapRebuild", name: "DijkstraMapRebuild", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Targeting", name: "Targeting", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "AutoTarget", name: "AutoTarget", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "AutoDir", name: "AutoDir", anonymous: false, exported: true, typ: direction, tag: ""}, {prop: "AutoHalt", name: "AutoHalt", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "AutoNext", name: "AutoNext", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Log", name: "Log", anonymous: false, exported: true, typ: sliceType$15, tag: ""}, {prop: "LogIndex", name: "LogIndex", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "LogNextTick", name: "LogNextTick", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "InfoEntry", name: "InfoEntry", anonymous: false, exported: true, typ: $String, tag: ""}, {prop: "Stats", name: "Stats", anonymous: false, exported: true, typ: stats, tag: ""}, {prop: "Scumming", name: "Scumming", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Quit", name: "Quit", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Wizard", name: "Wizard", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "ui", name: "ui", anonymous: false, exported: false, typ: Renderer, tag: ""}]);
-	Renderer.init([{prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "MonsterJavelinAnimation", name: "MonsterJavelinAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "MonsterProjectileAnimation", name: "MonsterProjectileAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Int32, uicolor], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, uicolor], [], false)}, {prop: "StatusEndAnimation", name: "StatusEndAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$5, $Bool], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}]);
+	game.init("github.com/anaseto/boohu", [{prop: "Dungeon", name: "Dungeon", anonymous: false, exported: true, typ: ptrType$5, tag: ""}, {prop: "Player", name: "Player", anonymous: false, exported: true, typ: ptrType$6, tag: ""}, {prop: "Monsters", name: "Monsters", anonymous: false, exported: true, typ: sliceType$14, tag: ""}, {prop: "MonstersPosCache", name: "MonstersPosCache", anonymous: false, exported: true, typ: sliceType$7, tag: ""}, {prop: "Bands", name: "Bands", anonymous: false, exported: true, typ: sliceType$15, tag: ""}, {prop: "Events", name: "Events", anonymous: false, exported: true, typ: ptrType$8, tag: ""}, {prop: "Ev", name: "Ev", anonymous: false, exported: true, typ: event, tag: ""}, {prop: "EventIndex", name: "EventIndex", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Depth", name: "Depth", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Turn", name: "Turn", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Highlight", name: "Highlight", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Collectables", name: "Collectables", anonymous: false, exported: true, typ: mapType$3, tag: ""}, {prop: "CollectableScore", name: "CollectableScore", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Equipables", name: "Equipables", anonymous: false, exported: true, typ: mapType$4, tag: ""}, {prop: "Rods", name: "Rods", anonymous: false, exported: true, typ: mapType$5, tag: ""}, {prop: "Stairs", name: "Stairs", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Clouds", name: "Clouds", anonymous: false, exported: true, typ: mapType$6, tag: ""}, {prop: "Fungus", name: "Fungus", anonymous: false, exported: true, typ: mapType$2, tag: ""}, {prop: "Doors", name: "Doors", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "TemporalWalls", name: "TemporalWalls", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "GeneratedBands", name: "GeneratedBands", anonymous: false, exported: true, typ: mapType$7, tag: ""}, {prop: "GeneratedEquipables", name: "GeneratedEquipables", anonymous: false, exported: true, typ: mapType$8, tag: ""}, {prop: "GeneratedRods", name: "GeneratedRods", anonymous: false, exported: true, typ: mapType$9, tag: ""}, {prop: "FoundEquipables", name: "FoundEquipables", anonymous: false, exported: true, typ: mapType$8, tag: ""}, {prop: "Simellas", name: "Simellas", anonymous: false, exported: true, typ: mapType$10, tag: ""}, {prop: "UnknownDig", name: "UnknownDig", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "UnknownBurn", name: "UnknownBurn", anonymous: false, exported: true, typ: mapType$11, tag: ""}, {prop: "ExclusionsMap", name: "ExclusionsMap", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Noise", name: "Noise", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Resting", name: "Resting", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Autoexploring", name: "Autoexploring", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "DijkstraMapRebuild", name: "DijkstraMapRebuild", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Targeting", name: "Targeting", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "AutoTarget", name: "AutoTarget", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "AutoDir", name: "AutoDir", anonymous: false, exported: true, typ: direction, tag: ""}, {prop: "AutoHalt", name: "AutoHalt", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "AutoNext", name: "AutoNext", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Log", name: "Log", anonymous: false, exported: true, typ: sliceType$16, tag: ""}, {prop: "LogIndex", name: "LogIndex", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "LogNextTick", name: "LogNextTick", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "InfoEntry", name: "InfoEntry", anonymous: false, exported: true, typ: $String, tag: ""}, {prop: "Stats", name: "Stats", anonymous: false, exported: true, typ: stats, tag: ""}, {prop: "Scumming", name: "Scumming", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Quit", name: "Quit", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Wizard", name: "Wizard", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "ui", name: "ui", anonymous: false, exported: false, typ: Renderer, tag: ""}]);
+	Renderer.init([{prop: "ChooseTarget", name: "ChooseTarget", pkg: "", typ: $funcType([ptrType$3, Targeter], [$error], false)}, {prop: "CriticalHPWarning", name: "CriticalHPWarning", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "Death", name: "Death", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "DrawDungeonView", name: "DrawDungeonView", pkg: "", typ: $funcType([ptrType$3, uiMode], [], false)}, {prop: "DrinkingPotionAnimation", name: "DrinkingPotionAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "ExploreStep", name: "ExploreStep", pkg: "", typ: $funcType([ptrType$3], [$Bool], false)}, {prop: "ExplosionAnimation", name: "ExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, explosionStyle, position], [], false)}, {prop: "HandlePlayerTurn", name: "HandlePlayerTurn", pkg: "", typ: $funcType([ptrType$3, event], [$Bool], false)}, {prop: "HitAnimation", name: "HitAnimation", pkg: "", typ: $funcType([ptrType$3, position, $Bool], [], false)}, {prop: "LightningBoltAnimation", name: "LightningBoltAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6], [], false)}, {prop: "MagicMappingAnimation", name: "MagicMappingAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$7], [], false)}, {prop: "MonsterJavelinAnimation", name: "MonsterJavelinAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, $Bool], [], false)}, {prop: "MonsterProjectileAnimation", name: "MonsterProjectileAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, $Int32, uicolor], [], false)}, {prop: "ProjectileTrajectoryAnimation", name: "ProjectileTrajectoryAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, uicolor], [], false)}, {prop: "StatusEndAnimation", name: "StatusEndAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}, {prop: "SwappingAnimation", name: "SwappingAnimation", pkg: "", typ: $funcType([ptrType$3, position, position], [], false)}, {prop: "TeleportAnimation", name: "TeleportAnimation", pkg: "", typ: $funcType([ptrType$3, position, position, $Bool], [], false)}, {prop: "ThrowAnimation", name: "ThrowAnimation", pkg: "", typ: $funcType([ptrType$3, sliceType$6, $Bool], [], false)}, {prop: "WallExplosionAnimation", name: "WallExplosionAnimation", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "WoundedAnimation", name: "WoundedAnimation", pkg: "", typ: $funcType([ptrType$3], [], false)}]);
 	consumable.init([{prop: "Desc", name: "Desc", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Int", name: "Int", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Letter", name: "Letter", pkg: "", typ: $funcType([], [$Int32], false)}, {prop: "Plural", name: "Plural", pkg: "", typ: $funcType([], [$String], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Use", name: "Use", pkg: "", typ: $funcType([ptrType$3, event], [$error], false)}]);
 	collectable.init("", [{prop: "Consumable", name: "Consumable", anonymous: false, exported: true, typ: consumable, tag: ""}, {prop: "Quantity", name: "Quantity", anonymous: false, exported: true, typ: $Int, tag: ""}]);
 	collectData.init("github.com/anaseto/boohu", [{prop: "rarity", name: "rarity", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "quantity", name: "quantity", anonymous: false, exported: false, typ: $Int, tag: ""}]);
@@ -54159,26 +54346,26 @@ $packages["github.com/anaseto/boohu"] = (function() {
 	equipableData.init("github.com/anaseto/boohu", [{prop: "rarity", name: "rarity", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "minDepth", name: "minDepth", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	UICell.init("github.com/anaseto/boohu", [{prop: "fg", name: "fg", anonymous: false, exported: false, typ: uicolor, tag: ""}, {prop: "bg", name: "bg", anonymous: false, exported: false, typ: uicolor, tag: ""}, {prop: "r", name: "r", anonymous: false, exported: false, typ: $Int32, tag: ""}]);
 	jsInput.init("github.com/anaseto/boohu", [{prop: "key", name: "key", anonymous: false, exported: false, typ: $String, tag: ""}, {prop: "mouse", name: "mouse", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "mouseX", name: "mouseX", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "mouseY", name: "mouseY", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "button", name: "button", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "interrupt", name: "interrupt", anonymous: false, exported: false, typ: $Bool, tag: ""}]);
-	termui.init("github.com/anaseto/boohu", [{prop: "cells", name: "cells", anonymous: false, exported: false, typ: sliceType$16, tag: ""}, {prop: "backBuffer", name: "backBuffer", anonymous: false, exported: false, typ: sliceType$16, tag: ""}, {prop: "cursor", name: "cursor", anonymous: false, exported: false, typ: position, tag: ""}, {prop: "display", name: "display", anonymous: false, exported: false, typ: ptrType$12, tag: ""}, {prop: "cache", name: "cache", anonymous: false, exported: false, typ: mapType$12, tag: ""}, {prop: "ctx", name: "ctx", anonymous: false, exported: false, typ: ptrType$12, tag: ""}, {prop: "width", name: "width", anonymous: false, exported: false, typ: $Int, tag: ""}]);
+	termui.init("github.com/anaseto/boohu", [{prop: "cells", name: "cells", anonymous: false, exported: false, typ: sliceType$17, tag: ""}, {prop: "backBuffer", name: "backBuffer", anonymous: false, exported: false, typ: sliceType$17, tag: ""}, {prop: "cursor", name: "cursor", anonymous: false, exported: false, typ: position, tag: ""}, {prop: "display", name: "display", anonymous: false, exported: false, typ: ptrType$12, tag: ""}, {prop: "cache", name: "cache", anonymous: false, exported: false, typ: mapType$12, tag: ""}, {prop: "ctx", name: "ctx", anonymous: false, exported: false, typ: ptrType$12, tag: ""}, {prop: "width", name: "width", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	logEntry.init("", [{prop: "Text", name: "Text", anonymous: false, exported: true, typ: $String, tag: ""}, {prop: "Index", name: "Index", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Tick", name: "Tick", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Style", name: "Style", anonymous: false, exported: true, typ: logStyle, tag: ""}, {prop: "Dups", name: "Dups", anonymous: false, exported: true, typ: $Int, tag: ""}]);
 	raynode.init("", [{prop: "Cost", name: "Cost", anonymous: false, exported: true, typ: $Int, tag: ""}]);
 	rayMap.init(position, raynode);
 	monsterData.init("github.com/anaseto/boohu", [{prop: "movementDelay", name: "movementDelay", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "baseAttack", name: "baseAttack", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "attackDelay", name: "attackDelay", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "maxHP", name: "maxHP", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "accuracy", name: "accuracy", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "armor", name: "armor", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "evasion", name: "evasion", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "letter", name: "letter", anonymous: false, exported: false, typ: $Int32, tag: ""}, {prop: "name", name: "name", anonymous: false, exported: false, typ: $String, tag: ""}, {prop: "dangerousness", name: "dangerousness", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	monsInterval.init("github.com/anaseto/boohu", [{prop: "min", name: "min", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "max", name: "max", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	monsterBandData.init("github.com/anaseto/boohu", [{prop: "distribution", name: "distribution", anonymous: false, exported: false, typ: mapType$13, tag: ""}, {prop: "rarity", name: "rarity", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "minDepth", name: "minDepth", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "maxDepth", name: "maxDepth", anonymous: false, exported: false, typ: $Int, tag: ""}, {prop: "band", name: "band", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "monster", name: "monster", anonymous: false, exported: false, typ: monsterKind, tag: ""}, {prop: "unique", name: "unique", anonymous: false, exported: false, typ: $Bool, tag: ""}]);
-	monster.init("", [{prop: "Kind", name: "Kind", anonymous: false, exported: true, typ: monsterKind, tag: ""}, {prop: "Band", name: "Band", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Index", name: "Index", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Attack", name: "Attack", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Accuracy", name: "Accuracy", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Armor", name: "Armor", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Evasion", name: "Evasion", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "HPmax", name: "HPmax", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "HP", name: "HP", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "State", name: "State", anonymous: false, exported: true, typ: monsterState, tag: ""}, {prop: "Statuses", name: "Statuses", anonymous: false, exported: true, typ: arrayType$7, tag: ""}, {prop: "Pos", name: "Pos", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "Target", name: "Target", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "Path", name: "Path", anonymous: false, exported: true, typ: sliceType$5, tag: ""}, {prop: "Obstructing", name: "Obstructing", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "FireReady", name: "FireReady", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Seen", name: "Seen", anonymous: false, exported: true, typ: $Bool, tag: ""}]);
-	dungeonPath.init("github.com/anaseto/boohu", [{prop: "dungeon", name: "dungeon", anonymous: false, exported: false, typ: ptrType$5, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$1, tag: ""}]);
-	playerPath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$1, tag: ""}]);
-	noisePath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$1, tag: ""}]);
-	normalPath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$1, tag: ""}]);
-	autoexplorePath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$1, tag: ""}]);
-	monPath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "monster", name: "monster", anonymous: false, exported: false, typ: ptrType$7, tag: ""}, {prop: "wall", name: "wall", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$1, tag: ""}]);
+	monster.init("", [{prop: "Kind", name: "Kind", anonymous: false, exported: true, typ: monsterKind, tag: ""}, {prop: "Band", name: "Band", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Index", name: "Index", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Attack", name: "Attack", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Accuracy", name: "Accuracy", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Armor", name: "Armor", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Evasion", name: "Evasion", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "HPmax", name: "HPmax", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "HP", name: "HP", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "State", name: "State", anonymous: false, exported: true, typ: monsterState, tag: ""}, {prop: "Statuses", name: "Statuses", anonymous: false, exported: true, typ: arrayType$1, tag: ""}, {prop: "Pos", name: "Pos", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "Target", name: "Target", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "Path", name: "Path", anonymous: false, exported: true, typ: sliceType$6, tag: ""}, {prop: "Obstructing", name: "Obstructing", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "FireReady", name: "FireReady", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Seen", name: "Seen", anonymous: false, exported: true, typ: $Bool, tag: ""}]);
+	dungeonPath.init("github.com/anaseto/boohu", [{prop: "dungeon", name: "dungeon", anonymous: false, exported: false, typ: ptrType$5, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$2, tag: ""}]);
+	playerPath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$2, tag: ""}]);
+	noisePath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$2, tag: ""}]);
+	normalPath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$2, tag: ""}]);
+	autoexplorePath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$2, tag: ""}]);
+	monPath.init("github.com/anaseto/boohu", [{prop: "game", name: "game", anonymous: false, exported: false, typ: ptrType$3, tag: ""}, {prop: "monster", name: "monster", anonymous: false, exported: false, typ: ptrType$7, tag: ""}, {prop: "wall", name: "wall", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "neighbors", name: "neighbors", anonymous: false, exported: false, typ: arrayType$2, tag: ""}]);
 	posCost.init("github.com/anaseto/boohu", [{prop: "pos", name: "pos", anonymous: false, exported: false, typ: position, tag: ""}, {prop: "cost", name: "cost", anonymous: false, exported: false, typ: $Int, tag: ""}]);
 	posSlice.init(posCost);
 	player.init("", [{prop: "HP", name: "HP", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "MP", name: "MP", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Simellas", name: "Simellas", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Armour", name: "Armour", anonymous: false, exported: true, typ: armour, tag: ""}, {prop: "Weapon", name: "Weapon", anonymous: false, exported: true, typ: weapon, tag: ""}, {prop: "Shield", name: "Shield", anonymous: false, exported: true, typ: shield, tag: ""}, {prop: "Consumables", name: "Consumables", anonymous: false, exported: true, typ: mapType$14, tag: ""}, {prop: "Rods", name: "Rods", anonymous: false, exported: true, typ: mapType$15, tag: ""}, {prop: "Aptitudes", name: "Aptitudes", anonymous: false, exported: true, typ: mapType$16, tag: ""}, {prop: "Statuses", name: "Statuses", anonymous: false, exported: true, typ: mapType$17, tag: ""}, {prop: "Pos", name: "Pos", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "Target", name: "Target", anonymous: false, exported: true, typ: position, tag: ""}, {prop: "LOS", name: "LOS", anonymous: false, exported: true, typ: mapType, tag: ""}, {prop: "Rays", name: "Rays", anonymous: false, exported: true, typ: rayMap, tag: ""}]);
 	position.init("", [{prop: "X", name: "X", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Y", name: "Y", anonymous: false, exported: true, typ: $Int, tag: ""}]);
 	rodProps.init("", [{prop: "Charge", name: "Charge", anonymous: false, exported: true, typ: $Int, tag: ""}]);
-	stats.init("", [{prop: "Story", name: "Story", anonymous: false, exported: true, typ: sliceType$3, tag: ""}, {prop: "Killed", name: "Killed", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "KilledMons", name: "KilledMons", anonymous: false, exported: true, typ: mapType$18, tag: ""}, {prop: "Moves", name: "Moves", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Hits", name: "Hits", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Misses", name: "Misses", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Wounds", name: "Wounds", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TimesLucky", name: "TimesLucky", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "DExplPerc", name: "DExplPerc", anonymous: false, exported: true, typ: arrayType$4, tag: ""}, {prop: "DSleepingPerc", name: "DSleepingPerc", anonymous: false, exported: true, typ: arrayType$4, tag: ""}, {prop: "DKilledPerc", name: "DKilledPerc", anonymous: false, exported: true, typ: arrayType$4, tag: ""}, {prop: "DLayout", name: "DLayout", anonymous: false, exported: true, typ: arrayType$5, tag: ""}, {prop: "Burns", name: "Burns", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Digs", name: "Digs", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Rest", name: "Rest", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "RestInterrupt", name: "RestInterrupt", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Turns", name: "Turns", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TWounded", name: "TWounded", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TMWounded", name: "TMWounded", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TMonsLOS", name: "TMonsLOS", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "UsedRod", name: "UsedRod", anonymous: false, exported: true, typ: arrayType$6, tag: ""}]);
+	stats.init("", [{prop: "Story", name: "Story", anonymous: false, exported: true, typ: sliceType$4, tag: ""}, {prop: "Killed", name: "Killed", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "KilledMons", name: "KilledMons", anonymous: false, exported: true, typ: mapType$18, tag: ""}, {prop: "Moves", name: "Moves", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Hits", name: "Hits", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Misses", name: "Misses", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Wounds", name: "Wounds", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TimesLucky", name: "TimesLucky", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "DExplPerc", name: "DExplPerc", anonymous: false, exported: true, typ: arrayType$5, tag: ""}, {prop: "DSleepingPerc", name: "DSleepingPerc", anonymous: false, exported: true, typ: arrayType$5, tag: ""}, {prop: "DKilledPerc", name: "DKilledPerc", anonymous: false, exported: true, typ: arrayType$5, tag: ""}, {prop: "DLayout", name: "DLayout", anonymous: false, exported: true, typ: arrayType$6, tag: ""}, {prop: "Burns", name: "Burns", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Digs", name: "Digs", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Rest", name: "Rest", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "RestInterrupt", name: "RestInterrupt", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "Turns", name: "Turns", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TWounded", name: "TWounded", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TMWounded", name: "TMWounded", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "TMonsLOS", name: "TMonsLOS", anonymous: false, exported: true, typ: $Int, tag: ""}, {prop: "UsedRod", name: "UsedRod", anonymous: false, exported: true, typ: arrayType$7, tag: ""}]);
 	Targeter.init([{prop: "Action", name: "Action", pkg: "", typ: $funcType([ptrType$3, position], [$error], false)}, {prop: "ComputeHighlight", name: "ComputeHighlight", pkg: "", typ: $funcType([ptrType$3, position], [], false)}, {prop: "Done", name: "Done", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Reachable", name: "Reachable", pkg: "", typ: $funcType([ptrType$3, position], [$Bool], false)}]);
 	examiner.init("github.com/anaseto/boohu", [{prop: "done", name: "done", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "stairs", name: "stairs", anonymous: false, exported: false, typ: $Bool, tag: ""}]);
 	chooser.init("github.com/anaseto/boohu", [{prop: "done", name: "done", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "area", name: "area", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "minDist", name: "minDist", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "needsFreeWay", name: "needsFreeWay", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "free", name: "free", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "flammable", name: "flammable", anonymous: false, exported: false, typ: $Bool, tag: ""}, {prop: "wall", name: "wall", anonymous: false, exported: false, typ: $Bool, tag: ""}]);
@@ -54246,6 +54433,8 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		$pkg.SaveError = "";
 		ch = $chanNil;
 		interrupt = $chanNil;
+		$pkg.UIWidth = 103;
+		$pkg.UIHeight = 27;
 		$pkg.ColorBase03 = 234;
 		$pkg.ColorBase02 = 235;
 		$pkg.ColorBase01 = 240;
@@ -54262,18 +54451,20 @@ $packages["github.com/anaseto/boohu"] = (function() {
 		$pkg.ColorBlue = 33;
 		$pkg.ColorCyan = 37;
 		$pkg.ColorGreen = 64;
-		configurableKeyActions = $toNativeArray($kindInt, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 35, 36, 37, 44, 38, 39, 40, 43]);
+		configurableKeyActions = $toNativeArray($kindInt, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 35, 36, 37, 44, 38, 39, 40]);
 		$pkg.InvalidPos = new position.ptr(-1, -1);
-		menuActions = new sliceType$1([21, 17, 25, 24, 26, 19, 23, 40, 38, 27, 28, 30, 31, 32]);
+		$pkg.MenuCols = new sliceType$1([$toNativeArray($kindInt, [0, 0]), $toNativeArray($kindInt, [0, 0]), $toNativeArray($kindInt, [0, 0]), $toNativeArray($kindInt, [0, 0]), $toNativeArray($kindInt, [0, 0]), $toNativeArray($kindInt, [0, 0]), $toNativeArray($kindInt, [0, 0])]);
+		menuActions = new sliceType$2([19, 23, 40, 27, 28, 30, 31, 32]);
 		$pkg.Version = "v0.8-dev";
 		$pkg.ConsumablesCollectData = $makeMap(consumable.keyFor, [{ k: new potion(0), v: new collectData.ptr(6, 1) }, { k: new potion(1), v: new collectData.ptr(5, 1) }, { k: new potion(2), v: new collectData.ptr(5, 1) }, { k: new potion(4), v: new collectData.ptr(6, 1) }, { k: new potion(3), v: new collectData.ptr(15, 1) }, { k: new potion(5), v: new collectData.ptr(8, 1) }, { k: new potion(6), v: new collectData.ptr(15, 1) }, { k: new potion(7), v: new collectData.ptr(10, 1) }, { k: new potion(8), v: new collectData.ptr(12, 1) }, { k: new potion(9), v: new collectData.ptr(12, 1) }, { k: new potion(10), v: new collectData.ptr(12, 1) }, { k: new potion(11), v: new collectData.ptr(12, 1) }, { k: new projectile(0), v: new collectData.ptr(4, 3) }, { k: new projectile(1), v: new collectData.ptr(8, 1) }]);
 		$pkg.EquipablesRepartitionData = $makeMap(equipable.keyFor, [{ k: new armour(0), v: new equipableData.ptr(5, 0) }, { k: new armour(1), v: new equipableData.ptr(5, 0) }, { k: new armour(2), v: new equipableData.ptr(10, 3) }, { k: new armour(3), v: new equipableData.ptr(15, 6) }, { k: new shield(1), v: new equipableData.ptr(10, 2) }, { k: new shield(2), v: new equipableData.ptr(15, 5) }]);
-		$pkg.MonsData = new sliceType$2([new monsterData.ptr(10, 7, 10, 15, 14, 0, 12, 103, "goblin", 2), new monsterData.ptr(10, 15, 12, 28, 13, 0, 8, 79, "ogre", 6), new monsterData.ptr(10, 12, 12, 28, 13, 0, 8, 67, "cyclop", 9), new monsterData.ptr(12, 9, 10, 25, 13, 0, 10, 119, "worm", 3), new monsterData.ptr(12, 10, 10, 30, 13, 0, 10, 122, "brizzia", 7), new monsterData.ptr(8, 9, 10, 15, 14, 0, 12, 104, "hound", 4), new monsterData.ptr(10, 11, 10, 21, 14, 0, 10, 121, "yack", 6), new monsterData.ptr(6, 10, 10, 11, 15, 0, 15, 66, "giant bee", 6), new monsterData.ptr(10, 11, 10, 22, 15, 3, 12, 71, "goblin warrior", 8), new monsterData.ptr(10, 9, 10, 45, 13, 0, 6, 72, "hydra", 15), new monsterData.ptr(10, 12, 10, 25, 15, 4, 12, 83, "skeleton warrior", 10), new monsterData.ptr(8, 7, 10, 13, 17, 0, 15, 115, "spider", 6), new monsterData.ptr(10, 10, 10, 20, 15, 0, 12, 70, "blinking frog", 7), new monsterData.ptr(10, 10, 10, 23, 15, 3, 12, 76, "lich", 17), new monsterData.ptr(10, 14, 10, 40, 14, 6, 8, 68, "earth dragon", 20), new monsterData.ptr(10, 9, 10, 18, 15, 0, 17, 109, "mirror specter", 11), new monsterData.ptr(10, 9, 10, 19, 15, 0, 8, 97, "acid mound", 7), new monsterData.ptr(10, 4, 10, 1, 14, 0, 10, 110, "explosive nadre", 5), new monsterData.ptr(10, 12, 12, 30, 15, 0, 4, 80, "satowalga plant", 7), new monsterData.ptr(10, 0, 10, 99, 18, 10, 15, 77, "Marevor Helith", 18)]);
-		monsDesc = new sliceType$3(["Goblins are little humanoid creatures. They often appear in group.", "Ogres are big clunky humanoids that can hit really hard.", "Cyclops are very similar to ogres, but they also like to throw rocks at their foes (for up to 15 damage), sometimes confusing them.", "Worms are ugly slow moving creatures, but surprisingly hardy at times.", "Brizzias are big slow moving biped creatures. They are quite hardy, and when hurt they can cause nausea, impeding the use of potions.", "Hounds are fast moving carnivore quadrupeds. They sometimes attack in group.", "Yacks are quite large herbivorous quadrupeds. They tend to form large groups. They can push you one cell away.", "Giant bees are fragile, but extremely fast moving creatures. Their bite can sometimes enrage you.", "Goblin warriors are goblins that learned to fight, and got equipped with a leather armour. They can throw javelins.", "Hydras are enormous creatures with four heads that can hit you each at once.", "Skeleton warriors are good fighters, and are equipped with a chain mail.", "Spiders are fast moving fragile creatures, whose bite can confuse you.", "Blinking frogs are big frog-like unstable creatures, whose bite can make you blink away.", "Liches are non-living mages wearing a leather armour. They can throw a bolt of torment at you, halving your HP.", "Earth dragons are big and hardy creatures that wander in the Underground. It is said they are to credit for many tunnels.", "Mirror specters are very insubstantial creatures. They can absorb your mana.", "Acid mounds are acidic creatures. They can temporally corrode your equipment.", "Explosive nadres are very frail creatures that explode upon dying, halving HP of any adjacent creatures and occasionally destroying walls.", "Satowalga Plants are static bushes that throw acidic projectiles at you, sometimes corroding and confusing you.", "Marevor Helith is an ancient undead nakrus very fond of teleporting people away."]);
-		$pkg.MonsBands = new sliceType$4([new monsterBandData.ptr(false, 10, 0, 5, false, 0, false), new monsterBandData.ptr(false, 15, 2, 11, false, 1, false), new monsterBandData.ptr(false, 10, 0, 6, false, 3, false), new monsterBandData.ptr(false, 90, 7, 13, false, 4, false), new monsterBandData.ptr(false, 20, 1, 8, false, 5, false), new monsterBandData.ptr(false, 45, 8, 13, false, 9, false), new monsterBandData.ptr(false, 20, 3, 13, false, 11, false), new monsterBandData.ptr(false, 50, 5, 13, false, 12, false), new monsterBandData.ptr(false, 45, 5, 13, false, 2, false), new monsterBandData.ptr(false, 70, 9, 13, false, 13, false), new monsterBandData.ptr(false, 80, 10, 13, false, 14, false), new monsterBandData.ptr(false, 70, 6, 13, false, 15, false), new monsterBandData.ptr(false, 70, 6, 13, false, 16, false), new monsterBandData.ptr(false, 55, 4, 7, false, 17, false), new monsterBandData.ptr(false, 80, 5, 13, false, 18, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(2, 4) }]), 10, 1, 5, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(3, 5) }, { k: 8, v: new monsInterval.ptr(0, 2) }]), 12, 5, 9, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(0, 1) }, { k: 8, v: new monsInterval.ptr(2, 4) }]), 45, 10, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 5, v: new monsInterval.ptr(2, 3) }]), 20, 2, 10, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 6, v: new monsInterval.ptr(2, 5) }]), 15, 5, 11, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 11, v: new monsInterval.ptr(2, 4) }]), 25, 5, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 18, v: new monsInterval.ptr(2, 2) }]), 100, 7, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 12, v: new monsInterval.ptr(2, 4) }]), 70, 9, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 12, v: new monsInterval.ptr(0, 1) }, { k: 17, v: new monsInterval.ptr(1, 2) }, { k: 7, v: new monsInterval.ptr(1, 1) }, { k: 4, v: new monsInterval.ptr(0, 1) }]), 65, 8, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 7, v: new monsInterval.ptr(2, 5) }]), 30, 6, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 10, v: new monsInterval.ptr(2, 3) }]), 45, 8, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 3, v: new monsInterval.ptr(3, 4) }, { k: 11, v: new monsInterval.ptr(1, 1) }]), 50, 4, 4, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(3, 5) }, { k: 5, v: new monsInterval.ptr(1, 2) }]), 30, 5, 5, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 12, v: new monsInterval.ptr(2, 3) }]), 60, 6, 6, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 1, v: new monsInterval.ptr(2, 3) }, { k: 2, v: new monsInterval.ptr(1, 1) }]), 35, 7, 7, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(2, 3) }, { k: 8, v: new monsInterval.ptr(2, 2) }, { k: 5, v: new monsInterval.ptr(1, 2) }]), 30, 8, 8, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 6, v: new monsInterval.ptr(3, 4) }, { k: 7, v: new monsInterval.ptr(2, 2) }]), 30, 9, 9, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 9, v: new monsInterval.ptr(2, 3) }, { k: 11, v: new monsInterval.ptr(1, 2) }]), 40, 10, 10, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 17, v: new monsInterval.ptr(2, 3) }, { k: 4, v: new monsInterval.ptr(1, 2) }]), 55, 10, 10, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 10, v: new monsInterval.ptr(2, 2) }, { k: 13, v: new monsInterval.ptr(1, 1) }, { k: 15, v: new monsInterval.ptr(0, 1) }]), 50, 11, 11, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 4, v: new monsInterval.ptr(3, 4) }]), 80, 11, 11, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 16, v: new monsInterval.ptr(3, 4) }]), 80, 12, 12, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 18, v: new monsInterval.ptr(3, 3) }]), 80, 12, 12, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 14, v: new monsInterval.ptr(2, 2) }]), 60, 12, 12, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 19, v: new monsInterval.ptr(1, 1) }, { k: 13, v: new monsInterval.ptr(0, 1) }]), 100, 7, 12, true, 0, true)]);
+		$pkg.MonsData = new sliceType$3([new monsterData.ptr(10, 7, 10, 15, 14, 0, 12, 103, "goblin", 2), new monsterData.ptr(10, 15, 12, 28, 13, 0, 8, 79, "ogre", 6), new monsterData.ptr(10, 12, 12, 28, 13, 0, 8, 67, "cyclop", 9), new monsterData.ptr(12, 9, 10, 25, 13, 0, 10, 119, "worm", 3), new monsterData.ptr(12, 10, 10, 30, 13, 0, 10, 122, "brizzia", 7), new monsterData.ptr(8, 9, 10, 15, 14, 0, 12, 104, "hound", 4), new monsterData.ptr(10, 11, 10, 21, 14, 0, 10, 121, "yack", 6), new monsterData.ptr(6, 10, 10, 11, 15, 0, 15, 66, "giant bee", 6), new monsterData.ptr(10, 11, 10, 22, 15, 3, 12, 71, "goblin warrior", 8), new monsterData.ptr(10, 9, 10, 45, 13, 0, 6, 72, "hydra", 15), new monsterData.ptr(10, 12, 10, 25, 15, 4, 12, 83, "skeleton warrior", 10), new monsterData.ptr(8, 7, 10, 13, 17, 0, 15, 115, "spider", 6), new monsterData.ptr(10, 10, 10, 20, 15, 0, 12, 70, "blinking frog", 7), new monsterData.ptr(10, 10, 10, 23, 15, 3, 12, 76, "lich", 17), new monsterData.ptr(10, 14, 10, 40, 14, 6, 8, 68, "earth dragon", 20), new monsterData.ptr(10, 9, 10, 18, 15, 0, 17, 109, "mirror specter", 11), new monsterData.ptr(10, 9, 10, 19, 15, 0, 8, 97, "acid mound", 7), new monsterData.ptr(10, 4, 10, 1, 14, 0, 10, 110, "explosive nadre", 5), new monsterData.ptr(10, 12, 12, 30, 15, 0, 4, 80, "satowalga plant", 7), new monsterData.ptr(10, 0, 10, 99, 18, 10, 15, 77, "Marevor Helith", 18)]);
+		monsDesc = new sliceType$4(["Goblins are little humanoid creatures. They often appear in group.", "Ogres are big clunky humanoids that can hit really hard.", "Cyclops are very similar to ogres, but they also like to throw rocks at their foes (for up to 15 damage), sometimes confusing them.", "Worms are ugly slow moving creatures, but surprisingly hardy at times.", "Brizzias are big slow moving biped creatures. They are quite hardy, and when hurt they can cause nausea, impeding the use of potions.", "Hounds are fast moving carnivore quadrupeds. They sometimes attack in group.", "Yacks are quite large herbivorous quadrupeds. They tend to form large groups. They can push you one cell away.", "Giant bees are fragile, but extremely fast moving creatures. Their bite can sometimes enrage you.", "Goblin warriors are goblins that learned to fight, and got equipped with a leather armour. They can throw javelins.", "Hydras are enormous creatures with four heads that can hit you each at once.", "Skeleton warriors are good fighters, and are equipped with a chain mail.", "Spiders are fast moving fragile creatures, whose bite can confuse you.", "Blinking frogs are big frog-like unstable creatures, whose bite can make you blink away.", "Liches are non-living mages wearing a leather armour. They can throw a bolt of torment at you, halving your HP.", "Earth dragons are big and hardy creatures that wander in the Underground. It is said they are to credit for many tunnels.", "Mirror specters are very insubstantial creatures. They can absorb your mana.", "Acid mounds are acidic creatures. They can temporally corrode your equipment.", "Explosive nadres are very frail creatures that explode upon dying, halving HP of any adjacent creatures and occasionally destroying walls.", "Satowalga Plants are static bushes that throw acidic projectiles at you, sometimes corroding and confusing you.", "Marevor Helith is an ancient undead nakrus very fond of teleporting people away."]);
+		$pkg.MonsBands = new sliceType$5([new monsterBandData.ptr(false, 10, 0, 5, false, 0, false), new monsterBandData.ptr(false, 15, 2, 11, false, 1, false), new monsterBandData.ptr(false, 10, 0, 6, false, 3, false), new monsterBandData.ptr(false, 90, 7, 13, false, 4, false), new monsterBandData.ptr(false, 20, 1, 8, false, 5, false), new monsterBandData.ptr(false, 45, 8, 13, false, 9, false), new monsterBandData.ptr(false, 20, 3, 13, false, 11, false), new monsterBandData.ptr(false, 50, 5, 13, false, 12, false), new monsterBandData.ptr(false, 45, 5, 13, false, 2, false), new monsterBandData.ptr(false, 70, 9, 13, false, 13, false), new monsterBandData.ptr(false, 80, 10, 13, false, 14, false), new monsterBandData.ptr(false, 70, 6, 13, false, 15, false), new monsterBandData.ptr(false, 70, 6, 13, false, 16, false), new monsterBandData.ptr(false, 55, 4, 7, false, 17, false), new monsterBandData.ptr(false, 80, 5, 13, false, 18, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(2, 4) }]), 10, 1, 5, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(3, 5) }, { k: 8, v: new monsInterval.ptr(0, 2) }]), 12, 5, 9, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(0, 1) }, { k: 8, v: new monsInterval.ptr(2, 4) }]), 45, 10, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 5, v: new monsInterval.ptr(2, 3) }]), 20, 2, 10, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 6, v: new monsInterval.ptr(2, 5) }]), 15, 5, 11, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 11, v: new monsInterval.ptr(2, 4) }]), 25, 5, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 18, v: new monsInterval.ptr(2, 2) }]), 100, 7, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 12, v: new monsInterval.ptr(2, 4) }]), 70, 9, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 12, v: new monsInterval.ptr(0, 1) }, { k: 17, v: new monsInterval.ptr(1, 2) }, { k: 7, v: new monsInterval.ptr(1, 1) }, { k: 4, v: new monsInterval.ptr(0, 1) }]), 65, 8, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 7, v: new monsInterval.ptr(2, 5) }]), 30, 6, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 10, v: new monsInterval.ptr(2, 3) }]), 45, 8, 13, true, 0, false), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 3, v: new monsInterval.ptr(3, 4) }, { k: 11, v: new monsInterval.ptr(1, 1) }]), 50, 4, 4, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(3, 5) }, { k: 5, v: new monsInterval.ptr(1, 2) }]), 30, 5, 5, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 12, v: new monsInterval.ptr(2, 3) }]), 60, 6, 6, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 1, v: new monsInterval.ptr(2, 3) }, { k: 2, v: new monsInterval.ptr(1, 1) }]), 35, 7, 7, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 0, v: new monsInterval.ptr(2, 3) }, { k: 8, v: new monsInterval.ptr(2, 2) }, { k: 5, v: new monsInterval.ptr(1, 2) }]), 30, 8, 8, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 6, v: new monsInterval.ptr(3, 4) }, { k: 7, v: new monsInterval.ptr(2, 2) }]), 30, 9, 9, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 9, v: new monsInterval.ptr(2, 3) }, { k: 11, v: new monsInterval.ptr(1, 2) }]), 40, 10, 10, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 17, v: new monsInterval.ptr(2, 3) }, { k: 4, v: new monsInterval.ptr(1, 2) }]), 55, 10, 10, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 10, v: new monsInterval.ptr(2, 2) }, { k: 13, v: new monsInterval.ptr(1, 1) }, { k: 15, v: new monsInterval.ptr(0, 1) }]), 50, 11, 11, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 4, v: new monsInterval.ptr(3, 4) }]), 80, 11, 11, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 16, v: new monsInterval.ptr(3, 4) }]), 80, 12, 12, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 18, v: new monsInterval.ptr(3, 3) }]), 80, 12, 12, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 14, v: new monsInterval.ptr(2, 2) }]), 60, 12, 12, true, 0, true), new monsterBandData.ptr($makeMap(monsterKind.keyFor, [{ k: 19, v: new monsInterval.ptr(1, 1) }, { k: 13, v: new monsInterval.ptr(0, 1) }]), 100, 7, 12, true, 0, true)]);
 		init();
-		$r = init$1(); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		init$2();
+		init$1();
+		$r = init$2(); /* */ $s = 18; case 18: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		init$3();
 		/* */ if ($pkg === $mainPkg) { $s = 19; continue; }
 		/* */ $s = 20; continue;
 		/* if ($pkg === $mainPkg) { */ case 19:
